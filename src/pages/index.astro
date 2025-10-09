@@ -1,11 +1,240 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import fotoGrupal from '../assets/foto-grupal.webp';
+import apadrinaImg from '../assets/apadrina-1024x682.webp';
+import apadrinarImg from '../assets/apadrinar-1024x768.webp';
 ---
 
 <Layout>
-	<Welcome />
+	<Header />
+	
+	<main>
+		<!-- Hero Section -->
+		<section class="relative mb-50 bg-gradient-to-br from-white to-gray-50 py-20 overflow-hidden">
+			<div class="container mx-auto px-4">
+				<div class="flex flex-col lg:flex-row items-center gap-12">
+					<div class="lg:w-1/2 space-y-6">
+						<h1 class="text-5xl lg:text-6xl font-bold text-[#0c615d] leading-tight">
+							Bienvenido a <span class="text-[#d75528]">AJERGA</span>
+						</h1>
+						<p class="text-xl text-gray-600 leading-relaxed">
+							Asociación de Jóvenes Emigrantes Retornados de Galicia. 
+							Juntos construimos una comunidad de apoyo para quienes vuelven a casa.
+						</p>
+						<div class="flex flex-wrap gap-4">
+							<a href="#asociate" class="bg-[#0c615d] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#094a47] transition-colors shadow-lg">
+								Asóciate
+							</a>
+							<a href="#apadrinamiento" class="bg-white text-[#0c615d] px-8 py-3 rounded-full font-semibold border-2 border-[#0c615d] hover:bg-[#0c615d] hover:text-white transition-colors">
+								Conoce más
+							</a>
+						</div>
+					</div>
+					<div class="lg:w-1/2">
+						<img src={fotoGrupal.src} alt="Equipo AJERGA" class="rounded-2xl shadow-2xl w-full" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sección: ¿Qué es AJERGA? con franja verde -->
+		<section id="que-es-ajerga" class="relative mb-60 -mt-16">
+			<!-- Fondo con inclinación -->
+			<div class="absolute inset-0 -top-24 -bottom-24 bg-gradient-to-r from-[#0c615d] to-[#c6d067]" style="clip-path: polygon(0 6%, 100% 0%, 100% 94%, 0% 100%);"></div>
+			
+			<!-- Contenido -->
+			<div class="relative container mx-auto px-4 py-8">
+				<div class="max-w-4xl mx-auto text-center">
+					<h2 class="text-4xl font-bold text-white mb-6">¿Qué es AJERGA?</h2>
+					<div class="w-24 h-1 bg-white mx-auto mb-8"></div>
+					<p class="text-lg text-white leading-relaxed mb-6">
+						AJERGA es la <strong>Asociación de Jóvenes Emigrantes Retornados de Galicia</strong>, 
+						una organización sin ánimo de lucro que nace con el objetivo de apoyar y acompañar 
+						a aquellas personas que, después de emigrar, deciden regresar a Galicia.
+					</p>
+					<p class="text-lg text-white leading-relaxed mb-6">
+						Sabemos que volver no siempre es fácil. Por eso, trabajamos para crear una red de apoyo 
+						mutuo que facilite el proceso de retorno, ofreciendo información práctica, orientación 
+						y una comunidad de personas que comparten experiencias similares.
+					</p>
+					<p class="text-lg text-white leading-relaxed">
+						Creemos en la fuerza del colectivo y en la importancia de construir juntos 
+						un futuro en Galicia para todas las personas que desean regresar.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sección: Programa de Apadrinamiento con franja naranja -->
+		<section id="apadrinamiento" class="relative mb-60 -mt-28">
+			<!-- Fondo con inclinación -->
+			<div class="absolute inset-0 -top-24 -bottom-24 bg-gradient-to-r from-[#d75528] to-[#dfa142]" style="clip-path: polygon(0 6%, 100% 0%, 100% 94%, 0% 100%);"></div>
+			
+			<!-- Contenido -->
+			<div class="relative container mx-auto px-4 py-8">
+				<div class="text-center mb-12">
+					<h2 class="text-4xl font-bold text-white mb-6">Programa de Apadrinamiento</h2>
+					<div class="w-24 h-1 bg-white mx-auto mb-8"></div>
+					<p class="text-lg text-white max-w-3xl mx-auto">
+						Conectamos a personas que ya están establecidas en Galicia con quienes acaban de regresar, 
+						creando lazos de apoyo y acompañamiento en el proceso de reintegración.
+					</p>
+				</div>
+				
+				<div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto mt-16">
+					<!-- Quiero ser apadrinado -->
+					<div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow">
+						<div class="h-64 overflow-hidden">
+							<img src={apadrinarImg.src} alt="Quiero ser apadrinado" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+						</div>
+						<div class="p-8">
+							<h3 class="text-2xl font-bold text-[#0c615d] mb-4">¿Acabas de volver?</h3>
+							<p class="text-gray-600 mb-6">
+								Si has regresado recientemente a Galicia y necesitas orientación, 
+								apoyo o simplemente conectar con alguien que entienda tu situación, 
+								podemos emparejarte con un padrino o madrina.
+							</p>
+							<a href="/apadrinamiento/ser-apadrinado" class="inline-block bg-[#d2557d] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#b8446a] transition-colors">
+								Quiero ser apadrinado/a
+							</a>
+						</div>
+					</div>
+
+					<!-- Quiero apadrinar -->
+					<div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow">
+						<div class="h-64 overflow-hidden">
+							<img src={apadrinaImg.src} alt="Quiero apadrinar" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+						</div>
+						<div class="p-8">
+							<h3 class="text-2xl font-bold text-[#0c615d] mb-4">¿Ya estás establecido/a?</h3>
+							<p class="text-gray-600 mb-6">
+								Si llevas tiempo viviendo en Galicia y quieres ayudar a otras personas 
+								en su proceso de retorno, compartiendo tu experiencia y conocimientos, 
+								únete como padrino o madrina.
+							</p>
+							<a href="/apadrinamiento/apadrinar" class="inline-block bg-[#77b2c0] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#5c94a0] transition-colors">
+								Quiero apadrinar
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sección: Nuestro Equipo con franja rosa-azul -->
+		<section id="equipo" class="relative mb-60 -mt-28">
+			<!-- Fondo con inclinación -->
+			<div class="absolute inset-0 -top-24 -bottom-24 bg-gradient-to-r from-[#d2557d] to-[#394d62]" style="clip-path: polygon(0 6%, 100% 0%, 100% 94%, 0% 100%);"></div>
+			
+			<!-- Contenido -->
+			<div class="relative container mx-auto px-4 py-8">
+				<div class="text-center mb-12">
+					<h2 class="text-4xl font-bold text-white mb-6">Nuestro Equipo</h2>
+					<div class="w-24 h-1 bg-white mx-auto mb-8"></div>
+					<p class="text-lg text-white max-w-3xl mx-auto">
+						AJERGA está formada por personas voluntarias que, como tú, han vivido la experiencia 
+						de emigrar y retornar. Nuestro equipo trabaja con pasión para construir una comunidad 
+						fuerte y solidaria.
+					</p>
+				</div>
+
+				<div class="max-w-4xl mx-auto text-center">
+					<div class="bg-white/10 backdrop-blur-sm rounded-2xl shadow-xl p-12 border border-white/20">
+						<p class="text-xl text-white mb-8">
+							Conoce a las personas que hacen posible AJERGA y que trabajan día a día 
+							para facilitar tu retorno a Galicia.
+						</p>
+						<a href="/equipo" class="inline-block bg-white text-[#394d62] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-lg">
+							Ver equipo completo
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sección: Asóciate con franja azul-verde -->
+		<section id="asociate" class="relative mb-60 -mt-28">
+			<!-- Fondo con inclinación -->
+			<div class="absolute inset-0 -top-24 -bottom-24 bg-gradient-to-r from-[#77b2c0] to-[#c6d067]" style="clip-path: polygon(0 6%, 100% 0%, 100% 94%, 0% 100%);"></div>
+			
+			<!-- Contenido -->
+			<div class="relative container mx-auto px-4 py-8">
+				<div class="max-w-4xl mx-auto">
+					<div class="text-center mb-12">
+						<h2 class="text-4xl font-bold text-white mb-6">Asóciate a AJERGA</h2>
+						<div class="w-24 h-1 bg-white mx-auto mb-8"></div>
+					</div>
+
+					<div class="bg-white rounded-2xl shadow-xl p-10 md:p-12">
+						<p class="text-lg text-gray-700 leading-relaxed mb-8 text-center">
+							Formar parte de AJERGA significa unirte a una comunidad de personas que comparten 
+							tu experiencia migratoria. Juntos podemos crear una red de apoyo sólida y trabajar 
+							por mejorar las condiciones de retorno a Galicia.
+						</p>
+
+						<div class="grid md:grid-cols-3 gap-6 mb-10">
+							<div class="text-center p-6 bg-gradient-to-br from-[#c6d067]/10 to-transparent rounded-xl">
+								<div class="text-4xl mb-3">🤝</div>
+								<h3 class="font-bold text-[#0c615d] mb-2">Comunidad</h3>
+								<p class="text-gray-600 text-sm">Conecta con personas que entienden tu experiencia</p>
+							</div>
+							<div class="text-center p-6 bg-gradient-to-br from-[#d75528]/10 to-transparent rounded-xl">
+								<div class="text-4xl mb-3">📚</div>
+								<h3 class="font-bold text-[#0c615d] mb-2">Recursos</h3>
+								<p class="text-gray-600 text-sm">Accede a información y guías útiles</p>
+							</div>
+							<div class="text-center p-6 bg-gradient-to-br from-[#77b2c0]/10 to-transparent rounded-xl">
+								<div class="text-4xl mb-3">💪</div>
+								<h3 class="font-bold text-[#0c615d] mb-2">Impacto</h3>
+								<p class="text-gray-600 text-sm">Ayuda a construir un futuro mejor</p>
+							</div>
+						</div>
+
+						<div class="text-center">
+							<a href="/asociate" class="inline-block bg-gradient-to-r from-[#0c615d] to-[#c6d067] text-white px-10 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+								Hazte socio/a ahora
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sección: Comité de Ética con franja naranja-rosa -->
+		<section id="comite-etica" class="relative mb-60 -mt-28">
+			<!-- Fondo con inclinación -->
+			<div class="absolute inset-0 -top-24 -bottom-24 bg-gradient-to-r from-[#dfa142] to-[#d2557d]" style="clip-path: polygon(0 6%, 100% 0%, 100% 94%, 0% 100%);"></div>
+			
+			<!-- Contenido -->
+			<div class="relative container mx-auto px-4 py-8">
+				<div class="max-w-4xl mx-auto">
+					<div class="text-center mb-12">
+						<h2 class="text-4xl font-bold text-white mb-6">Comité de Ética y Disciplina</h2>
+						<div class="w-24 h-1 bg-white mx-auto mb-8"></div>
+					</div>
+
+					<div class="bg-white/10 backdrop-blur-sm rounded-2xl shadow-xl p-10 border border-white/20">
+						<p class="text-lg text-white leading-relaxed mb-6">
+							En AJERGA creemos en la importancia de mantener un entorno seguro, respetuoso 
+							y transparente para todas las personas asociadas. Nuestro Comité de Ética y Disciplina 
+							se encarga de velar por el cumplimiento de nuestros valores y principios.
+						</p>
+						<p class="text-lg text-white leading-relaxed mb-8">
+							Trabajamos para garantizar que todas las actividades de la asociación se desarrollen 
+							con integridad, respeto y compromiso con nuestra misión.
+						</p>
+						<div class="text-center">
+							<a href="/comite-etica" class="inline-block bg-white text-[#d2557d] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-lg">
+								Conoce más sobre el comité
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<Footer />
 </Layout>
