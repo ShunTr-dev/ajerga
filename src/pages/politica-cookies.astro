@@ -94,7 +94,7 @@ import Footer from '../components/Footer.astro';
 						<h2 class="text-2xl font-bold text-[#394d62] mt-8 mb-4">Más información</h2>
 						<p>
 							Si tienes dudas sobre esta política de cookies, puedes contactar con AJERGA a través del correo 
-							electrónico <a href="mailto:info@ajerga.org" class="text-[#77b2c0] hover:underline">info@ajerga.org</a>
+							electrónico <a href={`mailto:${import.meta.env.EMAIL}`} class="text-[#77b2c0] hover:underline">{import.meta.env.EMAIL}</a>
 						</p>
 					</section>
 

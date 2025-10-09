@@ -206,7 +206,7 @@ import Footer from '../components/Footer.astro';
 							<a href="/asociate" class="inline-block bg-white text-[#d75528] px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg">
 								Hazte socio/a
 							</a>
-							<a href="mailto:info@ajerga.org" class="inline-block bg-[#394d62] text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-[#2d3d4f] transition-colors shadow-lg">
+							<a href={`mailto:${import.meta.env.EMAIL}`} class="inline-block bg-[#394d62] text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-[#2d3d4f] transition-colors shadow-lg">
 								Contáctanos
 							</a>
 						</div>

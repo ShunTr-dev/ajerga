@@ -2,6 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+
+import memoriaActividades2023 from '../assets/pdf/Memoria_Actividades_2023.pdf';
+import memoriaActividades2024 from '../assets/pdf/Memoria_Actividades_2024.pdf';
+import rendicionDeCuentas2023 from '../assets/pdf/Rendicion_de_Cuentas_2023.pdf';
+import rendicionDeCuentas2024 from '../assets/pdf/Rendicion_de_Cuentas_2024.pdf';
 ---
 
 <Layout title="Transparencia - AJERGA" description="Información sobre transparencia y cuentas de AJERGA">
@@ -42,11 +47,11 @@ import Footer from '../components/Footer.astro';
 							<div class="bg-gray-50 rounded-xl p-8">
 								<h3 class="text-xl font-semibold text-[#394d62] mb-4">Junta Directiva</h3>
 								<p class="text-gray-700 mb-4">
-									Nuestra junta directiva se renueva cada [X] años mediante votación democrática de todos 
+									Nuestra junta directiva se renueva cada año mediante votación democrática de todos 
 									los socios y socias.
 								</p>
 								<p class="text-gray-700">
-									<strong>Composición actual:</strong> [Información sobre los cargos y miembros de la junta]
+									<strong>Composición actual:</strong> 
 								</p>
 							</div>
 
@@ -106,7 +111,7 @@ import Footer from '../components/Footer.astro';
 							<div class="border-l-4 border-[#c6d067] pl-6 py-4 bg-gray-50">
 								<h4 class="font-bold text-[#394d62] mb-2">Cuentas Anuales 2024</h4>
 								<p class="text-gray-700 mb-3">Informe económico del ejercicio 2024</p>
-								<a href="#" class="text-[#77b2c0] hover:underline font-semibold">
+								<a href={rendicionDeCuentas2024} class="text-[#77b2c0] hover:underline font-semibold">
 									Descargar PDF →
 								</a>
 							</div>
@@ -114,39 +119,14 @@ import Footer from '../components/Footer.astro';
 							<div class="border-l-4 border-[#77b2c0] pl-6 py-4 bg-gray-50">
 								<h4 class="font-bold text-[#394d62] mb-2">Cuentas Anuales 2023</h4>
 								<p class="text-gray-700 mb-3">Informe económico del ejercicio 2023</p>
-								<a href="#" class="text-[#77b2c0] hover:underline font-semibold">
+								<a href={rendicionDeCuentas2023} class="text-[#77b2c0] hover:underline font-semibold">
 									Descargar PDF →
 								</a>
 							</div>
 						</div>
 					</div>
 
-					<div class="mb-12">
-						<h2 class="text-3xl font-bold text-[#0c615d] mb-6">Subvenciones y Ayudas</h2>
-						
-						<div class="bg-gray-50 rounded-xl p-8">
-							<p class="text-gray-700 mb-6">
-								AJERGA recibe apoyo institucional para desarrollar sus actividades. Aquí puedes consultar 
-								las subvenciones recibidas, su finalidad y justificación:
-							</p>
-
-							<div class="space-y-4">
-								<div class="bg-white rounded-lg p-6">
-									<div class="flex justify-between items-start mb-2">
-										<h4 class="font-bold text-[#394d62]">Xunta de Galicia - Secretaría Xeral da Emigración</h4>
-										<span class="text-[#0c615d] font-bold">[Año]</span>
-									</div>
-									<p class="text-gray-700 mb-2">Finalidad: Apoyo a asociaciones de retornados</p>
-									<p class="text-sm text-gray-600">Importe: [X.XXX €]</p>
-								</div>
-
-								<p class="text-sm text-gray-600 italic">
-									* La información completa sobre subvenciones se actualiza anualmente tras la rendición 
-									de cuentas aprobada en la Asamblea General.
-								</p>
-							</div>
-						</div>
-					</div>
+					
 
 					<div class="mb-12">
 						<h2 class="text-3xl font-bold text-[#0c615d] mb-6">Actividades y Memorias</h2>
@@ -158,11 +138,11 @@ import Footer from '../components/Footer.astro';
 							</p>
 							
 							<div class="space-y-3">
-								<a href="#" class="block border-l-4 border-[#d75528] pl-6 py-3 bg-white hover:bg-gray-50 transition-colors">
+								<a href={memoriaActividades2024} class="block border-l-4 border-[#d75528] pl-6 py-3 bg-white hover:bg-gray-50 transition-colors">
 									<span class="font-semibold text-[#394d62]">Memoria de Actividades 2024</span>
 									<span class="text-sm text-gray-600 block mt-1">Descargar PDF →</span>
 								</a>
-								<a href="#" class="block border-l-4 border-[#dfa142] pl-6 py-3 bg-white hover:bg-gray-50 transition-colors">
+								<a href={memoriaActividades2023} class="block border-l-4 border-[#dfa142] pl-6 py-3 bg-white hover:bg-gray-50 transition-colors">
 									<span class="font-semibold text-[#394d62]">Memoria de Actividades 2023</span>
 									<span class="text-sm text-gray-600 block mt-1">Descargar PDF →</span>
 								</a>
@@ -176,7 +156,7 @@ import Footer from '../components/Footer.astro';
 							Si necesitas información adicional sobre cualquier aspecto de la gestión de AJERGA, 
 							no dudes en contactarnos. Estamos comprometidos con la máxima transparencia.
 						</p>
-						<a href="mailto:info@ajerga.org" class="inline-block bg-white text-[#394d62] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+						<a href={`mailto:${import.meta.env.EMAIL}`} class="inline-block bg-white text-[#394d62] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
 							Contactar
 						</a>
 					</div>

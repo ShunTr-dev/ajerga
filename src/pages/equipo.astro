@@ -157,7 +157,7 @@ import Footer from '../components/Footer.astro';
 							AJERGA funciona gracias al trabajo voluntario de sus socios y socias. Si quieres implicarte 
 							activamente en algún grupo de trabajo o tienes ideas para aportar, ¡te esperamos!
 						</p>
-						<a href="mailto:info@ajerga.org" class="inline-block bg-white text-[#0c615d] px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg">
+						<a href={`mailto:${import.meta.env.EMAIL}`} class="inline-block bg-white text-[#0c615d] px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg">
 							Contacta con nosotros
 						</a>
 					</div>

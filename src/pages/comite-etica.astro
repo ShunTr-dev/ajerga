@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+
+import codigoEticaDisciplina from '../assets/pdf/CODIGO-DE-ETICA-Y-DISCIPLINA-AJERGA.pdf';
 ---
 
 <Layout title="Comité de Ética y Disciplina - AJERGA" description="Información sobre el Comité de Ética y Disciplina de AJERGA">
@@ -31,6 +33,9 @@ import Footer from '../components/Footer.astro';
 							Trabaja para garantizar que todas las actividades y relaciones dentro de la asociación 
 							se desarrollen con integridad, respeto y compromiso con nuestra misión.
 						</p>
+						<p class="text-lg text-gray-700">
+							El mandato de los miembros del Comité es de dos años, y el comité actualmente en funciones ejercerá hasta el 31 de enero de 2027, conforme a lo establecido en el Código.
+						</p>
 					</div>
 
 					<div class="mb-12">
@@ -51,33 +56,30 @@ import Footer from '../components/Footer.astro';
 							<div class="bg-gray-50 rounded-xl p-8">
 								<h3 class="text-xl font-semibold text-[#394d62] mb-4 flex items-center">
 									<span class="text-3xl mr-3">👂</span>
-									Recepción y Análisis de Quejas
+									Función disciplinaria
 								</h3>
 								<p class="text-gray-700">
-									Recibir, analizar y tramitar denuncias o quejas relacionadas con comportamientos 
-									que puedan vulnerar los principios de la asociación.
+									Investiga y propone medidas ante infracciones al Código de Ética y los Estatutos, garantizando el derecho a la defensa y la equidad en el proceso.
 								</p>
 							</div>
 
 							<div class="bg-gray-50 rounded-xl p-8">
 								<h3 class="text-xl font-semibold text-[#394d62] mb-4 flex items-center">
 									<span class="text-3xl mr-3">⚖️</span>
-									Mediación y Resolución
+									Función consultiva
 								</h3>
 								<p class="text-gray-700">
-									Actuar como órgano mediador en conflictos internos, promoviendo el diálogo 
-									y la resolución pacífica de controversias.
+									Asesora a la Junta Directiva y a los miembros de AJERGA en la interpretación de normas éticas y estatutarias.
 								</p>
 							</div>
 
 							<div class="bg-gray-50 rounded-xl p-8">
 								<h3 class="text-xl font-semibold text-[#394d62] mb-4 flex items-center">
 									<span class="text-3xl mr-3">📋</span>
-									Supervisión y Seguimiento
+									Función deliberativa
 								</h3>
 								<p class="text-gray-700">
-									Supervisar que las decisiones y acciones de la asociación se ajusten a los 
-									valores declarados y proponer mejoras.
+									Analiza y propone modificaciones al Código de Ética y Disciplina, asegurando su actualización conforme a las necesidades de la comunidad.
 								</p>
 							</div>
 						</div>
@@ -130,6 +132,70 @@ import Footer from '../components/Footer.astro';
 								</p>
 							</div>
 						</div>
+
+						<div class="mt-8 bg-gradient-to-br from-[#0c615d]/10 to-[#c6d067]/10 rounded-xl p-8">
+							<p class="text-lg text-gray-700 mb-4">
+								Todo esto lo reflejamos en un <strong>Código de Conducta</strong> que todas las personas asociadas deben conocer y respetar.
+							</p>
+							<p class="text-gray-700 mb-6">
+								Descárgate el Código de Conducta aquí:
+							</p>
+							<a href={codigoEticaDisciplina} download class="inline-block bg-[#0c615d] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#094a47] transition-colors shadow-lg">
+								📄 Descargar Código de Conducta (PDF)
+							</a>
+						</div>
+					</div>
+
+					<div class="mb-12">
+						<h2 class="text-3xl font-bold text-[#394d62] mb-6">Composición del Comité</h2>
+						
+						<div class="bg-gradient-to-br from-gray-50 to-white rounded-xl p-8">
+							<p class="text-lg text-gray-700 mb-6">
+								El Comité está constituido por:
+							</p>
+							
+							<div class="space-y-4">
+								<div class="flex items-start">
+									<span class="text-2xl mr-4">👤</span>
+									<div>
+										<p class="font-semibold text-[#394d62]">Presidencia:</p>
+										<p class="text-gray-700">Murilo Antelo Maximino</p>
+									</div>
+								</div>
+
+								<div class="flex items-start">
+									<span class="text-2xl mr-4">👤</span>
+									<div>
+										<p class="font-semibold text-[#394d62]">Vicepresidencia:</p>
+										<p class="text-gray-700">Maria Agustina Linari Marquez</p>
+									</div>
+								</div>
+
+								<div class="flex items-start">
+									<span class="text-2xl mr-4">👤</span>
+									<div>
+										<p class="font-semibold text-[#394d62]">Secretaría:</p>
+										<p class="text-gray-700">Fabiana Ambroa Ibarruri</p>
+									</div>
+								</div>
+
+								<div class="flex items-start">
+									<span class="text-2xl mr-4">👤</span>
+									<div>
+										<p class="font-semibold text-[#394d62]">Vocal 1:</p>
+										<p class="text-gray-700">Aimé Oreste Castro</p>
+									</div>
+								</div>
+
+								<div class="flex items-start">
+									<span class="text-2xl mr-4">👤</span>
+									<div>
+										<p class="font-semibold text-[#394d62]">Vocal 2:</p>
+										<p class="text-gray-700">Nelly Fortes Gonzalez</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 
 					<div class="mb-12">
@@ -146,8 +212,8 @@ import Footer from '../components/Footer.astro';
 									<span class="text-2xl mr-4">✉️</span>
 									<div>
 										<p class="font-semibold text-[#394d62]">Email:</p>
-										<a href="mailto:etica@ajerga.org" class="text-[#77b2c0] hover:underline">
-											etica@ajerga.org
+										<a href={`mailto:${import.meta.env.EMAIL_COMITE_ETICA}`} class="text-[#77b2c0] hover:underline">
+											{import.meta.env.EMAIL_COMITE_ETICA}
 										</a>
 									</div>
 								</div>
