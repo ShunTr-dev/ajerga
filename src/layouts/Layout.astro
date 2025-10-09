@@ -5,8 +5,11 @@ interface Props {
 }
 
 import globalStyles from '../styles/global.css';
+import SocialImage from '../assets/foto-grupal.webp';
+import favicon32x32 from '../assets/favicon.png';
+import favicon150x150 from '../assets/favicon-150x150.png';
 
-const { title = 'AJERGA - Asociación de Jóvenes Emigrantes Retornados de Galicia', description = 'Asociación de jóvenes emigrantes retornados que trabajan por la integración y apoyo mutuo en Galicia.' } = Astro.props;
+const { title = 'AJERGA - Asociación de Jóvenes Emigrantes Retornados de Galicia', description = 'AJERGA brinda orientación y asesoramiento a jóvenes emigrantes, contando con el respaldo de quienes han vivido esta experiencia en primera persona.' } = Astro.props;
 ---
 
 <!doctype html>
@@ -14,11 +17,32 @@ const { title = 'AJERGA - Asociación de Jóvenes Emigrantes Retornados de Galic
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href={favicon32x32.src} sizes="32x32">
+		<link rel="icon" href={favicon150x150.src} sizes="150x150">
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description} />
 		<title>{title}</title>
 		<link rel="stylesheet" href={globalStyles} />
+		<meta name="robots" content="max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="es_ES" />
+		<meta property="og:title" content="Asociación de Jóvenes Emigrantes Retornados en Galicia" />
+		<meta property="og:site_name" content="Asociación de Jóvenes Emigrantes Retornados en Galicia" />
+		<meta
+			property="og:description"
+			content="{description}" />
+		<meta property="og:url" content="https://retornoxove.gal/" />
+		<meta
+			property="og:image"
+			content={SocialImage.src} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Asociación de Jóvenes Emigrantes Retornados en Galicia" />
+		<meta
+			name="twitter:description"
+			content="{description}" />
+		<meta
+			name="twitter:image"
+			content={SocialImage.src} />
 	</head>
 	<body class="bg-white">
 		<slot />
