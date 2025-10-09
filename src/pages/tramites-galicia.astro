@@ -1,0 +1,191 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Trámites en Galicia - AJERGA" description="Guía completa de trámites al llegar a Galicia">
+	<Header />
+	
+	<main>
+		<!-- Hero Section -->
+		<section class="bg-gradient-to-br from-[#d75528] to-[#dfa142] py-20 text-white">
+			<div class="container mx-auto px-4">
+				<h1 class="text-5xl font-bold mb-6">Trámites al Llegar a Galicia</h1>
+				<p class="text-xl max-w-3xl">
+					Todo lo que necesitas gestionar una vez que ya estés en Galicia
+				</p>
+			</div>
+		</section>
+
+		<!-- Contenido -->
+		<section class="py-20 bg-white">
+			<div class="container mx-auto px-4">
+				<div class="max-w-4xl mx-auto">
+					
+					<div class="mb-12">
+						<h2 class="text-3xl font-bold text-[#d75528] mb-6">Primeros Pasos</h2>
+						
+						<div class="bg-gray-50 rounded-xl p-8 mb-6">
+							<h3 class="text-xl font-semibold text-[#394d62] mb-4">🏘️ Empadronamiento</h3>
+							<p class="text-gray-700 mb-4">
+								<strong>Uno de los primeros trámites que debes hacer al llegar.</strong> El empadronamiento 
+								es necesario para muchos otros trámites y servicios públicos.
+							</p>
+							<ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+								<li>Dirígete al ayuntamiento de tu municipio</li>
+								<li>Lleva tu DNI y un justificante de tu domicilio (contrato de alquiler, escrituras, etc.)</li>
+								<li>Si vives con otras personas, pueden necesitar autorización del propietario</li>
+								<li>El trámite suele ser gratuito y rápido</li>
+							</ul>
+							<div class="bg-[#dfa142]/10 p-4 rounded-lg">
+								<p class="text-sm text-gray-700">
+									<strong>Importante:</strong> El certificado de empadronamiento lo necesitarás para inscribirte 
+									en el médico, solicitar ayudas, matricular a tus hijos en el colegio, etc.
+								</p>
+							</div>
+						</div>
+
+						<div class="bg-gray-50 rounded-xl p-8 mb-6">
+							<h3 class="text-xl font-semibold text-[#394d62] mb-4">🏥 Tarjeta Sanitaria</h3>
+							<p class="text-gray-700 mb-4">
+								Solicita tu tarjeta sanitaria en el centro de salud más cercano a tu domicilio.
+							</p>
+							<ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+								<li>Pide cita previa en tu centro de salud (SERGAS)</li>
+								<li>Necesitarás DNI y certificado de empadronamiento</li>
+								<li>La tarjeta suele llegar a casa en unas semanas</li>
+								<li>Mientras tanto, te darán un justificante provisional</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="mb-12">
+						<h2 class="text-3xl font-bold text-[#d75528] mb-6">Seguridad Social y Empleo</h2>
+						
+						<div class="bg-gray-50 rounded-xl p-8 mb-6">
+							<h3 class="text-xl font-semibold text-[#394d62] mb-4">👤 Alta en la Seguridad Social</h3>
+							<p class="text-gray-700 mb-4">
+								Si has trabajado en el extranjero, actualiza tu situación en la Seguridad Social.
+							</p>
+							<ul class="list-disc list-inside text-gray-700 space-y-2">
+								<li>Solicita tu número de la Seguridad Social si no lo tienes</li>
+								<li>Presenta los certificados de cotización del extranjero</li>
+								<li>Actualiza tus datos personales y de domicilio</li>
+							</ul>
+						</div>
+
+						<div class="bg-gray-50 rounded-xl p-8 mb-6">
+							<h3 class="text-xl font-semibold text-[#394d62] mb-4">📋 Inscripción en el SEPE (antes INEM)</h3>
+							<p class="text-gray-700 mb-4">
+								Si buscas empleo o tienes derecho a prestaciones, inscríbete como demandante de empleo.
+							</p>
+							<ul class="list-disc list-inside text-gray-700 space-y-2">
+								<li>Pide cita previa en la oficina del SEPE de tu zona</li>
+								<li>Lleva tu DNI, certificado de empadronamiento y vida laboral</li>
+								<li>Infórmate sobre posibles ayudas o cursos de formación</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="mb-12">
+						<h2 class="text-3xl font-bold text-[#d75528] mb-6">Hacienda y Tributos</h2>
+						
+						<div class="bg-gray-50 rounded-xl p-8 mb-6">
+							<h3 class="text-xl font-semibold text-[#394d62] mb-4">💶 Alta en Hacienda</h3>
+							<p class="text-gray-700 mb-4">
+								Comunica tu cambio de residencia fiscal a la Agencia Tributaria.
+							</p>
+							<ul class="list-disc list-inside text-gray-700 space-y-2">
+								<li>Modifica tus datos de domicilio en la AEAT</li>
+								<li>Si vas a trabajar como autónomo, date de alta en el régimen correspondiente</li>
+								<li>Infórmate sobre tus obligaciones fiscales en España</li>
+							</ul>
+						</div>
+
+						<div class="bg-gray-50 rounded-xl p-8 mb-6">
+							<h3 class="text-xl font-semibold text-[#394d62] mb-4">🚗 Impuestos Locales</h3>
+							<p class="text-gray-700 mb-4">
+								Si tienes vehículo o propiedades, gestiona los impuestos municipales.
+							</p>
+							<ul class="list-disc list-inside text-gray-700 space-y-2">
+								<li>IBI (Impuesto de Bienes Inmuebles) si tienes vivienda en propiedad</li>
+								<li>Impuesto de circulación si tienes coche</li>
+								<li>Consulta con el ayuntamiento las bonificaciones disponibles</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="mb-12">
+						<h2 class="text-3xl font-bold text-[#d75528] mb-6">Educación y Familia</h2>
+						
+						<div class="bg-gray-50 rounded-xl p-8 mb-6">
+							<h3 class="text-xl font-semibold text-[#394d62] mb-4">🎓 Escolarización</h3>
+							<p class="text-gray-700 mb-4">
+								Si tienes hijos en edad escolar, matricúlalos lo antes posible.
+							</p>
+							<ul class="list-disc list-inside text-gray-700 space-y-2">
+								<li>Contacta con la Consellería de Educación</li>
+								<li>Infórmate sobre los plazos de matriculación</li>
+								<li>Necesitarás DNI del menor, certificado de empadronamiento y documentación académica</li>
+								<li>Si vienen de otro país, gestiona la convalidación de estudios</li>
+							</ul>
+						</div>
+
+						<div class="bg-gray-50 rounded-xl p-8 mb-6">
+							<h3 class="text-xl font-semibold text-[#394d62] mb-4">👶 Servicios Sociales</h3>
+							<p class="text-gray-700 mb-4">
+								Infórmate sobre las ayudas y servicios disponibles para familias.
+							</p>
+							<ul class="list-disc list-inside text-gray-700 space-y-2">
+								<li>Guarderías públicas y ayudas a la conciliación</li>
+								<li>Cheque infantil y otras prestaciones por hijos</li>
+								<li>Servicios de atención a personas dependientes</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="mb-12">
+						<h2 class="text-3xl font-bold text-[#d75528] mb-6">Otros Trámites Importantes</h2>
+						
+						<div class="bg-gray-50 rounded-xl p-8 mb-6">
+							<h3 class="text-xl font-semibold text-[#394d62] mb-4">📱 Servicios Básicos</h3>
+							<ul class="list-disc list-inside text-gray-700 space-y-2">
+								<li><strong>Teléfono e Internet:</strong> Contrata tus servicios de telecomunicaciones</li>
+								<li><strong>Luz, agua y gas:</strong> Da de alta los suministros en tu vivienda</li>
+								<li><strong>Cuenta bancaria:</strong> Abre una cuenta en un banco gallego si aún no lo has hecho</li>
+							</ul>
+						</div>
+
+						<div class="bg-gray-50 rounded-xl p-8 mb-6">
+							<h3 class="text-xl font-semibold text-[#394d62] mb-4">📚 Convalidaciones y Homologaciones</h3>
+							<p class="text-gray-700 mb-4">
+								Si tienes títulos académicos o profesionales obtenidos en el extranjero:
+							</p>
+							<ul class="list-disc list-inside text-gray-700 space-y-2">
+								<li>Solicita la homologación de tus títulos en el Ministerio de Educación</li>
+								<li>Para profesiones reguladas, infórmate en el colegio profesional correspondiente</li>
+								<li>El proceso puede ser largo, así que empieza cuanto antes</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="bg-gradient-to-r from-[#d2557d] to-[#394d62] rounded-2xl p-8 text-white">
+						<h3 class="text-2xl font-bold mb-4">🤝 AJERGA está aquí para ayudarte</h3>
+						<p class="text-lg mb-4">
+							Sabemos que puede ser abrumador gestionar todos estos trámites. Por eso en AJERGA 
+							organizamos sesiones informativas y te ponemos en contacto con personas que ya han 
+							pasado por lo mismo.
+						</p>
+						<p class="text-lg">
+							¿Tienes dudas sobre algún trámite? Contáctanos o participa en nuestro programa de apadrinamiento.
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<Footer />
+</Layout>
