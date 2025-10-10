@@ -1,112 +1,142 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Layout from '../layouts/Layout.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
 ---
 
 <Layout title="Política de Cookies - AJERGA" description="Política de cookies del sitio web de AJERGA">
-	<Header />
-	
-	<main class="py-20 bg-white">
-		<div class="container mx-auto px-4">
-			<div class="max-w-4xl mx-auto">
-				<h1 class="text-4xl font-bold text-[#0c615d] mb-8">Política de Cookies</h1>
-				
-				<div class="prose prose-lg max-w-none text-gray-700 space-y-6">
-					<section>
-						<h2 class="text-2xl font-bold text-[#394d62] mt-8 mb-4">¿Qué son las cookies?</h2>
-						<p>
-							Una cookie es un fichero que se descarga en el ordenador/smartphone/tablet del usuario al acceder 
-							a determinadas páginas web para almacenar y recuperar información sobre la navegación que se 
-							efectúa desde dicho equipo.
-						</p>
-					</section>
+    <Header />
 
-					<section>
-						<h2 class="text-2xl font-bold text-[#394d62] mt-8 mb-4">¿Qué tipos de cookies utiliza este sitio web?</h2>
-						
-						<h3 class="text-xl font-semibold text-[#0c615d] mt-6 mb-3">Cookies Técnicas</h3>
-						<p>
-							Son aquellas que permiten al usuario la navegación a través de una página web y la utilización 
-							de las diferentes opciones o servicios que en ella existan.
-						</p>
+    <main class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl font-bold text-[#0c615d] mb-8">Política de Cookies</h1>
 
-						<h3 class="text-xl font-semibold text-[#0c615d] mt-6 mb-3">Cookies de Análisis</h3>
-						<p>
-							Son aquellas que permiten el seguimiento y análisis del comportamiento de los usuarios de los 
-							sitios web. La información recogida mediante este tipo de cookies se utiliza para medir la actividad 
-							de la web y elaborar perfiles de navegación de los usuarios con el fin de mejorar el sitio web.
-						</p>
-					</section>
+                <div class="prose prose-lg max-w-none text-gray-700 space-y-6">
+                    <section>
+                        <h2 class="text-2xl font-bold text-[#394d62] mt-8 mb-4">¿Qué son las cookies?</h2>
+                        <p>
+                            Una cookie es un fichero que se descarga en el ordenador/smartphone/tablet del usuario al
+                            acceder a determinadas páginas web para almacenar y recuperar información sobre la
+                            navegación que se efectúa desde dicho equipo.
+                        </p>
+                    </section>
 
-					<section>
-						<h2 class="text-2xl font-bold text-[#394d62] mt-8 mb-4">Cookies utilizadas en este sitio</h2>
-						
-						<div class="bg-gray-50 rounded-xl p-6 mb-6">
-							<h3 class="font-semibold text-[#394d62] mb-2">Cookies propias</h3>
-							<p class="text-sm">
-								Este sitio web utiliza únicamente cookies técnicas esenciales para el correcto funcionamiento 
-								del sitio y la navegación del usuario. No se utilizan cookies de publicidad ni de terceros.
-							</p>
-						</div>
-					</section>
+                    <section>
+                        <h2 class="text-2xl font-bold text-[#394d62] mt-8 mb-4">
+                            ¿Qué tipos de cookies utiliza este sitio web?
+                        </h2>
 
-					<section>
-						<h2 class="text-2xl font-bold text-[#394d62] mt-8 mb-4">¿Cómo puedo configurar mis preferencias?</h2>
-						<p>
-							Puedes permitir, bloquear o eliminar las cookies instaladas en tu equipo mediante la configuración 
-							de las opciones de tu navegador de internet. En el caso de que no permitas la instalación de cookies 
-							en tu navegador, es posible que no puedas acceder a algunos servicios y que tu experiencia en 
-							nuestra web pueda resultar menos satisfactoria.
-						</p>
+                        <h3 class="text-xl font-semibold text-[#0c615d] mt-6 mb-3">Cookies Técnicas</h3>
+                        <p>
+                            Son aquellas que permiten al usuario la navegación a través de una página web y la
+                            utilización de las diferentes opciones o servicios que en ella existan.
+                        </p>
 
-						<h3 class="text-xl font-semibold text-[#0c615d] mt-6 mb-3">Enlaces a configuración de cookies en navegadores principales:</h3>
-						<ul class="list-disc list-inside space-y-2 ml-4">
-							<li>
-								<a href="https://support.google.com/chrome/answer/95647?hl=es" target="_blank" rel="noopener" 
-								   class="text-[#77b2c0] hover:underline">Google Chrome</a>
-							</li>
-							<li>
-								<a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias" 
-								   target="_blank" rel="noopener" class="text-[#77b2c0] hover:underline">Mozilla Firefox</a>
-							</li>
-							<li>
-								<a href="https://support.apple.com/es-es/HT201265" target="_blank" rel="noopener" 
-								   class="text-[#77b2c0] hover:underline">Safari (Apple)</a>
-							</li>
-							<li>
-								<a href="https://support.microsoft.com/es-es/microsoft-edge/eliminar-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" 
-								   target="_blank" rel="noopener" class="text-[#77b2c0] hover:underline">Microsoft Edge</a>
-							</li>
-						</ul>
-					</section>
+                        <h3 class="text-xl font-semibold text-[#0c615d] mt-6 mb-3">Cookies de Análisis</h3>
+                        <p>
+                            Son aquellas que permiten el seguimiento y análisis del comportamiento de los usuarios de
+                            los sitios web. La información recogida mediante este tipo de cookies se utiliza para medir
+                            la actividad de la web y elaborar perfiles de navegación de los usuarios con el fin de
+                            mejorar el sitio web.
+                        </p>
+                    </section>
 
-					<section>
-						<h2 class="text-2xl font-bold text-[#394d62] mt-8 mb-4">Actualización de la Política de Cookies</h2>
-						<p>
-							Esta Política de Cookies puede ser modificada en función de exigencias legislativas, reglamentarias, 
-							o con la finalidad de adaptar dicha política a las instrucciones dictadas por la Agencia Española 
-							de Protección de Datos. Por ello se aconseja a los usuarios que la visiten periódicamente.
-						</p>
-					</section>
+                    <section>
+                        <h2 class="text-2xl font-bold text-[#394d62] mt-8 mb-4">Cookies utilizadas en este sitio</h2>
 
-					<section>
-						<h2 class="text-2xl font-bold text-[#394d62] mt-8 mb-4">Más información</h2>
-						<p>
-							Si tienes dudas sobre esta política de cookies, puedes contactar con AJERGA a través del correo 
-							electrónico <a href={`mailto:${import.meta.env.EMAIL}`} class="text-[#77b2c0] hover:underline">{import.meta.env.EMAIL}</a>
-						</p>
-					</section>
+                        <div class="bg-gray-50 rounded-xl p-6 mb-6">
+                            <h3 class="font-semibold text-[#394d62] mb-2">Cookies propias</h3>
+                            <p class="text-sm">
+                                Este sitio web utiliza únicamente cookies técnicas esenciales para el correcto
+                                funcionamiento del sitio y la navegación del usuario. No se utilizan cookies de
+                                publicidad ni de terceros.
+                            </p>
+                        </div>
+                    </section>
 
-					<div class="bg-gray-100 rounded-xl p-6 mt-8">
-						<p class="text-sm text-gray-600">
-							<strong>Última actualización:</strong> Octubre 2025
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</main>
+                    <section>
+                        <h2 class="text-2xl font-bold text-[#394d62] mt-8 mb-4">
+                            ¿Cómo puedo configurar mis preferencias?
+                        </h2>
+                        <p>
+                            Puedes permitir, bloquear o eliminar las cookies instaladas en tu equipo mediante la
+                            configuración de las opciones de tu navegador de internet. En el caso de que no permitas la
+                            instalación de cookies en tu navegador, es posible que no puedas acceder a algunos servicios
+                            y que tu experiencia en nuestra web pueda resultar menos satisfactoria.
+                        </p>
 
-	<Footer />
+                        <h3 class="text-xl font-semibold text-[#0c615d] mt-6 mb-3">
+                            Enlaces a configuración de cookies en navegadores principales:
+                        </h3>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li>
+                                <a
+                                    href="https://support.google.com/chrome/answer/95647?hl=es"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="text-[#77b2c0] hover:underline">Google Chrome</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="text-[#77b2c0] hover:underline">Mozilla Firefox</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://support.apple.com/es-es/HT201265"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="text-[#77b2c0] hover:underline">Safari (Apple)</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://support.microsoft.com/es-es/microsoft-edge/eliminar-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="text-[#77b2c0] hover:underline">Microsoft Edge</a
+                                >
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-[#394d62] mt-8 mb-4">
+                            Actualización de la Política de Cookies
+                        </h2>
+                        <p>
+                            Esta Política de Cookies puede ser modificada en función de exigencias legislativas,
+                            reglamentarias, o con la finalidad de adaptar dicha política a las instrucciones dictadas
+                            por la Agencia Española de Protección de Datos. Por ello se aconseja a los usuarios que la
+                            visiten periódicamente.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-[#394d62] mt-8 mb-4">Más información</h2>
+                        <p>
+                            Si tienes dudas sobre esta política de cookies, puedes contactar con AJERGA a través del
+                            correo electrónico <a
+                                href={`mailto:${import.meta.env.EMAIL}`}
+                                class="text-[#77b2c0] hover:underline">{import.meta.env.EMAIL}</a
+                            >
+                        </p>
+                    </section>
+
+                    <div class="bg-gray-100 rounded-xl p-6 mt-8">
+                        <p class="text-sm text-gray-600">
+                            <strong>Última actualización:</strong> Octubre 2025
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <Footer />
 </Layout>

@@ -1,142 +1,241 @@
 ---
-import logo from '../assets/logo_ajerga-150x156.webp';
+import logo from '../assets/logo_ajerga-150x156.webp'
 ---
 
 <header class="bg-white shadow-md sticky top-0 z-50">
-  <nav class="container mx-auto px-4 py-4">
-    <div class="flex items-center justify-between">
-      <!-- Logo -->
-      <a href="/" class="flex items-center space-x-3">
-        <img src={logo.src} alt="Logo AJERGA" class="h-16 w-auto" />
-        <span class="text-2xl font-bold text-[#0c615d]">AJERGA</span>
-      </a>
+    <nav class="container mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <a href="/" class="flex items-center space-x-3">
+                <img src={logo.src} alt="Logo AJERGA" class="h-16 w-auto" />
+                <span class="text-2xl font-bold text-[#0c615d]">AJERGA</span>
+            </a>
 
-      <!-- Navigation Desktop -->
-      <ul class="hidden md:flex items-center space-x-6">
-        <li class="relative group">
-          <button class="text-[#394d62] hover:text-[#0c615d] font-medium py-2 flex items-center gap-1 transition-colors">
-            Trámites importantes
-            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <ul class="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-            <li><a href="/tramites-previos" class="block px-4 py-3 text-[#394d62] hover:bg-[#c6d067] hover:text-white transition-colors">Trámites previos</a></li>
-            <li><a href="/tramites-galicia" class="block px-4 py-3 text-[#394d62] hover:bg-[#c6d067] hover:text-white transition-colors">Trámites en Galicia</a></li>
-            <li><a href="/alojamiento" class="block px-4 py-3 text-[#394d62] hover:bg-[#c6d067] hover:text-white transition-colors">Alojamiento</a></li>
-          </ul>
-        </li>
+            <!-- Navigation Desktop -->
+            <ul class="hidden md:flex items-center space-x-6">
+                <li class="relative group">
+                    <button
+                        class="text-[#394d62] hover:text-[#0c615d] font-medium py-2 flex items-center gap-1 transition-colors">
+                        Trámites importantes
+                        <svg
+                            class="w-4 h-4 transition-transform group-hover:rotate-180"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"
+                            ></path>
+                        </svg>
+                    </button>
+                    <ul
+                        class="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <li>
+                            <a
+                                href="/tramites-previos"
+                                class="block px-4 py-3 text-[#394d62] hover:bg-[#c6d067] hover:text-white transition-colors"
+                                >Trámites previos</a>
+                        </li>
+                        <li>
+                            <a
+                                href="/tramites-galicia"
+                                class="block px-4 py-3 text-[#394d62] hover:bg-[#c6d067] hover:text-white transition-colors"
+                                >Trámites en Galicia</a>
+                        </li>
+                        <li>
+                            <a
+                                href="/alojamiento"
+                                class="block px-4 py-3 text-[#394d62] hover:bg-[#c6d067] hover:text-white transition-colors"
+                                >Alojamiento</a>
+                        </li>
+                    </ul>
+                </li>
 
-        <li class="relative group">
-          <button class="text-[#394d62] hover:text-[#0c615d] font-medium py-2 flex items-center gap-1 transition-colors">
-            Galitips
-            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <ul class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-            <li><a href="/galitips/coruna" class="block px-4 py-3 text-[#394d62] hover:bg-[#77b2c0] hover:text-white transition-colors">A Coruña</a></li>
-            <li><a href="/galitips/santiago" class="block px-4 py-3 text-[#394d62] hover:bg-[#77b2c0] hover:text-white transition-colors">Santiago</a></li>
-            <li><a href="/galitips/vigo" class="block px-4 py-3 text-[#394d62] hover:bg-[#77b2c0] hover:text-white transition-colors">Vigo</a></li>
-            <li><a href="/galitips/ourense" class="block px-4 py-3 text-[#394d62] hover:bg-[#77b2c0] hover:text-white transition-colors">Ourense</a></li>
-            <li><a href="/galitips/lugo" class="block px-4 py-3 text-[#394d62] hover:bg-[#77b2c0] hover:text-white transition-colors">Lugo</a></li>
-          </ul>
-        </li>
+                <li class="relative group">
+                    <button
+                        class="text-[#394d62] hover:text-[#0c615d] font-medium py-2 flex items-center gap-1 transition-colors">
+                        Galitips
+                        <svg
+                            class="w-4 h-4 transition-transform group-hover:rotate-180"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"
+                            ></path>
+                        </svg>
+                    </button>
+                    <ul
+                        class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <li>
+                            <a
+                                href="/galitips/coruna"
+                                class="block px-4 py-3 text-[#394d62] hover:bg-[#77b2c0] hover:text-white transition-colors"
+                                >A Coruña</a>
+                        </li>
+                        <li>
+                            <a
+                                href="/galitips/santiago"
+                                class="block px-4 py-3 text-[#394d62] hover:bg-[#77b2c0] hover:text-white transition-colors"
+                                >Santiago</a>
+                        </li>
+                        <li>
+                            <a
+                                href="/galitips/vigo"
+                                class="block px-4 py-3 text-[#394d62] hover:bg-[#77b2c0] hover:text-white transition-colors"
+                                >Vigo</a>
+                        </li>
+                        <li>
+                            <a
+                                href="/galitips/ourense"
+                                class="block px-4 py-3 text-[#394d62] hover:bg-[#77b2c0] hover:text-white transition-colors"
+                                >Ourense</a>
+                        </li>
+                        <li>
+                            <a
+                                href="/galitips/lugo"
+                                class="block px-4 py-3 text-[#394d62] hover:bg-[#77b2c0] hover:text-white transition-colors"
+                                >Lugo</a>
+                        </li>
+                    </ul>
+                </li>
 
-        <li class="relative group">
-          <button class="text-[#394d62] hover:text-[#0c615d] font-medium py-2 flex items-center gap-1 transition-colors">
-            Cousas do retorno
-            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <ul class="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-            <li><a href="/cousas-retorno/2021-concurso-1" class="block px-4 py-3 text-[#394d62] hover:bg-[#d2557d] hover:text-white transition-colors">2021 - 1° Concurso</a></li>
-          </ul>
-        </li>
-      </ul>
+                <li class="relative group">
+                    <button
+                        class="text-[#394d62] hover:text-[#0c615d] font-medium py-2 flex items-center gap-1 transition-colors">
+                        Cousas do retorno
+                        <svg
+                            class="w-4 h-4 transition-transform group-hover:rotate-180"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"
+                            ></path>
+                        </svg>
+                    </button>
+                    <ul
+                        class="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <li>
+                            <a
+                                href="/cousas-retorno/2021-concurso-1"
+                                class="block px-4 py-3 text-[#394d62] hover:bg-[#d2557d] hover:text-white transition-colors"
+                                >2021 - 1° Concurso</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
 
-      <!-- Mobile menu button -->
-      <button id="mobile-menu-button" class="md:hidden text-[#394d62] p-2">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
-    </div>
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="md:hidden text-[#394d62] p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"
+                    ></path>
+                </svg>
+            </button>
+        </div>
 
-    <!-- Mobile Navigation -->
-    <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
-      <ul class="space-y-2">
-        <li>
-          <button class="w-full text-left px-4 py-2 text-[#394d62] font-medium flex items-center justify-between mobile-dropdown-btn">
-            Trámites importantes
-            <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <ul class="hidden pl-8 space-y-1 mobile-dropdown">
-            <li><a href="/tramites-previos" class="block py-2 text-[#394d62] hover:text-[#0c615d]">Trámites previos</a></li>
-            <li><a href="/tramites-galicia" class="block py-2 text-[#394d62] hover:text-[#0c615d]">Trámites en Galicia</a></li>
-            <li><a href="/alojamiento" class="block py-2 text-[#394d62] hover:text-[#0c615d]">Alojamiento</a></li>
-          </ul>
-        </li>
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+            <ul class="space-y-2">
+                <li>
+                    <button
+                        class="w-full text-left px-4 py-2 text-[#394d62] font-medium flex items-center justify-between mobile-dropdown-btn">
+                        Trámites importantes
+                        <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"
+                            ></path>
+                        </svg>
+                    </button>
+                    <ul class="hidden pl-8 space-y-1 mobile-dropdown">
+                        <li>
+                            <a href="/tramites-previos" class="block py-2 text-[#394d62] hover:text-[#0c615d]"
+                                >Trámites previos</a>
+                        </li>
+                        <li>
+                            <a href="/tramites-galicia" class="block py-2 text-[#394d62] hover:text-[#0c615d]"
+                                >Trámites en Galicia</a>
+                        </li>
+                        <li>
+                            <a href="/alojamiento" class="block py-2 text-[#394d62] hover:text-[#0c615d]"
+                                >Alojamiento</a>
+                        </li>
+                    </ul>
+                </li>
 
-        <li>
-          <button class="w-full text-left px-4 py-2 text-[#394d62] font-medium flex items-center justify-between mobile-dropdown-btn">
-            Galitips
-            <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <ul class="hidden pl-8 space-y-1 mobile-dropdown">
-            <li><a href="/galitips/coruna" class="block py-2 text-[#394d62] hover:text-[#0c615d]">A Coruña</a></li>
-            <li><a href="/galitips/santiago" class="block py-2 text-[#394d62] hover:text-[#0c615d]">Santiago</a></li>
-            <li><a href="/galitips/vigo" class="block py-2 text-[#394d62] hover:text-[#0c615d]">Vigo</a></li>
-            <li><a href="/galitips/ourense" class="block py-2 text-[#394d62] hover:text-[#0c615d]">Ourense</a></li>
-            <li><a href="/galitips/lugo" class="block py-2 text-[#394d62] hover:text-[#0c615d]">Lugo</a></li>
-          </ul>
-        </li>
+                <li>
+                    <button
+                        class="w-full text-left px-4 py-2 text-[#394d62] font-medium flex items-center justify-between mobile-dropdown-btn">
+                        Galitips
+                        <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"
+                            ></path>
+                        </svg>
+                    </button>
+                    <ul class="hidden pl-8 space-y-1 mobile-dropdown">
+                        <li>
+                            <a href="/galitips/coruna" class="block py-2 text-[#394d62] hover:text-[#0c615d]"
+                                >A Coruña</a>
+                        </li>
+                        <li>
+                            <a href="/galitips/santiago" class="block py-2 text-[#394d62] hover:text-[#0c615d]"
+                                >Santiago</a>
+                        </li>
+                        <li>
+                            <a href="/galitips/vigo" class="block py-2 text-[#394d62] hover:text-[#0c615d]">Vigo</a>
+                        </li>
+                        <li>
+                            <a href="/galitips/ourense" class="block py-2 text-[#394d62] hover:text-[#0c615d]"
+                                >Ourense</a>
+                        </li>
+                        <li>
+                            <a href="/galitips/lugo" class="block py-2 text-[#394d62] hover:text-[#0c615d]">Lugo</a>
+                        </li>
+                    </ul>
+                </li>
 
-        <li>
-          <button class="w-full text-left px-4 py-2 text-[#394d62] font-medium flex items-center justify-between mobile-dropdown-btn">
-            Cousas do retorno
-            <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <ul class="hidden pl-8 space-y-1 mobile-dropdown">
-            <li><a href="/cousas-retorno/2021-concurso-1" class="block py-2 text-[#394d62] hover:text-[#0c615d]">2021 - 1° Concurso</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </nav>
+                <li>
+                    <button
+                        class="w-full text-left px-4 py-2 text-[#394d62] font-medium flex items-center justify-between mobile-dropdown-btn">
+                        Cousas do retorno
+                        <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"
+                            ></path>
+                        </svg>
+                    </button>
+                    <ul class="hidden pl-8 space-y-1 mobile-dropdown">
+                        <li>
+                            <a
+                                href="/cousas-retorno/2021-concurso-1"
+                                class="block py-2 text-[#394d62] hover:text-[#0c615d]">2021 - 1° Concurso</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </header>
 
 <script>
-  // Mobile menu toggle
-  const mobileMenuButton = document.getElementById('mobile-menu-button');
-  const mobileMenu = document.getElementById('mobile-menu');
-  
-  mobileMenuButton?.addEventListener('click', () => {
-    mobileMenu?.classList.toggle('hidden');
-  });
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button')
+    const mobileMenu = document.getElementById('mobile-menu')
 
-  // Mobile dropdown toggles
-  const dropdownButtons = document.querySelectorAll('.mobile-dropdown-btn');
-  dropdownButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const dropdown = button.nextElementSibling;
-      const icon = button.querySelector('svg');
-      dropdown?.classList.toggle('hidden');
-      icon?.classList.toggle('rotate-180');
-    });
-  });
+    mobileMenuButton?.addEventListener('click', () => {
+        mobileMenu?.classList.toggle('hidden')
+    })
+
+    // Mobile dropdown toggles
+    const dropdownButtons = document.querySelectorAll('.mobile-dropdown-btn')
+    dropdownButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            const dropdown = button.nextElementSibling
+            const icon = button.querySelector('svg')
+            dropdown?.classList.toggle('hidden')
+            icon?.classList.toggle('rotate-180')
+        })
+    })
 </script>
 
 <style>
-  /* Smooth transitions for dropdowns */
-  .group:hover ul {
-    display: block;
-  }
+    /* Smooth transitions for dropdowns */
+    .group:hover ul {
+        display: block;
+    }
 </style>
