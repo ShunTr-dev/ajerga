@@ -1,0 +1,53 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Header from '../../components/Header.astro'
+import Footer from '../../components/Footer.astro'
+---
+
+<Layout title="Trámites en Galicia - AJERGA" description="Guía completa de trámites al llegar a Galicia">
+    <Header />
+
+    <main>
+        <section class="bg-gradient-to-br from-[#d75528] to-[#dfa142] py-20 text-white">
+            <div class="container mx-auto px-4">
+                <h1 class="text-5xl font-bold mb-6">Trámites al Llegar a Galicia</h1>
+                <p class="text-xl max-w-3xl">Todo lo que necesitas gestionar una vez que ya estés en Galicia</p>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="mb-12">
+                        <div class="bg-gray-50 rounded-xl p-8 mb-6">
+                            <h3 class="text-xl font-semibold text-[#394d62] mb-4">
+                                Solicitud de la partida literal de nacimiento
+                            </h3>
+                            <p class="text-gray-700 mb-4">
+                                Para solicitar la partida literal desde tu consulado, te pedirán:
+                            </p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+                                <li>Copia de tu pasaporte español.</li>
+                                <li>La localidad en la que vas a residir.</li>
+                                <li>
+                                    El correo electrónico de la comisaría de policía en España donde vas a generar el
+                                    documento.
+                                </li>
+                                <li>El certificado de empadronamiento.</li>
+                                <li>Tu número de documento del país de procedencia.</li>
+                            </ul>
+
+                            <div class="bg-[#dfa142]/10 p-4 rounded-lg mt-3">
+                                <p class="text-sm text-gray-700">
+                                    <strong>Importante:</strong> Recuerdaque este trámite se solicita en tu consulado español
+                                    del país en el que estás residiendo y donde estás inscrito.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>
