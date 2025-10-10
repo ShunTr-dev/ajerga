@@ -4,109 +4,306 @@ import Header from '../../components/Header.astro'
 import Footer from '../../components/Footer.astro'
 ---
 
-<Layout title="Trámites en Galicia - AJERGA" description="Guía completa de trámites al llegar a Galicia">
+<Layout
+    title="Documentos de Actividad Laboral - AJERGA"
+    description="Guía para acreditar tu actividad laboral en el extranjero">
     <Header />
 
     <main>
-        <section class="bg-gradient-to-br from-[#d75528] to-[#dfa142] py-20 text-white">
-            <div class="container mx-auto px-4">
-                <h1 class="text-5xl font-bold mb-6">Trámites al Llegar a Galicia</h1>
-                <p class="text-xl max-w-3xl">Todo lo que necesitas gestionar una vez que ya estés en Galicia</p>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-[#394d62] to-[#77b2c0] py-16 text-white overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-10 right-10 text-9xl">💼</div>
+                <div class="absolute bottom-10 left-10 text-9xl">📄</div>
+            </div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
+                        <span class="text-sm font-semibold">Trabajo y Empleo</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4">💼 Documentos de Actividad Laboral</h1>
+                    <p class="text-xl md:text-2xl text-white/90">Acredita tu experiencia laboral en el extranjero</p>
+                </div>
             </div>
         </section>
 
-        <section class="py-20 bg-white">
+        <section class="py-16 bg-white">
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto">
-                    <div class="bg-gray-50 rounded-xl p-8 mb-6">
-                        <h3 class="text-xl font-semibold text-[#394d62] mb-4">
-                            Documentos Acreditativos de Actividad Laboral
-                        </h3>
-                        <p class="text-gray-700 mb-4">
-                            Para acceder a las diversas prestaciones básicas previstas por la legislación española en el
-                            ámbito laboral, los emigrantes y sus familiares españoles que se instalen en España, deberán
-                            acreditar documentalmente que han realizado en el extranjero, desde su última salida de
-                            España, una actividad laboral por cuenta propia o ajena.
-                        </p>
+                    <!-- ¿Para qué sirve? -->
+                    <div class="mb-12">
+                        <div
+                            class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-[#394d62] rounded-r-xl p-6 mb-8">
+                            <h2 class="text-2xl font-bold text-[#394d62] mb-4 flex items-center">
+                                <span class="text-3xl mr-3">💡</span>
+                                ¿Para qué necesito estos documentos?
+                            </h2>
+                            <p class="text-gray-700 text-lg leading-relaxed">
+                                Para acceder a las diversas <strong>prestaciones básicas</strong> previstas por la legislación
+                                española en el ámbito laboral, los emigrantes y sus familiares españoles que se instalen
+                                en España deberán <strong>acreditar documentalmente</strong> que han realizado en el extranjero,
+                                desde su última salida de España, una actividad laboral por cuenta propia o ajena.
+                            </p>
+                        </div>
+                    </div>
 
-                        <p class="text-gray-700 mb-4">Principales documentos acreditativos de la actividad laboral:</p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-2">
-                            <li>
-                                Trabajadores por cuenta ajena:
-                                <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                                    <li>Contratos de trabajo o carta de contratación.</li>
-                                    <li>Hojas salariales o nóminas.</li>
-                                    <li>
-                                        Certificados de afiliación y/o cotización al sistema de la Seguridad Social.
-                                    </li>
-                                    <li>
-                                        Certificados de empresas para las que prestaron servicios en que figure el
-                                        tiempo de los mismos.
-                                    </li>
-                                    <li>
-                                        Permisos de trabajo y residencia del país donde se ha realizado la actividad.
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                Trabajadores por cuenta propia o autónomos:
-                                <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                                    <li>Documentación justificativa del periodo y naturaleza de la actividad.</li>
-                                    <li>
-                                        Certificados de afiliación y/o cotización al Régimen de Seguridad Social que
-                                        proteja a los trabajadores autónomos, en su caso.
-                                    </li>
-                                    <li>
-                                        Certificados de las autoridades que debieran aprobar la instalación o ejercicio
-                                        de la actividad.
-                                    </li>
-                                    <li>
-                                        Certificados acreditativos del pago de impuestos por el ejercicio de la
-                                        actividad y/o por trabajo personal.
-                                    </li>
-                                    <li>
-                                        Permisos de trabajo y residencia del país donde se ha realizado la actividad.
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <!-- Tipos de trabajadores -->
+                    <div class="mb-12">
+                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
+                            <span class="text-4xl mr-3">📋</span>
+                            Documentos según tu situación laboral
+                        </h2>
 
-                        <p class="text-gray-700 mb-4">
-                            Todos los documentos laborales o de la Seguridad Social deberán adverarse en cuanto a su
-                            contenido por Consejerías de Empleo y Seguridad Social de las Embajadas de España y, en caso
-                            de que en el país donde se haya realizado la actividad no haya Consejerías, la documentación
-                            deberá legalizarse en las Oficinas Consulares, previa su elevación a pública, en garantía de
-                            autenticidad. Cuando se retorne de un país donde no exista Consejería de Empleo y Seguridad
-                            Social que tenga suscrito el Convenio de la Haya, la documentación que se quiere aportar
-                            para acreditar el haber desarrollado una actividad laboral, deberá apostillarse.
-                        </p>
-                        <p class="text-gray-700 mb-4">
-                            La adveración o legalización de los documentos no será necesaria en los casos en los que se
-                            haya expedido por una autoridad laboral pública del país y se pueda comprobar a través de
-                            códigos de verificación segura.
-                        </p>
-                        <p class="text-gray-700 mb-4">
-                            Además de lo anterior, los trabajadores españoles en los países de la Unión Europea y del
-                            Espacio Económico Europeo, Suiza y Australia cuando el trabajador haya sido titular de
-                            autorización de residencia permanente en dicho país, deberán obtener, antes de su retorno,
-                            el correspondiente formulario del organismo de la Seguridad Social acreditativo de los
-                            periodos de cotización, seguro o empleo y de las prestaciones por desempleo que, en su caso,
-                            hayan percibido en estos países:
-                        </p>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <!-- Cuenta ajena -->
+                            <div
+                                class="bg-white rounded-2xl border-2 border-[#77b2c0] overflow-hidden hover:shadow-xl transition-all transform hover:scale-105">
+                                <div class="bg-gradient-to-r from-[#77b2c0] to-[#0c615d] p-6 text-white">
+                                    <div class="text-4xl mb-2">👔</div>
+                                    <h3 class="text-2xl font-bold">Cuenta Ajena</h3>
+                                    <p class="text-white/90 text-sm">Trabajadores por cuenta de empresa</p>
+                                </div>
+                                <div class="p-6">
+                                    <ul class="space-y-3">
+                                        <li class="flex items-start">
+                                            <span class="text-[#77b2c0] mr-2 mt-1">✓</span>
+                                            <span class="text-gray-700"
+                                                >Contratos de trabajo o carta de contratación</span
+                                            >
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-[#77b2c0] mr-2 mt-1">✓</span>
+                                            <span class="text-gray-700">Hojas salariales o nóminas</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-[#77b2c0] mr-2 mt-1">✓</span>
+                                            <span class="text-gray-700"
+                                                >Certificados de afiliación y/o cotización a la Seguridad Social</span
+                                            >
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-[#77b2c0] mr-2 mt-1">✓</span>
+                                            <span class="text-gray-700"
+                                                >Certificados de empresas con el tiempo de servicios</span
+                                            >
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-[#77b2c0] mr-2 mt-1">✓</span>
+                                            <span class="text-gray-700">Permisos de trabajo y residencia del país</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                        <ul class="list-disc list-inside text-gray-700 space-y-2">
-                            <li>Trabajadores procedentes de países de la UE (27) y Suiza: Formulario U1</li>
-                            <li>Trabajadores procedentes de Noruega, Islandia y Liechtenstein: Formulario E301</li>
-                            <li>
-                                Trabajadores procedentes de Australia con residencia permanente: Formulario
-                                “Verification of working life residence in Australia”. Se solicita en: Centrelink
-                                International Services P.O. Box 273 Hobart 7001 (Australia)
-                            </li>
-                        </ul>
+                            <!-- Cuenta propia -->
+                            <div
+                                class="bg-white rounded-2xl border-2 border-[#dfa142] overflow-hidden hover:shadow-xl transition-all transform hover:scale-105">
+                                <div class="bg-gradient-to-r from-[#dfa142] to-[#d75528] p-6 text-white">
+                                    <div class="text-4xl mb-2">🚀</div>
+                                    <h3 class="text-2xl font-bold">Cuenta Propia</h3>
+                                    <p class="text-white/90 text-sm">Trabajadores autónomos</p>
+                                </div>
+                                <div class="p-6">
+                                    <ul class="space-y-3">
+                                        <li class="flex items-start">
+                                            <span class="text-[#dfa142] mr-2 mt-1">✓</span>
+                                            <span class="text-gray-700"
+                                                >Documentación del periodo y naturaleza de la actividad</span
+                                            >
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-[#dfa142] mr-2 mt-1">✓</span>
+                                            <span class="text-gray-700"
+                                                >Certificados de afiliación/cotización al régimen de autónomos</span
+                                            >
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-[#dfa142] mr-2 mt-1">✓</span>
+                                            <span class="text-gray-700"
+                                                >Certificados de autoridades que aprobaron la actividad</span
+                                            >
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-[#dfa142] mr-2 mt-1">✓</span>
+                                            <span class="text-gray-700"
+                                                >Certificados del pago de impuestos por la actividad</span
+                                            >
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-[#dfa142] mr-2 mt-1">✓</span>
+                                            <span class="text-gray-700">Permisos de trabajo y residencia del país</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Legalización -->
+                    <div class="mb-12">
+                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
+                            <span class="text-4xl mr-3">✅</span>
+                            Legalización de documentos
+                        </h2>
+
+                        <div class="mb-6">
+                            <div
+                                class="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-6 border-2 border-[#d75528]">
+                                <h3 class="text-xl font-bold text-[#394d62] mb-4 flex items-center">
+                                    <span class="text-2xl mr-2">⚠️</span>
+                                    Importante: Adveración y legalización
+                                </h3>
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    Todos los documentos laborales o de la Seguridad Social deberán <strong
+                                        >adverarse</strong
+                                    > en cuanto a su contenido por:
+                                </p>
+                                <div class="bg-white rounded-lg p-4 mb-4">
+                                    <ul class="space-y-2">
+                                        <li class="flex items-start">
+                                            <span class="text-[#d75528] mr-2 mt-1">1.</span>
+                                            <span class="text-gray-700"
+                                                ><strong>Consejerías de Empleo y Seguridad Social</strong> de las Embajadas
+                                                de España</span
+                                            >
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-[#d75528] mr-2 mt-1">2.</span>
+                                            <span class="text-gray-700"
+                                                >Si no hay Consejerías: <strong>Oficinas Consulares</strong> (previa elevación
+                                                a pública)</span
+                                            >
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-[#d75528] mr-2 mt-1">3.</span>
+                                            <span class="text-gray-700"
+                                                >Si no hay Consejería ni Convenio de La Haya: <strong>Apostilla</strong
+                                                ></span
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bg-green-100 rounded-lg p-4 border-l-4 border-green-500">
+                                    <p class="text-sm text-gray-700">
+                                        <strong>✨ Excepción:</strong> No es necesaria la adveración/legalización si el documento
+                                        fue expedido por una autoridad laboral pública del país y se puede comprobar a través
+                                        de <strong>códigos de verificación segura</strong>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formularios según país -->
+                    <div class="mb-12">
+                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
+                            <span class="text-4xl mr-3">🌍</span>
+                            Formularios específicos según país
+                        </h2>
+
+                        <div
+                            class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-6 border-2 border-[#d2557d] mb-6">
+                            <p class="text-gray-700 leading-relaxed mb-6">
+                                Los trabajadores procedentes de ciertos países deben obtener, <strong
+                                    >antes de su retorno</strong
+                                >, formularios específicos del organismo de la Seguridad Social que acrediten los
+                                periodos de cotización, seguro o empleo:
+                            </p>
+
+                            <div class="space-y-4">
+                                <!-- UE y Suiza -->
+                                <div
+                                    class="bg-white rounded-xl p-5 border-l-4 border-blue-500 hover:shadow-lg transition-shadow">
+                                    <div class="flex items-start">
+                                        <div class="text-3xl mr-4">🇪🇺</div>
+                                        <div class="flex-1">
+                                            <h4 class="font-bold text-[#394d62] mb-2">Países de la UE (27) y Suiza</h4>
+                                            <div class="bg-blue-50 rounded-lg p-3">
+                                                <p class="text-sm text-gray-700">
+                                                    <strong>📄 Formulario U1</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- EEE -->
+                                <div
+                                    class="bg-white rounded-xl p-5 border-l-4 border-cyan-500 hover:shadow-lg transition-shadow">
+                                    <div class="flex items-start">
+                                        <div class="text-3xl mr-4">🏔️</div>
+                                        <div class="flex-1">
+                                            <h4 class="font-bold text-[#394d62] mb-2">
+                                                Noruega, Islandia y Liechtenstein
+                                            </h4>
+                                            <div class="bg-cyan-50 rounded-lg p-3">
+                                                <p class="text-sm text-gray-700">
+                                                    <strong>📄 Formulario E301</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Australia -->
+                                <div
+                                    class="bg-white rounded-xl p-5 border-l-4 border-green-500 hover:shadow-lg transition-shadow">
+                                    <div class="flex items-start">
+                                        <div class="text-3xl mr-4">🦘</div>
+                                        <div class="flex-1">
+                                            <h4 class="font-bold text-[#394d62] mb-2">
+                                                Australia (con residencia permanente)
+                                            </h4>
+                                            <div class="bg-green-50 rounded-lg p-3 mb-3">
+                                                <p class="text-sm text-gray-700 mb-2">
+                                                    <strong>📄 Formulario:</strong> "Verification of working life residence
+                                                    in Australia"
+                                                </p>
+                                            </div>
+                                            <div class="bg-gray-100 rounded-lg p-3">
+                                                <p class="text-xs text-gray-600 font-semibold mb-1">📮 Solicitar en:</p>
+                                                <p class="text-xs text-gray-700">
+                                                    Centrelink International Services<br />
+                                                    P.O. Box 273<br />
+                                                    Hobart 7001 (Australia)
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Consejo importante -->
+                    <div class="mb-12">
+                        <div
+                            class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-8 border-2 border-[#c6d067]">
+                            <h3 class="text-2xl font-bold text-[#394d62] mb-4 flex items-center">
+                                <span class="text-3xl mr-3">💡</span>
+                                Consejo importante
+                            </h3>
+                            <p class="text-gray-700 text-lg leading-relaxed">
+                                <strong>Recopila todos estos documentos ANTES de volver a España</strong>. Una vez en
+                                Galicia, será mucho más difícil y costoso obtenerlos. Consulta con la embajada o
+                                consulado español en tu país de residencia para asegurarte de que toda la documentación
+                                esté correctamente legalizada.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Botón de vuelta -->
+                    <div class="text-center">
+                        <a
+                            href="/tramites-galicia"
+                            class="inline-flex items-center px-8 py-4 bg-[#394d62] text-white font-semibold rounded-xl hover:bg-[#2d3d4f] transition-all transform hover:scale-105 shadow-lg">
+                            <span class="mr-2">←</span>
+                            Volver a todos los trámites
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <Footer />
 </Layout>
+<Footer />

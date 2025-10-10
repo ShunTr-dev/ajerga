@@ -4,46 +4,265 @@ import Header from '../../components/Header.astro'
 import Footer from '../../components/Footer.astro'
 ---
 
-<Layout title="Trámites en Galicia - AJERGA" description="Guía completa de trámites al llegar a Galicia">
+<Layout
+    title="Partida Literal de Nacimiento - AJERGA"
+    description="Guía para solicitar la partida literal de nacimiento desde el consulado">
     <Header />
 
     <main>
-        <section class="bg-gradient-to-br from-[#d75528] to-[#dfa142] py-20 text-white">
-            <div class="container mx-auto px-4">
-                <h1 class="text-5xl font-bold mb-6">Trámites al Llegar a Galicia</h1>
-                <p class="text-xl max-w-3xl">Todo lo que necesitas gestionar una vez que ya estés en Galicia</p>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-[#c6d067] to-[#0c615d] py-16 text-white overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-10 right-10 text-9xl">📄</div>
+                <div class="absolute bottom-10 left-10 text-9xl">✍️</div>
+            </div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
+                        <span class="text-sm font-semibold">Primeros Pasos</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4">📄 Partida Literal de Nacimiento</h1>
+                    <p class="text-xl md:text-2xl text-white/90">Solicita este documento esencial desde tu consulado</p>
+                </div>
             </div>
         </section>
 
-        <section class="py-20 bg-white">
+        <section class="py-16 bg-white">
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto">
+                    <!-- ¿Qué es? -->
                     <div class="mb-12">
-                        <div class="bg-gray-50 rounded-xl p-8 mb-6">
-                            <h3 class="text-xl font-semibold text-[#394d62] mb-4">
-                                Solicitud de la partida literal de nacimiento
-                            </h3>
-                            <p class="text-gray-700 mb-4">
-                                Para solicitar la partida literal desde tu consulado, te pedirán:
+                        <div
+                            class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-[#0c615d] rounded-r-xl p-6 mb-8">
+                            <h2 class="text-2xl font-bold text-[#394d62] mb-4 flex items-center">
+                                <span class="text-3xl mr-3">💡</span>
+                                ¿Qué es la partida literal de nacimiento?
+                            </h2>
+                            <p class="text-gray-700 text-lg leading-relaxed">
+                                Es un documento oficial que certifica tu nacimiento y es <strong
+                                    >necesario para solicitar el DNI</strong
+                                > en España. Debe ser expedido por el Registro Civil con una antigüedad máxima de 6 meses
+                                y llevar anotación de que se expide para la obtención del DNI.
                             </p>
-                            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
-                                <li>Copia de tu pasaporte español.</li>
-                                <li>La localidad en la que vas a residir.</li>
-                                <li>
-                                    El correo electrónico de la comisaría de policía en España donde vas a generar el
-                                    documento.
-                                </li>
-                                <li>El certificado de empadronamiento.</li>
-                                <li>Tu número de documento del país de procedencia.</li>
-                            </ul>
+                        </div>
+                    </div>
 
-                            <div class="bg-[#dfa142]/10 p-4 rounded-lg mt-3">
-                                <p class="text-sm text-gray-700">
-                                    <strong>Importante:</strong> Recuerdaque este trámite se solicita en tu consulado español
-                                    del país en el que estás residiendo y donde estás inscrito.
+                    <!-- ¿Dónde solicitarlo? -->
+                    <div class="mb-12">
+                        <div class="bg-gradient-to-r from-[#0c615d] to-[#77b2c0] rounded-2xl p-8 text-white">
+                            <h2 class="text-2xl font-bold mb-4 flex items-center">
+                                <span class="text-3xl mr-3">🌍</span>
+                                ¿Dónde lo solicito?
+                            </h2>
+                            <p class="text-lg text-white/90 mb-4">
+                                Este trámite se solicita en tu <strong>consulado español</strong> del país en el que estás
+                                residiendo y donde estás inscrito como residente.
+                            </p>
+                            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                                <p class="text-sm">
+                                    <strong>💡 Importante:</strong> Asegúrate de estar inscrito en el consulado antes de
+                                    solicitar el documento.
                                 </p>
                             </div>
                         </div>
+                    </div>
+
+                    <!-- Documentación necesaria -->
+                    <div class="mb-12">
+                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
+                            <span class="text-4xl mr-3">📋</span>
+                            Documentación necesaria
+                        </h2>
+                        <p class="text-gray-700 text-lg mb-6">
+                            Para solicitar la partida literal desde tu consulado, te pedirán:
+                        </p>
+                        <div class="space-y-4">
+                            <div
+                                class="bg-white border-2 border-[#c6d067] rounded-xl p-6 hover:shadow-lg transition-shadow transform hover:-translate-y-1">
+                                <div class="flex items-start">
+                                    <div class="text-3xl mr-4">📘</div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-[#394d62] mb-2">
+                                            Copia de tu pasaporte español
+                                        </h3>
+                                        <p class="text-gray-700">Documento que acredita tu nacionalidad española.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white border-2 border-[#77b2c0] rounded-xl p-6 hover:shadow-lg transition-shadow transform hover:-translate-y-1">
+                                <div class="flex items-start">
+                                    <div class="text-3xl mr-4">🏘️</div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-[#394d62] mb-2">
+                                            Localidad donde vas a residir
+                                        </h3>
+                                        <p class="text-gray-700">Información sobre tu lugar de residencia en España.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white border-2 border-[#0c615d] rounded-xl p-6 hover:shadow-lg transition-shadow transform hover:-translate-y-1">
+                                <div class="flex items-start">
+                                    <div class="text-3xl mr-4">✉️</div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-[#394d62] mb-2">
+                                            Correo de la comisaría de policía
+                                        </h3>
+                                        <p class="text-gray-700">
+                                            Email de la comisaría en España donde vas a generar el DNI.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white border-2 border-[#dfa142] rounded-xl p-6 hover:shadow-lg transition-shadow transform hover:-translate-y-1">
+                                <div class="flex items-start">
+                                    <div class="text-3xl mr-4">📍</div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-[#394d62] mb-2">
+                                            Certificado de empadronamiento
+                                        </h3>
+                                        <p class="text-gray-700">Documento que acredita tu domicilio en España.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white border-2 border-[#d75528] rounded-xl p-6 hover:shadow-lg transition-shadow transform hover:-translate-y-1">
+                                <div class="flex items-start">
+                                    <div class="text-3xl mr-4">🪪</div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-[#394d62] mb-2">
+                                            Documento del país de procedencia
+                                        </h3>
+                                        <p class="text-gray-700">
+                                            Tu número de identificación del país donde resides actualmente.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pasos a seguir -->
+                    <div class="mb-12">
+                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
+                            <span class="text-4xl mr-3">🎯</span>
+                            Pasos a seguir
+                        </h2>
+                        <div class="space-y-4">
+                            <div
+                                class="flex items-start bg-gradient-to-r from-[#c6d067] to-[#0c615d] text-white rounded-xl p-6 transform hover:scale-[1.02] transition-transform">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-white text-[#0c615d] rounded-full flex items-center justify-center font-bold text-xl mr-4">
+                                    1
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Verifica tu inscripción consular</h3>
+                                    <p class="text-white/90">
+                                        Asegúrate de estar inscrito en el consulado del país donde resides.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex items-start bg-gradient-to-r from-[#0c615d] to-[#77b2c0] text-white rounded-xl p-6 transform hover:scale-[1.02] transition-transform">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-white text-[#0c615d] rounded-full flex items-center justify-center font-bold text-xl mr-4">
+                                    2
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Reúne la documentación</h3>
+                                    <p class="text-white/90">
+                                        Prepara todos los documentos necesarios listados arriba.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex items-start bg-gradient-to-r from-[#77b2c0] to-[#dfa142] text-white rounded-xl p-6 transform hover:scale-[1.02] transition-transform">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-white text-[#77b2c0] rounded-full flex items-center justify-center font-bold text-xl mr-4">
+                                    3
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Solicita en el consulado</h3>
+                                    <p class="text-white/90">
+                                        Contacta con tu consulado y presenta la solicitud con toda la documentación.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex items-start bg-gradient-to-r from-[#dfa142] to-[#d75528] text-white rounded-xl p-6 transform hover:scale-[1.02] transition-transform">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-white text-[#d75528] rounded-full flex items-center justify-center font-bold text-xl mr-4">
+                                    4
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Recibe tu partida literal</h3>
+                                    <p class="text-white/90">
+                                        Una vez procesado, recibirás el documento oficial necesario para solicitar tu
+                                        DNI.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Consejo importante -->
+                    <div class="mb-12">
+                        <div class="bg-gradient-to-br from-[#d2557d] to-[#394d62] rounded-2xl p-8 text-white">
+                            <h2 class="text-2xl font-bold mb-4 flex items-center">
+                                <span class="text-3xl mr-3">💬</span>
+                                Consejo útil
+                            </h2>
+                            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                                <p class="text-lg leading-relaxed">
+                                    <strong>Solicita con anticipación:</strong> Este trámite puede tardar varias semanas,
+                                    por lo que es recomendable iniciarlo lo antes posible, incluso antes de tu viaje de retorno.
+                                    Recuerda que el documento tiene una validez de <strong>6 meses</strong> para la solicitud
+                                    del DNI.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Relación con otros trámites -->
+                    <div class="mb-12">
+                        <div
+                            class="bg-gradient-to-r from-yellow-50 to-orange-50 border-l-4 border-[#dfa142] rounded-r-xl p-6">
+                            <h3 class="text-xl font-bold text-[#394d62] mb-3 flex items-center">
+                                <span class="text-2xl mr-2">🔗</span>
+                                Relación con otros trámites
+                            </h3>
+                            <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                                La partida literal de nacimiento es un <strong>documento esencial</strong> para solicitar
+                                tu DNI español. Una vez que tengas este documento, podrás continuar con el trámite del DNI
+                                en la comisaría de policía correspondiente.
+                            </p>
+                            <div class="flex gap-3">
+                                <a
+                                    href="/tramites/dni-espanol"
+                                    class="inline-flex items-center px-4 py-2 bg-[#0c615d] text-white rounded-lg hover:bg-[#094a47] transition-colors text-sm font-semibold">
+                                    Ver trámite DNI →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botón de vuelta -->
+                    <div class="text-center">
+                        <a
+                            href="/tramites-galicia"
+                            class="inline-flex items-center px-8 py-4 bg-[#c6d067] text-[#394d62] font-semibold rounded-xl hover:bg-[#b5bf5d] transition-all transform hover:scale-105 shadow-lg">
+                            <span class="mr-2">←</span>
+                            Volver a todos los trámites
+                        </a>
                     </div>
                 </div>
             </div>

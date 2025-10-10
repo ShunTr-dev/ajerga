@@ -4,35 +4,320 @@ import Header from '../../components/Header.astro'
 import Footer from '../../components/Footer.astro'
 ---
 
-<Layout title="Trámites en Galicia - AJERGA" description="Guía completa de trámites al llegar a Galicia">
+<Layout
+    title="Homologación y Convalidación de Títulos - AJERGA"
+    description="Guía para homologar y convalidar títulos extranjeros universitarios y no universitarios">
     <Header />
 
     <main>
-        <section class="bg-gradient-to-br from-[#d75528] to-[#dfa142] py-20 text-white">
-            <div class="container mx-auto px-4">
-                <h1 class="text-5xl font-bold mb-6">Trámites al Llegar a Galicia</h1>
-                <p class="text-xl max-w-3xl">Todo lo que necesitas gestionar una vez que ya estés en Galicia</p>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-[#7c3aed] to-[#2563eb] py-16 text-white overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-10 right-10 text-9xl">🎓</div>
+                <div class="absolute bottom-10 left-10 text-9xl">📚</div>
             </div>
-        </section>
-
-        <section class="py-20 bg-white">
-            <div class="container mx-auto px-4">
-                <div class="max-w-4xl mx-auto">
-                    En caso de que haya realizado sus estudios en el extranjero, es posible que deba realizar algún
-                    trámite para su homologación o convalidación, por lo que es conveniente que traiga las
-                    certificaciones correspondientes a los mismos. Podrá recabar más información al respecto en la
-                    correspondiente Consejería de Educación dependiente del Ministerio de Educación y Formación
-                    Profesional de España. La homologación de títulos, diplomas o estudios extranjeros de educación no
-                    universitaria supone la declaración de la equivalencia con los títulos del sistema educativo español
-                    vigente. La convalidación de estudios extranjeros por cursos españoles de educación no universitaria
-                    supone la declaración de la equivalencia de aquéllos con estos últimos a efectos de continuar
-                    estudios en un Centro docente español. Homologación y convalidación de títulos extranjeros no
-                    universitarios: pincha aquí para obtener más información. Homologación y convalidación de títulos
-                    extranjeros universitarios: pincha aquí para obtener más información. Más información sobre
-                    trámites(títulos universitarios): clic aquí.
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
+                        <span class="text-sm font-semibold">Reconocimiento Académico</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4">🎓 Homologación y Convalidación</h1>
+                    <p class="text-xl md:text-2xl text-white/90">
+                        Reconocimiento de títulos y estudios extranjeros en España
+                    </p>
                 </div>
             </div>
         </section>
     </main>
-    <Footer />
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <!-- Introducción -->
+                <div class="mb-12">
+                    <div
+                        class="bg-gradient-to-r from-purple-50 to-blue-50 border-l-4 border-[#7c3aed] rounded-r-xl p-6 mb-8">
+                        <h2 class="text-2xl font-bold text-[#394d62] mb-4 flex items-center">
+                            <span class="text-3xl mr-3">ℹ️</span>
+                            ¿Por qué es importante?
+                        </h2>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                            Si has realizado tus estudios en el extranjero, es posible que debas realizar algún trámite
+                            para su <strong>homologación</strong> o <strong>convalidación</strong>.
+                        </p>
+                        <p class="text-gray-700">
+                            <strong>Consejo:</strong> Trae las certificaciones correspondientes a tus estudios cuando retornes
+                            a España.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Diferencias clave -->
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
+                        <span class="text-4xl mr-3">🔍</span>
+                        Conceptos clave
+                    </h2>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Homologación -->
+                        <div
+                            class="bg-white rounded-2xl border-2 border-[#7c3aed] p-6 hover:shadow-xl transition-shadow">
+                            <div class="text-4xl mb-4 text-center">📜</div>
+                            <h3 class="text-xl font-bold text-[#7c3aed] mb-3 text-center">Homologación</h3>
+                            <div class="bg-purple-50 rounded-lg p-4">
+                                <p class="text-gray-700 text-sm mb-3">
+                                    <strong>Declaración de equivalencia</strong> de un título extranjero con un título del
+                                    sistema educativo español vigente.
+                                </p>
+                                <div class="bg-white rounded p-3">
+                                    <p class="text-xs text-gray-600 font-semibold mb-1">Objetivo:</p>
+                                    <p class="text-sm text-gray-700">
+                                        Obtener el <strong>reconocimiento oficial</strong> de tu título para ejercer profesionalmente
+                                        en España.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Convalidación -->
+                        <div
+                            class="bg-white rounded-2xl border-2 border-[#2563eb] p-6 hover:shadow-xl transition-shadow">
+                            <div class="text-4xl mb-4 text-center">✅</div>
+                            <h3 class="text-xl font-bold text-[#2563eb] mb-3 text-center">Convalidación</h3>
+                            <div class="bg-blue-50 rounded-lg p-4">
+                                <p class="text-gray-700 text-sm mb-3">
+                                    <strong>Declaración de equivalencia</strong> de estudios extranjeros por cursos del sistema
+                                    educativo español.
+                                </p>
+                                <div class="bg-white rounded p-3">
+                                    <p class="text-xs text-gray-600 font-semibold mb-1">Objetivo:</p>
+                                    <p class="text-sm text-gray-700">
+                                        Poder <strong>continuar estudios</strong> en un centro docente español.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tipos de títulos -->
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
+                        <span class="text-4xl mr-3">🎯</span>
+                        Elige tu tipo de título
+                    </h2>
+
+                    <!-- No Universitarios -->
+                    <div class="mb-8">
+                        <div
+                            class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-6 border-2 border-green-400">
+                            <div class="flex items-start mb-4">
+                                <div class="text-4xl mr-4">🏫</div>
+                                <div class="flex-1">
+                                    <h3 class="text-2xl font-bold text-[#394d62] mb-2">Títulos No Universitarios</h3>
+                                    <p class="text-gray-700 mb-4">
+                                        Educación Secundaria, Bachillerato, Formación Profesional, etc.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-xl p-5 border-l-4 border-green-500 mb-4">
+                                <h4 class="font-bold text-[#394d62] mb-3 flex items-center">
+                                    <span class="text-2xl mr-2">📋</span>
+                                    Procedimientos disponibles
+                                </h4>
+                                <div class="space-y-3">
+                                    <div class="bg-green-50 rounded-lg p-4">
+                                        <p class="font-semibold text-gray-700 mb-2">✓ Homologación de títulos</p>
+                                        <p class="text-sm text-gray-600">
+                                            Para reconocimiento oficial del título extranjero
+                                        </p>
+                                    </div>
+                                    <div class="bg-green-50 rounded-lg p-4">
+                                        <p class="font-semibold text-gray-700 mb-2">✓ Convalidación de estudios</p>
+                                        <p class="text-sm text-gray-600">Para continuar estudiando en España</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-gradient-to-r from-green-100 to-emerald-100 rounded-lg p-4">
+                                <h4 class="font-bold text-[#394d62] mb-3 flex items-center">
+                                    <span class="text-xl mr-2">🔗</span>
+                                    Más información
+                                </h4>
+                                <a
+                                    href="https://www.educacionyfp.gob.es/servicios-al-ciudadano/catalogo/general/99/998719/ficha/998719-informacion-general.html"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="inline-flex items-center px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-all transform hover:scale-105 shadow-md">
+                                    <span class="mr-2">🌐</span>
+                                    Ver información completa del Ministerio
+                                    <span class="ml-2">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Universitarios -->
+                    <div class="mb-8">
+                        <div
+                            class="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-2xl p-6 border-2 border-purple-400">
+                            <div class="flex items-start mb-4">
+                                <div class="text-4xl mr-4">🎓</div>
+                                <div class="flex-1">
+                                    <h3 class="text-2xl font-bold text-[#394d62] mb-2">Títulos Universitarios</h3>
+                                    <p class="text-gray-700 mb-4">Grado, Licenciatura, Máster, Doctorado, etc.</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-xl p-5 border-l-4 border-purple-500 mb-4">
+                                <h4 class="font-bold text-[#394d62] mb-3 flex items-center">
+                                    <span class="text-2xl mr-2">📋</span>
+                                    Procedimientos disponibles
+                                </h4>
+                                <div class="space-y-3">
+                                    <div class="bg-purple-50 rounded-lg p-4">
+                                        <p class="font-semibold text-gray-700 mb-2">✓ Homologación de títulos</p>
+                                        <p class="text-sm text-gray-600">
+                                            Para reconocimiento oficial del título universitario extranjero
+                                        </p>
+                                    </div>
+                                    <div class="bg-purple-50 rounded-lg p-4">
+                                        <p class="font-semibold text-gray-700 mb-2">
+                                            ✓ Convalidación de estudios parciales
+                                        </p>
+                                        <p class="text-sm text-gray-600">
+                                            Para continuar estudios universitarios en España
+                                        </p>
+                                    </div>
+                                    <div class="bg-purple-50 rounded-lg p-4">
+                                        <p class="font-semibold text-gray-700 mb-2">✓ Declaración de equivalencia</p>
+                                        <p class="text-sm text-gray-600">
+                                            Para fines académicos o profesionales específicos
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-gradient-to-r from-purple-100 to-indigo-100 rounded-lg p-4 mb-4">
+                                <h4 class="font-bold text-[#394d62] mb-3 flex items-center">
+                                    <span class="text-xl mr-2">🔗</span>
+                                    Información del Ministerio
+                                </h4>
+                                <a
+                                    href="https://universidades.sede.gob.es/procedimientos/portada/ida/3513/idp/1029"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="inline-flex items-center px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition-all transform hover:scale-105 shadow-md mb-3">
+                                    <span class="mr-2">🌐</span>
+                                    Ver homologación y convalidación
+                                    <span class="ml-2">→</span>
+                                </a>
+                            </div>
+
+                            <div class="bg-gradient-to-r from-blue-100 to-cyan-100 rounded-lg p-4">
+                                <h4 class="font-bold text-[#394d62] mb-3 flex items-center">
+                                    <span class="text-xl mr-2">📄</span>
+                                    Trámites específicos
+                                </h4>
+                                <a
+                                    href="https://www.educacionyfp.gob.es/servicios-al-ciudadano/catalogo/general/99/999208.html"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-all transform hover:scale-105 shadow-md">
+                                    <span class="mr-2">🔍</span>
+                                    Consultar todos los trámites universitarios
+                                    <span class="ml-2">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dónde informarse -->
+                <div class="mb-12">
+                    <div
+                        class="bg-gradient-to-r from-orange-50 to-yellow-50 border-l-4 border-[#dfa142] rounded-r-xl p-6">
+                        <h2 class="text-2xl font-bold text-[#394d62] mb-4 flex items-center">
+                            <span class="text-3xl mr-3">📞</span>
+                            ¿Dónde puedo informarme?
+                        </h2>
+                        <p class="text-gray-700 mb-4">
+                            Para cualquier consulta, puedes contactar con la <strong>Consejería de Educación</strong> del
+                            Ministerio de Educación y Formación Profesional de España.
+                        </p>
+
+                        <div class="bg-white rounded-xl p-5 border-l-4 border-orange-400">
+                            <h3 class="font-bold text-[#394d62] mb-3">📍 Información general</h3>
+                            <div class="space-y-2">
+                                <div class="flex items-start">
+                                    <span class="text-orange-500 mr-2 text-xl">🌐</span>
+                                    <div>
+                                        <p class="text-sm font-semibold text-gray-700">Web oficial:</p>
+                                        <a
+                                            href="https://www.educacionfpydeportes.gob.es/portada.html"
+                                            target="_blank"
+                                            rel="noopener"
+                                            class="text-sm text-blue-600 hover:underline">
+                                            https://www.educacionfpydeportes.gob.es/portada.html
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="text-orange-500 mr-2 text-xl">📧</span>
+                                    <div>
+                                        <p class="text-sm font-semibold text-gray-700">Sede electrónica:</p>
+                                        <a
+                                            href="https://sede.educacion.gob.es"
+                                            target="_blank"
+                                            rel="noopener"
+                                            class="text-sm text-blue-600 hover:underline">
+                                            sede.educacion.gob.es
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Consejo importante -->
+                <div class="mb-12">
+                    <div class="bg-gradient-to-r from-blue-50 to-cyan-50 border-l-4 border-blue-500 rounded-r-xl p-6">
+                        <h3 class="text-xl font-bold text-[#394d62] mb-3 flex items-center">
+                            <span class="text-2xl mr-2">💡</span>
+                            Consejo importante
+                        </h3>
+                        <div class="space-y-3">
+                            <p class="text-gray-700">
+                                <strong>Antes de retornar a España:</strong> Solicita y reúne toda la documentación académica
+                                oficial de tu país de origen (títulos, certificados de estudios, programas académicos, etc.).
+                            </p>
+                            <div class="bg-blue-100 rounded-lg p-4">
+                                <p class="text-sm text-gray-700 mb-2">
+                                    <strong>⏰ Los trámites pueden llevar tiempo</strong>
+                                </p>
+                                <p class="text-sm text-gray-600">
+                                    Es recomendable iniciar el proceso de homologación o convalidación lo antes posible,
+                                    ya que pueden tardar varios meses en resolverse.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botón de vuelta -->
+                <div class="text-center">
+                    <a
+                        href="/tramites-galicia"
+                        class="inline-flex items-center px-8 py-4 bg-[#394d62] text-white font-semibold rounded-xl hover:bg-[#2a3a4a] transition-all transform hover:scale-105 shadow-lg">
+                        <span class="mr-2">←</span>
+                        Volver a todos los trámites
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 </Layout>
+<Footer />

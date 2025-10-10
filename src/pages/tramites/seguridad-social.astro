@@ -4,43 +4,248 @@ import Header from '../../components/Header.astro'
 import Footer from '../../components/Footer.astro'
 ---
 
-<Layout title="Trámites en Galicia - AJERGA" description="Guía completa de trámites al llegar a Galicia">
+<Layout title="Seguridad Social - AJERGA" description="Guía para obtener tu número de Seguridad Social en España">
     <Header />
 
     <main>
-        <section class="bg-gradient-to-br from-[#d75528] to-[#dfa142] py-20 text-white">
-            <div class="container mx-auto px-4">
-                <h1 class="text-5xl font-bold mb-6">Trámites al Llegar a Galicia</h1>
-                <p class="text-xl max-w-3xl">Todo lo que necesitas gestionar una vez que ya estés en Galicia</p>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-[#d2557d] to-[#394d62] py-16 text-white overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-10 right-10 text-9xl">🛡️</div>
+                <div class="absolute bottom-10 left-10 text-9xl">💼</div>
+            </div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
+                        <span class="text-sm font-semibold">Salud y Bienestar</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4">🛡️ Seguridad Social</h1>
+                    <p class="text-xl md:text-2xl text-white/90">
+                        Obtén tu número de afiliación al sistema de seguridad social
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section class="py-20 bg-white">
+        <section class="py-16 bg-white">
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto">
+                    <!-- ¿Qué es? -->
                     <div class="mb-12">
-                        <div class="bg-gray-50 rounded-xl p-8 mb-6">
-                            <h3 class="text-xl font-semibold text-[#394d62] mb-4">Seguridad Social</h3>
-                            <p class="text-gray-700 mb-4">
-                                El <strong>número de la Seguridad Social</strong> identifica a cada ciudadano dentro del
-                                sistema y es necesario para ser beneficiario de pensiones o prestaciones y solicitar la inclusión
-                                en el sistema sanitario. Puedes obtener el número de la seguridad social de las siguientes
-                                maneras:
+                        <div
+                            class="bg-gradient-to-r from-purple-50 to-pink-50 border-l-4 border-[#d2557d] rounded-r-xl p-6 mb-8">
+                            <h2 class="text-2xl font-bold text-[#394d62] mb-4 flex items-center">
+                                <span class="text-3xl mr-3">💡</span>
+                                ¿Qué es el número de Seguridad Social?
+                            </h2>
+                            <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                                El <strong>número de la Seguridad Social</strong> es tu identificador único dentro del sistema
+                                de protección social español. Este número te identifica como ciudadano dentro del sistema
+                                y es esencial para múltiples gestiones.
                             </p>
-                            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
-                                <li>Solicitando turno presencial en la Seguridad Social, o</li>
-                                <li>
-                                    De forma online, usando la clave digital del DNI electrónico (que te entregarán en
-                                    la policía el día que tramites el documento).
-                                </li>
-                            </ul>
-                            <div class="bg-[#dfa142]/10 p-4 rounded-lg mt-3">
-                                <p class="text-sm text-gray-700">
-                                    <strong>Importante:</strong> Existe la posibilidad de ir a primera hora y que atiendan
-                                    sin cita previa.
-                                </p>
+                            <div class="grid md:grid-cols-2 gap-4 mt-4">
+                                <div class="bg-white/60 rounded-lg p-4">
+                                    <div class="text-2xl mb-2">💰</div>
+                                    <p class="text-gray-700 font-semibold mb-1">Pensiones y prestaciones</p>
+                                    <p class="text-sm text-gray-600">Ser beneficiario del sistema de pensiones</p>
+                                </div>
+                                <div class="bg-white/60 rounded-lg p-4">
+                                    <div class="text-2xl mb-2">🏥</div>
+                                    <p class="text-gray-700 font-semibold mb-1">Sistema sanitario</p>
+                                    <p class="text-sm text-gray-600">Solicitar inclusión en el sistema de salud</p>
+                                </div>
                             </div>
                         </div>
+                    </div>
+
+                    <!-- Formas de obtenerlo -->
+                    <div class="mb-12">
+                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
+                            <span class="text-4xl mr-3">🎯</span>
+                            ¿Cómo puedo obtenerlo?
+                        </h2>
+                        <p class="text-gray-700 text-lg mb-6">
+                            Existen dos formas de solicitar tu número de Seguridad Social:
+                        </p>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <!-- Opción presencial -->
+                            <div
+                                class="bg-gradient-to-br from-[#d2557d] to-[#394d62] rounded-2xl p-8 text-white transform hover:scale-[1.02] transition-all shadow-lg">
+                                <div class="text-5xl mb-4">🏢</div>
+                                <h3 class="text-2xl font-bold mb-4">Presencial</h3>
+                                <div class="space-y-3">
+                                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                                        <p class="text-sm font-semibold mb-2">📅 Paso 1</p>
+                                        <p class="text-white/90">
+                                            Solicita turno/cita previa en tu oficina de la Seguridad Social
+                                        </p>
+                                    </div>
+                                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                                        <p class="text-sm font-semibold mb-2">📋 Paso 2</p>
+                                        <p class="text-white/90">Acude con tu DNI y documentación necesaria</p>
+                                    </div>
+                                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                                        <p class="text-sm font-semibold mb-2">✅ Paso 3</p>
+                                        <p class="text-white/90">Recibe tu número de afiliación</p>
+                                    </div>
+                                </div>
+                                <div class="mt-6 bg-yellow-400/20 backdrop-blur-sm rounded-lg p-3">
+                                    <p class="text-sm">
+                                        <strong>💡 Consejo:</strong> Puedes ir a primera hora sin cita y probablemente te
+                                        atiendan.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Opción online -->
+                            <div
+                                class="bg-gradient-to-br from-[#0c615d] to-[#77b2c0] rounded-2xl p-8 text-white transform hover:scale-[1.02] transition-all shadow-lg">
+                                <div class="text-5xl mb-4">💻</div>
+                                <h3 class="text-2xl font-bold mb-4">Online</h3>
+                                <div class="space-y-3">
+                                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                                        <p class="text-sm font-semibold mb-2">🔐 Paso 1</p>
+                                        <p class="text-white/90">Necesitas la clave digital del DNI electrónico</p>
+                                    </div>
+                                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                                        <p class="text-sm font-semibold mb-2">🔑 Paso 2</p>
+                                        <p class="text-white/90">Accede a la sede electrónica de la Seguridad Social</p>
+                                    </div>
+                                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                                        <p class="text-sm font-semibold mb-2">📱 Paso 3</p>
+                                        <p class="text-white/90">Completa el trámite desde casa</p>
+                                    </div>
+                                </div>
+                                <div class="mt-6 bg-blue-400/20 backdrop-blur-sm rounded-lg p-3">
+                                    <p class="text-sm">
+                                        <strong>🔐 Requisito:</strong> Debes tener activado el DNI electrónico con certificados
+                                        digitales.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Documentación necesaria -->
+                    <div class="mb-12">
+                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
+                            <span class="text-4xl mr-3">📋</span>
+                            Documentación necesaria
+                        </h2>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div
+                                class="bg-white border-2 border-[#d2557d] rounded-xl p-6 hover:shadow-lg transition-shadow">
+                                <div class="flex items-start">
+                                    <div class="text-3xl mr-4">🪪</div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-[#394d62] mb-2">DNI español</h3>
+                                        <p class="text-gray-700">Documento Nacional de Identidad vigente.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white border-2 border-[#394d62] rounded-xl p-6 hover:shadow-lg transition-shadow">
+                                <div class="flex items-start">
+                                    <div class="text-3xl mr-4">🏠</div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-[#394d62] mb-2">
+                                            Certificado de empadronamiento
+                                        </h3>
+                                        <p class="text-gray-700">Que acredite tu domicilio en España.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white border-2 border-[#77b2c0] rounded-xl p-6 hover:shadow-lg transition-shadow">
+                                <div class="flex items-start">
+                                    <div class="text-3xl mr-4">📄</div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-[#394d62] mb-2">Formulario oficial</h3>
+                                        <p class="text-gray-700">Solicitud de alta (disponible en la oficina).</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white border-2 border-[#c6d067] rounded-xl p-6 hover:shadow-lg transition-shadow">
+                                <div class="flex items-start">
+                                    <div class="text-3xl mr-4">🔐</div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-[#394d62] mb-2">
+                                            Certificado digital (online)
+                                        </h3>
+                                        <p class="text-gray-700">Solo si haces el trámite por internet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Información importante -->
+                    <div class="mb-12">
+                        <div
+                            class="bg-gradient-to-r from-blue-50 to-cyan-50 border-l-4 border-[#77b2c0] rounded-r-xl p-6">
+                            <h3 class="text-xl font-bold text-[#394d62] mb-3 flex items-center">
+                                <span class="text-2xl mr-2">ℹ️</span>
+                                Información adicional
+                            </h3>
+                            <div class="space-y-3">
+                                <div class="flex items-start">
+                                    <span class="text-xl mr-3">⏰</span>
+                                    <p class="text-gray-700">
+                                        <strong>Tiempo de tramitación:</strong> Si lo haces presencialmente, suele ser inmediato.
+                                        Por internet, puede tardar algunos días.
+                                    </p>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="text-xl mr-3">🆓</span>
+                                    <p class="text-gray-700">
+                                        <strong>Coste:</strong> El trámite es completamente gratuito.
+                                    </p>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="text-xl mr-3">🔄</span>
+                                    <p class="text-gray-700">
+                                        <strong>Número único:</strong> Una vez obtenido, ese será tu número de por vida en
+                                        el sistema español.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Siguiente paso -->
+                    <div class="mb-12">
+                        <div
+                            class="bg-gradient-to-r from-yellow-50 to-orange-50 border-l-4 border-[#dfa142] rounded-r-xl p-6">
+                            <h3 class="text-xl font-bold text-[#394d62] mb-3 flex items-center">
+                                <span class="text-2xl mr-2">➡️</span>
+                                Siguiente paso: Tarjeta Sanitaria
+                            </h3>
+                            <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                                Una vez que tengas tu número de Seguridad Social, podrás solicitar tu <strong
+                                    >tarjeta sanitaria</strong
+                                > para acceder al sistema de salud público.
+                            </p>
+                            <a
+                                href="/tramites/tarjeta-sanitaria"
+                                class="inline-flex items-center px-4 py-2 bg-[#0c615d] text-white rounded-lg hover:bg-[#094a47] transition-colors text-sm font-semibold">
+                                Ver trámite Tarjeta Sanitaria →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Botón de vuelta -->
+                    <div class="text-center">
+                        <a
+                            href="/tramites-galicia"
+                            class="inline-flex items-center px-8 py-4 bg-[#d2557d] text-white font-semibold rounded-xl hover:bg-[#c14a6f] transition-all transform hover:scale-105 shadow-lg">
+                            <span class="mr-2">←</span>
+                            Volver a todos los trámites
+                        </a>
                     </div>
                 </div>
             </div>

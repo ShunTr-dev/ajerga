@@ -4,142 +4,290 @@ import Header from '../../components/Header.astro'
 import Footer from '../../components/Footer.astro'
 ---
 
-<Layout title="Trámites en Galicia - AJERGA" description="Guía completa de trámites al llegar a Galicia">
+<Layout title="DNI Español - AJERGA" description="Guía completa para obtener o renovar el DNI en España">
     <Header />
 
     <main>
-        <section class="bg-gradient-to-br from-[#d75528] to-[#dfa142] py-20 text-white">
-            <div class="container mx-auto px-4">
-                <h1 class="text-5xl font-bold mb-6">Trámites al Llegar a Galicia</h1>
-                <p class="text-xl max-w-3xl">Todo lo que necesitas gestionar una vez que ya estés en Galicia</p>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-[#d75528] to-[#dfa142] py-16 text-white overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-10 right-10 text-9xl">🪪</div>
+                <div class="absolute bottom-10 left-10 text-9xl">✨</div>
+            </div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
+                        <span class="text-sm font-semibold">Primeros Pasos</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4">🪪 DNI Español</h1>
+                    <p class="text-xl md:text-2xl text-white/90">Obtén o renueva tu Documento Nacional de Identidad</p>
+                </div>
             </div>
         </section>
 
-        <section class="py-20 bg-white">
+        <section class="py-16 bg-white">
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto">
+                    <!-- ¿Qué es? -->
                     <div class="mb-12">
-                        <div class="bg-gray-50 rounded-xl p-8 mb-6">
-                            <h3 class="text-xl font-semibold text-[#394d62] mb-4">DNI Español</h3>
-                            <p class="text-gray-700 mb-4">
+                        <div
+                            class="bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-[#d75528] rounded-r-xl p-6 mb-8">
+                            <h2 class="text-2xl font-bold text-[#394d62] mb-4 flex items-center">
+                                <span class="text-3xl mr-3">💡</span>
+                                ¿Qué es el DNI?
+                            </h2>
+                            <p class="text-gray-700 text-lg leading-relaxed mb-4">
                                 Todos los españoles tienen derecho a obtener el DNI desde el momento en que su
-                                nacimiento se haya inscrito en el Registro Civil. Los mayores de 14 años están obligados
-                                a poseerlo, custodiarlo y conservarlo. Es un documento intransferible y nadie podrá ser
-                                privado del mismo, ni siquiera temporalmente.
+                                nacimiento se haya inscrito en el Registro Civil. Los <strong
+                                    >mayores de 14 años están obligados</strong
+                                > a poseerlo, custodiarlo y conservarlo.
                             </p>
-                            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
-                                <li>
-                                    Se puede solicitar cita previa con los datos de un amigo o familiar: <a
-                                        href="http://www.citapreviadnie.es/citaPreviaDni/"
-                                        target="_blank"
-                                        rel="noopener noreferrer">http://www.citapreviadnie.es/citaPreviaDni/</a
-                                    >
-                                </li>
-                                <li>
-                                    Certificación literal de nacimiento expedida por el Registro Civil correspondiente.
-                                    A estos efectos sólo serán admitidas las certificaciones expedidas con una
-                                    antelación máxima de seis meses a la fecha de presentación de la solicitud de
-                                    expedición del DNI, debiendo llevar anotación por parte del Registro Civil de que se
-                                    expide a los solos efectos de la obtención de dicho documento.
-                                </li>
-                                <li>
-                                    Certificado de empadronamiento del Ayuntamiento donde el solicitante tenga su
-                                    domicilio, expedido con una antelación máxima de tres meses a la fecha de la
-                                    solicitud del DNI. Este documento no será necesario si el interesado autoriza a los
-                                    funcionarios del equipo para que se compruebe su domicilio mediante acceso al
-                                    Sistema de Verificación de Datos de Residencia.
-                                </li>
-                                <li>
-                                    Los españoles residentes en el extranjero acreditarán el domicilio mediante
-                                    certificación de la Representación Diplomática o Consular donde estén inscritos como
-                                    residentes, que asimismo deberá estar expedido con una antelación máxima de tres
-                                    meses.
-                                </li>
-                                <li>
-                                    Cuando el solicitante sea menor de 14 años o incapaz, deberá ir acompañado por la
-                                    persona que tenga la patria potestad o la tutela, o por persona apoderada por estas
-                                    últimas.
-                                </li>
-                                <li>
-                                    Además de los documentos señalados, los españoles residentes en el extranjero habrán
-                                    de aportar el Certificado de la Representación Diplomática o Consular aludido en el
-                                    apartado “Primera Expedición”.
-                                </li>
-                                <li>En cada caso se abonará la tasa correspondiente.</li>
-                                <li>
-                                    Las renovaciones del DNI por cambio de datos de filiación o de domicilio, hallándose
-                                    éste en vigor, están exentas del pago de la tasa.
-                                </li>
-                                <li>
-                                    Si es la primera vez que lo solicitas, necesitarás una fotografía reciente en color
-                                    (32x26 mm) con fondo blanco.
-                                </li>
-                            </ul>
+                            <p class="text-gray-700 text-lg leading-relaxed">
+                                Es un documento <strong>intransferible</strong> y nadie podrá ser privado del mismo, ni siquiera
+                                temporalmente.
+                            </p>
+                        </div>
+                    </div>
 
-                            <p class="text-gray-700 mb-4">¿Dónde realizar el trámite?</p>
-
-                            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
-                                <li>
-                                    El DNI sólo se puede tramitar en las oficinas del Documento Nacional de Identidad en
-                                    España.
-                                </li>
-                                <li>
-                                    Los españoles residentes en el extranjero pueden renovar su DNI u obtener dicho
-                                    documento por primera vez haciendo constar como domicilio el de su lugar de
-                                    residencia en el extranjero. Para ello necesitan el certificado a que se hace
-                                    referencia en los puntos anteriores para la primera expedición y para las
-                                    renovaciones. Con dicho documento, los españoles residentes en el extranjero deben
-                                    solicitar el DNI en España, cuando realicen un viaje a nuestro país. El documento
-                                    plastificado será posteriormente remitido a la Oficina Consular en donde resida el
-                                    solicitante, la cual lo entregará personalmente al mismo, no pudiendo, en ninguna
-                                    circunstancia, ser recogido directamente en España.
-                                </li>
-                                <li>
-                                    Cuando los españoles residentes en el extranjero retornen a España deberán renovar
-                                    su DNI para que en lugar del domicilio en el extranjero conste el de su
-                                    empadronamiento en nuestro país.
-                                </li>
-                                <li>
-                                    Actualmente ya se ha iniciado la emisión del documento nacional de identidad
-                                    electrónico por lo que, si la solicitud se realiza en alguno de los equipos que ya
-                                    expiden este documento, la entrega se efectúa en el acto, tanto a los españoles
-                                    residentes en territorio nacional como a los residentes en el extranjero.
-                                </li>
-                                <li>
-                                    Puede obtenerse más información sobre este documento en la página web: <a
-                                        href="https://www.dnielectronico.es/PortalDNIe/"
-                                        target="_blank"
-                                        rel="noopener noreferrer">www.dnielectronico.es</a
-                                    >; por teléfono: <a href="tel:902364444">902 364 444</a> o por correo electrónico:
-                                    <a href="mailto:sac@dnielectronico.es">sac@dnielectronico.es</a>
-                                </li>
-                                <li>
-                                    Por otro lado, se encuentra establecido un servicio de cita previa para su emisión,
-                                    que se solicita por Internet en <a
-                                        href="http://www.citapreviadnie.es/citaPreviaDni/"
-                                        target="_blank"
-                                        rel="noopener noreferrer">http://www.citapreviadnie.es/citaPreviaDni/</a
-                                    >.
-                                </li>
-                                <li>
-                                    Más información en:
-
-                                    <a
-                                        href="http://www.interior.gob.es/es/web/servicios-al-ciudadano/dni"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        >http://www.interior.gob.es/es/web/servicios-al-ciudadano/dni</a
-                                    >
-                                </li>
-                            </ul>
-
-                            <div class="bg-[#dfa142]/10 p-4 rounded-lg mt-3">
-                                <p class="text-sm text-gray-700">
-                                    <strong>Importante:</strong> Existe la posibilidad de ir a primera hora y que atiendan
+                    <!-- Cita previa -->
+                    <div class="mb-12">
+                        <div class="bg-gradient-to-r from-[#0c615d] to-[#77b2c0] rounded-2xl p-8 text-white">
+                            <h2 class="text-2xl font-bold mb-4 flex items-center">
+                                <span class="text-3xl mr-3">📅</span>
+                                Primer paso: Solicita cita previa
+                            </h2>
+                            <p class="text-lg mb-4 text-white/90">
+                                Puedes solicitar cita previa online incluso con los datos de un amigo o familiar:
+                            </p>
+                            <a
+                                href="http://www.citapreviadnie.es/citaPreviaDni/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-flex items-center px-6 py-3 bg-white text-[#0c615d] font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+                                <span class="mr-2">🔗</span>
+                                Solicitar cita previa
+                            </a>
+                            <div class="mt-4 bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                                <p class="text-sm">
+                                    <strong>💡 Consejo:</strong> Existe la posibilidad de ir a primera hora y que atiendan
                                     sin cita previa.
                                 </p>
                             </div>
                         </div>
+                    </div>
+
+                    <!-- Documentación necesaria -->
+                    <div class="mb-12">
+                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
+                            <span class="text-4xl mr-3">📋</span>
+                            Documentación necesaria
+                        </h2>
+                        <div class="space-y-4">
+                            <div
+                                class="bg-white border-2 border-[#d75528] rounded-xl p-6 hover:shadow-lg transition-shadow">
+                                <div class="flex items-start">
+                                    <div class="text-3xl mr-4">📄</div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-[#394d62] mb-2">
+                                            Certificación literal de nacimiento
+                                        </h3>
+                                        <p class="text-gray-700 mb-2">
+                                            Expedida por el Registro Civil correspondiente.
+                                        </p>
+                                        <p class="text-sm text-gray-600">
+                                            ⏰ Debe tener una antigüedad máxima de <strong>6 meses</strong> y llevar anotación
+                                            de que se expide para obtener el DNI.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white border-2 border-[#dfa142] rounded-xl p-6 hover:shadow-lg transition-shadow">
+                                <div class="flex items-start">
+                                    <div class="text-3xl mr-4">🏠</div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-[#394d62] mb-2">
+                                            Certificado de empadronamiento
+                                        </h3>
+                                        <p class="text-gray-700 mb-2">Del ayuntamiento donde tengas tu domicilio.</p>
+                                        <p class="text-sm text-gray-600">
+                                            ⏰ Antigüedad máxima de <strong>3 meses</strong>. No es necesario si
+                                            autorizas la comprobación mediante el Sistema de Verificación de Datos de
+                                            Residencia.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white border-2 border-[#77b2c0] rounded-xl p-6 hover:shadow-lg transition-shadow">
+                                <div class="flex items-start">
+                                    <div class="text-3xl mr-4">📸</div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-[#394d62] mb-2">Fotografía reciente</h3>
+                                        <p class="text-gray-700 mb-2">Solo si es la primera vez que lo solicitas.</p>
+                                        <p class="text-sm text-gray-600">
+                                            📏 Medidas: 32x26 mm, en color, con fondo blanco.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white border-2 border-[#c6d067] rounded-xl p-6 hover:shadow-lg transition-shadow">
+                                <div class="flex items-start">
+                                    <div class="text-3xl mr-4">💶</div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-[#394d62] mb-2">Pago de tasa</h3>
+                                        <p class="text-gray-700 mb-2">Se debe abonar la tasa correspondiente.</p>
+                                        <p class="text-sm text-gray-600">
+                                            ✅ Las renovaciones por cambio de datos estando en vigor están <strong
+                                                >exentas</strong
+                                            > de pago.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Casos especiales -->
+                    <div class="mb-12">
+                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
+                            <span class="text-4xl mr-3">⚡</span>
+                            Casos especiales
+                        </h2>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div
+                                class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 border-2 border-[#d2557d]">
+                                <div class="text-3xl mb-3">👶</div>
+                                <h3 class="text-xl font-bold text-[#394d62] mb-3">Menores de 14 años</h3>
+                                <p class="text-gray-700">
+                                    Deben ir acompañados por la persona que tenga la patria potestad, tutela, o por
+                                    persona apoderada.
+                                </p>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 border-2 border-[#77b2c0]">
+                                <div class="text-3xl mb-3">🌍</div>
+                                <h3 class="text-xl font-bold text-[#394d62] mb-3">Residentes en el extranjero</h3>
+                                <p class="text-gray-700">
+                                    Necesitan certificación de la Representación Diplomática o Consular donde estén
+                                    inscritos (antigüedad máx. 3 meses).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ¿Dónde realizar el trámite? -->
+                    <div class="mb-12">
+                        <div class="bg-gradient-to-r from-[#d2557d] to-[#394d62] rounded-2xl p-8 text-white">
+                            <h2 class="text-2xl font-bold mb-4 flex items-center">
+                                <span class="text-3xl mr-3">📍</span>
+                                ¿Dónde realizar el trámite?
+                            </h2>
+                            <div class="space-y-4">
+                                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                                    <p class="text-lg leading-relaxed">
+                                        <strong>En España:</strong> El DNI solo se puede tramitar en las <strong
+                                            >oficinas del Documento Nacional de Identidad</strong
+                                        > en España.
+                                    </p>
+                                </div>
+                                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                                    <p class="text-lg leading-relaxed">
+                                        <strong>Desde el extranjero:</strong> Los españoles residentes fuera pueden renovar
+                                        u obtener el DNI haciendo constar su domicilio en el extranjero. Deben solicitar
+                                        el DNI en España durante un viaje, y el documento será remitido posteriormente a
+                                        su Oficina Consular.
+                                    </p>
+                                </div>
+                                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                                    <p class="text-lg leading-relaxed">
+                                        <strong>Al retornar:</strong> Cuando retornes a España, deberás renovar tu DNI para
+                                        que conste tu nuevo domicilio de empadronamiento.
+                                    </p>
+                                </div>
+                                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                                    <p class="text-lg leading-relaxed">
+                                        <strong>DNI electrónico:</strong> Si la solicitud se realiza en equipos que ya expiden
+                                        DNI electrónico, la entrega se efectúa <strong>en el acto</strong>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Información adicional -->
+                    <div class="mb-12">
+                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
+                            <span class="text-4xl mr-3">ℹ️</span>
+                            Información adicional
+                        </h2>
+                        <div class="bg-gray-50 rounded-xl p-6">
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <span class="text-2xl mr-3">🌐</span>
+                                    <div>
+                                        <p class="text-gray-700 mb-1"><strong>Web DNI electrónico:</strong></p>
+                                        <a
+                                            href="https://www.dnielectronico.es/PortalDNIe/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="text-[#0c615d] hover:text-[#77b2c0] underline">
+                                            www.dnielectronico.es
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="text-2xl mr-3">📞</span>
+                                    <div>
+                                        <p class="text-gray-700 mb-1"><strong>Teléfono de información:</strong></p>
+                                        <a
+                                            href="tel:902364444"
+                                            class="text-[#0c615d] hover:text-[#77b2c0] font-semibold">
+                                            902 364 444
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="text-2xl mr-3">✉️</span>
+                                    <div>
+                                        <p class="text-gray-700 mb-1"><strong>Email:</strong></p>
+                                        <a
+                                            href="mailto:sac@dnielectronico.es"
+                                            class="text-[#0c615d] hover:text-[#77b2c0] underline">
+                                            sac@dnielectronico.es
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="text-2xl mr-3">🔗</span>
+                                    <div>
+                                        <p class="text-gray-700 mb-1"><strong>Más información:</strong></p>
+                                        <a
+                                            href="http://www.interior.gob.es/es/web/servicios-al-ciudadano/dni"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="text-[#0c615d] hover:text-[#77b2c0] underline break-all">
+                                            www.interior.gob.es/es/web/servicios-al-ciudadano/dni
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botón de vuelta -->
+                    <div class="text-center">
+                        <a
+                            href="/tramites-galicia"
+                            class="inline-flex items-center px-8 py-4 bg-[#d75528] text-white font-semibold rounded-xl hover:bg-[#c24920] transition-all transform hover:scale-105 shadow-lg">
+                            <span class="mr-2">←</span>
+                            Volver a todos los trámites
+                        </a>
                     </div>
                 </div>
             </div>
@@ -147,3 +295,102 @@ import Footer from '../../components/Footer.astro'
     </main>
     <Footer />
 </Layout>
+Todos los españoles tienen derecho a obtener el DNI desde el momento en que su nacimiento se haya inscrito en el Registro
+Civil. Los mayores de 14 años están obligados a poseerlo, custodiarlo y conservarlo. Es un documento intransferible y nadie
+podrá ser privado del mismo, ni siquiera temporalmente.
+
+<ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+    <li>
+        Se puede solicitar cita previa con los datos de un amigo o familiar: <a
+            href="http://www.citapreviadnie.es/citaPreviaDni/"
+            target="_blank"
+            rel="noopener noreferrer">http://www.citapreviadnie.es/citaPreviaDni/</a
+        >
+    </li>
+    <li>
+        Certificación literal de nacimiento expedida por el Registro Civil correspondiente. A estos efectos sólo serán
+        admitidas las certificaciones expedidas con una antelación máxima de seis meses a la fecha de presentación de la
+        solicitud de expedición del DNI, debiendo llevar anotación por parte del Registro Civil de que se expide a los
+        solos efectos de la obtención de dicho documento.
+    </li>
+    <li>
+        Certificado de empadronamiento del Ayuntamiento donde el solicitante tenga su domicilio, expedido con una
+        antelación máxima de tres meses a la fecha de la solicitud del DNI. Este documento no será necesario si el
+        interesado autoriza a los funcionarios del equipo para que se compruebe su domicilio mediante acceso al Sistema
+        de Verificación de Datos de Residencia.
+    </li>
+    <li>
+        Los españoles residentes en el extranjero acreditarán el domicilio mediante certificación de la Representación
+        Diplomática o Consular donde estén inscritos como residentes, que asimismo deberá estar expedido con una
+        antelación máxima de tres meses.
+    </li>
+    <li>
+        Cuando el solicitante sea menor de 14 años o incapaz, deberá ir acompañado por la persona que tenga la patria
+        potestad o la tutela, o por persona apoderada por estas últimas.
+    </li>
+    <li>
+        Además de los documentos señalados, los españoles residentes en el extranjero habrán de aportar el Certificado
+        de la Representación Diplomática o Consular aludido en el apartado “Primera Expedición”.
+    </li>
+    <li>En cada caso se abonará la tasa correspondiente.</li>
+    <li>
+        Las renovaciones del DNI por cambio de datos de filiación o de domicilio, hallándose éste en vigor, están
+        exentas del pago de la tasa.
+    </li>
+    <li>
+        Si es la primera vez que lo solicitas, necesitarás una fotografía reciente en color (32x26 mm) con fondo blanco.
+    </li>
+</ul>
+
+<p class="text-gray-700 mb-4">¿Dónde realizar el trámite?</p>
+
+<ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+    <li>El DNI sólo se puede tramitar en las oficinas del Documento Nacional de Identidad en España.</li>
+    <li>
+        Los españoles residentes en el extranjero pueden renovar su DNI u obtener dicho documento por primera vez
+        haciendo constar como domicilio el de su lugar de residencia en el extranjero. Para ello necesitan el
+        certificado a que se hace referencia en los puntos anteriores para la primera expedición y para las
+        renovaciones. Con dicho documento, los españoles residentes en el extranjero deben solicitar el DNI en España,
+        cuando realicen un viaje a nuestro país. El documento plastificado será posteriormente remitido a la Oficina
+        Consular en donde resida el solicitante, la cual lo entregará personalmente al mismo, no pudiendo, en ninguna
+        circunstancia, ser recogido directamente en España.
+    </li>
+    <li>
+        Cuando los españoles residentes en el extranjero retornen a España deberán renovar su DNI para que en lugar del
+        domicilio en el extranjero conste el de su empadronamiento en nuestro país.
+    </li>
+    <li>
+        Actualmente ya se ha iniciado la emisión del documento nacional de identidad electrónico por lo que, si la
+        solicitud se realiza en alguno de los equipos que ya expiden este documento, la entrega se efectúa en el acto,
+        tanto a los españoles residentes en territorio nacional como a los residentes en el extranjero.
+    </li>
+    <li>
+        Puede obtenerse más información sobre este documento en la página web: <a
+            href="https://www.dnielectronico.es/PortalDNIe/"
+            target="_blank"
+            rel="noopener noreferrer">www.dnielectronico.es</a
+        >; por teléfono: <a href="tel:902364444">902 364 444</a> o por correo electrónico:
+        <a href="mailto:sac@dnielectronico.es">sac@dnielectronico.es</a>
+    </li>
+    <li>
+        Por otro lado, se encuentra establecido un servicio de cita previa para su emisión, que se solicita por Internet
+        en <a href="http://www.citapreviadnie.es/citaPreviaDni/" target="_blank" rel="noopener noreferrer"
+            >http://www.citapreviadnie.es/citaPreviaDni/</a
+        >.
+    </li>
+    <li>
+        Más información en:
+
+        <a href="http://www.interior.gob.es/es/web/servicios-al-ciudadano/dni" target="_blank" rel="noopener noreferrer"
+            >http://www.interior.gob.es/es/web/servicios-al-ciudadano/dni</a
+        >
+    </li>
+</ul>
+
+<div class="bg-[#dfa142]/10 p-4 rounded-lg mt-3">
+    <p class="text-sm text-gray-700">
+        <strong>Importante:</strong> Existe la posibilidad de ir a primera hora y que atiendan sin cita previa.
+    </p>
+</div>
+
+<Footer />

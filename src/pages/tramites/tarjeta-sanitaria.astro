@@ -4,97 +4,316 @@ import Header from '../../components/Header.astro'
 import Footer from '../../components/Footer.astro'
 ---
 
-<Layout title="Trámites en Galicia - AJERGA" description="Guía completa de trámites al llegar a Galicia">
+<Layout title="Tarjeta Sanitaria - AJERGA" description="Guía para obtener tu tarjeta sanitaria en Galicia">
     <Header />
 
     <main>
-        <section class="bg-gradient-to-br from-[#d75528] to-[#dfa142] py-20 text-white">
-            <div class="container mx-auto px-4">
-                <h1 class="text-5xl font-bold mb-6">Trámites al Llegar a Galicia</h1>
-                <p class="text-xl max-w-3xl">Todo lo que necesitas gestionar una vez que ya estés en Galicia</p>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-[#77b2c0] to-[#0c615d] py-16 text-white overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-10 right-10 text-9xl">💳</div>
+                <div class="absolute bottom-10 left-10 text-9xl">🏥</div>
+            </div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
+                        <span class="text-sm font-semibold">Salud y Bienestar</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4">💳 Tarjeta Sanitaria</h1>
+                    <p class="text-xl md:text-2xl text-white/90">Accede al sistema de salud público de Galicia</p>
+                </div>
             </div>
         </section>
 
-        <section class="py-20 bg-white">
+        <section class="py-16 bg-white">
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto">
+                    <!-- ¿Qué es? -->
                     <div class="mb-12">
-                        <div class="bg-gray-50 rounded-xl p-8 mb-6">
-                            <h3 class="text-xl font-semibold text-[#394d62] mb-4">Tarjeta Sanitaria</h3>
-                            <p class="text-gray-700 mb-4">
-                                Con tu número de Seguridad Social ya podrás solicitar la tarjeta sanitaria. Este trámite
-                                te otorga el derecho a la asistencia médica pública.
+                        <div
+                            class="bg-gradient-to-r from-blue-50 to-cyan-50 border-l-4 border-[#77b2c0] rounded-r-xl p-6 mb-8">
+                            <h2 class="text-2xl font-bold text-[#394d62] mb-4 flex items-center">
+                                <span class="text-3xl mr-3">💡</span>
+                                ¿Qué es la tarjeta sanitaria?
+                            </h2>
+                            <p class="text-gray-700 text-lg leading-relaxed">
+                                Con tu número de Seguridad Social podrás solicitar la <strong>tarjeta sanitaria</strong
+                                >. Este trámite te otorga el derecho a la <strong>asistencia médica pública</strong> en el
+                                sistema de salud gallego (SERGAS).
                             </p>
-                            <p class="text-gray-700 mb-4">Existen dos opciones:</p>
-                            <p class="text-gray-700 mb-4">
-                                La asistencia sanitaria provisional en Galicia se puede solicitar, siempre que no haya
-                                causado baja en el registro de matrícula consular, la tarjeta de Salud Exterior de la
-                                Xunta de Galicia, que en caso de no poseer otro seguro privado le cubrirá la asistencia
-                                sanitaria por un periodo máximo de 3 meses, mientras no tramita un seguro definitivo.
-                                Puede hacerlo <a
-                                    href="https://www.sergas.es/Tarxeta-sanitaria/Galicia-sa%C3%BAde-exterior"
-                                    target="_blank"
-                                    rel="noopener noreferrer">a través de este enlace</a
-                                >.
-                            </p>
-
-                            <p class="text-gray-700 mb-4">Asistencia Sanitaria definitiva en Galicia:</p>
-                            <p class="text-gray-700 mb-4">
-                                Para solicitar la asistencia sanitaria de la Seguridad Social Española deberá acudir a
-                                un <a
-                                    href="https://www.seg-social.es/wps/portal/wss/internet/OficinaSeguridadSocial"
-                                    target="_blank"
-                                    rel="noopener noreferrer">Centro de Atención e Información de la Seguridad Social</a
-                                >
-                                (CAISS) con la siguiente documentación:
-                            </p>
-                            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
-                                <li>DNI español en vigor</li>
-                                <li>Certificado de empadronamiento en el municipio donde va a residir en Galicia</li>
-                            </ul>
-
-                            <p class="text-gray-700 mb-4">
-                                Con el certificado acreditativo del derecho a la asistencia sanitaria que le entregarán
-                                en el CAISS debe dirigirse al <a
-                                    href="https://extranet.sergas.es/sixsanweb/sixsan_web/mapa.aspx?Idioma=es"
-                                    target="_blank"
-                                    rel="noopener noreferrer">Centro de Salud</a
-                                > más cercano a su domicilio para solicitar la tarjeta sanitaria, aportando:
-                            </p>
-                            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
-                                <li>Documento de derecho a asistencia sanitaria emitido por el INSS</li>
-                                <li>Certificado de empadronamiento</li>
-                                <li>DNI</li>
-                            </ul>
-                            <p class="text-gray-700 mb-4">
-                                Ciudadanos procedentes de países de la Unión Europea, Espacio Económico Europeo y Suíza:
-                            </p>
-                            <p class="text-gray-700 mb-4">
-                                Siempre que no traslade su residencia habitual a Galicia puede obtener en el organismo
-                                correspondiente de su país de <a
-                                    href="https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/european-health-insurance-card_es"
-                                    target="_blank"
-                                    rel="noopener noreferrer">procedencia la Tarjeta Sanitaria Europea</a
-                                >.
-                            </p>
-                            <p class="text-gray-700 mb-4">Seguro Médico Privado</p>
-                            <p class="text-gray-700 mb-4">
-                                Si no se da de alta en ninguno de los sistemas de la Seguridad Social Pública debe
-                                contratar un seguro médico privado.
-                            </p>
-
-                            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
-                                <li>Pide cita previa en tu centro de salud más cercano (SERGAS)</li>
-                                <li>Necesitarás DNI y certificado de empadronamiento</li>
-                                <li>La tarjeta suele llegar a casa en unas semanas</li>
-                                <li>Mientras tanto, te darán un justificante provisional</li>
-                                <li>
-                                    Con esta tarjeta tendrás acceso a todos los centros de salud, así como a los Puntos
-                                    de Atención Continuada (PAC), donde podrás acudir a cualquier hora ante cualquier
-                                    problema de salud.
-                                </li>
-                            </ul>
                         </div>
+                    </div>
+
+                    <!-- Opciones disponibles -->
+                    <div class="mb-12">
+                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
+                            <span class="text-4xl mr-3">🎯</span>
+                            Opciones disponibles
+                        </h2>
+
+                        <!-- Opción 1: Provisional -->
+                        <div class="mb-8">
+                            <div class="bg-gradient-to-r from-[#dfa142] to-[#d75528] rounded-t-2xl p-6 text-white">
+                                <div class="flex items-center">
+                                    <div class="text-4xl mr-4">⏱️</div>
+                                    <div>
+                                        <h3 class="text-2xl font-bold">Opción 1: Asistencia Sanitaria Provisional</h3>
+                                        <p class="text-white/90">Tarjeta temporal por 3 meses máximo</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-orange-50 rounded-b-2xl p-6 border-2 border-t-0 border-[#dfa142]">
+                                <div class="space-y-4">
+                                    <p class="text-gray-700 leading-relaxed">
+                                        La <strong>Tarjeta de Salud Exterior de la Xunta de Galicia</strong> te cubrirá la
+                                        asistencia sanitaria por un periodo máximo de <strong>3 meses</strong>, mientras
+                                        tramitas un seguro definitivo.
+                                    </p>
+                                    <div class="bg-white rounded-lg p-4 border-l-4 border-[#d75528]">
+                                        <p class="text-sm text-gray-700 mb-2">
+                                            <strong>📋 Requisito:</strong> No haber causado baja en el registro de matrícula
+                                            consular
+                                        </p>
+                                        <p class="text-sm text-gray-700">
+                                            <strong>⚠️ Condición:</strong> Solo si no posees otro seguro privado
+                                        </p>
+                                    </div>
+                                    <a
+                                        href="https://www.sergas.es/Tarxeta-sanitaria/Galicia-sa%C3%BAde-exterior"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="inline-flex items-center px-6 py-3 bg-[#d75528] text-white font-semibold rounded-lg hover:bg-[#c24920] transition-colors">
+                                        <span class="mr-2">🔗</span>
+                                        Solicitar Tarjeta Provisional
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Opción 2: Definitiva -->
+                        <div class="mb-8">
+                            <div class="bg-gradient-to-r from-[#0c615d] to-[#77b2c0] rounded-t-2xl p-6 text-white">
+                                <div class="flex items-center">
+                                    <div class="text-4xl mr-4">✅</div>
+                                    <div>
+                                        <h3 class="text-2xl font-bold">Opción 2: Asistencia Sanitaria Definitiva</h3>
+                                        <p class="text-white/90">Cobertura completa del sistema público</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-cyan-50 rounded-b-2xl p-6 border-2 border-t-0 border-[#77b2c0]">
+                                <div class="space-y-6">
+                                    <!-- Paso 1 -->
+                                    <div class="bg-white rounded-xl p-6 shadow-md">
+                                        <div class="flex items-start">
+                                            <div
+                                                class="flex-shrink-0 w-12 h-12 bg-[#0c615d] text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">
+                                                1
+                                            </div>
+                                            <div class="flex-1">
+                                                <h4 class="text-xl font-bold text-[#394d62] mb-3">Acude al CAISS</h4>
+                                                <p class="text-gray-700 mb-4">
+                                                    Dirígete a un <a
+                                                        href="https://www.seg-social.es/wps/portal/wss/internet/OficinaSeguridadSocial"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        class="text-[#0c615d] underline font-semibold hover:text-[#77b2c0]">
+                                                        Centro de Atención e Información de la Seguridad Social (CAISS)
+                                                    </a>
+                                                </p>
+                                                <div class="bg-gray-50 rounded-lg p-4">
+                                                    <p class="font-semibold text-gray-700 mb-2">
+                                                        📋 Documentación necesaria:
+                                                    </p>
+                                                    <ul class="space-y-2">
+                                                        <li class="flex items-start">
+                                                            <span class="text-[#0c615d] mr-2">✓</span>
+                                                            <span class="text-gray-700">DNI español en vigor</span>
+                                                        </li>
+                                                        <li class="flex items-start">
+                                                            <span class="text-[#0c615d] mr-2">✓</span>
+                                                            <span class="text-gray-700"
+                                                                >Certificado de empadronamiento</span
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Paso 2 -->
+                                    <div class="bg-white rounded-xl p-6 shadow-md">
+                                        <div class="flex items-start">
+                                            <div
+                                                class="flex-shrink-0 w-12 h-12 bg-[#77b2c0] text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">
+                                                2
+                                            </div>
+                                            <div class="flex-1">
+                                                <h4 class="text-xl font-bold text-[#394d62] mb-3">
+                                                    Ve a tu Centro de Salud
+                                                </h4>
+                                                <p class="text-gray-700 mb-4">
+                                                    Con el certificado del CAISS, ve al <a
+                                                        href="https://extranet.sergas.es/sixsanweb/sixsan_web/mapa.aspx?Idioma=es"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        class="text-[#77b2c0] underline font-semibold hover:text-[#0c615d]">
+                                                        Centro de Salud
+                                                    </a> más cercano a tu domicilio
+                                                </p>
+                                                <div class="bg-gray-50 rounded-lg p-4">
+                                                    <p class="font-semibold text-gray-700 mb-2">
+                                                        📋 Documentación necesaria:
+                                                    </p>
+                                                    <ul class="space-y-2">
+                                                        <li class="flex items-start">
+                                                            <span class="text-[#77b2c0] mr-2">✓</span>
+                                                            <span class="text-gray-700"
+                                                                >Certificado de derecho a asistencia sanitaria (del
+                                                                CAISS)</span
+                                                            >
+                                                        </li>
+                                                        <li class="flex items-start">
+                                                            <span class="text-[#77b2c0] mr-2">✓</span>
+                                                            <span class="text-gray-700"
+                                                                >Certificado de empadronamiento</span
+                                                            >
+                                                        </li>
+                                                        <li class="flex items-start">
+                                                            <span class="text-[#77b2c0] mr-2">✓</span>
+                                                            <span class="text-gray-700">DNI español</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Recepción -->
+                                    <div
+                                        class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-4 border-l-4 border-green-500">
+                                        <p class="text-gray-700">
+                                            <strong>📬 Recepción:</strong> La tarjeta suele llegar a casa en unas semanas.
+                                            Mientras tanto, te darán un <strong>justificante provisional</strong> para usar
+                                            los servicios.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Opción 3: Ciudadanos UE -->
+                        <div class="mb-8">
+                            <div class="bg-gradient-to-r from-[#c6d067] to-[#dfa142] rounded-t-2xl p-6 text-white">
+                                <div class="flex items-center">
+                                    <div class="text-4xl mr-4">🇪🇺</div>
+                                    <div>
+                                        <h3 class="text-2xl font-bold">Ciudadanos de la Unión Europea</h3>
+                                        <p class="text-white/90">Tarjeta Sanitaria Europea</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-yellow-50 rounded-b-2xl p-6 border-2 border-t-0 border-[#c6d067]">
+                                <p class="text-gray-700 mb-4 leading-relaxed">
+                                    Si <strong>no trasladas tu residencia habitual a Galicia</strong>, puedes obtener la <a
+                                        href="https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/european-health-insurance-card_es"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-[#0c615d] underline font-semibold hover:text-[#77b2c0]">
+                                        Tarjeta Sanitaria Europea
+                                    </a> en el organismo correspondiente de tu país de procedencia.
+                                </p>
+                                <div class="bg-white rounded-lg p-4 border-l-4 border-blue-500">
+                                    <p class="text-sm text-gray-700">
+                                        <strong>📍 Aplicable a:</strong> Países de la UE, Espacio Económico Europeo y Suiza
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Opción 4: Seguro Privado -->
+                        <div class="mb-8">
+                            <div class="bg-gradient-to-r from-[#d2557d] to-[#394d62] rounded-t-2xl p-6 text-white">
+                                <div class="flex items-center">
+                                    <div class="text-4xl mr-4">🏥</div>
+                                    <div>
+                                        <h3 class="text-2xl font-bold">Seguro Médico Privado</h3>
+                                        <p class="text-white/90">Alternativa al sistema público</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-purple-50 rounded-b-2xl p-6 border-2 border-t-0 border-[#d2557d]">
+                                <p class="text-gray-700 leading-relaxed">
+                                    Si <strong>no te das de alta en la Seguridad Social Pública</strong>, debes
+                                    contratar un seguro médico privado para tener cobertura sanitaria en España.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Beneficios -->
+                    <div class="mb-12">
+                        <div
+                            class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border-2 border-green-400">
+                            <h2 class="text-2xl font-bold text-[#394d62] mb-4 flex items-center">
+                                <span class="text-3xl mr-3">🌟</span>
+                                ¿Qué incluye la tarjeta sanitaria?
+                            </h2>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="bg-white rounded-lg p-4">
+                                    <div class="text-2xl mb-2">🏥</div>
+                                    <p class="font-semibold text-gray-700 mb-1">Centros de Salud</p>
+                                    <p class="text-sm text-gray-600">Acceso a todos los centros de atención primaria</p>
+                                </div>
+                                <div class="bg-white rounded-lg p-4">
+                                    <div class="text-2xl mb-2">🚑</div>
+                                    <p class="font-semibold text-gray-700 mb-1">Urgencias 24/7</p>
+                                    <p class="text-sm text-gray-600">Puntos de Atención Continuada (PAC)</p>
+                                </div>
+                                <div class="bg-white rounded-lg p-4">
+                                    <div class="text-2xl mb-2">💊</div>
+                                    <p class="font-semibold text-gray-700 mb-1">Medicamentos</p>
+                                    <p class="text-sm text-gray-600">Acceso a medicamentos recetados con descuento</p>
+                                </div>
+                                <div class="bg-white rounded-lg p-4">
+                                    <div class="text-2xl mb-2">🔬</div>
+                                    <p class="font-semibold text-gray-700 mb-1">Especialistas</p>
+                                    <p class="text-sm text-gray-600">Derivaciones a médicos especialistas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paso previo -->
+                    <div class="mb-12">
+                        <div
+                            class="bg-gradient-to-r from-yellow-50 to-orange-50 border-l-4 border-[#dfa142] rounded-r-xl p-6">
+                            <h3 class="text-xl font-bold text-[#394d62] mb-3 flex items-center">
+                                <span class="text-2xl mr-2">⚠️</span>
+                                Paso previo necesario
+                            </h3>
+                            <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                                Antes de solicitar la tarjeta sanitaria, debes tener tu <strong
+                                    >número de Seguridad Social</strong
+                                >.
+                            </p>
+                            <a
+                                href="/tramites/seguridad-social"
+                                class="inline-flex items-center px-4 py-2 bg-[#0c615d] text-white rounded-lg hover:bg-[#094a47] transition-colors text-sm font-semibold">
+                                ← Ver trámite Seguridad Social
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Botón de vuelta -->
+                    <div class="text-center">
+                        <a
+                            href="/tramites-galicia"
+                            class="inline-flex items-center px-8 py-4 bg-[#77b2c0] text-white font-semibold rounded-xl hover:bg-[#669fad] transition-all transform hover:scale-105 shadow-lg">
+                            <span class="mr-2">←</span>
+                            Volver a todos los trámites
+                        </a>
                     </div>
                 </div>
             </div>
