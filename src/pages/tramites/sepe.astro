@@ -1,0 +1,171 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Header from '../../components/Header.astro'
+import Footer from '../../components/Footer.astro'
+---
+
+<Layout title="Seguridad Social - AJERGA" description="Guía para obtener tu número de Seguridad Social en España">
+    <Header />
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-[#d2557d] to-[#394d62] py-16 text-white overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-10 right-10 text-9xl">🛡️</div>
+                <div class="absolute bottom-10 left-10 text-9xl">💼</div>
+            </div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
+                        <span class="text-sm font-semibold">Empleo</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4">Oficina de Emprego</h1>
+                    <p class="text-xl md:text-2xl text-white/90">Inscríbete en el Servicio Público de Empleo</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seguridad Social (INSS/TGSS) -->
+        <section class="py-16 bg-gradient-to-b from-white to-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div
+                        class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all p-8 border-t-4 border-[#c6d067]">
+                        <div class="flex items-start gap-4 mb-6">
+                            <div class="text-5xl">💼</div>
+                            <div>
+                                <h2 class="text-3xl font-bold text-[#394d62] mb-2">Oficina de Emprego</h2>
+                                <p class="text-gray-600">Inscripción como demandante de empleo</p>
+                            </div>
+                        </div>
+
+                        <!-- Plazo -->
+                        <div class="bg-red-50 border-l-4 border-red-500 rounded-xl p-6 mb-6">
+                            <h3 class="font-bold text-lg text-gray-800 mb-3 flex items-center gap-2">
+                                <span class="text-2xl">⏰</span>
+                                Plazo de inscripción
+                            </h3>
+                            <p class="text-gray-700">
+                                Deberás inscribirte como <strong>DEMANDANTE DE EMPLEO</strong> en la Oficina de Emprego de
+                                la Xunta de Galicia en el plazo de <strong>30 días</strong> a contar desde el retorno.
+                            </p>
+                        </div>
+
+                        <!-- Documentación -->
+                        <div class="bg-green-50 rounded-xl p-6 mb-6">
+                            <h3 class="font-bold text-lg text-gray-800 mb-4 flex items-center gap-2">
+                                <span class="text-2xl">📋</span>
+                                Documentación necesaria
+                            </h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-center gap-2 text-gray-700">
+                                    <span class="w-2 h-2 bg-[#c6d067] rounded-full"></span>
+                                    DNI o NIE
+                                </li>
+                                <li class="flex items-center gap-2 text-gray-700">
+                                    <span class="w-2 h-2 bg-[#c6d067] rounded-full"></span>
+                                    Certificado de empadronamiento
+                                </li>
+                                <li class="flex items-center gap-2 text-gray-700">
+                                    <span class="w-2 h-2 bg-[#c6d067] rounded-full"></span>
+                                    Número de afiliación a la Seguridad Social
+                                </li>
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <span class="w-2 h-2 bg-[#c6d067] rounded-full mt-2"></span>
+                                    <span
+                                        >Documentación que acredite formación y experiencia laboral: todos los
+                                        certificados que recopilaste en tu país de origen, titulaciones,
+                                        certificaciones, idiomas, etc.</span
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Proceso -->
+                        <div class="bg-blue-50 rounded-xl p-6 mb-6">
+                            <h3 class="font-bold text-lg text-gray-800 mb-3 flex items-center gap-2">
+                                <span class="text-2xl">📝</span>
+                                Proceso de inscripción
+                            </h3>
+                            <p class="text-gray-700 mb-4">
+                                En la oficina te informarán el paso a paso: te darán un usuario y contraseña. La demanda
+                                de empleo se debe renovar a través de la aplicación móvil o desde la web <strong
+                                    >cada 3 meses</strong
+                                >.
+                            </p>
+                            <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded">
+                                <p class="text-gray-800 mb-2">
+                                    <strong>Documentos importantes a solicitar:</strong>
+                                </p>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start gap-2">
+                                        <span>📄</span>
+                                        <span
+                                            ><strong>"Informe de períodos de inscripción"</strong> (aunque no figure ninguno,
+                                            se debe solicitar de igual manera)</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span>✍️</span>
+                                        <span
+                                            ><strong>Acuerdo de Actividad</strong> (deberás presentarlo para solicitar el
+                                            Subsidio para Emigrantes Retornados)</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Nota -->
+                        <div class="bg-gray-50 rounded-xl p-6 mb-6">
+                            <h3 class="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                                <span class="text-2xl">💡</span>
+                                Nota importante
+                            </h3>
+                            <p class="text-gray-700">
+                                Si aún estás trabajando en tu país de origen, y no vas a solicitar el subsidio ni la
+                                ayuda del emigrante retornado, no es necesario realizar este paso. <strong
+                                    >Pero lo recomendamos</strong
+                                >, para obtener diversidad de beneficios.
+                            </p>
+                        </div>
+
+                        <!-- Enlace -->
+                        <div class="bg-gray-100 rounded-xl p-6">
+                            <h3 class="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                                <span class="text-2xl">🔍</span>
+                                Información y cita previa
+                            </h3>
+                            <a
+                                href="https://emprego.xunta.gal"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-flex items-center gap-2 text-[#394d62] hover:text-[#c6d067] font-semibold transition-colors">
+                                <span>🔗</span>
+                                <span>Oficina de Emprego de la Xunta de Galicia</span>
+                                <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botón de retorno -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center">
+                        <a
+                            href="/tramites-galicia"
+                            class="inline-flex items-center px-8 py-4 bg-[#d2557d] text-white font-semibold rounded-xl hover:bg-[#c14a6f] transition-all transform hover:scale-105 shadow-lg">
+                            <span class="mr-2">←</span>
+                            Volver a todos los trámites
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>

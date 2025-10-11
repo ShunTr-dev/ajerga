@@ -1,0 +1,356 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Header from '../../components/Header.astro'
+import Footer from '../../components/Footer.astro'
+---
+
+<Layout
+    title="Subsidio por Desempleo para Emigrante Retornado - AJERGA"
+    description="Guía para solicitar el subsidio por desempleo como emigrante retornado">
+    <Header />
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-[#0c615d] to-[#77b2c0] py-16 text-white overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-10 right-10 text-9xl">💰</div>
+                <div class="absolute bottom-10 left-10 text-9xl">🛡️</div>
+            </div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
+                        <span class="text-sm font-semibold">Prestaciones por Desempleo</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4">💰 Subsidio por Desempleo</h1>
+                    <p class="text-xl md:text-2xl text-white/90">Para Emigrantes Retornados</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introducción -->
+        <section class="py-8 bg-blue-50 border-l-4 border-blue-500">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">💡</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">
+                                ¿Qué es el subsidio para emigrantes retornados?
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                Es un subsidio gestionado por el <strong
+                                    >SEPE (Servicio Estatal Público de Empleo)</strong
+                                > al que tienen derecho las personas españolas emigrantes retornadas de determinados países
+                                en los que han trabajado.
+                            </p>
+                            <p class="text-gray-700">
+                                Está dirigido a quienes <strong>no tienen derecho a la prestación contributiva</strong> por
+                                haber cotizado por desempleo menos de 360 días en los 6 años anteriores a su salida de España.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plazo importante -->
+        <section class="py-8 bg-red-50 border-l-4 border-red-500">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">⏰</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Plazo de solicitud</h3>
+                            <p class="text-gray-700 mb-2">
+                                Puedes presentar la solicitud dentro del plazo de <strong
+                                    >los seis meses siguientes al retorno a España</strong
+                                >.
+                            </p>
+                            <div class="bg-red-100 border-l-4 border-red-600 p-4 rounded">
+                                <p class="text-gray-800 flex items-start gap-2">
+                                    <span class="text-xl">⚠️</span>
+                                    <span
+                                        ><strong>¡Muy importante!</strong> Si presentas la solicitud una vez transcurrido
+                                        el plazo de seis meses desde la fecha del retorno a España, será denegada.</span
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Información del subsidio -->
+        <section class="py-16 bg-gradient-to-b from-white to-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Duración y características -->
+                    <div class="grid md:grid-cols-2 gap-6 mb-12">
+                        <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-[#0c615d]">
+                            <div class="flex items-center gap-3 mb-4">
+                                <span class="text-4xl">📅</span>
+                                <h3 class="text-xl font-bold text-gray-800">Duración</h3>
+                            </div>
+                            <p class="text-gray-700 mb-3">
+                                La duración máxima del subsidio será de <strong>18 meses</strong> si se mantienen los requisitos.
+                            </p>
+                            <p class="text-gray-600 text-sm">
+                                El subsidio se reconocerá por periodos trimestrales, prorrogables hasta agotar la
+                                duración máxima.
+                            </p>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-[#77b2c0]">
+                            <div class="flex items-center gap-3 mb-4">
+                                <span class="text-4xl">🔗</span>
+                                <h3 class="text-xl font-bold text-gray-800">Más información</h3>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                Para conocer todos los detalles del subsidio, visita la web oficial del SEPE:
+                            </p>
+                            <a
+                                href="https://www.sepe.es/HomeSepe/prestaciones-desempleo/subsidio-desempleo/subsidio-de-emigrante-retornado.html"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-flex items-center gap-2 text-[#0c615d] hover:text-[#77b2c0] font-semibold text-sm transition-colors">
+                                <span>🌐</span>
+                                <span>Visitar web del SEPE</span>
+                                <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Requisitos -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[#c6d067] mb-12">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+                            <span class="text-4xl">✅</span>
+                            <span>Requisitos</span>
+                        </h3>
+                        <p class="text-gray-600 mb-6">Para acceder al subsidio debes cumplir todos estos requisitos:</p>
+
+                        <div class="space-y-3">
+                            <div
+                                class="flex items-start gap-3 p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
+                                <span class="text-2xl flex-shrink-0">🇪🇸</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Nacionalidad y residencia</h4>
+                                    <p class="text-gray-700">
+                                        Ser español que retorna a España para fijar residencia permanente.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex items-start gap-3 p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
+                                <span class="text-2xl flex-shrink-0">📜</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">
+                                        Certificado de Emigrante Retornado (CER)
+                                    </h4>
+                                    <p class="text-gray-700">
+                                        Emitido por la Delegación/Subdelegación del Gobierno. Incluye datos sobre tu
+                                        salida de España, retorno, trabajo en el extranjero y cotizaciones.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex items-start gap-3 p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
+                                <span class="text-2xl flex-shrink-0">💼</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Situación laboral</h4>
+                                    <p class="text-gray-700">
+                                        Estar en desempleo. <span class="text-sm text-gray-600"
+                                            >(A partir de 2025, también puedes tener empleo a tiempo parcial, con
+                                            ciertas condiciones)</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex items-start gap-3 p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
+                                <span class="text-2xl flex-shrink-0">🚫</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Sin prestaciones en el extranjero</h4>
+                                    <p class="text-gray-700">
+                                        No haber recibido prestaciones por desempleo en el país donde trabajaste.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex items-start gap-3 p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
+                                <span class="text-2xl flex-shrink-0">❌</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Sin prestación contributiva en España</h4>
+                                    <p class="text-gray-700">
+                                        No tener derecho a la prestación contributiva en España.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex items-start gap-3 p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
+                                <span class="text-2xl flex-shrink-0">📝</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Demandante de empleo</h4>
+                                    <p class="text-gray-700">
+                                        Estar inscrito como demandante de empleo y haber suscrito el acuerdo de
+                                        actividad.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex items-start gap-3 p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
+                                <span class="text-2xl flex-shrink-0">🌍</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">País de procedencia</h4>
+                                    <p class="text-gray-700">
+                                        Haber retornado de países no pertenecientes al Espacio Económico Europeo o sin
+                                        convenio de protección por desempleo.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex items-start gap-3 p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
+                                <span class="text-2xl flex-shrink-0">⏱️</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Tiempo trabajado</h4>
+                                    <p class="text-gray-700">
+                                        Haber trabajado al menos <strong>12 meses en los últimos 6 años</strong> en el país
+                                        de retorno.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex items-start gap-3 p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                                <span class="text-2xl flex-shrink-0">💰</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Carencia de rentas</h4>
+                                    <p class="text-gray-700">
+                                        Tus rentas no deben superar el <strong>75% del SMI</strong> (Salario Mínimo Interprofesional)
+                                        en el mes anterior a la solicitud.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Documentación necesaria -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[#d2557d]">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+                            <span class="text-4xl">📋</span>
+                            <span>Documentación necesaria</span>
+                        </h3>
+                        <p class="text-gray-600 mb-6">Debes presentar los siguientes documentos en el SEPE:</p>
+
+                        <div class="space-y-4">
+                            <!-- Documento 1 -->
+                            <div class="flex gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                                <div class="flex-shrink-0">
+                                    <div
+                                        class="w-10 h-10 bg-[#d2557d] text-white rounded-full flex items-center justify-center font-bold">
+                                        1
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Modelo oficial de solicitud</h4>
+                                    <p class="text-gray-700">
+                                        Incluye la <strong>declaración responsable de rentas e ingresos</strong> del mes
+                                        anterior a la solicitud.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Documento 2 -->
+                            <div class="flex gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                                <div class="flex-shrink-0">
+                                    <div
+                                        class="w-10 h-10 bg-[#d2557d] text-white rounded-full flex items-center justify-center font-bold">
+                                        2
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Documento de identificación</h4>
+                                    <p class="text-gray-700">DNI o NIE en vigor.</p>
+                                </div>
+                            </div>
+
+                            <!-- Documento 3 -->
+                            <div class="flex gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                                <div class="flex-shrink-0">
+                                    <div
+                                        class="w-10 h-10 bg-[#d2557d] text-white rounded-full flex items-center justify-center font-bold">
+                                        3
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Documento bancario</h4>
+                                    <p class="text-gray-700">
+                                        Donde figure el número de cuenta a nombre del solicitante para recibir la
+                                        prestación. Puede ser el contrato o bien, el certificado de titularidad de
+                                        cuenta que lo sacas directamente de la APP del banco.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Documento 4 -->
+                            <div class="flex gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                                <div class="flex-shrink-0">
+                                    <div
+                                        class="w-10 h-10 bg-[#d2557d] text-white rounded-full flex items-center justify-center font-bold">
+                                        4
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">
+                                        Certificado de Emigrante Retornado (CER)
+                                    </h4>
+                                    <p class="text-gray-700">Emitido por la Delegación o Subdelegación del Gobierno.</p>
+                                </div>
+                            </div>
+
+                            <!-- Documento 5 -->
+                            <div class="flex gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                                <div class="flex-shrink-0">
+                                    <div
+                                        class="w-10 h-10 bg-[#d2557d] text-white rounded-full flex items-center justify-center font-bold">
+                                        5
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Declaración del IRPF</h4>
+                                    <p class="text-gray-700">
+                                        Declaración del Impuesto sobre la Renta de las Personas Físicas del último
+                                        ejercicio fiscal. Justificante de rentas (si la entidad gestora lo requiere).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botón de retorno -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center">
+                        <a
+                            href="/tramites-galicia"
+                            class="inline-flex items-center px-8 py-4 bg-[#0c615d] text-white font-semibold rounded-xl hover:bg-[#094d4a] transition-all transform hover:scale-105 shadow-lg">
+                            <span class="mr-2">←</span>
+                            Volver a todos los trámites
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>

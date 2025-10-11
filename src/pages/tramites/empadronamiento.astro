@@ -25,158 +25,262 @@ import Footer from '../../components/Footer.astro'
             </div>
         </section>
 
-        <section class="py-16 bg-white">
+        <section class="py-16 bg-gradient-to-b from-white to-gray-50">
             <div class="container mx-auto px-4">
-                <div class="max-w-4xl mx-auto">
-                    <!-- ¿Qué es? -->
+                <div class="max-w-6xl mx-auto">
+                    <!-- Alerta importante -->
                     <div class="mb-12">
-                        <div
-                            class="bg-gradient-to-r from-blue-50 to-cyan-50 border-l-4 border-[#77b2c0] rounded-r-xl p-6 mb-8">
-                            <h2 class="text-2xl font-bold text-[#394d62] mb-4 flex items-center">
-                                <span class="text-3xl mr-3">💡</span>
-                                ¿Qué es el empadronamiento?
-                            </h2>
-                            <p class="text-gray-700 text-lg leading-relaxed mb-4">
-                                Toda persona que viva en España está obligada a inscribirse en el <strong
-                                    >Padrón del municipio</strong
-                                > en el que resida habitualmente. Quien viva en varios municipios deberá inscribirse únicamente
-                                en el que habite durante más tiempo al año.
-                            </p>
-                            <p class="text-gray-700 text-lg leading-relaxed">
-                                El emigrante retornado deberá aportar para empadronarse, además del DNI como documento
-                                probatorio de su identidad, los documentos que acrediten su residencia en dicho
-                                municipio. El empadronamiento es un requisito para solicitar diversas ayudas y para el
-                                reconocimiento de determinados derechos.
-                            </p>
+                        <div class="bg-red-50 border-l-4 border-red-500 rounded-lg p-6">
+                            <div class="flex items-start">
+                                <span class="text-red-500 text-3xl mr-4">⚠️</span>
+                                <div>
+                                    <h2 class="text-2xl font-bold text-gray-800 mb-2">¡Hazlo cuanto antes!</h2>
+                                    <p class="text-gray-700 text-lg leading-relaxed">
+                                        Empadrónate lo antes posible al llegar, ya que <strong
+                                            >muchos trámites lo requieren</strong
+                                        > como documento previo (DNI, tarjeta sanitaria, certificados, etc.).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cita previa por ciudad -->
+                    <div class="mb-12">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">📅 Solicita tu cita previa</h2>
+                        <p class="text-center text-gray-600 mb-8">
+                            En general, debes sacar cita previa. En algunos lugares puedes ir directamente a primera
+                            hora laboral.
+                        </p>
+
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Vigo -->
+                            <a
+                                href="https://citaprevia.vigo.org/citaprevia/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="block group">
+                                <div
+                                    class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-[#0c615d] hover:shadow-2xl hover:scale-105 transition-all">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <h3 class="text-2xl font-bold text-gray-800">Vigo</h3>
+                                        <span class="text-3xl group-hover:scale-110 transition-transform">⚓</span>
+                                    </div>
+                                    <p class="text-gray-600 mb-3">Cita previa online</p>
+                                    <div class="flex items-center text-[#0c615d] font-semibold">
+                                        <span class="mr-2">🔗</span>
+                                        <span>Solicitar cita</span>
+                                        <span class="ml-auto group-hover:translate-x-1 transition-transform">→</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Lugo -->
+                            <a
+                                href="https://sede.legal/tramites/lugo/certificado-empadronamiento/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="block group">
+                                <div
+                                    class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-[#77b2c0] hover:shadow-2xl hover:scale-105 transition-all">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <h3 class="text-2xl font-bold text-gray-800">Lugo</h3>
+                                        <span class="text-3xl group-hover:scale-110 transition-transform">🏰</span>
+                                    </div>
+                                    <p class="text-gray-600 mb-3">Cita previa online</p>
+                                    <div class="flex items-center text-[#77b2c0] font-semibold">
+                                        <span class="mr-2">🔗</span>
+                                        <span>Solicitar cita</span>
+                                        <span class="ml-auto group-hover:translate-x-1 transition-transform">→</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Ourense -->
+                            <a
+                                href="https://sede.legal/tramites/ourense/certificado-empadronamiento/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="block group">
+                                <div
+                                    class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-[#c6d067] hover:shadow-2xl hover:scale-105 transition-all">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <h3 class="text-2xl font-bold text-gray-800">Ourense</h3>
+                                        <span class="text-3xl group-hover:scale-110 transition-transform">♨️</span>
+                                    </div>
+                                    <p class="text-gray-600 mb-3">Cita previa online</p>
+                                    <div class="flex items-center text-[#c6d067] font-semibold">
+                                        <span class="mr-2">🔗</span>
+                                        <span>Solicitar cita</span>
+                                        <span class="ml-auto group-hover:translate-x-1 transition-transform">→</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- A Coruña -->
+                            <a
+                                href="https://citaprevia.coruna.gal/citaprevia/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="block group">
+                                <div
+                                    class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-[#394d62] hover:shadow-2xl hover:scale-105 transition-all">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <h3 class="text-2xl font-bold text-gray-800">A Coruña</h3>
+                                        <span class="text-3xl group-hover:scale-110 transition-transform">🌊</span>
+                                    </div>
+                                    <p class="text-gray-600 mb-3">Oficinas Maria Pita / Agora / Forum</p>
+                                    <div class="flex items-center text-[#394d62] font-semibold">
+                                        <span class="mr-2">🔗</span>
+                                        <span>Solicitar cita</span>
+                                        <span class="ml-auto group-hover:translate-x-1 transition-transform">→</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Santiago -->
+                            <div
+                                class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-[#d2557d] md:col-span-2 lg:col-span-1">
+                                <div class="flex items-center justify-between mb-4">
+                                    <h3 class="text-2xl font-bold text-gray-800">Santiago</h3>
+                                    <span class="text-3xl">🏛️</span>
+                                </div>
+                                <p class="text-gray-600 mb-3">Sin cita previa</p>
+                                <div class="bg-[#d2557d]/10 rounded-lg p-3">
+                                    <p class="text-sm text-gray-700">
+                                        <strong>Lunes a viernes</strong> en primer horario laboral.
+                                        <span class="block mt-1 font-semibold text-[#d2557d]"
+                                            >80 citas diarias por orden de llegada</span
+                                        >
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Documentación necesaria -->
                     <div class="mb-12">
-                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
-                            <span class="text-4xl mr-3">📋</span>
-                            Documentación necesaria
-                        </h2>
-                        <div class="grid md:grid-cols-2 gap-4">
-                            <div
-                                class="bg-white border-2 border-[#0c615d] rounded-xl p-6 hover:shadow-lg transition-shadow">
-                                <div class="text-4xl mb-3">🪪</div>
-                                <h3 class="text-xl font-bold text-[#394d62] mb-2">Documento de identidad</h3>
-                                <p class="text-gray-600">DNI o documento identificativo válido</p>
-                            </div>
-
-                            <div
-                                class="bg-white border-2 border-[#77b2c0] rounded-xl p-6 hover:shadow-lg transition-shadow">
-                                <div class="text-4xl mb-3">🏠</div>
-                                <h3 class="text-xl font-bold text-[#394d62] mb-2">Justificante de domicilio</h3>
-                                <p class="text-gray-600">
-                                    Contrato de alquiler, escrituras, o contrato de luz/agua/gas
-                                </p>
-                            </div>
-
-                            <div
-                                class="bg-white border-2 border-[#c6d067] rounded-xl p-6 hover:shadow-lg transition-shadow">
-                                <div class="text-4xl mb-3">✍️</div>
-                                <h3 class="text-xl font-bold text-[#394d62] mb-2">Autorización (si aplica)</h3>
-                                <p class="text-gray-600">Si vives de alquiler, autorización del propietario</p>
-                            </div>
-
-                            <div
-                                class="bg-white border-2 border-[#dfa142] rounded-xl p-6 hover:shadow-lg transition-shadow">
-                                <div class="text-4xl mb-3">📄</div>
-                                <h3 class="text-xl font-bold text-[#394d62] mb-2">Formulario</h3>
-                                <p class="text-gray-600">Hoja de empadronamiento (disponible en el ayuntamiento)</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Pasos a seguir -->
-                    <div class="mb-12">
-                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
-                            <span class="text-4xl mr-3">🎯</span>
-                            Pasos a seguir
-                        </h2>
-                        <div class="space-y-4">
-                            <div
-                                class="flex items-start bg-gradient-to-r from-[#0c615d] to-[#77b2c0] text-white rounded-xl p-6 transform hover:scale-[1.02] transition-transform">
-                                <div
-                                    class="flex-shrink-0 w-12 h-12 bg-white text-[#0c615d] rounded-full flex items-center justify-center font-bold text-xl mr-4">
-                                    1
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-bold mb-2">Solicita cita previa</h3>
-                                    <p class="text-white/90">
-                                        Contacta con el padrón de tu ayuntamiento para solicitar cita. Muchos municipios
-                                        permiten hacerlo online.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div
-                                class="flex items-start bg-gradient-to-r from-[#77b2c0] to-[#c6d067] text-white rounded-xl p-6 transform hover:scale-[1.02] transition-transform">
-                                <div
-                                    class="flex-shrink-0 w-12 h-12 bg-white text-[#77b2c0] rounded-full flex items-center justify-center font-bold text-xl mr-4">
-                                    2
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-bold mb-2">Prepara la documentación</h3>
-                                    <p class="text-white/90">
-                                        Reúne todos los documentos necesarios: DNI y justificante de domicilio.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div
-                                class="flex items-start bg-gradient-to-r from-[#c6d067] to-[#dfa142] text-white rounded-xl p-6 transform hover:scale-[1.02] transition-transform">
-                                <div
-                                    class="flex-shrink-0 w-12 h-12 bg-white text-[#dfa142] rounded-full flex items-center justify-center font-bold text-xl mr-4">
-                                    3
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-bold mb-2">Acude al ayuntamiento</h3>
-                                    <p class="text-white/90">
-                                        Dirígete en la fecha indicada con toda la documentación.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div
-                                class="flex items-start bg-gradient-to-r from-[#dfa142] to-[#d75528] text-white rounded-xl p-6 transform hover:scale-[1.02] transition-transform">
-                                <div
-                                    class="flex-shrink-0 w-12 h-12 bg-white text-[#d75528] rounded-full flex items-center justify-center font-bold text-xl mr-4">
-                                    4
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-bold mb-2">Recibe tu certificado</h3>
-                                    <p class="text-white/90">
-                                        Una vez procesado, recibirás tu certificado de empadronamiento.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Consejos de experiencia -->
-                    <div class="mb-12">
-                        <div class="bg-gradient-to-br from-[#d2557d] to-[#394d62] rounded-2xl p-8 text-white">
-                            <h2 class="text-2xl font-bold mb-4 flex items-center">
-                                <span class="text-3xl mr-3">💬</span>
-                                Consejos de quien ya lo hizo
+                        <div class="bg-white rounded-2xl shadow-xl p-8 border-l-4 border-[#0c615d]">
+                            <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                                <span class="text-4xl mr-3">📋</span>
+                                Documentación necesaria
                             </h2>
-                            <div class="space-y-4">
-                                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                                    <p class="text-lg leading-relaxed">
-                                        <strong>Solicita la baja consular:</strong> Una vez que tengas tu contrato de vivienda
-                                        o sepas dónde vas a vivir, solicita la baja consular. Este trámite suele tardar un
-                                        par de días y puede hacerse por correo electrónico directamente a tu consulado o
-                                        de forma presencial.
+
+                            <div class="space-y-4 mb-6">
+                                <div class="flex items-start bg-gray-50 rounded-lg p-4">
+                                    <span class="text-2xl mr-3">✓</span>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800 mb-1">Baja consular</h4>
+                                        <p class="text-gray-600 text-sm">
+                                            Documento que acredita tu salida del país de origen
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start bg-gray-50 rounded-lg p-4">
+                                    <span class="text-2xl mr-3">✓</span>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800 mb-1">DNI o Pasaporte</h4>
+                                        <p class="text-gray-600 text-sm">Documento de identidad válido</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start bg-gray-50 rounded-lg p-4">
+                                    <span class="text-2xl mr-3">✓</span>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800 mb-1">
+                                            Contrato de alquiler o escritura de vivienda
+                                        </h4>
+                                        <p class="text-gray-600 text-sm">Documento que acredite tu domicilio</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-blue-50 border-l-4 border-blue-500 rounded-lg p-5">
+                                <h4 class="font-bold text-gray-800 mb-2 flex items-center">
+                                    <span class="text-xl mr-2">💡</span>
+                                    Si no figuras en el contrato
+                                </h4>
+                                <p class="text-gray-700 text-sm mb-2">Deberás presentar:</p>
+                                <ul class="space-y-2 ml-6 text-gray-700 text-sm">
+                                    <li class="flex items-start">
+                                        <span class="mr-2">•</span>
+                                        <span
+                                            ><strong>Autorización del propietario</strong> para empadronarte en su domicilio</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="mr-2">•</span>
+                                        <span><strong>DNI del propietario</strong></span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="mr-2">•</span>
+                                        <span>O bien, <strong>ir acompañado del propietario</strong></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Opciones de alojamiento -->
+                    <div class="mb-12">
+                        <div
+                            class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl shadow-xl p-8 border-l-4 border-purple-500">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="text-3xl mr-3">🏠</span>
+                                ¿Dónde puedo empadronarme?
+                            </h3>
+                            <div class="space-y-3 text-gray-700">
+                                <div class="flex items-start">
+                                    <span class="text-purple-600 mr-3 text-xl">•</span>
+                                    <p>
+                                        <strong>Alojamientos temporales:</strong> Algunos permiten el empadronamiento temporal
                                     </p>
                                 </div>
-                                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                                    <p class="text-lg leading-relaxed">
-                                        <strong>Reserva tu cita con anticipación:</strong> Te recomendamos ir solicitando
-                                        el turno en el padrón municipal para que, cuando llegues, puedas inscribirte sin
-                                        inconvenientes.
+                                <div class="flex items-start">
+                                    <span class="text-purple-600 mr-3 text-xl">•</span>
+                                    <p>
+                                        <strong>Domicilio de familiar o amigo:</strong> Con la autorización correspondiente
+                                    </p>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="text-purple-600 mr-3 text-xl">•</span>
+                                    <p>
+                                        <strong>Tu propia vivienda:</strong> Si ya tienes contrato de alquiler o propiedad
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificados adicionales -->
+                    <div class="mb-12">
+                        <div class="bg-gradient-to-br from-[#dfa142] to-[#d75528] rounded-2xl shadow-xl p-8 text-white">
+                            <h3 class="text-2xl font-bold mb-4 flex items-center">
+                                <span class="text-3xl mr-3">📜</span>
+                                Certificados importantes a solicitar
+                            </h3>
+                            <p class="text-white/90 mb-6">
+                                Cuando acudas al padrón, además de empadronarte, solicita estos certificados que
+                                necesitarás para otros trámites:
+                            </p>
+
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-lg p-5">
+                                    <h4 class="font-bold text-xl mb-2">1️⃣ Certificado de Empadronamiento Histórico</h4>
+                                    <p class="text-white/90 text-sm">
+                                        Lo necesitarás para tramitar el <strong
+                                            >Certificado de Emigrante Retornado (CER)</strong
+                                        >
+                                    </p>
+                                </div>
+
+                                <div class="bg-white/20 backdrop-blur-sm rounded-lg p-5">
+                                    <h4 class="font-bold text-xl mb-2">2️⃣ Certificado de Empadronamiento Conjunto</h4>
+                                    <p class="text-white/90 text-sm">
+                                        Si compartes piso o convivencia, lo necesitarás para la <strong
+                                            >Ayuda Extraordinaria de la Xunta</strong
+                                        >
                                     </p>
                                 </div>
                             </div>

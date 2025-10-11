@@ -1,0 +1,694 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Header from '../../components/Header.astro'
+import Footer from '../../components/Footer.astro'
+---
+
+<Layout
+    title="Transporte Público en Galicia - AJERGA"
+    description="Guía completa sobre tarjetas de transporte público para moverse por Galicia: buses urbanos e interurbanos">
+    <Header />
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-[#d2557d] to-[#394d62] py-16 text-white overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-10 right-10 text-9xl">🚌</div>
+                <div class="absolute bottom-10 left-10 text-9xl">🎫</div>
+            </div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
+                        <span class="text-sm font-semibold">Transporte</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">🚌 Tarjetas de Autobús en Galicia</h1>
+                    <p class="text-xl md:text-2xl text-white/90">
+                        Guía completa de tarjetas de transporte público para moverse por las ciudades gallegas
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contenido Principal -->
+        <section class="py-16 bg-gradient-to-b from-gray-50 to-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <!-- Tarjeta de Movilidad de Galicia -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 border-t-4 border-blue-500">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-5xl">🗺️</span>
+                            <div>
+                                <h2 class="text-3xl font-bold text-[#394d62]">Tarxeta da Mobilidade de Galicia</h2>
+                                <p class="text-gray-600 mt-1">Tarjeta de Transporte Público de Galicia (ABANCA)</p>
+                            </div>
+                        </div>
+
+                        <div class="prose prose-lg text-gray-700 mb-6">
+                            <p class="leading-relaxed">
+                                Para moverte en <strong>autobús entre ciudades gallegas</strong>, existe la Tarjeta de
+                                Transporte Público de Galicia de Abanca. Es una <strong
+                                    >tarjeta monedero recargable</strong
+                                > que permite obtener descuentos en el precio de los servicios, en comparación de pagarlo
+                                en efectivo.
+                            </p>
+                            <p class="leading-relaxed mt-3">
+                                Conecta las Áreas de Transporte metropolitano (ATM) con buses de empresas como
+                                <strong>Monbus, ALSA y Transporte de Galicia</strong>. También puedes utilizarla para
+                                viajar en autobuses urbanos de ciudades como <strong
+                                    >A Coruña y Santiago de Compostela</strong
+                                >.
+                            </p>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 mb-6">
+                            <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                <span class="mr-2">📋</span>
+                                Información práctica
+                            </h3>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                    <div class="flex items-start gap-3">
+                                        <span class="text-2xl">📄</span>
+                                        <div>
+                                            <h4 class="font-bold text-[#394d62] mb-1">¿Qué necesito?</h4>
+                                            <p class="text-sm text-gray-700">
+                                                DNI o pasaporte para registrarla a tu nombre
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                    <span class="text-2xl">💰</span>
+                                    <div>
+                                        <h4 class="font-bold text-[#394d62] mb-1">¿Cuánto cuesta?</h4>
+                                        <p class="text-sm text-gray-700">
+                                            <strong class="text-blue-700">2 euros</strong> la emisión de la tarjeta
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div
+                                class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 border-l-4 border-green-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">🏦</span>
+                                    ¿Cómo se obtiene?
+                                </h3>
+                                <p class="text-gray-700 leading-relaxed">
+                                    Debes acercarte a <strong>cualquier banco ABANCA</strong> con atención al público e indicar
+                                    que quieres obtener dicha tarjeta.
+                                </p>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 border-l-4 border-purple-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">💳</span>
+                                    ¿Cómo se recarga?
+                                </h3>
+                                <p class="text-gray-700 leading-relaxed mb-2">
+                                    En cualquier cajero automático de ABANCA ingresando un <strong
+                                        >mínimo de 10 euros</strong
+                                    >.
+                                </p>
+                                <p class="text-sm text-gray-600">También desde la web si tienes cuenta en el banco.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-blue-100 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                            <p class="text-sm text-blue-800">
+                                <strong>ℹ️ Más información:</strong>
+                                <a
+                                    href="https://tmg.xunta.gal/tarxeta-metropolitana-introducion"
+                                    target="_blank"
+                                    class="underline hover:text-blue-600">
+                                    https://tmg.xunta.gal/tarxeta-metropolitana-introducion
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta Millenium - A Coruña -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 border-t-4 border-cyan-500">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-5xl">🌊</span>
+                            <div>
+                                <h2 class="text-3xl font-bold text-[#394d62]">Tarjeta Millenium</h2>
+                                <p class="text-gray-600 mt-1">A Coruña - Transporte urbano</p>
+                            </div>
+                        </div>
+
+                        <div class="prose prose-lg text-gray-700 mb-6">
+                            <p class="leading-relaxed">
+                                Para movilizarte dentro de la ciudad de <strong>A Coruña</strong> existe la tarjeta Millenium.
+                                Es una tarjeta monedero recargable, disponible en <strong
+                                    >versión digital y física</strong
+                                >, que permite aplicar descuentos en el precio del billete de bus urbano.
+                            </p>
+                            <p class="leading-relaxed mt-3">
+                                💡 <strong>Beneficio extra:</strong> También te da acceso a realizar préstamos de libros,
+                                películas y juegos de mesa en cualquiera de las <strong
+                                    >bibliotecas de la Red de bibliotecas de A Coruña</strong
+                                >.
+                            </p>
+                        </div>
+
+                        <!-- Tarjeta Digital -->
+                        <div
+                            class="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-6 mb-6 border-l-4 border-cyan-500">
+                            <h3 class="font-bold text-2xl text-[#394d62] mb-4 flex items-center">
+                                <span class="mr-2">📱</span>
+                                Tarjeta Digital
+                            </h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-3">
+                                    <div
+                                        class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">
+                                        1
+                                    </div>
+                                    <div class="flex-1">
+                                        <h4 class="font-bold text-[#394d62] mb-1">Descarga la APP Coruña</h4>
+                                        <p class="text-sm text-gray-700">
+                                            Cualquier persona puede descargar la aplicación:
+                                            <a
+                                                href="https://www.coruna.gal/web/es/comunicate/aplicaciones-para-moviles/app-coruna"
+                                                target="_blank"
+                                                class="text-cyan-600 hover:underline block mt-1">
+                                                www.coruna.gal → APP Coruña
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div
+                                        class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">
+                                        2
+                                    </div>
+                                    <div class="flex-1">
+                                        <h4 class="font-bold text-[#394d62] mb-1">Crea tu cuenta personal</h4>
+                                        <p class="text-sm text-gray-700">
+                                            Una vez descargada la app, te solicitará crear una cuenta
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div
+                                        class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">
+                                        3
+                                    </div>
+                                    <div class="flex-1">
+                                        <h4 class="font-bold text-[#394d62] mb-1">Accede a "Transporte"</h4>
+                                        <p class="text-sm text-gray-700">
+                                            Ve a: <strong>Transporte → Autobús urbano → Pago con QR</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="bg-green-100 border-l-4 border-green-500 p-3 rounded-r-lg">
+                                    <p class="text-sm text-green-800">
+                                        <strong>✅ Gratuito</strong> - La versión digital no tiene costo
+                                    </p>
+                                </div>
+                                <div class="bg-purple-100 border-l-4 border-purple-500 p-3 rounded-r-lg">
+                                    <p class="text-sm text-purple-800">
+                                        <strong>💳 Recarga:</strong> Desde el área de transporte carga saldo (mínimo 5 euros)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta Física -->
+                        <div
+                            class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 mb-4 border-l-4 border-purple-500">
+                            <h3 class="font-bold text-2xl text-[#394d62] mb-4 flex items-center">
+                                <span class="mr-2">💳</span>
+                                Tarjeta Física
+                            </h3>
+                            <div class="bg-yellow-100 border-l-4 border-yellow-500 p-3 rounded-r-lg mb-4">
+                                <p class="text-sm text-yellow-800">
+                                    <strong>⚠️ Solo para residentes</strong> - Requiere empadronamiento en A Coruña
+                                </p>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                    <h4 class="font-bold text-[#394d62] mb-2">📄 Requisitos</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Certificado de empadronamiento</li>
+                                        <li>• DNI</li>
+                                        <li>• <strong>Para descuento estudiante:</strong> Matrícula universitaria</li>
+                                        <li>
+                                            • <strong>Para descuento social:</strong> Tarjeta de demandante de empleo
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                    <h4 class="font-bold text-[#394d62] mb-2">🏢 ¿Dónde obtenerla?</h4>
+                                    <p class="text-sm text-gray-700 mb-2">
+                                        Solicita <strong>cita previa</strong> en estas oficinas:
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs"
+                                            >Agora</span
+                                        >
+                                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs"
+                                            >Forum</span
+                                        >
+                                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs"
+                                            >María Pita</span
+                                        >
+                                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs"
+                                            >Estación de buses</span
+                                        >
+                                    </div>
+                                    <a
+                                        href="https://citaprevia.coruna.gal/citaprevia/"
+                                        target="_blank"
+                                        class="text-purple-600 hover:underline text-sm mt-2 block">
+                                        → Pedir cita previa aquí
+                                    </a>
+                                </div>
+                                <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                    <h4 class="font-bold text-[#394d62] mb-2">💰 Costos y recarga</h4>
+                                    <p class="text-sm text-gray-700">
+                                        <strong>Emisión:</strong> 2 euros<br />
+                                        <strong>Recarga:</strong> Cajeros ABANCA (mínimo 10 euros)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-indigo-100 border-l-4 border-indigo-500 p-4 rounded-r-lg">
+                            <p class="text-sm text-indigo-800">
+                                <strong>📲 Apps recomendadas:</strong> Descarga <strong>Itranvias</strong> o <strong
+                                    >Movit</strong
+                                >
+                                para consultar horarios de autobuses en tiempo real
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Pass Vigo -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 border-t-4 border-teal-500">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-5xl">🏙️</span>
+                            <div>
+                                <h2 class="text-3xl font-bold text-[#394d62]">Pass Vigo</h2>
+                                <p class="text-gray-600 mt-1">Vigo - Transporte urbano</p>
+                                <span
+                                    class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold mt-2">
+                                    ⚠️ Solo para residentes
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="prose prose-lg text-gray-700 mb-6">
+                            <p class="leading-relaxed">
+                                Para movilizarte dentro de la ciudad de <strong>Vigo</strong> existe la tarjeta Pass Vigo.
+                                Es una <strong>tarjeta física monedero recargable</strong> que permite a los residentes obtener
+                                descuentos en el precio del billete de bus urbano.
+                            </p>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div
+                                class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-6 border-l-4 border-teal-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">📄</span>
+                                    Requisitos
+                                </h3>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-teal-600">✓</span>
+                                        <span>Certificado de empadronamiento en Vigo</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-teal-600">✓</span>
+                                        <span>DNI</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-teal-600">✓</span>
+                                        <span
+                                            ><strong>Descuento estudiante:</strong> Matrícula o inscripción máster</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-teal-600">✓</span>
+                                        <span><strong>Descuento social:</strong> Tarjeta demandante de empleo</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 border-l-4 border-green-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">🌐</span>
+                                    Tramitación online
+                                </h3>
+                                <p class="text-gray-700 mb-3 leading-relaxed">
+                                    Se puede tramitar desde la web. ¡Puedes ir tramitándola <strong
+                                        >antes de venir</strong
+                                    >
+                                    para evitar pagar tarifas más caras en efectivo!
+                                </p>
+                                <a
+                                    href="https://passvigo.vigo.org/solicitar-tarjeta"
+                                    target="_blank"
+                                    class="inline-flex items-center gap-2 px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors text-sm">
+                                    <span>Solicitar tarjeta</span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div
+                                class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-4 border-l-4 border-green-500">
+                                <h4 class="font-bold text-[#394d62] mb-2 flex items-center">
+                                    <span class="mr-2">✅</span>
+                                    Costo
+                                </h4>
+                                <p class="text-2xl font-bold text-green-700">GRATUITA</p>
+                            </div>
+                            <div
+                                class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-4 border-l-4 border-purple-500">
+                                <h4 class="font-bold text-[#394d62] mb-2 flex items-center">
+                                    <span class="mr-2">💳</span>
+                                    Recarga
+                                </h4>
+                                <p class="text-sm text-gray-700">
+                                    Cajeros ABANCA<br />
+                                    <strong>Mínimo:</strong> 10 euros
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-blue-100 border-l-4 border-blue-500 p-4 rounded-r-lg mb-4">
+                            <p class="text-sm text-blue-800">
+                                <strong>ℹ️ Más información:</strong>
+                                <a
+                                    href="https://passvigo.vigo.org/index.php?lan=es"
+                                    target="_blank"
+                                    class="underline hover:text-blue-600">
+                                    https://passvigo.vigo.org
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="bg-indigo-100 border-l-4 border-indigo-500 p-4 rounded-r-lg">
+                            <p class="text-sm text-indigo-800">
+                                <strong>📲 Apps recomendadas:</strong> Descarga <strong>Moovit</strong> para horarios o la
+                                <strong>app de Vigo</strong> (sección "Vitrasa") para consultar paradas y horarios en tiempo
+                                real
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta del Milenio - Ourense -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 border-t-4 border-orange-500">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-5xl">♨️</span>
+                            <div>
+                                <h2 class="text-3xl font-bold text-[#394d62]">Tarjeta del Milenio</h2>
+                                <p class="text-gray-600 mt-1">Ourense - Transporte urbano</p>
+                                <span
+                                    class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold mt-2">
+                                    ⚠️ Solo para residentes
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="prose prose-lg text-gray-700 mb-6">
+                            <p class="leading-relaxed">
+                                Para movilizarte dentro de la ciudad de <strong>Ourense</strong> existe la Tarjeta del Milenio.
+                                Es una <strong>tarjeta física monedero recargable</strong> que permite a los residentes obtener
+                                descuentos en el precio del billete de bus urbano según tu situación personal (estudiante,
+                                demandante de empleo, etc.).
+                            </p>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div
+                                class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-6 border-l-4 border-orange-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">📄</span>
+                                    Requisitos
+                                </h3>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-orange-600">✓</span>
+                                        <span>Certificado de empadronamiento</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-orange-600">✓</span>
+                                        <span>DNI</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-orange-600">✓</span>
+                                        <span
+                                            ><strong>Descuento estudiante:</strong> Matrícula o inscripción máster</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-orange-600">✓</span>
+                                        <span><strong>Descuento social:</strong> Tarjeta demandante de empleo</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 border-l-4 border-blue-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">🏦</span>
+                                    Obtención y costos
+                                </h3>
+                                <div class="space-y-3">
+                                    <div>
+                                        <p class="font-semibold text-[#394d62] mb-1">¿Dónde?</p>
+                                        <p class="text-sm text-gray-700">
+                                            En las oficinas de <strong>ABANCA</strong> de la ciudad
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-[#394d62] mb-1">Costo</p>
+                                        <p class="text-sm text-gray-700">
+                                            <strong class="text-green-700">Gratuita</strong> la primera vez<br />
+                                            <span class="text-xs text-gray-600">Si se pierde: 4 euros</span>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-[#394d62] mb-1">Recarga</p>
+                                        <p class="text-sm text-gray-700">Cajeros ABANCA (mínimo 10 euros)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-purple-100 border-l-4 border-purple-500 p-4 rounded-r-lg mb-4">
+                            <p class="text-sm text-purple-800">
+                                <strong>🌙 Moucho Bus:</strong> Autobús nocturno que pasa cada <strong
+                                    >media hora en madrugadas de festivos y fines de semana</strong
+                                >
+                            </p>
+                        </div>
+
+                        <div class="bg-blue-100 border-l-4 border-blue-500 p-4 rounded-r-lg mb-4">
+                            <p class="text-sm text-blue-800">
+                                <strong>ℹ️ Más información:</strong>
+                                <a
+                                    href="https://ourense.avanzagrupo.com/tarifas/tarjeta-milenio"
+                                    target="_blank"
+                                    class="underline hover:text-blue-600">
+                                    https://ourense.avanzagrupo.com/tarifas/tarjeta-milenio
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="bg-indigo-100 border-l-4 border-indigo-500 p-4 rounded-r-lg">
+                            <p class="text-sm text-indigo-800">
+                                <strong>📲 Consultar horarios:</strong> App <strong>OurenseConsello</strong>, código QR
+                                en paradas, o app <strong>Moovit</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- MoBT - Santiago de Compostela -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 border-t-4 border-indigo-500">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-5xl">🏛️</span>
+                            <div>
+                                <h2 class="text-3xl font-bold text-[#394d62]">Mobilidade MoBT</h2>
+                                <p class="text-gray-600 mt-1">Santiago de Compostela - Plataforma digital</p>
+                                <span
+                                    class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mt-2">
+                                    ✨ 100% Digital
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="prose prose-lg text-gray-700 mb-6">
+                            <p class="leading-relaxed">
+                                Plataforma de movilidad digital con <strong>aplicación móvil</strong> que permite el pago
+                                en el autobús a través del teléfono móvil, <strong>eliminando la necesidad</strong> de acudir
+                                a una oficina bancaria, disponer de una tarjeta física o recargar en el cajero.
+                            </p>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div
+                                class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6 border-l-4 border-indigo-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">✨</span>
+                                    Ventajas
+                                </h3>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-2xl">📱</span>
+                                        <div>
+                                            <p class="font-semibold text-[#394d62]">Pago con QR</p>
+                                            <p class="text-sm text-gray-600">Genera código QR para cada viaje</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-2xl">💰</span>
+                                        <div>
+                                            <p class="font-semibold text-[#394d62]">Consulta saldo online</p>
+                                            <p class="text-sm text-gray-600">Control total de tu saldo</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-2xl">🗺️</span>
+                                        <div>
+                                            <p class="font-semibold text-[#394d62]">Buscador de rutas</p>
+                                            <p class="text-sm text-gray-600">
+                                                Consulta rutas y horarios en tiempo real
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 border-l-4 border-green-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">🚀</span>
+                                    Sin complicaciones
+                                </h3>
+                                <div class="space-y-3">
+                                    <div class="bg-white/80 backdrop-blur rounded-lg p-3">
+                                        <p class="text-sm text-gray-700">
+                                            <strong class="text-green-700">✅</strong> Sin necesidad de ir al banco
+                                        </p>
+                                    </div>
+                                    <div class="bg-white/80 backdrop-blur rounded-lg p-3">
+                                        <p class="text-sm text-gray-700">
+                                            <strong class="text-green-700">✅</strong> Sin tarjeta física
+                                        </p>
+                                    </div>
+                                    <div class="bg-white/80 backdrop-blur rounded-lg p-3">
+                                        <p class="text-sm text-gray-700">
+                                            <strong class="text-green-700">✅</strong> Sin ir a cajeros a recargar
+                                        </p>
+                                    </div>
+                                    <div class="bg-white/80 backdrop-blur rounded-lg p-3">
+                                        <p class="text-sm text-gray-700">
+                                            <strong class="text-green-700">✅</strong> Todo desde el móvil
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-indigo-100 border-l-4 border-indigo-500 p-4 rounded-r-lg">
+                            <p class="text-sm text-indigo-800">
+                                <strong>ℹ️ Más información:</strong>
+                                <a
+                                    href="https://www.bus.gal/gl/queres-pagar-tuas-viaxes-co-mobil-descubre-mobt"
+                                    target="_blank"
+                                    class="underline hover:text-indigo-600">
+                                    https://www.bus.gal/gl/queres-pagar-tuas-viaxes-co-mobil-descubre-mobt
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Consejos Finales -->
+                    <div class="bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-50 rounded-2xl shadow-lg p-8">
+                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
+                            <span class="text-4xl mr-3">💡</span>
+                            Consejos para el transporte público
+                        </h2>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="bg-white/80 backdrop-blur rounded-xl p-5 border-l-4 border-pink-500">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-3xl">💰</span>
+                                    <div>
+                                        <h3 class="font-bold text-lg text-[#394d62] mb-2">Ahorra dinero</h3>
+                                        <p class="text-sm text-gray-700">
+                                            Las tarjetas siempre son <strong>más económicas</strong> que pagar en efectivo.
+                                            ¡Tramítalas cuanto antes!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white/80 backdrop-blur rounded-xl p-5 border-l-4 border-purple-500">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-3xl">📱</span>
+                                    <div>
+                                        <h3 class="font-bold text-lg text-[#394d62] mb-2">Usa apps</h3>
+                                        <p class="text-sm text-gray-700">
+                                            Descarga las apps de transporte para ver horarios en <strong
+                                                >tiempo real</strong
+                                            >
+                                            y planificar tus rutas.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white/80 backdrop-blur rounded-xl p-5 border-l-4 border-indigo-500">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-3xl">🎓</span>
+                                    <div>
+                                        <h3 class="font-bold text-lg text-[#394d62] mb-2">Descuentos estudiante</h3>
+                                        <p class="text-sm text-gray-700">
+                                            Si eres estudiante, no olvides llevar tu <strong
+                                                >matrícula universitaria</strong
+                                            >
+                                            para solicitar descuentos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white/80 backdrop-blur rounded-xl p-5 border-l-4 border-blue-500">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-3xl">🏠</span>
+                                    <div>
+                                        <h3 class="font-bold text-lg text-[#394d62] mb-2">Empadronamiento</h3>
+                                        <p class="text-sm text-gray-700">
+                                            Muchas tarjetas requieren estar <strong>empadronado en la ciudad</strong>.
+                                            Hazlo pronto al llegar.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botón de vuelta -->
+                    <div class="text-center pt-8">
+                        <a
+                            href="/tramites-galicia"
+                            class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#d2557d] to-[#c14a6f] text-white font-semibold rounded-xl hover:shadow-xl transition-all transform hover:scale-105 shadow-lg group">
+                            <span class="text-xl group-hover:-translate-x-1 transition-transform">←</span>
+                            <span>Volver a todos los trámites</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>

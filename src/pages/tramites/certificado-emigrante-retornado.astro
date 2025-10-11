@@ -29,279 +29,422 @@ import Footer from '../../components/Footer.astro'
             </div>
         </section>
 
-        <section class="py-16 bg-white">
+        <!-- Introducción -->
+        <section class="py-8 bg-blue-50 border-l-4 border-blue-500">
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto">
-                    <!-- ¿Qué es el C.E.R.? -->
-                    <div class="mb-12">
-                        <div
-                            class="bg-gradient-to-r from-purple-50 to-pink-50 border-l-4 border-[#d2557d] rounded-r-xl p-6 mb-8">
-                            <h2 class="text-2xl font-bold text-[#394d62] mb-4 flex items-center">
-                                <span class="text-3xl mr-3">💡</span>
-                                ¿Qué es el C.E.R.?
-                            </h2>
-                            <p class="text-gray-700 text-lg leading-relaxed mb-4">
-                                El <strong>Certificado de Emigrante Retornado (C.E.R.)</strong> acredita tu condición de
-                                emigrante retornado y te permite acceder a prestaciones por desempleo en España.
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">💡</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">
+                                ¿Qué es el Certificado de Emigrante Retornado?
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                El <strong>Certificado de Emigrante Retornado (CER)</strong> es un documento expedido por
+                                la Administración General del Estado que reconoce los períodos cotizados y la situación legal
+                                de desempleo tras el retorno a España.
                             </p>
-                            <div class="bg-white rounded-lg p-4">
-                                <p class="text-sm text-gray-700 mb-2"><strong>📋 El certificado acredita:</strong></p>
-                                <ul class="space-y-1 text-sm text-gray-700">
-                                    <li>✓ Fecha de última salida de España</li>
-                                    <li>✓ Fecha de retorno</li>
-                                    <li>✓ Tiempo trabajado en el extranjero</li>
-                                    <li>✓ Período de ocupación cotizado</li>
-                                    <li>✓ No tienes derecho a prestación por desempleo en el país de emigración</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ¿Quién lo necesita? -->
-                    <div class="mb-12">
-                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
-                            <span class="text-4xl mr-3">🌍</span>
-                            ¿Quién necesita este certificado?
-                        </h2>
-
-                        <div
-                            class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-6 border-2 border-[#77b2c0] mb-6">
-                            <h3 class="text-xl font-bold text-[#394d62] mb-4">
-                                ⚠️ Necesitas el C.E.R. si retornas de:
-                            </h3>
-                            <div class="grid md:grid-cols-2 gap-4">
-                                <div class="bg-white rounded-lg p-4">
-                                    <div class="text-2xl mb-2">🌎</div>
-                                    <p class="font-semibold text-gray-700">Países fuera de la UE/EEE</p>
-                                    <p class="text-sm text-gray-600">Excepto Suiza</p>
-                                </div>
-                                <div class="bg-white rounded-lg p-4">
-                                    <div class="text-2xl mb-2">🦘</div>
-                                    <p class="font-semibold text-gray-700">Australia</p>
-                                    <p class="text-sm text-gray-600">Sin residencia permanente</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
-                            class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 border-2 border-green-400">
-                            <h3 class="text-xl font-bold text-[#394d62] mb-4">
-                                ✅ NO necesitas el C.E.R. si retornas de:
-                            </h3>
-                            <div class="grid md:grid-cols-3 gap-4">
-                                <div class="bg-white rounded-lg p-3 text-center">
-                                    <div class="text-2xl mb-1">🇪🇺</div>
-                                    <p class="text-sm font-semibold text-gray-700">UE (27 países)</p>
-                                </div>
-                                <div class="bg-white rounded-lg p-3 text-center">
-                                    <div class="text-2xl mb-1">🏔️</div>
-                                    <p class="text-sm font-semibold text-gray-700">EEE + Suiza</p>
-                                </div>
-                                <div class="bg-white rounded-lg p-3 text-center">
-                                    <div class="text-2xl mb-1">🦘</div>
-                                    <p class="text-sm font-semibold text-gray-700">Australia (residencia permanente)</p>
-                                </div>
-                            </div>
-                            <p class="text-sm text-gray-600 mt-4">
-                                * Usarás formularios U1, E301 o verificación de Australia
+                            <p class="text-gray-700">
+                                El certificado acreditará tu condición de emigrante retornado, la fecha de la última
+                                salida de España, la fecha del retorno, el tiempo trabajado en el país extranjero, el
+                                período de ocupación cotizado, así como que no tienes derecho a prestación por desempleo
+                                en dicho país.
                             </p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <!-- Prestaciones -->
+        <!-- Requisito principal -->
+        <section class="py-8 bg-yellow-50 border-l-4 border-yellow-500">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">⚠️</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Requisito fundamental</h3>
+                            <p class="text-gray-700">
+                                Debes demostrar haber <strong>cotizado 12 meses en los últimos 6 años</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dónde solicitar -->
+        <section class="py-16 bg-gradient-to-b from-white to-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
                     <div class="mb-12">
-                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
-                            <span class="text-4xl mr-3">💰</span>
-                            Prestaciones a las que puedes acceder
-                        </h2>
+                        <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">¿Dónde solicitar el CER?</h2>
+                        <p class="text-center text-gray-600 mb-8">
+                            Debes presentar la solicitud ante la <strong>Delegación o Subdelegación de Gobierno</strong>
+                            correspondiente a tu provincia de residencia.
+                        </p>
 
-                        <div class="grid md:grid-cols-3 gap-4">
-                            <div
-                                class="bg-white rounded-xl border-2 border-[#0c615d] p-5 hover:shadow-lg transition-shadow">
-                                <div class="text-3xl mb-3">💼</div>
-                                <h4 class="font-bold text-[#394d62] mb-2">Prestación contributiva</h4>
-                                <p class="text-sm text-gray-700">Por desempleo de nivel contributivo</p>
+                        <div class="bg-gradient-to-r from-[#d2557d] to-[#394d62] rounded-xl p-6 text-white mb-8">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="text-3xl">📄</span>
+                                <h3 class="text-xl font-bold">Formulario de solicitud</h3>
                             </div>
-                            <div
-                                class="bg-white rounded-xl border-2 border-[#dfa142] p-5 hover:shadow-lg transition-shadow">
-                                <div class="text-3xl mb-3">🛡️</div>
-                                <h4 class="font-bold text-[#394d62] mb-2">Subsidio retornado</h4>
-                                <p class="text-sm text-gray-700">Subsidio por desempleo para emigrantes retornados</p>
+                            <p class="mb-4">
+                                Descarga el anexo de solicitud del CER antes de acudir a la subdelegación.
+                            </p>
+                            <a
+                                href="#"
+                                class="inline-flex items-center gap-2 bg-white text-[#d2557d] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                                <span>📥</span>
+                                <span>Descargar Anexo Solicitud CER</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Subdelegaciones -->
+                    <h3 class="text-2xl font-bold text-center mb-8 text-gray-800">
+                        Subdelegaciones del Gobierno en Galicia
+                    </h3>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-12">
+                        <!-- Lugo -->
+                        <div
+                            class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all p-6 border-t-4 border-[#c6d067]">
+                            <div class="flex items-start gap-3 mb-4">
+                                <span class="text-4xl">🏛️</span>
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-800">Lugo</h4>
+                                    <p class="text-sm text-gray-500">Subdelegación do Goberno</p>
+                                </div>
                             </div>
-                            <div
-                                class="bg-white rounded-xl border-2 border-[#d2557d] p-5 hover:shadow-lg transition-shadow">
-                                <div class="text-3xl mb-3">🔄</div>
-                                <h4 class="font-bold text-[#394d62] mb-2">Renta activa</h4>
-                                <p class="text-sm text-gray-700">Renta activa de inserción</p>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-2 text-gray-700">
+                                    <span class="text-lg">📍</span>
+                                    <span>R. Armanyá, 10, 27001 Lugo</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-gray-700">
+                                    <span class="text-lg">📞</span>
+                                    <a href="tel:982759000" class="hover:text-[#c6d067] transition-colors"
+                                        >982 75 90 00</a
+                                    >
+                                </div>
+                                <div class="flex items-center gap-2 text-gray-700">
+                                    <span class="text-lg">📠</span>
+                                    <span>982 759 251</span>
+                                </div>
+                                <a
+                                    href="https://share.google/2NBWDC3Me0zVQCLYa"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-2 text-[#c6d067] hover:text-[#394d62] font-semibold text-sm transition-colors mt-2">
+                                    <span>🗺️</span>
+                                    <span>Ver en el mapa</span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Ourense -->
+                        <div
+                            class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all p-6 border-t-4 border-[#dfa142]">
+                            <div class="flex items-start gap-3 mb-4">
+                                <span class="text-4xl">🏛️</span>
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-800">Ourense</h4>
+                                    <p class="text-sm text-gray-500">Subdelegación do Goberno</p>
+                                </div>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-2 text-gray-700">
+                                    <span class="text-lg">📍</span>
+                                    <span>Rúa Parque de San Lázaro, 3, 32003 Ourense</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-gray-700">
+                                    <span class="text-lg">📞</span>
+                                    <a href="tel:988759000" class="hover:text-[#dfa142] transition-colors"
+                                        >988 75 90 00</a
+                                    >
+                                </div>
+                                <div class="flex items-center gap-2 text-gray-700">
+                                    <span class="text-lg">📠</span>
+                                    <span>988 759 191</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-gray-700">
+                                    <span class="text-lg">✉️</span>
+                                    <a
+                                        href="mailto:subdelegaciondelgobierno@correo.gob.es"
+                                        class="hover:text-[#dfa142] transition-colors text-sm">
+                                        subdelegaciondelgobierno@correo.gob.es
+                                    </a>
+                                </div>
+                                <a
+                                    href="https://share.google/xJFErr08ipp9jig8q"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-2 text-[#dfa142] hover:text-[#394d62] font-semibold text-sm transition-colors mt-2">
+                                    <span>🗺️</span>
+                                    <span>Ver en el mapa</span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Pontevedra -->
+                        <div
+                            class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all p-6 border-t-4 border-[#77b2c0]">
+                            <div class="flex items-start gap-3 mb-4">
+                                <span class="text-4xl">🏛️</span>
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-800">Pontevedra</h4>
+                                    <p class="text-sm text-gray-500">Subdelegación do Goberno</p>
+                                </div>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-2 text-gray-700">
+                                    <span class="text-lg">📍</span>
+                                    <span>Praza de España, 1, 36002 Pontevedra</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-gray-700">
+                                    <span class="text-lg">📞</span>
+                                    <a href="tel:986989000" class="hover:text-[#77b2c0] transition-colors"
+                                        >986 98 90 00</a
+                                    >
+                                </div>
+                                <div class="flex items-center gap-2 text-gray-700">
+                                    <span class="text-lg">📠</span>
+                                    <span>986 989 232</span>
+                                </div>
+                                <a
+                                    href="https://share.google/RLtVruwWAkpPe0Vs3"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-2 text-[#77b2c0] hover:text-[#394d62] font-semibold text-sm transition-colors mt-2">
+                                    <span>🗺️</span>
+                                    <span>Ver en el mapa</span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- A Coruña -->
+                        <div
+                            class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all p-6 border-t-4 border-[#0c615d]">
+                            <div class="flex items-start gap-3 mb-4">
+                                <span class="text-4xl">🏛️</span>
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-800">A Coruña</h4>
+                                    <p class="text-sm text-gray-500">Subdelegación do Goberno</p>
+                                </div>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-2 text-gray-700">
+                                    <span class="text-lg">📍</span>
+                                    <span>Avenida Marina, 23, 15003 A Coruña</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-gray-700">
+                                    <span class="text-lg">📞</span>
+                                    <a href="tel:981989300" class="hover:text-[#0c615d] transition-colors"
+                                        >981 98 93 00</a
+                                    >
+                                </div>
+                                <div class="flex items-center gap-2 text-gray-700">
+                                    <span class="text-lg">📠</span>
+                                    <span>981 989 352</span>
+                                </div>
+                                <a
+                                    href="https://share.google/Yd5Q5SMhimWfrSmYC"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-2 text-[#0c615d] hover:text-[#394d62] font-semibold text-sm transition-colors mt-2">
+                                    <span>🗺️</span>
+                                    <span>Ver en el mapa</span>
+                                    <span>→</span>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <!-- Requisitos -->
-                    <div class="mb-12">
-                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
-                            <span class="text-4xl mr-3">📋</span>
-                            Requisitos y documentación
-                        </h2>
+
+                    <!-- Documentación necesaria -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 border-t-4 border-[#d2557d]">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+                            <span class="text-4xl">📋</span>
+                            <span>Documentación necesaria</span>
+                        </h3>
+                        <p class="text-gray-600 mb-6">Debes presentar los siguientes documentos:</p>
 
                         <div class="space-y-4">
-                            <!-- Requisito 1 -->
-                            <div class="bg-white rounded-xl border-l-4 border-[#0c615d] p-5 shadow-md">
-                                <div class="flex items-start">
+                            <!-- Documento 1 -->
+                            <div class="flex gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                                <div class="flex-shrink-0">
                                     <div
-                                        class="flex-shrink-0 w-10 h-10 bg-[#0c615d] text-white rounded-full flex items-center justify-center font-bold mr-4">
+                                        class="w-10 h-10 bg-[#d2557d] text-white rounded-full flex items-center justify-center font-bold">
                                         1
                                     </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-bold text-[#394d62] mb-2">Identificación</h4>
-                                        <p class="text-gray-700">DNI o pasaporte en vigor</p>
-                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Identidad</h4>
+                                    <p class="text-gray-700">DNI y copia completa del pasaporte.</p>
                                 </div>
                             </div>
 
-                            <!-- Requisito 2 -->
-                            <div class="bg-white rounded-xl border-l-4 border-[#77b2c0] p-5 shadow-md">
-                                <div class="flex items-start">
+                            <!-- Documento 2 -->
+                            <div class="flex gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                                <div class="flex-shrink-0">
                                     <div
-                                        class="flex-shrink-0 w-10 h-10 bg-[#77b2c0] text-white rounded-full flex items-center justify-center font-bold mr-4">
+                                        class="w-10 h-10 bg-[#d2557d] text-white rounded-full flex items-center justify-center font-bold">
                                         2
                                     </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-bold text-[#394d62] mb-2">Nacionalidad española</h4>
-                                        <p class="text-gray-700 mb-2">
-                                            Durante el periodo de cotización en el país extranjero.
-                                        </p>
-                                        <div class="bg-blue-50 rounded-lg p-3 mt-2">
-                                            <p class="text-sm text-gray-700">
-                                                <strong>📌 Hijos/nietos de emigrantes:</strong> Para un primer retorno, se
-                                                tendrá en cuenta la actividad laboral desde que adquirieron la nacionalidad
-                                                española (si están inscritos en el Registro de Matrícula Consular).
-                                            </p>
-                                        </div>
-                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Partida literal de nacimiento</h4>
+                                    <p class="text-gray-700">
+                                        Obtenida en el consulado de España (la copia que <strong
+                                            >NO dice "para DNI"</strong
+                                        >).
+                                    </p>
                                 </div>
                             </div>
 
-                            <!-- Requisito 3 -->
-                            <div class="bg-white rounded-xl border-l-4 border-[#dfa142] p-5 shadow-md">
-                                <div class="flex items-start">
+                            <!-- Documento 3 -->
+                            <div class="flex gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                                <div class="flex-shrink-0">
                                     <div
-                                        class="flex-shrink-0 w-10 h-10 bg-[#dfa142] text-white rounded-full flex items-center justify-center font-bold mr-4">
+                                        class="w-10 h-10 bg-[#d2557d] text-white rounded-full flex items-center justify-center font-bold">
                                         3
                                     </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-bold text-[#394d62] mb-2">Fecha de retorno</h4>
-                                        <p class="text-gray-700 mb-2">
-                                            Acreditar mediante pasaporte u otro documento oficial.
-                                        </p>
-                                        <div class="bg-red-50 rounded-lg p-3 mt-2 border-l-4 border-red-400">
-                                            <p class="text-sm text-gray-700">
-                                                <strong>⚠️ Importante:</strong> La baja consular NO es documento suficiente.
-                                            </p>
-                                        </div>
-                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Certificado de baja consular</h4>
+                                    <p class="text-gray-700">
+                                        Documento que acredita tu baja en el registro consular del país de origen.
+                                    </p>
                                 </div>
                             </div>
 
-                            <!-- Requisito 4 -->
-                            <div class="bg-white rounded-xl border-l-4 border-[#d2557d] p-5 shadow-md">
-                                <div class="flex items-start">
+                            <!-- Documento 4 -->
+                            <div class="flex gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                                <div class="flex-shrink-0">
                                     <div
-                                        class="flex-shrink-0 w-10 h-10 bg-[#d2557d] text-white rounded-full flex items-center justify-center font-bold mr-4">
+                                        class="w-10 h-10 bg-[#d2557d] text-white rounded-full flex items-center justify-center font-bold">
                                         4
                                     </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-bold text-[#394d62] mb-3">
-                                            Trabajo realizado en el extranjero
-                                        </h4>
-                                        <p class="text-gray-700 mb-3">
-                                            Documentos necesarios (por cuenta ajena o propia):
-                                        </p>
-                                        <ul class="space-y-2 mb-4">
-                                            <li class="flex items-start">
-                                                <span class="text-[#d2557d] mr-2">✓</span>
-                                                <span class="text-gray-700">Contratos de trabajo</span>
-                                            </li>
-                                            <li class="flex items-start">
-                                                <span class="text-[#d2557d] mr-2">✓</span>
-                                                <span class="text-gray-700"
-                                                    >Hojas salariales o de cotización a la Seguridad Social</span
-                                                >
-                                            </li>
-                                            <li class="flex items-start">
-                                                <span class="text-[#d2557d] mr-2">✓</span>
-                                                <span class="text-gray-700"
-                                                    >Certificado de trabajo de la empresa (con tiempo de servicios)</span
-                                                >
-                                            </li>
-                                        </ul>
-                                        <div class="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-400">
-                                            <p class="text-sm font-semibold text-gray-700 mb-2">
-                                                🔐 Legalización de documentos:
-                                            </p>
-                                            <ul class="space-y-2 text-sm text-gray-700">
-                                                <li>
-                                                    • <strong>Con Consejería:</strong> Adverados por Consejería de Empleo
-                                                    y Seguridad Social
-                                                </li>
-                                                <li>
-                                                    • <strong>Sin Consejería:</strong> Legalizados por Consulado (documentos
-                                                    públicos elevados a públicos)
-                                                </li>
-                                                <li>• <strong>Convenio La Haya:</strong> Apostillados</li>
-                                                <li>
-                                                    • <strong>Con código seguro:</strong> No requiere legalización si es
-                                                    verificable
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Adveración del tiempo trabajado</h4>
+                                    <p class="text-gray-700">
+                                        Certificación del tiempo trabajado en el país de procedencia (siendo ya
+                                        ciudadano español). Este trámite lo realiza la <strong
+                                            >Consejería de Trabajo, Migraciones y Seguridad Social</strong
+                                        >
+                                        de la embajada de España en tu país de procedencia.
+                                    </p>
                                 </div>
                             </div>
 
-                            <!-- Requisito 5 -->
-                            <div class="bg-white rounded-xl border-l-4 border-[#394d62] p-5 shadow-md">
-                                <div class="flex items-start">
+                            <!-- Documento 5 -->
+                            <div class="flex gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                                <div class="flex-shrink-0">
                                     <div
-                                        class="flex-shrink-0 w-10 h-10 bg-[#394d62] text-white rounded-full flex items-center justify-center font-bold mr-4">
+                                        class="w-10 h-10 bg-[#d2557d] text-white rounded-full flex items-center justify-center font-bold">
                                         5
                                     </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-bold text-[#394d62] mb-2">
-                                            No percibir prestación en país de origen
-                                        </h4>
-                                        <p class="text-gray-700 mb-2">
-                                            Mediante declaración responsable indicando que:
-                                        </p>
-                                        <div class="bg-gray-50 rounded-lg p-3 mt-2">
-                                            <p class="text-sm text-gray-700">
-                                                Desde tu fecha de retorno a España no percibes prestación o subsidio de
-                                                desempleo a cargo del país de emigración.
-                                            </p>
-                                        </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Certificado de Empadronamiento</h4>
+                                    <p class="text-gray-700">Actual, que acredite tu residencia en España.</p>
+                                </div>
+                            </div>
+
+                            <!-- Documento 6 -->
+                            <div class="flex gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                                <div class="flex-shrink-0">
+                                    <div
+                                        class="w-10 h-10 bg-[#d2557d] text-white rounded-full flex items-center justify-center font-bold">
+                                        6
                                     </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Documentos de salida y retorno</h4>
+                                    <p class="text-gray-700">
+                                        Documentos que acrediten la última salida y el retorno a España: pasaporte con
+                                        sellos, billete de avión, u otros.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Documento 7 -->
+                            <div class="flex gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                                <div class="flex-shrink-0">
+                                    <div
+                                        class="w-10 h-10 bg-[#d2557d] text-white rounded-full flex items-center justify-center font-bold">
+                                        7
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Informe de vida laboral española</h4>
+                                    <p class="text-gray-700 mb-2">
+                                        No importa si nunca trabajaste en España, se solicita igual.
+                                    </p>
+                                    <a
+                                        href="#"
+                                        class="inline-flex items-center gap-2 text-[#d2557d] hover:text-[#c14a6f] font-semibold text-sm transition-colors">
+                                        <span>🔗</span>
+                                        <span>Click aquí para tramitarlo</span>
+                                        <span>→</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Documento 8 -->
+                            <div class="flex gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                                <div class="flex-shrink-0">
+                                    <div
+                                        class="w-10 h-10 bg-[#d2557d] text-white rounded-full flex items-center justify-center font-bold">
+                                        8
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Informe de períodos de inscripción</h4>
+                                    <p class="text-gray-700">Que solicitaste en la Oficina de Emprego.</p>
+                                </div>
+                            </div>
+
+                            <!-- Documento 9 -->
+                            <div class="flex gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                                <div class="flex-shrink-0">
+                                    <div
+                                        class="w-10 h-10 bg-[#d2557d] text-white rounded-full flex items-center justify-center font-bold">
+                                        9
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">
+                                        Certificado de Empadronamiento Histórico
+                                    </h4>
+                                    <p class="text-gray-700">Que solicitaste en el padrón municipal.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-4">
-                        A los españoles que retornen de los países miembros de la Unión Europea, el Espacio Económico
-                        Europeo, Suiza o de Australia, habiendo ostentado en este último caso residencia permanente en
-                        dicho país, no se les requerirá el certificado de emigrante retornado para acceder a prestación
-                        por desempleo ya que, en su caso, acreditarán el trabajo realizado en el extranjero a través de
-                        los siguientes formularios:
-                    </p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2">
-                        <li>Trabajadores procedentes de países de la UE (27) y Suiza: Formulario U1</li>
-                        <li>Trabajadores procedentes de Noruega, Islandia, Liechtenstein: Formulario E301</li>
-                        <li>
-                            Trabajadores procedentes de Australia con residencia permanente: Formulario “Verification of
-                            working life residence in Australia”. Se solicita en: Centrelink International Services,
-                            P.O. Box 273, Hobart 7001 (Australia)
-                        </li>
-                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botón de retorno -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center">
+                        <a
+                            href="/tramites-galicia"
+                            class="inline-flex items-center px-8 py-4 bg-[#d2557d] text-white font-semibold rounded-xl hover:bg-[#c14a6f] transition-all transform hover:scale-105 shadow-lg">
+                            <span class="mr-2">←</span>
+                            Volver a todos los trámites
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <Footer />
 </Layout>
-<Footer />

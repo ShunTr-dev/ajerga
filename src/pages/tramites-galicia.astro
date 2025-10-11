@@ -11,256 +11,381 @@ import Footer from '../components/Footer.astro'
         <!-- Hero Section -->
         <section class="bg-gradient-to-br from-[#d75528] to-[#dfa142] py-20 text-white">
             <div class="container mx-auto px-4">
-                <h1 class="text-5xl font-bold mb-6">Trámites al Llegar a Galicia</h1>
+                <h1 class="text-5xl font-bold mb-6">Trámites al llegar a Galicia</h1>
                 <p class="text-xl max-w-3xl">Todo lo que necesitas gestionar una vez que ya estés en Galicia</p>
             </div>
         </section>
 
-        <section class="py-20 bg-white">
+        <section class="py-20 bg-gradient-to-b from-white to-gray-50">
             <div class="container mx-auto px-4">
                 <div class="max-w-6xl mx-auto">
-                    <!-- Primeros Pasos -->
-                    <div class="mb-16">
-                        <div class="text-center mb-12">
-                            <h2 class="text-4xl font-bold text-[#394d62] mb-4">🎯 Primeros Pasos</h2>
-                            <p class="text-gray-600 text-lg">Los trámites esenciales que debes hacer al llegar</p>
-                        </div>
-
-                        <div class="grid md:grid-cols-3 gap-6">
-                            <!-- Empadronamiento -->
-                            <a
-                                href="/tramites/empadronamiento"
-                                class="group bg-gradient-to-br from-[#0c615d] to-[#77b2c0] p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2">
-                                <div class="text-white">
-                                    <div class="text-5xl mb-4">📝</div>
-                                    <h3 class="text-2xl font-bold mb-3">Empadronamiento</h3>
-                                    <p class="text-white/90 mb-4">Registra tu residencia en tu ayuntamiento</p>
-                                    <div class="flex items-center text-sm font-semibold">
-                                        <span>Ver detalles</span>
-                                        <span class="ml-2 transform group-hover:translate-x-2 transition-transform"
-                                            >→</span
-                                        >
-                                    </div>
-                                </div>
-                            </a>
-
-                            <!-- DNI Español -->
-                            <a
-                                href="/tramites/dni-espanol"
-                                class="group bg-gradient-to-br from-[#d75528] to-[#dfa142] p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2">
-                                <div class="text-white">
-                                    <div class="text-5xl mb-4">🪪</div>
-                                    <h3 class="text-2xl font-bold mb-3">DNI Español</h3>
-                                    <p class="text-white/90 mb-4">Obtén o renueva tu documento de identidad</p>
-                                    <div class="flex items-center text-sm font-semibold">
-                                        <span>Ver detalles</span>
-                                        <span class="ml-2 transform group-hover:translate-x-2 transition-transform"
-                                            >→</span
-                                        >
-                                    </div>
-                                </div>
-                            </a>
-
-                            <!-- Partida de Nacimiento -->
-                            <a
-                                href="/tramites/solicitud-partida-literal-nacimiento"
-                                class="group bg-gradient-to-br from-[#c6d067] to-[#0c615d] p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2">
-                                <div class="text-white">
-                                    <div class="text-5xl mb-4">📄</div>
-                                    <h3 class="text-2xl font-bold mb-3">Partida de Nacimiento</h3>
-                                    <p class="text-white/90 mb-4">Solicitud de partida literal de nacimiento</p>
-                                    <div class="flex items-center text-sm font-semibold">
-                                        <span>Ver detalles</span>
-                                        <span class="ml-2 transform group-hover:translate-x-2 transition-transform"
-                                            >→</span
-                                        >
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                    <!-- Introducción -->
+                    <div class="mb-16 text-center">
+                        <h2 class="text-4xl font-bold text-gray-800 mb-4">Tu ruta de trámites paso a paso</h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Sigue este recorrido en orden para que tu proceso de retorno sea más sencillo
+                        </p>
                     </div>
 
-                    <!-- Salud y Bienestar -->
-                    <div class="mb-16">
-                        <div class="text-center mb-12">
-                            <h2 class="text-4xl font-bold text-[#394d62] mb-4">🏥 Salud y Bienestar</h2>
-                            <p class="text-gray-600 text-lg">Accede al sistema sanitario gallego</p>
+                    <!-- Timeline -->
+                    <div class="relative">
+                        <!-- Línea vertical del timeline -->
+                        <div
+                            class="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-[#d75528] via-[#dfa142] to-[#0c615d]">
                         </div>
 
-                        <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                            <!-- Seguridad Social -->
-                            <a
-                                href="/tramites/seguridad-social"
-                                class="group bg-gradient-to-br from-[#d2557d] to-[#394d62] p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2">
-                                <div class="text-white">
-                                    <div class="text-5xl mb-4">🛡️</div>
-                                    <h3 class="text-2xl font-bold mb-3">Seguridad Social</h3>
-                                    <p class="text-white/90 mb-4">Alta y gestión en la Seguridad Social</p>
-                                    <div class="flex items-center text-sm font-semibold">
-                                        <span>Ver detalles</span>
-                                        <span class="ml-2 transform group-hover:translate-x-2 transition-transform"
-                                            >→</span
-                                        >
+                        <!-- Paso 1: Baja Consular -->
+                        <div class="relative mb-12 md:mb-16">
+                            <div class="flex items-start">
+                                <div
+                                    class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#d75528] to-[#dfa142] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10 md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+                                    1
+                                </div>
+                                <div class="ml-8 md:ml-0 md:w-full md:max-w-[50%] md:mr-auto md:pr-12">
+                                    <div
+                                        class="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#d75528] hover:shadow-2xl transition-shadow">
+                                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Baja Consular</h3>
+                                        <p class="text-gray-600 mb-3">
+                                            Solicítala en el Consulado de España de tu demarcación, si es que no lo has
+                                            hecho todavía
+                                        </p>
+                                        <span
+                                            class="inline-block bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
+                                            📋 Trámite previo
+                                        </span>
                                     </div>
                                 </div>
-                            </a>
-
-                            <!-- Tarjeta Sanitaria -->
-                            <a
-                                href="/tramites/tarjeta-sanitaria"
-                                class="group bg-gradient-to-br from-[#77b2c0] to-[#0c615d] p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2">
-                                <div class="text-white">
-                                    <div class="text-5xl mb-4">💳</div>
-                                    <h3 class="text-2xl font-bold mb-3">Tarjeta Sanitaria</h3>
-                                    <p class="text-white/90 mb-4">Obtén tu tarjeta para atención médica</p>
-                                    <div class="flex items-center text-sm font-semibold">
-                                        <span>Ver detalles</span>
-                                        <span class="ml-2 transform group-hover:translate-x-2 transition-transform"
-                                            >→</span
-                                        >
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Trabajo y Empleo -->
-                    <div class="mb-16">
-                        <div class="text-center mb-12">
-                            <h2 class="text-4xl font-bold text-[#394d62] mb-4">💼 Trabajo y Empleo</h2>
-                            <p class="text-gray-600 text-lg">Todo lo relacionado con tu actividad laboral</p>
+                            </div>
                         </div>
 
-                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <!-- Actividad Laboral -->
-                            <a
-                                href="/tramites/actividad-laboral"
-                                class="group bg-white border-2 border-[#0c615d] p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:bg-[#0c615d] transition-all transform hover:-translate-y-2">
-                                <div class="group-hover:text-white transition-colors">
-                                    <div class="text-5xl mb-4">💼</div>
-                                    <h3 class="text-xl font-bold mb-3 text-[#394d62] group-hover:text-white">
-                                        Actividad Laboral
-                                    </h3>
-                                    <p class="text-gray-600 group-hover:text-white/90 mb-4">
-                                        Información sobre trabajar en Galicia
-                                    </p>
+                        <!-- Paso 2: Oficina del Retorno -->
+                        <div class="relative mb-12 md:mb-16">
+                            <div class="flex items-start md:justify-end">
+                                <div
+                                    class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#dfa142] to-[#d75528] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10 md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+                                    2
+                                </div>
+                                <div class="ml-8 md:ml-0 md:w-full md:max-w-[50%] md:pl-12">
                                     <div
-                                        class="flex items-center text-sm font-semibold text-[#0c615d] group-hover:text-white">
-                                        <span>Ver detalles</span>
-                                        <span class="ml-2 transform group-hover:translate-x-2 transition-transform"
-                                            >→</span
-                                        >
+                                        class="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#dfa142] hover:shadow-2xl transition-shadow">
+                                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Oficina del Retorno</h3>
+                                        <p class="text-gray-600 mb-3">
+                                            Contacta con la Oficina del Retorno de tu ciudad para orientación en tus
+                                            primeros días
+                                        </p>
+                                        <a
+                                            href="/tramites/oficina-del-retorno"
+                                            class="inline-block bg-[#dfa142] text-white px-3 py-1 rounded-full text-sm hover:bg-opacity-80 transition-colors mb-2">
+                                            🔗 Ver oficinas del retorno
+                                        </a>
+                                        <span
+                                            class="inline-block bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold">
+                                            ⚠️ Obligatorio para BEME
+                                        </span>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
+                        </div>
 
-                            <!-- Certificado Emigrante Retornado -->
-                            <a
-                                href="/tramites/certificado-emigrante-retornado"
-                                class="group bg-white border-2 border-[#d75528] p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:bg-[#d75528] transition-all transform hover:-translate-y-2">
-                                <div class="group-hover:text-white transition-colors">
-                                    <div class="text-5xl mb-4">🎖️</div>
-                                    <h3 class="text-xl font-bold mb-3 text-[#394d62] group-hover:text-white">C.E.R.</h3>
-                                    <p class="text-gray-600 group-hover:text-white/90 mb-4">
-                                        Certificado de Emigrante Retornado
-                                    </p>
-                                    <div
-                                        class="flex items-center text-sm font-semibold text-[#d75528] group-hover:text-white">
-                                        <span>Ver detalles</span>
-                                        <span class="ml-2 transform group-hover:translate-x-2 transition-transform"
-                                            >→</span
-                                        >
-                                    </div>
+                        <!-- Paso 3: Empadronamiento -->
+                        <div class="relative mb-12 md:mb-16">
+                            <div class="flex items-start">
+                                <div
+                                    class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#0c615d] to-[#77b2c0] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10 md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+                                    3
                                 </div>
-                            </a>
+                                <div class="ml-8 md:ml-0 md:w-full md:max-w-[50%] md:mr-auto md:pr-12">
+                                    <a href="/tramites/empadronamiento" class="block group">
+                                        <div
+                                            class="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#0c615d] hover:shadow-2xl hover:scale-105 transition-all cursor-pointer">
+                                            <h3 class="text-2xl font-bold text-gray-800 mb-2 flex items-center">
+                                                Empadronamiento
+                                                <span
+                                                    class="ml-2 text-[#0c615d] group-hover:translate-x-1 transition-transform"
+                                                    >→</span
+                                                >
+                                            </h3>
+                                            <p class="text-gray-600 mb-3">Empadrónate en un ayuntamiento de Galicia</p>
+                                            <span
+                                                class="inline-block bg-[#0c615d] text-white px-3 py-1 rounded-full text-sm">
+                                                🔗 Ver guía completa
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-                            <!-- Subsidio Emigrante Retornado -->
-                            <a
-                                href="/tramites/subsidio-por-desempleo-para-emigrante-retornado"
-                                class="group bg-white border-2 border-[#dfa142] p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:bg-[#dfa142] transition-all transform hover:-translate-y-2">
-                                <div class="group-hover:text-white transition-colors">
-                                    <div class="text-5xl mb-4">💰</div>
-                                    <h3 class="text-xl font-bold mb-3 text-[#394d62] group-hover:text-white">
-                                        Subsidio Retornado
-                                    </h3>
-                                    <p class="text-gray-600 group-hover:text-white/90 mb-4">
-                                        Subsidio por desempleo para retornados
-                                    </p>
-                                    <div
-                                        class="flex items-center text-sm font-semibold text-[#dfa142] group-hover:text-white">
-                                        <span>Ver detalles</span>
-                                        <span class="ml-2 transform group-hover:translate-x-2 transition-transform"
-                                            >→</span
-                                        >
-                                    </div>
+                        <!-- Paso 4: DNI Español -->
+                        <div class="relative mb-12 md:mb-16">
+                            <div class="flex items-start md:justify-end">
+                                <div
+                                    class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#77b2c0] to-[#0c615d] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10 md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+                                    4
                                 </div>
-                            </a>
+                                <div class="ml-8 md:ml-0 md:w-full md:max-w-[50%] md:pl-12">
+                                    <a href="/tramites/dni-espanol" class="block group">
+                                        <div
+                                            class="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#77b2c0] hover:shadow-2xl hover:scale-105 transition-all cursor-pointer">
+                                            <h3 class="text-2xl font-bold text-gray-800 mb-2 flex items-center">
+                                                <span
+                                                    class="mr-2 text-[#77b2c0] group-hover:translate-x-1 transition-transform"
+                                                    >→</span
+                                                >
+                                                DNI Español
+                                            </h3>
+                                            <p class="text-gray-600 mb-3">
+                                                Solicita tu Documento Nacional de Identidad
+                                            </p>
+                                            <span
+                                                class="inline-block bg-[#77b2c0] text-white px-3 py-1 rounded-full text-sm">
+                                                🔗 Ver guía completa
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-                            <!-- Subsidio Espacio Europeo -->
-                            <a
-                                href="/tramites/subsidio-por-desempleo-espacio-europeo"
-                                class="group bg-white border-2 border-[#77b2c0] p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:bg-[#77b2c0] transition-all transform hover:-translate-y-2">
-                                <div class="group-hover:text-white transition-colors">
-                                    <div class="text-5xl mb-4">🇪🇺</div>
-                                    <h3 class="text-xl font-bold mb-3 text-[#394d62] group-hover:text-white">
-                                        Subsidio UE
-                                    </h3>
-                                    <p class="text-gray-600 group-hover:text-white/90 mb-4">
-                                        Subsidio espacio económico europeo
-                                    </p>
+                        <!-- Paso 5: Cuenta Bancaria -->
+                        <div class="relative mb-12 md:mb-16">
+                            <div class="flex items-start">
+                                <div
+                                    class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#c6d067] to-[#0c615d] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10 md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+                                    5
+                                </div>
+                                <div class="ml-8 md:ml-0 md:w-full md:max-w-[50%] md:mr-auto md:pr-12">
                                     <div
-                                        class="flex items-center text-sm font-semibold text-[#77b2c0] group-hover:text-white">
-                                        <span>Ver detalles</span>
-                                        <span class="ml-2 transform group-hover:translate-x-2 transition-transform"
-                                            >→</span
-                                        >
+                                        class="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#c6d067] hover:shadow-2xl transition-shadow">
+                                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Cuenta Bancaria</h3>
+                                        <p class="text-gray-600 mb-3">Abre una cuenta bancaria en Galicia</p>
+                                        <a href="/tramites/cuenta-bancaria">
+                                            <span
+                                                class="inline-block bg-[#c6d067] text-white px-3 py-1 rounded-full text-sm hover:bg-opacity-80 transition-colors mb-2">
+                                                🔗 Ver guía completa
+                                            </span>
+                                        </a>
+                                        <span
+                                            class="inline-block bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
+                                            🏦 Trámite bancario
+                                        </span>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
+                        </div>
 
-                            <!-- Canje Registro Conducir -->
-                            <a
-                                href="/tramites/canje-registro-de-conducir"
-                                class="group bg-white border-2 border-[#d2557d] p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:bg-[#d2557d] transition-all transform hover:-translate-y-2">
-                                <div class="group-hover:text-white transition-colors">
-                                    <div class="text-5xl mb-4">🚗</div>
-                                    <h3 class="text-xl font-bold mb-3 text-[#394d62] group-hover:text-white">
-                                        Canje de Licencia
-                                    </h3>
-                                    <p class="text-gray-600 group-hover:text-white/90 mb-4">
-                                        Canje registro de conducir
-                                    </p>
-                                    <div
-                                        class="flex items-center text-sm font-semibold text-[#d2557d] group-hover:text-white">
-                                        <span>Ver detalles</span>
-                                        <span class="ml-2 transform group-hover:translate-x-2 transition-transform"
-                                            >→</span
-                                        >
-                                    </div>
+                        <!-- Paso 6: Certificado Emigrante Retornado -->
+                        <div class="relative mb-12 md:mb-16">
+                            <div class="flex items-start md:justify-end">
+                                <div
+                                    class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#d2557d] to-[#394d62] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10 md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+                                    6
                                 </div>
-                            </a>
+                                <div class="ml-8 md:ml-0 md:w-full md:max-w-[50%] md:pl-12">
+                                    <a href="/tramites/certificado-emigrante-retornado" class="block group">
+                                        <div
+                                            class="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#d2557d] hover:shadow-2xl hover:scale-105 transition-all cursor-pointer">
+                                            <h3 class="text-2xl font-bold text-gray-800 mb-2 flex items-center">
+                                                <span
+                                                    class="mr-2 text-[#d2557d] group-hover:translate-x-1 transition-transform"
+                                                    >→</span
+                                                >
+                                                Certificado Emigrante Retornado
+                                            </h3>
+                                            <p class="text-gray-600 mb-3">
+                                                Solicita el Certificado de Emigrante Retornado (CER)
+                                            </p>
+                                            <span
+                                                class="inline-block bg-[#d2557d] text-white px-3 py-1 rounded-full text-sm">
+                                                🔗 Ver guía completa
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-                            <!-- Homologación Títulos -->
-                            <a
-                                href="/tramites/homologacion-equivalencia-y-convalidacion-de-titulos"
-                                class="group bg-white border-2 border-[#c6d067] p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:bg-[#c6d067] transition-all transform hover:-translate-y-2">
-                                <div class="group-hover:text-white transition-colors">
-                                    <div class="text-5xl mb-4">🎓</div>
-                                    <h3 class="text-xl font-bold mb-3 text-[#394d62] group-hover:text-white">
-                                        Homologación
-                                    </h3>
-                                    <p class="text-gray-600 group-hover:text-white/90 mb-4">
-                                        Homologación y convalidación de títulos
-                                    </p>
+                        <!-- Paso 7: Seguridad Social y Sanidad -->
+                        <div class="relative mb-12 md:mb-16">
+                            <div class="flex items-start">
+                                <div
+                                    class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#394d62] to-[#0c615d] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10 md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+                                    7
+                                </div>
+                                <div class="ml-8 md:ml-0 md:w-full md:max-w-[50%] md:mr-auto md:pr-12">
                                     <div
-                                        class="flex items-center text-sm font-semibold text-[#c6d067] group-hover:text-white">
-                                        <span>Ver detalles</span>
-                                        <span class="ml-2 transform group-hover:translate-x-2 transition-transform"
-                                            >→</span
-                                        >
+                                        class="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#394d62] hover:shadow-2xl transition-shadow">
+                                        <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                                            Seguridad Social y Sanidad
+                                        </h3>
+                                        <p class="text-gray-600 mb-3">
+                                            Para integrarte plenamente en el sistema español, deberás inscribirte en
+                                            tres instituciones:
+                                        </p>
+
+                                        <div class="flex flex-wrap gap-2">
+                                            <a
+                                                href="/tramites/seguridad-social"
+                                                class="inline-block bg-[#394d62] text-white px-3 py-1 rounded-full text-sm hover:bg-opacity-80 transition-colors">
+                                                📋 Seguridad Social (INSS/TGSS)
+                                            </a>
+                                            <a
+                                                href="/tramites/sistema-de-salud"
+                                                class="inline-block bg-[#394d62] text-white px-3 py-1 rounded-full text-sm hover:bg-opacity-80 transition-colors">
+                                                🏥 Sistema de salud (SERGAS)
+                                            </a>
+                                            <a
+                                                href="/tramites/sepe"
+                                                class="inline-block bg-[#394d62] text-white px-3 py-1 rounded-full text-sm hover:bg-opacity-80 transition-colors">
+                                                📋 Oficina de Emprego (SEPE)
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
+                        </div>
+
+                        <!-- Paso 8: Programas y Ayudas -->
+                        <div class="relative mb-12 md:mb-16">
+                            <div class="flex items-start md:justify-end">
+                                <div
+                                    class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#0c615d] to-[#c6d067] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10 md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+                                    8
+                                </div>
+                                <div class="ml-8 md:ml-0 md:w-full md:max-w-[50%] md:pl-12">
+                                    <div
+                                        class="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#0c615d] hover:shadow-2xl transition-shadow">
+                                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Programas y Ayudas</h3>
+                                        <p class="text-gray-600 mb-3">
+                                            Aprovecha programas, ayudas y subsidios disponibles
+                                        </p>
+                                        <div class="flex flex-wrap gap-2">
+                                            <a
+                                                href="/tramites/subsidio-para-emigrante-retornado"
+                                                class="inline-block bg-[#0c615d] text-white px-3 py-1 rounded-full text-sm hover:bg-opacity-80 transition-colors">
+                                                💰 Subsidio para Emigrantes Retornados
+                                            </a>
+                                            <a
+                                                href="/tramites/ayuda-extraordinaria-para-migrantes-gallegos-retornados"
+                                                class="inline-block bg-[#0c615d] text-white px-3 py-1 rounded-full text-sm hover:bg-opacity-80 transition-colors">
+                                                💰 Ayuda Extraordinaria para Emigrantes Gallegos Retornados
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 9: Homologación -->
+                        <div class="relative mb-12 md:mb-16">
+                            <div class="flex items-start">
+                                <div
+                                    class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#c6d067] to-[#dfa142] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10 md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+                                    9
+                                </div>
+                                <div class="ml-8 md:ml-0 md:w-full md:max-w-[50%] md:mr-auto md:pr-12">
+                                    <a href="/tramites/homologacion-de-estudios-extranjeros" class="block group">
+                                        <div
+                                            class="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#c6d067] hover:shadow-2xl hover:scale-105 transition-all cursor-pointer">
+                                            <h3 class="text-2xl font-bold text-gray-800 mb-2 flex items-center">
+                                                Homologación de Títulos
+                                                <span
+                                                    class="ml-2 text-[#c6d067] group-hover:translate-x-1 transition-transform"
+                                                    >→</span
+                                                >
+                                            </h3>
+                                            <p class="text-gray-600 mb-3">
+                                                Homologa tu Bachiller y, si corresponde, tu Grado universitario
+                                            </p>
+                                            <span
+                                                class="inline-block bg-[#c6d067] text-white px-3 py-1 rounded-full text-sm">
+                                                🔗 Ver guía completa
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 10: Canje Licencia -->
+                        <div class="relative mb-12 md:mb-16">
+                            <div class="flex items-start md:justify-end">
+                                <div
+                                    class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#dfa142] to-[#d75528] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10 md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+                                    10
+                                </div>
+                                <div class="ml-8 md:ml-0 md:w-full md:max-w-[50%] md:pl-12">
+                                    <a href="/tramites/canje-licencia-de-conducir" class="block group">
+                                        <div
+                                            class="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#dfa142] hover:shadow-2xl hover:scale-105 transition-all cursor-pointer">
+                                            <h3 class="text-2xl font-bold text-gray-800 mb-2 flex items-center">
+                                                <span
+                                                    class="mr-2 text-[#dfa142] group-hover:translate-x-1 transition-transform"
+                                                    >→</span
+                                                >
+                                                Canje de Licencia de Conducir
+                                            </h3>
+                                            <p class="text-gray-600 mb-3">Canjea tu permiso de conducir extranjero</p>
+                                            <span
+                                                class="inline-block bg-[#dfa142] text-white px-3 py-1 rounded-full text-sm">
+                                                🔗 Ver guía completa
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 11: Pareja no española -->
+                        <div class="relative mb-12 md:mb-16">
+                            <div class="flex items-start">
+                                <div
+                                    class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#d75528] to-[#d2557d] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10 md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+                                    11
+                                </div>
+                                <div class="ml-8 md:ml-0 md:w-full md:max-w-[50%] md:mr-auto md:pr-12">
+                                    <div
+                                        class="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-[#d75528] hover:shadow-2xl transition-shadow">
+                                        <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                                            Residencia y Trabajo (Pareja)
+                                        </h3>
+                                        <p class="text-gray-600 mb-3">
+                                            Si vienes con pareja no española: presenta residencia + permiso de trabajo
+                                        </p>
+                                        <a
+                                            href="/tramites/residencia-y-permiso-de-trabajo-para-pareja-sin-ciudadania"
+                                            class="inline-block bg-[#d75528] text-white px-3 py-1 rounded-full text-sm hover:bg-opacity-80 transition-colors mb-2">
+                                            🔗 Ver guía completa
+                                        </a>
+                                        <span
+                                            class="inline-block bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm">
+                                            💑 Si aplica
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 12: Contacto AJERGA -->
+                        <div class="relative">
+                            <div class="flex items-start md:justify-end">
+                                <div
+                                    class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#d2557d] to-[#394d62] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10 md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+                                    12
+                                </div>
+                                <div class="ml-8 md:ml-0 md:w-full md:max-w-[50%] md:pl-12">
+                                    <div
+                                        class="bg-gradient-to-br from-[#0c615d] to-[#094a47] rounded-2xl shadow-xl p-6 text-white hover:shadow-2xl transition-shadow">
+                                        <h3 class="text-2xl font-bold mb-2">Contacta con AJERGA</h3>
+                                        <p class="mb-3">En cualquier etapa del proceso, estamos aquí para asesorarte</p>
+                                        <a
+                                            href="/asociate"
+                                            class="inline-block bg-white text-[#0c615d] px-4 py-2 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+                                            🤝 Asóciate ahora
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -275,25 +400,69 @@ import Footer from '../components/Footer.astro'
                                 <li class="flex items-start">
                                     <span class="text-2xl mr-4 mt-1">🔐</span>
                                     <div>
-                                        <p class="text-gray-700 text-lg">
-                                            Muchos trámites se agilizan con un <strong>lector de DNI electrónico</strong
-                                            >, un pequeño dispositivo que se conecta al ordenador y funciona con tu
-                                            clave digital. Puedes conseguirlo en
-                                            <a
-                                                class="text-[#0c615d] underline font-semibold hover:text-[#77b2c0]"
-                                                href="https://www.amazon.es/Trust-Lector-Compatible-tarjetas-Cumple/dp/B08HVYHMZH/"
-                                                target="_blank"
-                                                rel="noopener noreferrer">Amazon por menos de 8 euros</a
-                                            >.
+                                        <h3 class="font-bold text-xl text-[#394d62] mb-3">
+                                            Identificación y firma electrónica
+                                        </h3>
+                                        <p class="text-gray-700 leading-relaxed mb-4">
+                                            En general, para realizar trámites u obtener información personal por
+                                            internet, es necesario utilizar un sistema que permita verificar tu
+                                            identidad. En España, teniendo una de estas formas de acceso, te ahorras <strong
+                                                >casi por completo</strong
+                                            > solicitar cita y acudir de forma presencial a los trámites.
                                         </p>
+                                        <div class="space-y-3 mt-4">
+                                            <div
+                                                class="bg-white rounded-lg p-3 shadow-sm hover:shadow-md transition-shadow">
+                                                <strong class="text-[#394d62]">a) Plataforma Cl@ve:</strong>
+                                                <a
+                                                    href="https://clave.gob.es"
+                                                    target="_blank"
+                                                    class="text-blue-600 hover:text-blue-800 underline ml-2">
+                                                    clave.gob.es
+                                                </a>
+                                            </div>
+                                            <div
+                                                class="bg-white rounded-lg p-3 shadow-sm hover:shadow-md transition-shadow">
+                                                <strong class="text-[#394d62]">b) DNI Electrónico:</strong>
+                                                <a
+                                                    href="https://www.dnielectronico.es"
+                                                    target="_blank"
+                                                    class="text-blue-600 hover:text-blue-800 underline ml-2">
+                                                    dnielectronico.es
+                                                </a>
+                                            </div>
+                                            <div
+                                                class="bg-white rounded-lg p-3 shadow-sm hover:shadow-md transition-shadow">
+                                                <strong class="text-[#394d62]">c) Certificado Digital:</strong>
+                                                <a
+                                                    href="https://www.sede.fnmt.gob.es/certificados/persona-fisica"
+                                                    target="_blank"
+                                                    class="text-blue-600 hover:text-blue-800 underline ml-2 break-all">
+                                                    sede.fnmt.gob.es/certificados/persona-fisica
+                                                </a>
+                                            </div>
+                                            <div
+                                                class="bg-white rounded-lg p-3 shadow-sm hover:shadow-md transition-shadow">
+                                                <strong class="text-[#394d62]">d) Chave 365:</strong>
+                                                <a
+                                                    href="https://www.xunta.gal/es/chave365/solicitude"
+                                                    target="_blank"
+                                                    class="text-blue-600 hover:text-blue-800 underline ml-2">
+                                                    xunta.gal/es/chave365/solicitude
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li class="flex items-start">
                                     <span class="text-2xl mr-4 mt-1">📞</span>
                                     <div>
                                         <p class="text-gray-700 text-lg">
-                                            No dudes en contactar con la <strong>Oficina de Retorno</strong> de tu ciudad:
-                                            ellos sabrán orientarte si tienes dudas con algún trámite.
+                                            No dudes en contactar con la <a
+                                                href="/tramites/oficina-del-retorno"
+                                                class="underline"
+                                                target="_blank"><strong>Oficina de Retorno</strong></a
+                                            > de tu ciudad: ellos sabrán orientarte si tienes dudas con algún trámite.
                                         </p>
                                     </div>
                                 </li>

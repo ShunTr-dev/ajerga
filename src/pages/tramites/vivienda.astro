@@ -1,0 +1,664 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Header from '../../components/Header.astro'
+import Footer from '../../components/Footer.astro'
+---
+
+<Layout
+    title="Vivienda Estudiantil en Galicia - AJERGA"
+    description="Guía completa sobre alojamiento para estudiantes en las principales ciudades de Galicia: precios, zonas y consejos">
+    <Header />
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-[#d2557d] to-[#394d62] py-16 text-white overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-10 right-10 text-9xl">🏠</div>
+                <div class="absolute bottom-10 left-10 text-9xl">🎓</div>
+            </div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
+                        <span class="text-sm font-semibold">Alojamiento</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">🏡 Vivienda Estudiantil en Galicia</h1>
+                    <p class="text-xl md:text-2xl text-white/90">
+                        Guía completa de alojamiento en las principales ciudades universitarias
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contenido Principal -->
+        <section class="py-16 bg-gradient-to-b from-gray-50 to-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <!-- Santiago de Compostela -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 border-t-4 border-blue-500">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-5xl">🏛️</span>
+                            <div>
+                                <h2 class="text-3xl font-bold text-[#394d62]">Santiago de Compostela</h2>
+                                <span
+                                    class="inline-block bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold mt-2">
+                                    🔥 Demanda ALTA
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="prose prose-lg text-gray-700 mb-6">
+                            <p class="leading-relaxed">
+                                Santiago es la ciudad con <strong>más concentración de estudiantes</strong> en Galicia, albergando
+                                la <strong>Universidad de Santiago de Compostela (USC)</strong>, con estudiantes
+                                nacionales e internacionales.
+                            </p>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div
+                                class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 border-l-4 border-blue-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">💰</span>
+                                    Precios promedio
+                                </h3>
+                                <div class="space-y-3">
+                                    <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                        <p class="font-semibold text-[#394d62] mb-1">Habitación compartida</p>
+                                        <p class="text-2xl font-bold text-blue-700">
+                                            350-450€ <span class="text-sm font-normal text-gray-600">+ gastos/mes</span>
+                                        </p>
+                                    </div>
+                                    <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                        <p class="font-semibold text-[#394d62] mb-1">Residencia universitaria</p>
+                                        <p class="text-2xl font-bold text-cyan-700">
+                                            350-500€ <span class="text-sm font-normal text-gray-600">/mes</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 border-l-4 border-green-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">📍</span>
+                                    Zonas recomendadas
+                                </h3>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-green-600 mt-1">✓</span>
+                                        <div>
+                                            <strong>Campus Sur:</strong> Santa Marta, Ensanche, Plaza Roja
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-green-600 mt-1">✓</span>
+                                        <div>
+                                            <strong>Campus Norte:</strong> Casco Histórico, San Caetano
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="mt-4 bg-yellow-100 border-l-4 border-yellow-500 p-3 rounded-r-lg">
+                                    <p class="text-sm text-yellow-800">
+                                        <strong>☔ Consejo:</strong> La ciudad llueve bastante, prioriza habitaciones con
+                                        luz natural.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- A Coruña -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 border-t-4 border-purple-500">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-5xl">🌊</span>
+                            <div>
+                                <h2 class="text-3xl font-bold text-[#394d62]">A Coruña</h2>
+                                <span
+                                    class="inline-block bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold mt-2">
+                                    🔥 Demanda ALTA
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="prose prose-lg text-gray-700 mb-6">
+                            <p class="leading-relaxed">
+                                La <strong>Universidad de A Coruña (UDC)</strong> atrae a muchos estudiantes. La ciudad es
+                                conocida por su <strong>gran vida universitaria</strong>.
+                            </p>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div
+                                class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 border-l-4 border-purple-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">💰</span>
+                                    Precios promedio
+                                </h3>
+                                <div class="space-y-3">
+                                    <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                        <p class="font-semibold text-[#394d62] mb-1">Habitación compartida</p>
+                                        <p class="text-2xl font-bold text-purple-700">
+                                            300-420€ <span class="text-sm font-normal text-gray-600">+ gastos/mes</span>
+                                        </p>
+                                    </div>
+                                    <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                        <p class="font-semibold text-[#394d62] mb-1">Residencia universitaria</p>
+                                        <p class="text-2xl font-bold text-pink-700">
+                                            350-450€ <span class="text-sm font-normal text-gray-600">/mes</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 border-l-4 border-blue-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">📍</span>
+                                    Zonas recomendadas
+                                </h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Riazor</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                                        >Os Mallos</span
+                                    >
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                                        >Cuatro Caminos</span
+                                    >
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                                        >Los Rosales</span
+                                    >
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                                        >Monte Alto</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ourense -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 border-t-4 border-orange-500">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-5xl">♨️</span>
+                            <div>
+                                <h2 class="text-3xl font-bold text-[#394d62]">Ourense</h2>
+                                <span
+                                    class="inline-block bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-semibold mt-2">
+                                    📊 Demanda MODERADA
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="prose prose-lg text-gray-700 mb-6">
+                            <p class="leading-relaxed">
+                                La <strong>Universidad de Vigo</strong> tiene una sede importante en la ciudad. Opciones
+                                <strong>más asequibles</strong> que Santiago o A Coruña.
+                            </p>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div
+                                class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-6 border-l-4 border-orange-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">💰</span>
+                                    Precios promedio
+                                </h3>
+                                <div class="space-y-3">
+                                    <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                        <p class="font-semibold text-[#394d62] mb-1">Habitación compartida</p>
+                                        <p class="text-2xl font-bold text-orange-700">
+                                            250-350€ <span class="text-sm font-normal text-gray-600">+ gastos/mes</span>
+                                        </p>
+                                    </div>
+                                    <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                        <p class="font-semibold text-[#394d62] mb-1">Residencia universitaria</p>
+                                        <p class="text-2xl font-bold text-amber-700">
+                                            280-380€ <span class="text-sm font-normal text-gray-600">/mes</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 border-l-4 border-green-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">📍</span>
+                                    Zonas recomendadas
+                                </h3>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-green-600">✓</span>
+                                        <span><strong>O Casco Vello</strong> (centro histórico)</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-green-600">✓</span>
+                                        <span><strong>A Ponte</strong> y <strong>O Couto</strong> (económicos)</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-green-600">✓</span>
+                                        <span><strong>As Lagunas</strong> (cerca de la universidad)</span>
+                                    </li>
+                                </ul>
+                                <div class="mt-3 bg-blue-100 border-l-4 border-blue-500 p-3 rounded-r-lg">
+                                    <p class="text-sm text-blue-800">
+                                        <strong>ℹ️</strong> Ciudad pequeña, puedes llegar andando a cualquier sitio.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lugo -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 border-t-4 border-green-500">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-5xl">🏰</span>
+                            <div>
+                                <h2 class="text-3xl font-bold text-[#394d62]">Lugo</h2>
+                                <span
+                                    class="inline-block bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-semibold mt-2">
+                                    📊 Demanda MODERADA
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="prose prose-lg text-gray-700 mb-6">
+                            <p class="leading-relaxed">
+                                Pequeña pero importante <strong>comunidad estudiantil</strong> en la Universidad de Lugo.
+                                Precios muy <strong>asequibles</strong>.
+                            </p>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div
+                                class="bg-gradient-to-br from-green-50 to-teal-50 rounded-xl p-6 border-l-4 border-green-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">💰</span>
+                                    Precios promedio
+                                </h3>
+                                <div class="space-y-3">
+                                    <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                        <p class="font-semibold text-[#394d62] mb-1">Habitación compartida</p>
+                                        <p class="text-2xl font-bold text-green-700">
+                                            250-350€ <span class="text-sm font-normal text-gray-600">/mes</span>
+                                        </p>
+                                    </div>
+                                    <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                        <p class="font-semibold text-[#394d62] mb-1">Residencia universitaria</p>
+                                        <p class="text-2xl font-bold text-teal-700">
+                                            250-350€ <span class="text-sm font-normal text-gray-600">/mes</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border-l-4 border-blue-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">📍</span>
+                                    Zonas recomendadas
+                                </h3>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-blue-600">✓</span>
+                                        <span>Cerca del <strong>campus universitario</strong></span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-blue-600">✓</span>
+                                        <span><strong>Centro de la ciudad</strong> (junto a la muralla romana)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pontevedra -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 border-t-4 border-teal-500">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-5xl">🌳</span>
+                            <div>
+                                <h2 class="text-3xl font-bold text-[#394d62]">Pontevedra</h2>
+                                <span
+                                    class="inline-block bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-semibold mt-2">
+                                    📊 Demanda MODERADA
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="prose prose-lg text-gray-700 mb-6">
+                            <p class="leading-relaxed">
+                                La <strong>Universidad de Vigo</strong> tiene presencia en Pontevedra.
+                                <strong>Precios más bajos</strong> que Santiago o A Coruña.
+                            </p>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div
+                                class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-6 border-l-4 border-teal-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">💰</span>
+                                    Precios promedio
+                                </h3>
+                                <div class="space-y-3">
+                                    <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                        <p class="font-semibold text-[#394d62] mb-1">Habitación compartida</p>
+                                        <p class="text-2xl font-bold text-teal-700">
+                                            250-350€ <span class="text-sm font-normal text-gray-600">/mes</span>
+                                        </p>
+                                    </div>
+                                    <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                        <p class="font-semibold text-[#394d62] mb-1">Residencia universitaria</p>
+                                        <p class="text-2xl font-bold text-cyan-700">
+                                            250-350€ <span class="text-sm font-normal text-gray-600">/mes</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 border-l-4 border-purple-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">📍</span>
+                                    Zonas recomendadas
+                                </h3>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-purple-600">✓</span>
+                                        <span><strong>Centro de la ciudad</strong></span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-purple-600">✓</span>
+                                        <span>Área cercana al <strong>campus de Pontente</strong></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vigo -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 border-t-4 border-rose-500">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-5xl">🏙️</span>
+                            <div>
+                                <h2 class="text-3xl font-bold text-[#394d62]">Vigo</h2>
+                                <span
+                                    class="inline-block bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold mt-2">
+                                    🔥 Demanda ALTA
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="prose prose-lg text-gray-700 mb-6">
+                            <p class="leading-relaxed">
+                                Vigo es la <strong>ciudad más grande de Galicia</strong> y uno de los principales núcleos
+                                universitarios, con la <strong>Universidad de Vigo</strong>. Alta demanda de
+                                alojamiento.
+                            </p>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div
+                                class="bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl p-6 border-l-4 border-rose-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">💰</span>
+                                    Precios promedio
+                                </h3>
+                                <div class="space-y-3">
+                                    <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                        <p class="font-semibold text-[#394d62] mb-1">Habitación compartida</p>
+                                        <p class="text-2xl font-bold text-rose-700">
+                                            300-450€ <span class="text-sm font-normal text-gray-600">/mes</span>
+                                        </p>
+                                    </div>
+                                    <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                        <p class="font-semibold text-[#394d62] mb-1">Residencia universitaria</p>
+                                        <p class="text-2xl font-bold text-pink-700">
+                                            300-450€ <span class="text-sm font-normal text-gray-600">/mes</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-6 border-l-4 border-amber-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">🏫</span>
+                                    Campus Universidad de Vigo
+                                </h3>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-amber-600">•</span>
+                                        <span><strong>Campus Cuvi:</strong> Zona alejada del centro (13 km)</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-amber-600">•</span>
+                                        <span><strong>Facultad de Comercio:</strong> Más cerca del centro</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-amber-600">•</span>
+                                        <span
+                                            >También campus en <strong>Pontevedra</strong> y <strong>Ourense</strong
+                                            ></span
+                                        >
+                                    </li>
+                                </ul>
+                                <div class="mt-3 bg-yellow-100 border-l-4 border-yellow-500 p-3 rounded-r-lg">
+                                    <p class="text-xs text-yellow-800">
+                                        <strong>⚠️</strong> Averigua cuál es tu sede antes de buscar vivienda
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border-l-4 border-blue-500">
+                            <h3 class="font-bold text-xl text-[#394d62] mb-4 flex items-center">
+                                <span class="mr-2">📍</span>
+                                Zonas recomendadas
+                            </h3>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                    <h4 class="font-bold text-[#394d62] mb-2">🎯 Centro de Vigo</h4>
+                                    <p class="text-sm text-gray-700">
+                                        Zona accesible con servicios, transporte público. Cerca de estación de tren y
+                                        autobuses.
+                                    </p>
+                                </div>
+                                <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                    <h4 class="font-bold text-[#394d62] mb-2">🏫 Coia</h4>
+                                    <p class="text-sm text-gray-700">
+                                        Cerca de la Universidad, bien conectada con el campus.
+                                    </p>
+                                </div>
+                                <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                    <h4 class="font-bold text-[#394d62] mb-2">🌆 Churruca y Plaza España</h4>
+                                    <p class="text-sm text-gray-700">
+                                        Muy céntricos, gran oferta comercial, corazón de la ciudad.
+                                    </p>
+                                </div>
+                                <div class="bg-white/80 backdrop-blur rounded-lg p-4">
+                                    <h4 class="font-bold text-[#394d62] mb-2">🏘️ Coia y Bouzas</h4>
+                                    <p class="text-sm text-gray-700">
+                                        Barrios tranquilos, precios ligeramente más bajos, buena conexión.
+                                    </p>
+                                </div>
+                                <div class="bg-white/80 backdrop-blur rounded-lg p-4 md:col-span-2">
+                                    <h4 class="font-bold text-[#394d62] mb-2">🏡 Plaza América</h4>
+                                    <p class="text-sm text-gray-700">
+                                        Zona residencial con servicios, bien conectada para ir al Cuvi.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Páginas para buscar vivienda -->
+                    <div
+                        class="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 rounded-2xl shadow-lg p-8 mb-8">
+                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
+                            <span class="text-4xl mr-3">🔍</span>
+                            Principales páginas para buscar vivienda
+                        </h2>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <a
+                                href="https://www.idealista.com"
+                                target="_blank"
+                                class="bg-white/80 backdrop-blur rounded-xl p-5 shadow-sm hover:shadow-lg transition-all border-l-4 border-indigo-500 group">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h3
+                                            class="font-bold text-lg text-[#394d62] group-hover:text-indigo-600 transition-colors">
+                                            💼 Idealista
+                                        </h3>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            Uno de los portales más populares en España
+                                        </p>
+                                    </div>
+                                    <span class="text-2xl group-hover:scale-110 transition-transform">🔗</span>
+                                </div>
+                            </a>
+
+                            <a
+                                href="https://www.fotocasa.es"
+                                target="_blank"
+                                class="bg-white/80 backdrop-blur rounded-xl p-5 shadow-sm hover:shadow-lg transition-all border-l-4 border-purple-500 group">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h3
+                                            class="font-bold text-lg text-[#394d62] group-hover:text-purple-600 transition-colors">
+                                            📸 Fotocasa
+                                        </h3>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            Gran oferta de habitaciones y pisos compartidos
+                                        </p>
+                                    </div>
+                                    <span class="text-2xl group-hover:scale-110 transition-transform">🔗</span>
+                                </div>
+                            </a>
+
+                            <a
+                                href="https://www.xunta.gal"
+                                target="_blank"
+                                class="bg-white/80 backdrop-blur rounded-xl p-5 shadow-sm hover:shadow-lg transition-all border-l-4 border-pink-500 group">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h3
+                                            class="font-bold text-lg text-[#394d62] group-hover:text-pink-600 transition-colors">
+                                            🏛️ Xunta de Galicia
+                                        </h3>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            Residencias universitarias y ayudas al alquiler
+                                        </p>
+                                    </div>
+                                    <span class="text-2xl group-hover:scale-110 transition-transform">🔗</span>
+                                </div>
+                            </a>
+
+                            <div class="bg-white/80 backdrop-blur rounded-xl p-5 shadow-sm border-l-4 border-green-500">
+                                <div class="flex items-center gap-3">
+                                    <span class="text-3xl">📱</span>
+                                    <div>
+                                        <h3 class="font-bold text-lg text-[#394d62]">WhatsApp e Instagram</h3>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            Grupos y perfiles son fuentes habituales. Estudiantes buscan compañeros u
+                                            ofertan pisos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Consejos Adicionales -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 border-t-4 border-[#d2557d]">
+                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
+                            <span class="text-4xl mr-3">💡</span>
+                            Consejos adicionales
+                        </h2>
+                        <div class="space-y-4">
+                            <div
+                                class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-5 border-l-4 border-blue-500">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-3xl flex-shrink-0">🚇</span>
+                                    <div>
+                                        <h3 class="font-bold text-lg text-[#394d62] mb-2">
+                                            Considera zonas periféricas
+                                        </h3>
+                                        <p class="text-gray-700">
+                                            Algunas zonas alejadas del centro ofrecen <strong
+                                                >precios más asequibles</strong
+                                            >, aunque puede ser necesario usar transporte público.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-5 border-l-4 border-purple-500">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-3xl flex-shrink-0">📄</span>
+                                    <div>
+                                        <h3 class="font-bold text-lg text-[#394d62] mb-2">
+                                            Verifica las condiciones del contrato
+                                        </h3>
+                                        <p class="text-gray-700 mb-2">
+                                            Asegúrate de que el <strong>contrato de alquiler</strong> esté claro, con especificaciones
+                                            sobre:
+                                        </p>
+                                        <ul class="text-sm space-y-1 text-gray-600">
+                                            <li>• Precio mensual</li>
+                                            <li>• Facturas y gastos incluidos/excluidos</li>
+                                            <li>• Duración del contrato</li>
+                                            <li>• Normas de convivencia</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-5 border-l-4 border-green-500">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-3xl flex-shrink-0">🏋️</span>
+                                    <div>
+                                        <h3 class="font-bold text-lg text-[#394d62] mb-2">
+                                            Aprovecha las instalaciones universitarias
+                                        </h3>
+                                        <p class="text-gray-700 mb-2">
+                                            Las universidades cuentan con instalaciones para hacer <strong
+                                                >deporte, clases dirigidas, cursos de idiomas, equipos y talleres</strong
+                                            > (ej: grupo de teatro) a precios asequibles.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-5 border-l-4 border-orange-500">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-3xl flex-shrink-0">🗣️</span>
+                                    <div>
+                                        <h3 class="font-bold text-lg text-[#394d62] mb-2">Aprende gallego</h3>
+                                        <p class="text-gray-700">
+                                            Para una <strong>inmersión completa en Galicia</strong>, te recomendamos
+                                            inscribirte en clases de idioma <strong>Gallego</strong>. Es la lengua
+                                            co-oficial y <strong>fundamental para la inserción laboral</strong>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botón de vuelta -->
+                    <div class="text-center pt-4">
+                        <a
+                            href="/tramites-galicia"
+                            class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#d2557d] to-[#c14a6f] text-white font-semibold rounded-xl hover:shadow-xl transition-all transform hover:scale-105 shadow-lg group">
+                            <span class="text-xl group-hover:-translate-x-1 transition-transform">←</span>
+                            <span>Volver a todos los trámites</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>

@@ -1,0 +1,374 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Header from '../../components/Header.astro'
+import Footer from '../../components/Footer.astro'
+---
+
+<Layout title="Cuenta Bancaria - AJERGA" description="Guía completa para abrir una cuenta bancaria en España">
+    <Header />
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-[#77b2c0] to-[#0c615d] py-16 text-white overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-10 right-10 text-9xl">🏦</div>
+                <div class="absolute bottom-10 left-10 text-9xl">💳</div>
+            </div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
+                        <span class="text-sm font-semibold">Gestión Bancaria</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4">🏦 Cuenta Bancaria</h1>
+                    <p class="text-xl md:text-2xl text-white/90">Guía para abrir tu cuenta bancaria en España</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introducción -->
+        <section class="py-8 bg-blue-50 border-l-4 border-blue-500">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">💡</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">
+                                ¿Por qué necesitas una cuenta bancaria?
+                            </h3>
+                            <p class="text-gray-700">
+                                Abrir una cuenta bancaria es un paso necesario para tu retorno. Te servirá para cobrar
+                                becas, ayudas y gestionar tus finanzas en España.
+                            </p>
+                            <p class="text-gray-600 text-sm mt-2">
+                                La oferta bancaria es variada. Aquí facilitamos información para contextualizar y
+                                brindar alternativas.
+                                <strong
+                                    >Recomendamos siempre dirigirse a las entidades y asesorarse con los especialistas
+                                    de cada banco.</strong
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bancos Section -->
+        <section class="py-16 bg-gradient-to-b from-white to-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Principales Opciones Bancarias</h2>
+
+                    <div class="space-y-8">
+                        <!-- Abanca -->
+                        <div
+                            class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all p-8 border-t-4 border-[#0c615d]">
+                            <div class="flex items-start gap-4 mb-6">
+                                <div class="text-5xl">🟢</div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-[#0c615d] mb-2">Abanca</h3>
+                                    <p class="text-gray-600">Banco gallego con amplia presencia en Galicia</p>
+                                </div>
+                            </div>
+
+                            <div class="space-y-6">
+                                <!-- Residentes -->
+                                <div class="bg-green-50 rounded-xl p-6">
+                                    <h4 class="font-bold text-lg text-gray-800 mb-4 flex items-center gap-2">
+                                        <span class="text-2xl">✅</span>
+                                        Con ciudadanía española o NIE (residente)
+                                    </h4>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-xl mt-1">💳</span>
+                                            <div>
+                                                <strong class="text-gray-800">Cuenta Clara:</strong>
+                                                <span class="text-gray-700">
+                                                    Sin comisiones, online, con tarjeta de débito gratuita. Ideal para
+                                                    jóvenes o nuevos residentes.</span
+                                                >
+                                            </div>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-xl mt-1">💰</span>
+                                            <div>
+                                                <strong class="text-gray-800">Cuenta Nómina:</strong>
+                                                <span class="text-gray-700">
+                                                    Sin comisiones si domicilias una nómina o pensión.</span
+                                                >
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- No residentes -->
+                                <div class="bg-blue-50 rounded-xl p-6">
+                                    <h4 class="font-bold text-lg text-gray-800 mb-4 flex items-center gap-2">
+                                        <span class="text-2xl">🌍</span>
+                                        Sin ciudadanía española (extranjero no residente)
+                                    </h4>
+                                    <p class="text-gray-700 mb-3">
+                                        <strong>Cuenta para no residentes:</strong> Puedes abrirla con pasaporte + prueba
+                                        de domicilio fuera de España + justificación de ingresos. Permite operar en euros.
+                                    </p>
+                                </div>
+
+                                <!-- Requisitos -->
+                                <div class="bg-gray-50 rounded-xl p-6">
+                                    <h4 class="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                                        <span class="text-xl">📋</span>
+                                        Requisitos comunes
+                                    </h4>
+                                    <ul class="space-y-2 text-gray-700">
+                                        <li class="flex items-center gap-2">
+                                            <span class="w-2 h-2 bg-[#0c615d] rounded-full"></span>
+                                            Pasaporte o NIE
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <span class="w-2 h-2 bg-[#0c615d] rounded-full"></span>
+                                            Prueba de domicilio (empadronamiento, factura o contrato de alquiler)
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <span class="w-2 h-2 bg-[#0c615d] rounded-full"></span>
+                                            Justificación de ingresos o actividad económica si la hubiera
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CaixaBank -->
+                        <div
+                            class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all p-8 border-t-4 border-[#77b2c0]">
+                            <div class="flex items-start gap-4 mb-6">
+                                <div class="text-5xl">🔵</div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-[#77b2c0] mb-2">CaixaBank</h3>
+                                    <p class="text-gray-600">Una de las entidades más grandes de España</p>
+                                </div>
+                            </div>
+
+                            <div class="space-y-6">
+                                <!-- Residentes -->
+                                <div class="bg-green-50 rounded-xl p-6">
+                                    <h4 class="font-bold text-lg text-gray-800 mb-4 flex items-center gap-2">
+                                        <span class="text-2xl">✅</span>
+                                        Con ciudadanía española o NIE (residente)
+                                    </h4>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-xl mt-1">💳</span>
+                                            <div>
+                                                <strong class="text-gray-800">Cuenta Día a Día:</strong>
+                                                <span class="text-gray-700">
+                                                    Incluye tarjeta y acceso a banca digital. Comisiones si no cumples
+                                                    requisitos.</span
+                                                >
+                                            </div>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-xl mt-1">📱</span>
+                                            <div>
+                                                <strong class="text-gray-800">ImaginBank (marca de CaixaBank):</strong>
+                                                <span class="text-gray-700">
+                                                    Cuenta 100% online, sin comisiones, ideal para jóvenes y
+                                                    estudiantes.</span
+                                                >
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- No residentes -->
+                                <div class="bg-blue-50 rounded-xl p-6">
+                                    <h4 class="font-bold text-lg text-gray-800 mb-4 flex items-center gap-2">
+                                        <span class="text-2xl">🌍</span>
+                                        Sin ciudadanía española (extranjero no residente)
+                                    </h4>
+                                    <p class="text-gray-700">
+                                        <strong>Cuenta de no residente:</strong> Con más comisiones, pero permite abrirla
+                                        con pasaporte.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Banco Santander -->
+                        <div
+                            class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all p-8 border-t-4 border-[#d75528]">
+                            <div class="flex items-start gap-4 mb-6">
+                                <div class="text-5xl">🔴</div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-[#d75528] mb-2">Banco Santander</h3>
+                                    <p class="text-gray-600">Banco internacional con amplia red en España</p>
+                                </div>
+                            </div>
+
+                            <div class="space-y-6">
+                                <!-- Residentes -->
+                                <div class="bg-green-50 rounded-xl p-6">
+                                    <h4 class="font-bold text-lg text-gray-800 mb-4 flex items-center gap-2">
+                                        <span class="text-2xl">✅</span>
+                                        Con ciudadanía española o NIE (residente)
+                                    </h4>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-xl mt-1">💻</span>
+                                            <div>
+                                                <strong class="text-gray-800">Cuenta Online Santander:</strong>
+                                                <span class="text-gray-700">
+                                                    Sin comisiones, incluye tarjeta de débito.</span
+                                                >
+                                            </div>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-xl mt-1">🎓</span>
+                                            <div>
+                                                <strong class="text-gray-800">Cuenta Smart:</strong>
+                                                <span class="text-gray-700">
+                                                    Para menores de 31 años, sin comisiones.</span
+                                                >
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- No residentes -->
+                                <div class="bg-blue-50 rounded-xl p-6">
+                                    <h4 class="font-bold text-lg text-gray-800 mb-4 flex items-center gap-2">
+                                        <span class="text-2xl">🌍</span>
+                                        Sin ciudadanía española (extranjero no residente)
+                                    </h4>
+                                    <p class="text-gray-700">
+                                        Se puede abrir la cuenta bancaria con el pasaporte de origen.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- BBVA -->
+                        <div
+                            class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all p-8 border-t-4 border-[#394d62]">
+                            <div class="flex items-start gap-4 mb-6">
+                                <div class="text-5xl">⚫</div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-[#394d62] mb-2">BBVA</h3>
+                                    <p class="text-gray-600">Banco líder en banca digital</p>
+                                </div>
+                            </div>
+
+                            <div class="space-y-6">
+                                <!-- Residentes -->
+                                <div class="bg-green-50 rounded-xl p-6">
+                                    <h4 class="font-bold text-lg text-gray-800 mb-4 flex items-center gap-2">
+                                        <span class="text-2xl">✅</span>
+                                        Con ciudadanía española o NIE (residente)
+                                    </h4>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-xl mt-1">🆓</span>
+                                            <div>
+                                                <strong class="text-gray-800">Cuenta Online Sin Comisiones:</strong>
+                                                <span class="text-gray-700">
+                                                    Muy popular, gestión 100% online, tarjeta de débito gratuita.</span
+                                                >
+                                            </div>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-xl mt-1">👤</span>
+                                            <div>
+                                                <strong class="text-gray-800">Cuenta Nómina Va Contigo:</strong>
+                                                <span class="text-gray-700">
+                                                    Con asesor personal si domicilias ingresos.</span
+                                                >
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- No residentes -->
+                                <div class="bg-blue-50 rounded-xl p-6">
+                                    <h4 class="font-bold text-lg text-gray-800 mb-4 flex items-center gap-2">
+                                        <span class="text-2xl">🌍</span>
+                                        Sin ciudadanía española (extranjero no residente)
+                                    </h4>
+                                    <p class="text-gray-700">
+                                        Puedes abrir una cuenta para no residentes, pero es necesario ir a una oficina y
+                                        presentar documentación adicional (pasaporte, etc.).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Banco Sabadell -->
+                        <div
+                            class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all p-8 border-t-4 border-[#c6d067]">
+                            <div class="flex items-start gap-4 mb-6">
+                                <div class="text-5xl">🟡</div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-[#394d62] mb-2">Banco Sabadell</h3>
+                                    <p class="text-gray-600">Banco con soluciones flexibles</p>
+                                </div>
+                            </div>
+
+                            <div class="space-y-6">
+                                <!-- Residentes -->
+                                <div class="bg-green-50 rounded-xl p-6">
+                                    <h4 class="font-bold text-lg text-gray-800 mb-4 flex items-center gap-2">
+                                        <span class="text-2xl">✅</span>
+                                        Con ciudadanía española o NIE (residente)
+                                    </h4>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-xl mt-1">💻</span>
+                                            <div>
+                                                <strong class="text-gray-800">Cuenta Online Sabadell:</strong>
+                                                <span class="text-gray-700">
+                                                    Sin comisiones ni condiciones, incluye tarjeta de débito.</span
+                                                >
+                                            </div>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-xl mt-1">📈</span>
+                                            <div>
+                                                <strong class="text-gray-800">Cuenta Expansión:</strong>
+                                                <span class="text-gray-700">
+                                                    Con beneficios si domicilias tu nómina.</span
+                                                >
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- No residentes -->
+                                <div class="bg-blue-50 rounded-xl p-6">
+                                    <h4 class="font-bold text-lg text-gray-800 mb-4 flex items-center gap-2">
+                                        <span class="text-2xl">🌍</span>
+                                        Sin ciudadanía española (extranjero no residente)
+                                    </h4>
+                                    <p class="text-gray-700">
+                                        Cuentan con productos especiales para no residentes. El proceso suele ser
+                                        presencial y puede tardar más.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botón de retorno -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <a
+                    href="/tramites-galicia"
+                    class="inline-flex items-center gap-2 bg-gradient-to-r from-[#0c615d] to-[#77b2c0] text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transition-all hover:scale-105">
+                    <span>←</span>
+                    <span>Volver a Trámites en Galicia</span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>

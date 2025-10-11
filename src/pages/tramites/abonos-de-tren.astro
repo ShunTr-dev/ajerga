@@ -1,0 +1,309 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Header from '../../components/Header.astro'
+import Footer from '../../components/Footer.astro'
+---
+
+<Layout
+    title="Abonos de Tren en Galicia - AJERGA"
+    description="Guía completa sobre abonos y descuentos en trenes de Media Distancia y Avant en Galicia">
+    <Header />
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-[#d2557d] to-[#394d62] py-16 text-white overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-10 right-10 text-9xl">🚄</div>
+                <div class="absolute bottom-10 left-10 text-9xl">🎫</div>
+            </div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
+                        <span class="text-sm font-semibold">Transporte</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">🚆 Abonos de Tren en Galicia</h1>
+                    <p class="text-xl md:text-2xl text-white/90">
+                        Descuentos y abonos para viajar en tren de forma económica
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contenido Principal -->
+        <section class="py-16 bg-gradient-to-b from-gray-50 to-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Introducción -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 border-t-4 border-[#d2557d]">
+                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
+                            <span class="text-4xl mr-3">ℹ️</span>
+                            Información general
+                        </h2>
+                        <div class="prose prose-lg text-gray-700 space-y-4">
+                            <p class="leading-relaxed">
+                                Viajar en tren resulta <strong>práctico y económico</strong>. A partir de <strong
+                                    >julio de 2025</strong
+                                >, rigen nuevas tarifas con importantes descuentos para residentes.
+                            </p>
+                            <div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-xl">
+                                <p class="text-blue-900">
+                                    <strong>📍 Más información oficial:</strong>
+                                </p>
+                                <a
+                                    href="https://www.renfe.com/es/es/viajar/prepara-tu-viaje/trenes-media-distancia-avant/abonos-media-distancia"
+                                    target="_blank"
+                                    class="text-blue-600 hover:text-blue-800 underline break-all text-sm mt-2 block">
+                                    renfe.com/es/es/viajar/prepara-tu-viaje/trenes-media-distancia-avant/abonos-media-distancia
+                                </a>
+                            </div>
+                            <div class="bg-green-50 border-l-4 border-green-500 p-5 rounded-r-xl mt-4">
+                                <p class="text-green-900">
+                                    <strong>🎫 ¿Dónde obtener los abonos?</strong>
+                                </p>
+                                <ul class="space-y-2 mt-2">
+                                    <li class="flex items-center gap-2">
+                                        <span class="text-green-600">✓</span>
+                                        <span><strong>Online:</strong> A través de la web o app de Renfe</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="text-green-600">✓</span>
+                                        <span
+                                            ><strong>Presencialmente:</strong> En las oficinas de Renfe (ubicadas en las
+                                            estaciones)</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tipos de Abonos -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 border-t-4 border-blue-500">
+                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
+                            <span class="text-4xl mr-3">🎫</span>
+                            Abonos de Media Distancia
+                        </h2>
+                        <p class="text-gray-600 mb-6 italic">Válidos para trayectos concretos origen-destino</p>
+
+                        <div class="space-y-6">
+                            <!-- Abono Mensual -->
+                            <div
+                                class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6 border-l-4 border-purple-500">
+                                <h3 class="text-2xl font-bold text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">📅</span>
+                                    Abono mensual
+                                </h3>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div class="bg-white/80 backdrop-blur rounded-lg p-5 shadow-sm">
+                                        <div class="flex items-center gap-3 mb-2">
+                                            <span class="text-3xl">👨‍🎓</span>
+                                            <h4 class="font-bold text-lg text-[#394d62]">Jóvenes (15–26 años)</h4>
+                                        </div>
+                                        <div class="bg-purple-100 rounded-lg p-3 mt-3">
+                                            <p class="text-center text-2xl font-bold text-purple-700">
+                                                70% de descuento
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white/80 backdrop-blur rounded-lg p-5 shadow-sm">
+                                        <div class="flex items-center gap-3 mb-2">
+                                            <span class="text-3xl">👨‍💼</span>
+                                            <h4 class="font-bold text-lg text-[#394d62]">Adultos (> 26 años)</h4>
+                                        </div>
+                                        <div class="bg-pink-100 rounded-lg p-3 mt-3">
+                                            <p class="text-center text-2xl font-bold text-pink-700">40% de descuento</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bono de 10 viajes -->
+                            <div
+                                class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-6 border-l-4 border-blue-500">
+                                <h3 class="text-2xl font-bold text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">🎟️</span>
+                                    Bono de 10 viajes
+                                </h3>
+                                <div class="space-y-4">
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div class="bg-white/80 backdrop-blur rounded-lg p-5 shadow-sm">
+                                            <div class="flex items-center gap-3 mb-2">
+                                                <span class="text-3xl">👨‍🎓</span>
+                                                <h4 class="font-bold text-lg text-[#394d62]">Jóvenes</h4>
+                                            </div>
+                                            <div class="bg-blue-100 rounded-lg p-3 mt-3">
+                                                <p class="text-center text-2xl font-bold text-blue-700">
+                                                    70% de descuento
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="bg-white/80 backdrop-blur rounded-lg p-5 shadow-sm">
+                                            <div class="flex items-center gap-3 mb-2">
+                                                <span class="text-3xl">👨‍💼</span>
+                                                <h4 class="font-bold text-lg text-[#394d62]">Adultos</h4>
+                                            </div>
+                                            <div class="bg-cyan-100 rounded-lg p-3 mt-3">
+                                                <p class="text-center text-2xl font-bold text-cyan-700">
+                                                    40% de descuento
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
+                                        <ul class="space-y-2 text-gray-700">
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-yellow-600">✓</span>
+                                                <span
+                                                    ><strong>Multipersonal:</strong> Lo puede utilizar más de una persona</span
+                                                >
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-yellow-600">✓</span>
+                                                <span><strong>Validez:</strong> 1 año desde la compra</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Abono Infantil -->
+                            <div
+                                class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6 border-l-4 border-green-500">
+                                <h3 class="text-2xl font-bold text-[#394d62] mb-4 flex items-center">
+                                    <span class="mr-2">👶</span>
+                                    Abono infantil (menores de 15 años)
+                                </h3>
+                                <div class="bg-white/80 backdrop-blur rounded-lg p-6 text-center">
+                                    <div
+                                        class="inline-block bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full px-8 py-4 text-3xl font-bold shadow-lg">
+                                        🎉 TOTALMENTE GRATUITO
+                                    </div>
+                                    <p class="text-gray-600 mt-4 italic">En trenes de Media Distancia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trenes Avant -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 border-t-4 border-orange-500">
+                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
+                            <span class="text-4xl mr-3">⚡</span>
+                            Trenes Avant (alta velocidad Media Distancia)
+                        </h2>
+                        <div
+                            class="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-6 border-l-4 border-orange-500">
+                            <div class="flex items-start gap-4">
+                                <span class="text-4xl flex-shrink-0">🚄</span>
+                                <div>
+                                    <p class="text-gray-700 leading-relaxed mb-3">
+                                        Los trenes Avant mantienen una <strong>bonificación del 50%</strong>, aunque
+                                        <strong>no son gratuitos</strong> como los trenes convencionales de Media Distancia.
+                                    </p>
+                                    <div class="bg-orange-100 rounded-lg p-4 text-center">
+                                        <p class="text-2xl font-bold text-orange-700">50% de descuento</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cercanías y Abono Único -->
+                    <div
+                        class="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 rounded-2xl shadow-lg p-8 mb-8">
+                        <h2 class="text-3xl font-bold text-[#394d62] mb-6 flex items-center">
+                            <span class="text-4xl mr-3">🎫</span>
+                            Cercanías y Abono Único Nacional
+                        </h2>
+                        <div class="space-y-4">
+                            <div class="bg-white/80 backdrop-blur rounded-xl p-6 border-l-4 border-indigo-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-3 flex items-center">
+                                    <span class="mr-2">⚠️</span>
+                                    Situación en Galicia
+                                </h3>
+                                <p class="text-gray-700 leading-relaxed">
+                                    Galicia <strong>no cuenta con red de Cercanías</strong>, por lo que no puede aplicar
+                                    el abono de Cercanías de 20 € (10 € para jóvenes) que existe en otras comunidades
+                                    autónomas.
+                                </p>
+                            </div>
+                            <div class="bg-white/80 backdrop-blur rounded-xl p-6 border-l-4 border-purple-500">
+                                <h3 class="font-bold text-xl text-[#394d62] mb-3 flex items-center">
+                                    <span class="mr-2">🔮</span>
+                                    Futuro: Billete Único
+                                </h3>
+                                <p class="text-gray-700 leading-relaxed">
+                                    El Gobierno prevé implantar un <strong>"billete único"</strong> para toda Galicia en
+                                    <strong>enero de 2026</strong>.
+                                </p>
+                                <div class="bg-purple-100 rounded-lg p-4 mt-3">
+                                    <p class="text-center font-semibold text-purple-800">
+                                        📅 Disponible a partir de: <strong>Enero 2026</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Consejos -->
+                    <div class="bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50 rounded-2xl shadow-lg p-8 mb-8">
+                        <h3 class="text-2xl font-bold text-[#394d62] mb-6 flex items-center">
+                            <span class="text-3xl mr-3">💡</span>
+                            Consejos importantes
+                        </h3>
+                        <div class="space-y-4">
+                            <div
+                                class="bg-white/80 backdrop-blur rounded-xl p-5 shadow-sm hover:shadow-md transition-all border-l-4 border-blue-500">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-3xl flex-shrink-0">📱</span>
+                                    <div>
+                                        <h4 class="font-bold text-[#394d62] mb-2">Descarga la app de Renfe</h4>
+                                        <p class="text-gray-700">
+                                            Gestiona tus billetes y abonos desde tu móvil de forma rápida y sencilla.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white/80 backdrop-blur rounded-xl p-5 shadow-sm hover:shadow-md transition-all border-l-4 border-cyan-500">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-3xl flex-shrink-0">💳</span>
+                                    <div>
+                                        <h4 class="font-bold text-[#394d62] mb-2">Lleva tu DNI o NIE</h4>
+                                        <p class="text-gray-700">
+                                            Para utilizar los abonos y bonos con descuento necesitarás acreditar tu
+                                            identidad y edad.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white/80 backdrop-blur rounded-xl p-5 shadow-sm hover:shadow-md transition-all border-l-4 border-teal-500">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-3xl flex-shrink-0">⏰</span>
+                                    <div>
+                                        <h4 class="font-bold text-[#394d62] mb-2">Planifica tus viajes</h4>
+                                        <p class="text-gray-700">
+                                            Consulta horarios y disponibilidad con antelación, especialmente en fechas
+                                            de alta demanda.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botón de vuelta -->
+                    <div class="text-center pt-4">
+                        <a
+                            href="/tramites-galicia"
+                            class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#d2557d] to-[#c14a6f] text-white font-semibold rounded-xl hover:shadow-xl transition-all transform hover:scale-105 shadow-lg group">
+                            <span class="text-xl group-hover:-translate-x-1 transition-transform">←</span>
+                            <span>Volver a todos los trámites</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>

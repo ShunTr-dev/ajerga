@@ -1,0 +1,128 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Header from '../../components/Header.astro'
+import Footer from '../../components/Footer.astro'
+---
+
+<Layout title="Seguridad Social - AJERGA" description="Guía para obtener tu número de Seguridad Social en España">
+    <Header />
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-[#d2557d] to-[#394d62] py-16 text-white overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-10 right-10 text-9xl">🛡️</div>
+                <div class="absolute bottom-10 left-10 text-9xl">💼</div>
+            </div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
+                        <span class="text-sm font-semibold">Salud y Bienestar</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4">SERGAS</h1>
+                    <p class="text-xl md:text-2xl text-white/90">Sistema de Salud de Galicia</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gradient-to-b from-white to-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div
+                        class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all p-8 border-t-4 border-[#77b2c0] mb-12">
+                        <div class="flex items-start gap-4 mb-6">
+                            <div class="text-5xl">🏥</div>
+                            <div>
+                                <h2 class="text-3xl font-bold text-[#77b2c0] mb-2">
+                                    Sistema Público de Salud (SERGAS)
+                                </h2>
+                                <p class="text-gray-600">Tarjeta Sanitaria Individual (TSI)</p>
+                            </div>
+                        </div>
+
+                        <!-- Descripción -->
+                        <div class="bg-blue-50 rounded-xl p-6 mb-6">
+                            <h3 class="font-bold text-lg text-gray-800 mb-3 flex items-center gap-2">
+                                <span class="text-2xl">💳</span>
+                                ¿Qué es la TSI?
+                            </h3>
+                            <p class="text-gray-700 mb-3">
+                                Solicitar la <strong>Tarjeta Sanitaria Individual (TSI)</strong> te da acceso al sistema
+                                público de salud de Galicia (SERGAS). Puedes hacerlo online o en el centro de salud más cercano.
+                            </p>
+                            <div class="bg-green-100 border-l-4 border-green-500 p-4 rounded">
+                                <p class="text-gray-800 flex items-start gap-2">
+                                    <span class="text-xl">✅</span>
+                                    <span
+                                        >Te darán un <strong>papel provisorio</strong> con el que ya tendrás cobertura. La
+                                        credencial definitiva te llegará a domicilio (puede tardar hasta 3 meses).</span
+                                    >
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Documentación -->
+                        <div class="bg-green-50 rounded-xl p-6 mb-6">
+                            <h3 class="font-bold text-lg text-gray-800 mb-4 flex items-center gap-2">
+                                <span class="text-2xl">📋</span>
+                                Documentación necesaria
+                            </h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-center gap-2 text-gray-700">
+                                    <span class="w-2 h-2 bg-[#77b2c0] rounded-full"></span>
+                                    DNI
+                                </li>
+                                <li class="flex items-center gap-2 text-gray-700">
+                                    <span class="w-2 h-2 bg-[#77b2c0] rounded-full"></span>
+                                    Certificado de empadronamiento
+                                </li>
+                                <li class="flex items-center gap-2 text-gray-700">
+                                    <span class="w-2 h-2 bg-[#77b2c0] rounded-full"></span>
+                                    Número de afiliación a la Seguridad Social
+                                </li>
+                                <li class="flex items-center gap-2 text-gray-700">
+                                    <span class="w-2 h-2 bg-[#77b2c0] rounded-full"></span>
+                                    Documento acreditativo del derecho a asistencia sanitaria (emitido por el INSS)
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Enlace centro de salud -->
+                        <div class="bg-gray-100 rounded-xl p-6">
+                            <h3 class="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                                <span class="text-2xl">🔍</span>
+                                Consultar centro de salud
+                            </h3>
+                            <a
+                                href="https://extranet.sergas.es/sixsanweb/sixsan_web/mapa.aspx?Idioma=es"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-flex items-center gap-2 text-[#77b2c0] hover:text-[#0c615d] font-semibold transition-colors">
+                                <span>🔗</span>
+                                <span>Buscar tu centro de salud</span>
+                                <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botón de retorno -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center">
+                        <a
+                            href="/tramites-galicia"
+                            class="inline-flex items-center px-8 py-4 bg-[#d2557d] text-white font-semibold rounded-xl hover:bg-[#c14a6f] transition-all transform hover:scale-105 shadow-lg">
+                            <span class="mr-2">←</span>
+                            Volver a todos los trámites
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>
