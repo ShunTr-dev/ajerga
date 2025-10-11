@@ -19,7 +19,7 @@ import partidaNacimientoLiteral from '../assets/tramites/Partida-literal-de-naci
         <!-- Hero Section -->
         <section class="bg-gradient-to-br from-[#0c615d] to-[#c6d067] py-20 text-white">
             <div class="container mx-auto px-4">
-                <h1 class="text-5xl font-bold mb-6">Trámites Previos al Retorno</h1>
+                <h1 class="text-5xl font-bold mb-6">Preparativos en el país de origen</h1>
                 <p class="text-xl max-w-3xl">
                     Información esencial sobre los trámites que debes gestionar antes de regresar a Galicia
                 </p>
@@ -27,190 +27,224 @@ import partidaNacimientoLiteral from '../assets/tramites/Partida-literal-de-naci
         </section>
 
         <!-- Contenido -->
-        <section class="py-20 bg-white">
+        <section class="py-20 bg-gradient-to-b from-white to-gray-50">
             <div class="container mx-auto px-4">
-                <div class="max-w-4xl mx-auto">
-                    <!-- Actividad laboral -->
-                    <div class="mb-16">
-                        <h2 class="text-3xl font-bold text-[#d75528] mb-6">Actividad laboral</h2>
-                        <p class="text-lg text-gray-700 mb-4">
-                            Es necesario este documento para demostrar que se trabajó antes de viajar y poder acceder a
-                            diferentes tipos de prestaciones para trabajadores en paro. Si trabajaste el último año,
-                            este documento es necesario para:
+                <div class="max-w-6xl mx-auto">
+                    <!-- Introducción -->
+                    <div class="mb-16 text-center">
+                        <h2 class="text-4xl font-bold text-gray-800 mb-4">Preparativos antes de viajar</h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Sigue esta guía paso a paso para tener todos los documentos necesarios antes de tu retorno a
+                            Galicia
                         </p>
-                        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-                            <li>Subsidio por desempleo</li>
-                            <li>SEPE</li>
-                        </ul>
-                        <img
-                            src={actividadLaboral.src}
-                            alt="Actividad laboral"
-                            class="w-full h-auto rounded-xl mb-8 shadow-lg"
-                        />
                     </div>
 
-                    <!-- Estudios apostillados -->
-                    <div class="mb-16">
-                        <h2 class="text-3xl font-bold text-[#d75528] mb-6">Estudios apostillados</h2>
-                        <p class="text-lg text-gray-700 mb-4">
-                            Desde la escuela primaria a los títulos universitarios. Es imprescindible para poder
-                            legalizar los estudios si se quiere ejercer la profesión o acceder a cualquier otro empleo.
-                            Es necesario para la homologación de título universitario y certificar nivel de estudios.
-                        </p>
-                        <img
-                            src={estudiosApostillados.src}
-                            alt="Estudios apostillados"
-                            class="w-full h-auto rounded-xl mb-8 shadow-lg"
-                        />
-                    </div>
-
-                    <!-- Baja consular -->
-                    <div class="mb-16">
-                        <h2 class="text-3xl font-bold text-[#d75528] mb-6">Baja consular</h2>
-                        <p class="text-lg text-gray-700 mb-4">
-                            Los españoles que residen de forma permanente en el extranjero deben inscribirse en el
-                            Registro de Matrícula de residentes del Consulado de la demarcación consular en que se
-                            encuentren. Esta inscripción supone también la inscripción de los mayores de edad en el
-                            CERA, que es el censo de los españoles residentes en el extranjero, lo que les permitirá
-                            –entre otras utilidades- participar en las elecciones que se celebren en España.
-                        </p>
-                        <p class="text-lg text-gray-700 mb-4">
-                            Los españoles residentes en el extranjero que deseen retornar a España deberán solicitar su
-                            BAJA en el Registro de Matrícula Consular. A su llegada al nuevo lugar de residencia deberán
-                            darse de alta en el Padrón Municipal correspondiente a su domicilio en España.
-                        </p>
-                        <p class="text-lg text-gray-700 mb-4">
-                            La Baja Consular facilita a los españoles que regresan ciertos trámites en relación con la
-                            entrada en aduanas de sus enseres, así como de otro tipo, por lo que es muy útil solicitarla
-                            antes de finalizar su estancia en el extranjero.
-                        </p>
-                        <p class="text-lg text-gray-700 mb-4">
-                            Además, el certificado del periodo completo de residencia y matrícula en una jurisdicción
-                            consular sirve de justificante oficial sobre la totalidad de tiempo residido en el
-                            extranjero.
-                        </p>
-                        <p class="text-lg text-gray-700 mb-4">
-                            Este documento sirve para diversos trámites. Desde el acceso a diferentes tipos de
-                            prestaciones a trámites de carácter jurídico. Necesario para:
-                        </p>
-                        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-                            <li>DNI</li>
-                            <li>Empadronamiento</li>
-                            <li>SEPE</li>
-                            <li>Certificado de Emigrante Retornado</li>
-                        </ul>
-                        <img
-                            src={bajaConsular.src}
-                            alt="Baja consular"
-                            class="w-full h-auto rounded-xl mb-8 shadow-lg"
-                        />
-                    </div>
-
-                    <div class="mb-16">
-                        <h2 class="text-3xl font-bold text-[#d75528] mb-6">Pasaporte Español</h2>
-                        <p class="text-lg text-gray-700 mb-4">
-                            Los ciudadanos españoles pueden salir y entrar libremente en España y tienen derecho a
-                            obtener un pasaporte desde el momento en que se efectúa su inscripción de nacimiento en el
-                            Registro Civil. El pasaporte es un documento que acredita fuera de España la identidad y la
-                            nacionalidad de los ciudadanos españoles y, dentro del territorio nacional, las mismas
-                            circunstancias de aquellos españoles no residentes.
-                        </p>
-                        <p class="text-lg text-gray-700 mb-4">Requisitos para personas mayores de edad:</p>
-                        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-                            <li>
-                                DNI en vigor. Si está caducado, deberá ir acompañado del resguardo de haber tramitado su
-                                renovación. El requisito del DNI en vigor no es exigible a los residentes en el
-                                extranjero.
+                    <!-- Documentación básica -->
+                    <div class="bg-white rounded-2xl shadow-xl p-8 mb-8 border-l-4 border-[#0c615d]">
+                        <div class="flex items-start mb-6">
+                            <div
+                                class="bg-[#0c615d] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl font-bold mr-4 flex-shrink-0">
+                                1
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">📋 Documentación básica</h3>
+                                <p class="text-gray-600">Asegúrate de tener estos documentos en orden</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 ml-16">
+                            <li class="flex items-start">
+                                <span class="text-[#c6d067] mr-3 text-xl">✓</span>
+                                <span class="text-gray-700"
+                                    ><strong>Pasaporte en vigor</strong> y, si lo tienes, también el <strong
+                                        >DNI español</strong
+                                    ></span
+                                >
                             </li>
-                            <li>
-                                1 fotografía reciente del rostro del solicitante tamaño carné, en color y con fondo
-                                claro, liso y uniforme, tomada de frente, y sin gafas de cristales oscuros o cualquier
-                                otra prenda que impida la identificación de la persona.
+                            <li class="flex items-start">
+                                <span class="text-[#c6d067] mr-3 text-xl">✓</span>
+                                <span class="text-gray-700"
+                                    >Imprimir los <strong>billetes de avión</strong> y el <strong
+                                        >listado de admitidos BEME</strong
+                                    > (si eres beneficiario)</span
+                                >
                             </li>
                         </ul>
+                    </div>
 
-                        <p class="text-lg text-gray-700 mb-4">Requisitos para personas menores de edad:</p>
-                        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-                            <li>DNI a partir de los 14 años.</li>
-                            <li>
-                                1 fotografía reciente del rostro del solicitante tamaño carné, en color y con fondo
-                                claro, liso y uniforme, tomada de frente, y sin gafas de cristales oscuros o cualquier
-                                otra prenda que impida la identificación de la persona.
+                    <!-- Apostilla de documentos -->
+                    <div class="bg-white rounded-2xl shadow-xl p-8 mb-8 border-l-4 border-[#c6d067]">
+                        <div class="flex items-start mb-6">
+                            <div
+                                class="bg-[#c6d067] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl font-bold mr-4 flex-shrink-0">
+                                2
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">📑 Apostilla y traducciones</h3>
+                                <p class="text-gray-600">
+                                    Documentos que necesitan apostilla y, si es necesario, traducción oficial
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 ml-16">
+                            <li class="flex items-start">
+                                <span class="text-[#0c615d] mr-3 text-xl">•</span>
+                                <span class="text-gray-700"
+                                    ><strong>Partida de nacimiento</strong> de todos los que viajen (que no sean comunitarios)</span
+                                >
                             </li>
-                            <li>
-                                Cuando la persona que solicite la expedición del pasaporte fuera menor de edad y no
-                                estuviera en posesión del documento nacional de identidad por no estar obligada a su
-                                obtención, deberá aportar certificación literal de nacimiento expedida por el Registro
-                                Civil y el documento nacional de identidad de la persona que ejerza la patria potestad o
-                                la tutela, salvo en el supuesto, en este último caso que la misma hubiere sido asumida
-                                por Ministerio de la Ley.
-                            </li>
-                            <li>
-                                Siendo extranjera la persona que ejerza la patria potestad deberá aportar, además de la
-                                certificación literal de nacimiento del menor, el número de identificación de
-                                extranjeros o cualquier otro documento identificativo expedido por autoridad oficial.
-                            </li>
-                            <li>
-                                En las solicitudes de expedición de pasaporte para menores de edad y para personas
-                                incapacitadas deberá de constar el consentimiento expreso de quien ejerza la patria
-                                potestad o tutela con la indicación de que su ejercicio no se encuentra limitado para
-                                prestarlo, debiendo en caso contrario suplir su falta con autorización judicial.
-                            </li>
-                            <li>
-                                El consentimiento de la persona o entidad que ejerza la patria potestad o tutela se
-                                prestará ante el funcionario del órgano competente para la expedición del pasaporte,
-                                pudiendo también prestarse ante fedatario público, en cuyo caso, deberá acompañarse a la
-                                solicitud, copia auténtica del documento del que resulte el citado consentimiento.
+                            <li class="flex items-start">
+                                <span class="text-[#0c615d] mr-3 text-xl">•</span>
+                                <span class="text-gray-700"
+                                    ><strong>Título de bachiller y/o universitario</strong> y certificados analíticos</span
+                                >
                             </li>
                         </ul>
-
-                        <p class="text-lg text-gray-700 mb-4">
-                            La presencia física del solicitante es imprescindible en todos los casos, aunque se trate de
-                            menores de corta edad. En cada caso se abonará la tasa correspondiente.
-                        </p>
                     </div>
 
-                    <!-- Partida de nacimiento -->
-                    <div class="mb-16">
-                        <h2 class="text-3xl font-bold text-[#d75528] mb-6">Partida de nacimiento</h2>
-                        <p class="text-lg text-gray-700 mb-4">
-                            Al igual que la Baja Consular, este documento sirve para la expedición de una variedad de
-                            trámites una vez en Galicia como la Asistencia sanitaria, inscripción en el SEPE o el
-                            Certificado de Emigrante Retornado. Se solicita unas semanas antes de salir del país.
-                        </p>
-                        <img
-                            src={partidaNacimiento.src}
-                            alt="Partida de nacimiento"
-                            class="w-full h-auto rounded-xl mb-8 shadow-lg"
-                        />
+                    <!-- Trámites en el consulado -->
+                    <div class="bg-white rounded-2xl shadow-xl p-8 mb-8 border-l-4 border-[#0c615d]">
+                        <div class="flex items-start mb-6">
+                            <div
+                                class="bg-[#0c615d] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl font-bold mr-4 flex-shrink-0">
+                                3
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">🏛️ En el consulado español</h3>
+                                <p class="text-gray-600">Trámites que debes realizar en tu demarcación consular</p>
+                            </div>
+                        </div>
+
+                        <div class="ml-16 space-y-6">
+                            <!-- Certificado de residencia -->
+                            <div class="bg-gray-50 rounded-lg p-5">
+                                <h4 class="font-bold text-gray-800 mb-2 flex items-center">
+                                    <span class="text-[#c6d067] mr-2">▸</span>
+                                    Certificado de residencia
+                                </h4>
+                                <p class="text-gray-600 text-sm">
+                                    Por si al llegar no encuentras rápido dónde vivir y empadronarte. Con este
+                                    certificado podrás sacar un DNI provisional, que luego puedes actualizar
+                                    gratuitamente con tu residencia en Galicia.
+                                </p>
+                            </div>
+
+                            <!-- Partida literal -->
+                            <div class="bg-gray-50 rounded-lg p-5">
+                                <h4 class="font-bold text-gray-800 mb-2 flex items-center">
+                                    <span class="text-[#c6d067] mr-2">▸</span>
+                                    Partida Literal de Nacimiento
+                                </h4>
+                                <p class="text-gray-600 text-sm mb-3">
+                                    Solicita <strong>tres copias</strong>: una "para DNI" y otras 2 que no sean para
+                                    DNI.
+                                </p>
+                                <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded">
+                                    <p class="text-red-800 text-sm font-semibold flex items-start">
+                                        <span class="mr-2">⚠️</span>
+                                        <span
+                                            ><strong>¡IMPORTANTE!</strong> La partida de nacimiento para DNI debe tener una
+                                            antelación máxima de <strong>6 meses</strong> a la fecha de tramitación del DNI
+                                            y debe llevar la anotación: <em
+                                                >"se expide sólo a efectos de la obtención del DNI"</em
+                                            ></span
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Adveración de vida laboral -->
+                            <div class="bg-gray-50 rounded-lg p-5">
+                                <h4 class="font-bold text-gray-800 mb-2 flex items-center">
+                                    <span class="text-[#c6d067] mr-2">▸</span>
+                                    Adveración de vida laboral
+                                </h4>
+                                <p class="text-gray-600 text-sm mb-3">
+                                    En el departamento de seguridad social. Debes llevar:
+                                </p>
+                                <div class="ml-4 space-y-2">
+                                    <div class="flex items-start">
+                                        <span
+                                            class="bg-[#0c615d] text-white rounded-full w-6 h-6 flex items-center justify-center text-xs mr-2 flex-shrink-0"
+                                            >1</span
+                                        >
+                                        <span class="text-gray-700 text-sm">Baja consular</span>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <span
+                                            class="bg-[#0c615d] text-white rounded-full w-6 h-6 flex items-center justify-center text-xs mr-2 flex-shrink-0"
+                                            >2</span
+                                        >
+                                        <span class="text-gray-700 text-sm"
+                                            >Hoja de vida laboral con BAJA de la actividad laboral (si aún estás
+                                            trabajando no lo podrás solicitar)</span
+                                        >
+                                    </div>
+                                    <div class="flex items-start">
+                                        <span
+                                            class="bg-[#0c615d] text-white rounded-full w-6 h-6 flex items-center justify-center text-xs mr-2 flex-shrink-0"
+                                            >3</span
+                                        >
+                                        <span class="text-gray-700 text-sm">Pasaporte</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Baja consular adicional -->
+                            <div class="bg-gray-50 rounded-lg p-5">
+                                <h4 class="font-bold text-gray-800 mb-2 flex items-center">
+                                    <span class="text-[#c6d067] mr-2">▸</span>
+                                    Baja consular (copia adicional)
+                                </h4>
+                                <p class="text-gray-600 text-sm">
+                                    Solicita otra copia de la baja consular, la necesitarás para empadronarte.
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Partida literal de nacimiento para DNI -->
-                    <div class="mb-16">
-                        <h2 class="text-3xl font-bold text-[#d75528] mb-6">Partida literal de nacimiento para DNI</h2>
+                    <!-- Si vienes con pareja -->
+                    <div class="bg-gradient-to-r from-[#0c615d] to-[#094a47] rounded-2xl shadow-xl p-8 text-white mb-8">
+                        <div class="flex items-start mb-6">
+                            <div
+                                class="bg-white text-[#0c615d] rounded-full w-12 h-12 flex items-center justify-center text-2xl mr-4 flex-shrink-0">
+                                💑
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-2">Si vienes con pareja no española</h3>
+                                <p class="text-gray-100">Documentación adicional necesaria</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 ml-16">
+                            <li class="flex items-start">
+                                <span class="text-[#c6d067] mr-3 text-xl">✓</span>
+                                <span
+                                    ><strong>Acta de matrimonio</strong> o <strong
+                                        >Certificado de pareja de hecho</strong
+                                    > apostillado</span
+                                >
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#c6d067] mr-3 text-xl">✓</span>
+                                <span><strong>Opcional:</strong> Seguro de salud (modalidad privada hasta la TIE)</span>
+                            </li>
+                        </ul>
+                    </div>
 
-                        <p class="text-lg text-gray-700 mb-4">
-                            Este documento es necesario para la expedición por primera vez del DNI español.
-                        </p>
-                        <p class="text-lg text-gray-700 mb-4">
-                            Debe saber que solo serán admitidas las certificaciones expedidas con una antelación máxima
-                            de seis meses a la fecha de presentación de la solicitud del DNI, debiendo llevar una
-                            anotación por parte del Registro Civil que la expide, donde indique “a los solos efectos de
-                            la obtención de DNI”.
-                        </p>
-                        <p class="text-lg text-gray-700 mb-4">
-                            Esta certificación la expide el Registro Civil del Consulado de España correspondiente, al
-                            que se deberá dirigir.
-                        </p>
-
-                        <p class="text-lg text-gray-700 mb-4">
-                            Exclusiva para la expedición del DNI (Documento Nacional de Identificación).
-                        </p>
-                        <img
-                            src={partidaNacimientoLiteral.src}
-                            alt="Partida literal de nacimiento para DNI"
-                            class="w-full h-auto rounded-xl mb-8 shadow-lg"
-                        />
+                    <!-- Nota importante sobre apostilla -->
+                    <div class="bg-blue-50 border-l-4 border-blue-500 rounded-lg p-6">
+                        <div class="flex items-start">
+                            <span class="text-blue-500 text-2xl mr-3">ℹ️</span>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Nota sobre legalización y apostilla</h4>
+                                <p class="text-gray-700 text-sm leading-relaxed">
+                                    Toda la documentación que sea privada, para poder ser legalizada deberá previamente
+                                    ser elevada a pública de acuerdo con la normativa del país. Cuando se retorne de un
+                                    país suscriptor del Convenio de la Haya, la documentación aportada para que sea
+                                    acreditativa, deberá estar apostillada. Sin embargo, la documentación emitida por la
+                                    embajada o consulado de España no es necesario apostillar.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
