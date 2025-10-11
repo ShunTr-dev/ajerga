@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro'
 import Header from '../../components/Header.astro'
 import Footer from '../../components/Footer.astro'
+import AyudaTramitesAjerga from '../../components/ayudaTramitesAjerga.astro'
 ---
 
 <Layout
@@ -398,18 +399,10 @@ import Footer from '../../components/Footer.astro'
                             </a>
                         </div>
                     </div>
-
-                    <div class="text-center mt-12">
-                        <a
-                            href="/tramites-galicia"
-                            class="inline-flex items-center px-8 py-4 bg-[#0c615d] text-white font-semibold rounded-xl hover:bg-[#094a47] transition-all transform hover:scale-105 shadow-lg">
-                            <span class="mr-2">←</span>
-                            Volver a todos los trámites
-                        </a>
-                    </div>
                 </div>
             </div>
         </section>
+        <AyudaTramitesAjerga />
     </main>
 </Layout>
 <Footer />

@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro'
 import Header from '../../components/Header.astro'
 import Footer from '../../components/Footer.astro'
+import AyudaTramitesAjerga from '../../components/ayudaTramitesAjerga.astro'
 ---
 
 <Layout title="Tarjeta Sanitaria - AJERGA" description="Guía para obtener tu tarjeta sanitaria en Galicia">
@@ -305,19 +306,10 @@ import Footer from '../../components/Footer.astro'
                             </a>
                         </div>
                     </div>
-
-                    <!-- Botón de vuelta -->
-                    <div class="text-center">
-                        <a
-                            href="/tramites-galicia"
-                            class="inline-flex items-center px-8 py-4 bg-[#77b2c0] text-white font-semibold rounded-xl hover:bg-[#669fad] transition-all transform hover:scale-105 shadow-lg">
-                            <span class="mr-2">←</span>
-                            Volver a todos los trámites
-                        </a>
-                    </div>
                 </div>
             </div>
         </section>
+        <AyudaTramitesAjerga />
     </main>
     <Footer />
 </Layout>

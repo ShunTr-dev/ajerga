@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro'
 import Header from '../../components/Header.astro'
 import Footer from '../../components/Footer.astro'
+import AyudaTramitesAjerga from '../../components/ayudaTramitesAjerga.astro'
 ---
 
 <Layout title="Cuenta Bancaria - AJERGA" description="Guía completa para abrir una cuenta bancaria en España">
@@ -358,17 +359,7 @@ import Footer from '../../components/Footer.astro'
             </div>
         </section>
 
-        <!-- Botón de retorno -->
-        <section class="py-12 bg-white">
-            <div class="container mx-auto px-4 text-center">
-                <a
-                    href="/tramites-galicia"
-                    class="inline-flex items-center gap-2 bg-gradient-to-r from-[#0c615d] to-[#77b2c0] text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transition-all hover:scale-105">
-                    <span>←</span>
-                    <span>Volver a Trámites en Galicia</span>
-                </a>
-            </div>
-        </section>
+        <AyudaTramitesAjerga />
     </main>
     <Footer />
 </Layout>

@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro'
 import Header from '../../components/Header.astro'
 import Footer from '../../components/Footer.astro'
+import AyudaTramitesAjerga from '../../components/ayudaTramitesAjerga.astro'
 ---
 
 <Layout
@@ -163,7 +164,8 @@ import Footer from '../../components/Footer.astro'
                                     <p class="text-gray-700">
                                         Estar en desempleo. <span class="text-sm text-gray-600"
                                             >(A partir de 2025, también puedes tener empleo a tiempo parcial, con
-                                            ciertas condiciones)</span>
+                                            ciertas condiciones)</span
+                                        >
                                     </p>
                                 </div>
                             </div>
@@ -335,22 +337,7 @@ import Footer from '../../components/Footer.astro'
                 </div>
             </div>
         </section>
-
-        <!-- Botón de retorno -->
-        <section class="py-12 bg-white">
-            <div class="container mx-auto px-4">
-                <div class="max-w-4xl mx-auto">
-                    <div class="text-center">
-                        <a
-                            href="/tramites-galicia"
-                            class="inline-flex items-center px-8 py-4 bg-[#0c615d] text-white font-semibold rounded-xl hover:bg-[#094d4a] transition-all transform hover:scale-105 shadow-lg">
-                            <span class="mr-2">←</span>
-                            Volver a todos los trámites
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <AyudaTramitesAjerga />
     </main>
     <Footer />
 </Layout>

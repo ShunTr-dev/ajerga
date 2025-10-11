@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro'
 import Header from '../../components/Header.astro'
 import Footer from '../../components/Footer.astro'
+import AyudaTramitesAjerga from '../../components/ayudaTramitesAjerga.astro'
 ---
 
 <Layout title="DNI Español - AJERGA" description="Guía completa para obtener o renovar el DNI en España">
@@ -227,19 +228,10 @@ import Footer from '../../components/Footer.astro'
                             </p>
                         </div>
                     </div>
-
-                    <!-- Botón de vuelta -->
-                    <div class="text-center">
-                        <a
-                            href="/tramites-galicia"
-                            class="inline-flex items-center px-8 py-4 bg-[#d75528] text-white font-semibold rounded-xl hover:bg-[#c24920] transition-all transform hover:scale-105 shadow-lg">
-                            <span class="mr-2">←</span>
-                            Volver a todos los trámites
-                        </a>
-                    </div>
                 </div>
             </div>
         </section>
+        <AyudaTramitesAjerga />
     </main>
     <Footer />
 </Layout>

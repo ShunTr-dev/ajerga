@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro'
 import Header from '../../components/Header.astro'
 import Footer from '../../components/Footer.astro'
+import AyudaTramitesAjerga from '../../components/ayudaTramitesAjerga.astro'
 ---
 
 <Layout
@@ -306,7 +307,8 @@ import Footer from '../../components/Footer.astro'
                                         <p class="text-gray-700"><strong>Comprobante de pago de la tasa</strong></p>
                                         <p class="text-sm text-gray-600 mt-1">
                                             Transferencia bancaria por apertura de expediente: <strong
-                                                >166,50 EUR</strong>
+                                                >166,50 EUR</strong
+                                            >
                                         </p>
                                     </div>
                                 </div>
@@ -462,19 +464,10 @@ import Footer from '../../components/Footer.astro'
                             </div>
                         </div>
                     </div>
-
-                    <!-- Botón de vuelta -->
-                    <div class="text-center">
-                        <a
-                            href="/tramites-galicia"
-                            class="inline-flex items-center px-8 py-4 bg-[#394d62] text-white font-semibold rounded-xl hover:bg-[#2a3a4a] transition-all transform hover:scale-105 shadow-lg">
-                            <span class="mr-2">←</span>
-                            Volver a todos los trámites
-                        </a>
-                    </div>
                 </div>
             </div>
         </section>
+        <AyudaTramitesAjerga />
     </main>
     <Footer />
 </Layout>
