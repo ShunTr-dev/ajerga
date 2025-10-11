@@ -3,29 +3,19 @@ import Layout from '../../layouts/Layout.astro'
 import Header from '../../components/Header.astro'
 import Footer from '../../components/Footer.astro'
 import AyudaTramitesAjerga from '../../components/ayudaTramitesAjerga.astro'
+import HeroSection from '../../components/hero-section.astro'
 ---
 
 <Layout title="Cuenta Bancaria - AJERGA" description="Guía completa para abrir una cuenta bancaria en España">
     <Header />
 
     <main>
-        <!-- Hero Section -->
-        <section class="relative bg-gradient-to-br from-[#77b2c0] to-[#0c615d] py-16 text-white overflow-hidden">
-            <div class="absolute inset-0 opacity-10">
-                <div class="absolute top-10 right-10 text-9xl">🏦</div>
-                <div class="absolute bottom-10 left-10 text-9xl">💳</div>
-            </div>
-            <div class="container mx-auto px-4 relative z-10">
-                <div class="max-w-4xl mx-auto text-center">
-                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
-                        <span class="text-sm font-semibold">Gestión Bancaria</span>
-                    </div>
-                    <h1 class="text-5xl md:text-6xl font-bold mb-4">🏦 Cuenta Bancaria</h1>
-                    <p class="text-xl md:text-2xl text-white/90">Guía para abrir tu cuenta bancaria en España</p>
-                </div>
-            </div>
-        </section>
-
+        <HeroSection
+            colorFrom="#77b2c0"
+            colorTo="#0c615d"
+            title="Cuenta Bancaria"
+            description="Guía para abrir tu cuenta bancaria en España"
+        />
         <!-- Introducción -->
         <section class="py-8 bg-blue-50 border-l-4 border-blue-500">
             <div class="container mx-auto px-4">

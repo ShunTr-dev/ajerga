@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro'
 import Header from '../../components/Header.astro'
 import Footer from '../../components/Footer.astro'
 import AyudaTramitesAjerga from '../../components/ayudaTramitesAjerga.astro'
+import HeroSection from '../../components/hero-section.astro'
 ---
 
 <Layout
@@ -11,24 +12,12 @@ import AyudaTramitesAjerga from '../../components/ayudaTramitesAjerga.astro'
     <Header />
 
     <main>
-        <!-- Hero Section -->
-        <section class="relative bg-gradient-to-br from-[#e11d48] to-[#f97316] py-16 text-white overflow-hidden">
-            <div class="absolute inset-0 opacity-10">
-                <div class="absolute top-10 right-10 text-9xl">🚗</div>
-                <div class="absolute bottom-10 left-10 text-9xl">🪪</div>
-            </div>
-            <div class="container mx-auto px-4 relative z-10">
-                <div class="max-w-4xl mx-auto text-center">
-                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
-                        <span class="text-sm font-semibold">Documentación de Conducir</span>
-                    </div>
-                    <h1 class="text-5xl md:text-6xl font-bold mb-4">🚗 Canje de Permiso de Conducir</h1>
-                    <p class="text-xl md:text-2xl text-white/90">
-                        Cómo validar tu licencia de conducir extranjera en España
-                    </p>
-                </div>
-            </div>
-        </section>
+        <HeroSection
+            colorFrom="#e11d48"
+            colorTo="#f97316"
+            title="Canje de Permiso de Conducir"
+            description="Guía para canjear tu permiso de conducir extranjero en España"
+        />
     </main>
 
     <section class="py-16 bg-gradient-to-b from-gray-50 to-white">

@@ -3,28 +3,19 @@ import Layout from '../../layouts/Layout.astro'
 import Header from '../../components/Header.astro'
 import Footer from '../../components/Footer.astro'
 import AyudaTramitesAjerga from '../../components/ayudaTramitesAjerga.astro'
+import HeroSection from '../../components/hero-section.astro'
 ---
 
 <Layout title="DNI Español - AJERGA" description="Guía completa para obtener o renovar el DNI en España">
     <Header />
 
     <main>
-        <!-- Hero Section -->
-        <section class="relative bg-gradient-to-br from-[#d75528] to-[#dfa142] py-16 text-white overflow-hidden">
-            <div class="absolute inset-0 opacity-10">
-                <div class="absolute top-10 right-10 text-9xl">🪪</div>
-                <div class="absolute bottom-10 left-10 text-9xl">✨</div>
-            </div>
-            <div class="container mx-auto px-4 relative z-10">
-                <div class="max-w-4xl mx-auto text-center">
-                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
-                        <span class="text-sm font-semibold">Documento Esencial</span>
-                    </div>
-                    <h1 class="text-5xl md:text-6xl font-bold mb-4">🪪 DNI Español</h1>
-                    <p class="text-xl md:text-2xl text-white/90">Obtén o renueva tu Documento Nacional de Identidad</p>
-                </div>
-            </div>
-        </section>
+        <HeroSection
+            colorFrom="#d75528"
+            colorTo="#dfa142"
+            title="DNI Español"
+            description="Obtén o renueva tu Documento Nacional de Identidad"
+        />
 
         <section class="py-16 bg-gradient-to-b from-white to-gray-50">
             <div class="container mx-auto px-4">

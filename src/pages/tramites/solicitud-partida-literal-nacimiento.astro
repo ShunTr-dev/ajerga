@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro'
 import Header from '../../components/Header.astro'
 import Footer from '../../components/Footer.astro'
 import AyudaTramitesAjerga from '../../components/ayudaTramitesAjerga.astro'
+import HeroSection from '../../components/hero-section.astro'
 ---
 
 <Layout
@@ -11,6 +12,13 @@ import AyudaTramitesAjerga from '../../components/ayudaTramitesAjerga.astro'
     <Header />
 
     <main>
+        <HeroSection
+            colorFrom="#c6d067"
+            colorTo="#0c615d"
+            title="📄 Partida Literal de Nacimiento"
+            description="Solicita este documento esencial desde tu consulado"
+        />
+
         <!-- Hero Section -->
         <section class="relative bg-gradient-to-br from-[#c6d067] to-[#0c615d] py-16 text-white overflow-hidden">
             <div class="absolute inset-0 opacity-10">

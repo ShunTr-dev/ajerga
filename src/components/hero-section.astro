@@ -1,0 +1,22 @@
+---
+interface Props {
+    colorFrom?: string
+    colorTo?: string
+    title?: string
+    description?: string
+}
+
+const {
+    colorFrom = '#d75528',
+    colorTo = '#dfa142',
+    title = 'AJERGA - Asociación de Jóvenes Emigrantes Retornados de Galicia',
+    description = 'AJERGA brinda orientación y asesoramiento a jóvenes emigrantes, contando con el respaldo de quienes han vivido esta experiencia en primera persona.',
+} = Astro.props
+---
+
+<section class={`bg-gradient-to-br from-[${colorFrom}] to-[${colorTo}] py-20 text-white`}>
+    <div class="container mx-auto px-4">
+        <h1 class="text-5xl font-bold mb-6">{title}</h1>
+        <p class="text-xl max-w-3xl">{description}</p>
+    </div>
+</section>

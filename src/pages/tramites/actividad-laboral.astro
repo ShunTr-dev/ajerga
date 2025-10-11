@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro'
 import Header from '../../components/Header.astro'
 import Footer from '../../components/Footer.astro'
 import AyudaTramitesAjerga from '../../components/ayudaTramitesAjerga.astro'
+import HeroSection from '../../components/hero-section.astro'
 ---
 
 <Layout
@@ -11,23 +12,12 @@ import AyudaTramitesAjerga from '../../components/ayudaTramitesAjerga.astro'
     <Header />
 
     <main>
-        <!-- Hero Section -->
-        <section class="relative bg-gradient-to-br from-[#394d62] to-[#77b2c0] py-16 text-white overflow-hidden">
-            <div class="absolute inset-0 opacity-10">
-                <div class="absolute top-10 right-10 text-9xl">💼</div>
-                <div class="absolute bottom-10 left-10 text-9xl">📄</div>
-            </div>
-            <div class="container mx-auto px-4 relative z-10">
-                <div class="max-w-4xl mx-auto text-center">
-                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
-                        <span class="text-sm font-semibold">Trabajo y Empleo</span>
-                    </div>
-                    <h1 class="text-5xl md:text-6xl font-bold mb-4">💼 Documentos de Actividad Laboral</h1>
-                    <p class="text-xl md:text-2xl text-white/90">Acredita tu experiencia laboral en el extranjero</p>
-                </div>
-            </div>
-        </section>
-
+        <HeroSection
+            colorFrom="#394d62"
+            colorTo="#77b2c0"
+            title="Documentos de Actividad Laboral"
+            description="Acredita tu experiencia laboral en el extranjero"
+        />
         <section class="py-16 bg-white">
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto">
