@@ -1,0 +1,121 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Header from '../../components/Header.astro'
+import Footer from '../../components/Footer.astro'
+import AyudaTramitesAjerga from '../../components/ayudaTramitesAjerga.astro'
+import HeroSection from '../../components/hero-section.astro'
+---
+
+<Layout
+    title="A Tarxeta de Mobilidade de Galicia"
+    description="Tarxeta de Mobilidade de Galicia o Tarjeta de Transporte Publico de Galicia">
+    <Header />
+
+    <main>
+        <HeroSection
+            colorFrom="#d2557d"
+            colorTo="#394d62"
+            title="A Tarxeta de Mobilidade de Galicia"
+            description="Tarxeta de Mobilidade de Galicia o Tarjeta de Transporte Publico de Galicia"
+        />
+
+        <!-- Contenido Principal -->
+        <section class="py-16 bg-gradient-to-b from-gray-50 to-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Introducción -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Para moverte en autobús entre ciudades gallegas, existe la <span
+                                class="font-semibold text-[#d2557d]"
+                                >Tarjeta de Transporte Público de Galicia de Abanca</span
+                            >. Es una tarjeta monedero recargable que permite obtener descuentos en el precio de los
+                            servicios, en comparación de pagarlo en efectivo, y que conecta las Áreas de Transporte
+                            metropolitano (ATM) con buses de las empresas “Monbus”, “ALSA” y “Transporte de Galicia",
+                            entre otras.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Además, puedes utilizarla para viajar en autobuses urbanos de ciudades como A Coruña y
+                            Santiago de Compostela.
+                        </p>
+                    </div>
+
+                    <!-- Información detallada -->
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-lg border-l-4 border-[#d2557d]">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">¿Qué necesito?</h3>
+                            <p class="text-gray-700">
+                                Te solicitarán tu DNI o pasaporte para poder registrarla a tu nombre.
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-lg border-l-4 border-[#d2557d]">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">¿Cómo se obtiene?</h3>
+                            <p class="text-gray-700 mb-3">
+                                Debes acercarte a cualquier banco Abanca que tenga atención al público e indicar que
+                                quieres obtener dicha tarjeta.
+                            </p>
+                            <a
+                                href="https://tmg.xunta.gal/tarxeta-metropolitana-introducion"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-flex items-center text-blue-600 hover:text-blue-800 hover:underline font-medium">
+                                Consulta las oficinas disponibles aquí
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                                    ></path>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-lg border-l-4 border-[#d2557d]">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">¿Cuánto cuesta?</h3>
+                            <p class="text-gray-700">
+                                La emisión de la tarjeta tiene un costo de <span class="font-semibold text-[#d2557d]"
+                                    >2 euros</span
+                                >.
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-lg border-l-4 border-[#d2557d]">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">¿Cómo se recarga?</h3>
+                            <p class="text-gray-700">
+                                En cualquier cajero automático de Abanca podrás recargarla ingresando un mínimo de 10
+                                euros. Si tienes una cuenta en el banco, también se puede hacer por su plataforma web.
+                            </p>
+                        </div>
+
+                        <div class="bg-[#d2557d] bg-opacity-10 p-6 rounded-lg border border-[#d2557d]">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Más información</h3>
+                            <a
+                                href="https://tmg.xunta.gal/tarxeta-metropolitana-introducion"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-flex items-center text-[#d2557d] hover:text-[#394d62] font-semibold text-lg hover:underline">
+                                Portal oficial de la Tarxeta Metropolitana de Galicia
+                                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                                    ></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <AyudaTramitesAjerga />
+    </main>
+    <Footer />
+</Layout>

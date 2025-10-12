@@ -2,6 +2,9 @@
 import Layout from '../../layouts/Layout.astro'
 import Header from '../../components/Header.astro'
 import Footer from '../../components/Footer.astro'
+import AcabasDeLlegarA from '../../components/AcabasDeLlegarA.astro'
+import PortalesBuscarVivienda from '../../components/PortalesBuscarVivienda.astro'
+import ConsejosAdicionalesVivienda from '../../components/ConsejosAdicionalesVivienda.astro'
 ---
 
 <Layout title="Santiago de Compostela - Galitips - AJERGA" description="Guía para vivir en Santiago de Compostela">
@@ -37,166 +40,153 @@ import Footer from '../../components/Footer.astro'
                     </div>
 
                     <div class="mb-12">
-                        <h2 class="text-3xl font-bold text-[#0c615d] mb-6">Zonas para vivir</h2>
-
-                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <div class="bg-gradient-to-br from-[#c6d067]/10 to-transparent rounded-xl p-6">
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-3">🏛️ Zona Vella</h3>
-                                <p class="text-gray-700 text-sm mb-2">
-                                    El casco histórico, patrimonio de la humanidad. Ideal para turistas y estudiantes.
-                                    Ambiente muy animado.
-                                </p>
-                                <p class="text-[#d75528] text-sm font-semibold">
-                                    Alquileres: 500-800€ (piso compartido)
-                                </p>
-                            </div>
-
-                            <div class="bg-gradient-to-br from-[#77b2c0]/10 to-transparent rounded-xl p-6">
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-3">🏘️ Ensanche</h3>
-                                <p class="text-gray-700 text-sm mb-2">
-                                    Zona residencial moderna, con todos los servicios. Muy bien comunicada. Ideal para
-                                    familias.
-                                </p>
-                                <p class="text-[#d75528] text-sm font-semibold">Alquileres: 600-900€</p>
-                            </div>
-
-                            <div class="bg-gradient-to-br from-[#dfa142]/10 to-transparent rounded-xl p-6">
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-3">🌳 Fontiñas</h3>
-                                <p class="text-gray-700 text-sm mb-2">
-                                    Barrio universitario con ambiente joven. Campus Sur de la USC. Bien comunicado y con
-                                    precios más asequibles.
-                                </p>
-                                <p class="text-[#d75528] text-sm font-semibold">Alquileres: 400-650€</p>
-                            </div>
-
-                            <div class="bg-gradient-to-br from-[#d2557d]/10 to-transparent rounded-xl p-6">
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-3">🏫 San Caetano</h3>
-                                <p class="text-gray-700 text-sm mb-2">
-                                    Cerca del Campus Norte de la USC. Zona tranquila, residencial, con servicios
-                                    cercanos.
-                                </p>
-                                <p class="text-[#d75528] text-sm font-semibold">Alquileres: 450-700€</p>
-                            </div>
-
-                            <div class="bg-gradient-to-br from-[#394d62]/10 to-transparent rounded-xl p-6">
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-3">🏢 Vista Alegre</h3>
-                                <p class="text-gray-700 text-sm mb-2">
-                                    Zona residencial con buena comunicación. Próxima al centro y con espacios verdes.
-                                </p>
-                                <p class="text-[#d75528] text-sm font-semibold">Alquileres: 550-800€</p>
-                            </div>
-
-                            <div class="bg-gradient-to-br from-[#0c615d]/10 to-transparent rounded-xl p-6">
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-3">🌲 Boisaca</h3>
-                                <p class="text-gray-700 text-sm mb-2">
-                                    Zona más alejada del centro, con viviendas unifamiliares. Ideal si buscas
-                                    tranquilidad y espacios verdes.
-                                </p>
-                                <p class="text-[#d75528] text-sm font-semibold">Alquileres: 600-1000€</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mb-12">
-                        <h2 class="text-3xl font-bold text-[#0c615d] mb-6">Dónde comer y tomar algo</h2>
+                        <h2 class="text-3xl font-bold text-[#0c615d] mb-6">Vivienda</h2>
 
                         <div class="space-y-6">
-                            <div>
-                                <h3 class="text-xl font-semibold text-[#d75528] mb-3">
-                                    🍷 Zona Vella (Casco Histórico)
-                                </h3>
-                                <p class="text-gray-700 mb-3">
-                                    La zona de vinos por excelencia. Calles como Raiña, Franco y Travesa ofrecen cientos
-                                    de bares y restaurantes. Imprescindible probar las tapas en "Casa Marcelo", "O Curro
-                                    da Parra" o "Abastos 2.0".
-                                </p>
-                                <p class="text-sm text-gray-600">
-                                    🕒 Ambiente: Todo el día, especialmente animado por las noches
+                            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-[#0c615d]">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">Demanda Alta</h3>
+                                <p class="text-gray-700">
+                                    Santiago es la ciudad con más concentración de estudiantes en Galicia, ya que
+                                    alberga la Universidad de Santiago de Compostela (USC), con estudiantes nacionales e
+                                    internacionales.
                                 </p>
                             </div>
 
-                            <div>
-                                <h3 class="text-xl font-semibold text-[#d75528] mb-3">🍽️ Mercado de Abastos</h3>
-                                <p class="text-gray-700 mb-3">
-                                    El mercado más importante de Galicia. Productos frescos de máxima calidad y varios
-                                    restaurantes donde degustar marisco, pescado y carnes gallegas. Ambiente auténtico y
-                                    precios razonables.
+                            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-[#0c615d]">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">Tipos de Vivienda</h3>
+                                <p class="text-gray-700">
+                                    Hay muchas opciones de pisos compartidos, residencias universitarias y alquileres de
+                                    apartamentos.
                                 </p>
-                                <p class="text-sm text-gray-600">🕒 Abre de lunes a sábado, mañanas</p>
                             </div>
 
-                            <div>
-                                <h3 class="text-xl font-semibold text-[#d75528] mb-3">
-                                    🎓 Zona Universitaria (San Caetano / Fontiñas)
-                                </h3>
-                                <p class="text-gray-700 mb-3">
-                                    Opciones más económicas y ambiente joven. Bares de tapas, pizzerías, hamburgueserías
-                                    y terrazas.
-                                </p>
-                                <p class="text-sm text-gray-600">🕒 Ambiente: Nocturno, especialmente jueves-sábado</p>
+                            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-[#0c615d]">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">Precios Promedio</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <span class="font-medium mr-2">Habitación compartida:</span>
+                                        <span
+                                            >350-450 € al mes + gastos (agua, gas, electricidad y comunidad - según cada
+                                            caso)</span
+                                        >
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="font-medium mr-2">Residencias universitarias:</span>
+                                        <span>350-500 € al mes por habitación individual</span>
+                                    </li>
+                                </ul>
                             </div>
 
-                            <div>
-                                <h3 class="text-xl font-semibold text-[#d75528] mb-3">☕ Cafeterías y Brunch</h3>
-                                <p class="text-gray-700 mb-3">
-                                    <strong>Café Casino:</strong> Histórico, en la Praza de Cervantes<br />
-                                    <strong>La Flor:</strong> Brunchs y tartas caseras<br />
-                                    <strong>Cafeína:</strong> Cafés de especialidad y ambiente tranquilo
-                                </p>
+                            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-[#0c615d]">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">Zonas Recomendadas</h3>
+                                <div class="space-y-3 text-gray-700">
+                                    <p>
+                                        <span class="font-medium">Campus Sur:</span> Te recomendamos el barrio de Santa Marta
+                                        o el Ensanche, alrededor de Plaza Roja.
+                                    </p>
+                                    <p>
+                                        <span class="font-medium">Campus Norte:</span> Te recomendamos el casco histórico
+                                        o la zona de San Caetano.
+                                    </p>
+                                    <div class="bg-amber-50 p-4 rounded-lg border-l-2 border-amber-400 mt-4">
+                                        <p class="text-sm text-gray-700">
+                                            <span class="font-semibold">💡 Consejo importante:</span> Es una ciudad que llueve
+                                            bastante, prioriza una habitación que reciba luz natural.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <PortalesBuscarVivienda />
+                    <ConsejosAdicionalesVivienda />
 
-                    <div class="mb-12">
-                        <h2 class="text-3xl font-bold text-[#0c615d] mb-6">Cultura y ocio</h2>
-
-                        <div class="grid md:grid-cols-2 gap-8">
-                            <div>
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-4">🏛️ Monumentos y museos</h3>
-                                <ul class="space-y-2 text-gray-700">
-                                    <li>
-                                        • <strong>Catedral:</strong> Visita obligada, asiste a la Misa del Peregrino
-                                    </li>
-                                    <li>
-                                        • <strong>Cidade da Cultura:</strong> Centro cultural con exposiciones y eventos
-                                    </li>
-                                    <li>• <strong>CGAC:</strong> Centro Galego de Arte Contemporánea</li>
-                                    <li>• <strong>Museo do Pobo Galego:</strong> Historia y etnografía de Galicia</li>
-                                    <li>• <strong>Auditorio de Galicia:</strong> Conciertos y eventos culturales</li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-4">🌳 Espacios verdes</h3>
-                                <ul class="space-y-2 text-gray-700">
-                                    <li>• <strong>Alameda:</strong> Parque emblemático con vistas a la Catedral</li>
-                                    <li>• <strong>Parque de Belvís:</strong> Zona de picnic y paseos</li>
-                                    <li>• <strong>Monte Pedroso:</strong> Rutas de senderismo y naturaleza</li>
-                                    <li>• <strong>Parque de San Domingos de Bonaval:</strong> Parque histórico</li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-4">🎭 Eventos anuales</h3>
-                                <ul class="space-y-2 text-gray-700">
-                                    <li>• <strong>Ascensión:</strong> Fiestas mayores en mayo (puente festivo)</li>
-                                    <li>• <strong>Cineuropa:</strong> Festival de cine en noviembre</li>
-                                    <li>• <strong>San Froilán:</strong> Fiestas tradicionales gallegas en octubre</li>
-                                    <li>• <strong>Noite Meiga:</strong> Celebración de la noche de San Juan</li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-4">🏃 Deporte</h3>
-                                <ul class="space-y-2 text-gray-700">
-                                    <li>• <strong>Piscina de Santa Isabel:</strong> Piscina cubierta municipal</li>
-                                    <li>• <strong>Gimnasios:</strong> Altafit, Metropolitan, O2 Wellness</li>
-                                    <li>• <strong>Rutas de running:</strong> Río Sar, Alameda, Monte Pedroso</li>
-                                    <li>• <strong>Polideportivos:</strong> Fontes do Sar, Sar, Vite</li>
-                                </ul>
-                            </div>
+                    <section class="mb-12">
+                        <h2 class="text-3xl font-bold text-[#394d62] mb-6">Residencias Universitarias</h2>
+                        <div class="bg-orange-50 border-l-4 border-[#d75528] p-6 mb-6">
+                            <p class="text-gray-700">
+                                <strong>⚠️ Ten en cuenta:</strong> La mensualidad de las residencias suelen tener un costo
+                                elevado. Por otra parte, este servicio suele ser contratado por jóvenes que actualmente se
+                                encuentran cursando una carrera de grado (19-23 años).
+                            </p>
                         </div>
-                    </div>
+
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-bold text-[#0c615d] mb-4">📍 Santiago de Compostela</h3>
+                            <ul class="space-y-2">
+                                <li>
+                                    <a
+                                        href="https://estila.org/residencia/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-[#c6d067] hover:text-[#394d62] transition-colors">
+                                        <span class="mr-2"></span>
+                                        <span>Residencia Universitaria La Estila</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.usc.gal/es/servicios/area/residencias/residencia-universitaria-burgo-nacions"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-[#c6d067] hover:text-[#394d62] transition-colors">
+                                        <span class="mr-2"></span>
+                                        <span>Residencia Universitaria Burgo Das Nacións</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="http://ferrolferreiro.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-[#c6d067] hover:text-[#394d62] transition-colors">
+                                        <span class="mr-2"></span>
+                                        <span>F&F Residencia de estudiantes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.residenciacarmen.es/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-[#c6d067] hover:text-[#394d62] transition-colors">
+                                        <span class="mr-2"></span>
+                                        <span>Residencia Carmen</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.habituni.es/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-[#c6d067] hover:text-[#394d62] transition-colors">
+                                        <span class="mr-2"></span>
+                                        <span>Residencia Habituni</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="http://lapensiondesanti.es/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-[#c6d067] hover:text-[#394d62] transition-colors">
+                                        <span class="mr-2"></span>
+                                        <span>Residencia Santiago</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://residenciaoregar.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-[#c6d067] hover:text-[#394d62] transition-colors">
+                                        <span class="mr-2"></span>
+                                        <span>Residencia Oregar</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
 
                     <div class="mb-12">
                         <h2 class="text-3xl font-bold text-[#0c615d] mb-6">Transporte</h2>
@@ -208,8 +198,41 @@ import Footer from '../../components/Footer.astro'
                                     Red de Tussa con múltiples líneas que conectan toda la ciudad.
                                 </p>
                                 <p class="text-sm text-[#0c615d] font-semibold">
-                                    Bono mensual: ~27€ | Billete sencillo: 1,20€
+                                    Bono mensual: +-30€ | Billete sencillo: 1,20€
                                 </p>
+
+                                <div class="mt-4 pt-4 border-t border-gray-200">
+                                    <h4 class="text-md font-semibold text-[#394d62] mb-3">📱 Mobilidade MoBT</h4>
+                                    <p class="text-gray-700 text-sm mb-3">
+                                        Plataforma de movilidad digital con aplicación móvil que permite el pago en el
+                                        autobús a través del teléfono, eliminando la necesidad de acudir a una oficina
+                                        bancaria, disponer de una tarjeta física o recargar en cajeros.
+                                    </p>
+                                    <ul class="space-y-2 text-sm text-gray-700">
+                                        <li class="flex items-start">
+                                            <span class="text-[#0c615d] mr-2">•</span>
+                                            <span>Método de pago: crea código QR para cada usuario y viaje</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-[#0c615d] mr-2">•</span>
+                                            <span>Permite consultar saldo en línea</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-[#0c615d] mr-2">•</span>
+                                            <span
+                                                >Buscador avanzado de servicios de transporte público: consultar rutas y
+                                                horarios</span
+                                            >
+                                        </li>
+                                    </ul>
+                                    <a
+                                        href="https://www.bus.gal/gl/queres-pagar-tuas-viaxes-co-mobil-descubre-mobt"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="inline-block mt-3 text-sm text-[#0c615d] hover:text-[#394d62] font-medium underline">
+                                        Más información sobre MoBT →
+                                    </a>
+                                </div>
                             </div>
 
                             <div class="bg-gray-50 rounded-xl p-6">
@@ -223,7 +246,7 @@ import Footer from '../../components/Footer.astro'
                             </div>
 
                             <div class="bg-gray-50 rounded-xl p-6">
-                                <h3 class="text-lg font-semibold text-[#394d62] mb-3">✈️ Aeropuerto</h3>
+                                <h3 class="text-lg font-semibold text-[#394d62] mb-3">Aeropuerto</h3>
                                 <p class="text-gray-700 mb-2">
                                     Aeropuerto de Lavacolla a 15 km. Vuelos nacionales e internacionales. Bus línea 6A.
                                 </p>
@@ -248,24 +271,24 @@ import Footer from '../../components/Footer.astro'
                             <div class="grid md:grid-cols-2 gap-6">
                                 <div>
                                     <p class="text-gray-700 mb-2">
-                                        <strong>🏛️ Administración pública:</strong> Xunta de Galicia y organismos autonómicos
+                                        <strong> Administración pública:</strong> Xunta de Galicia y organismos autonómicos
                                     </p>
                                     <p class="text-gray-700 mb-2">
-                                        <strong>🏥 Sanidad:</strong> CHUS (Hospital Clínico), Hospital Provincial
+                                        <strong> Sanidad:</strong> CHUS (Hospital Clínico), Hospital Provincial
                                     </p>
                                     <p class="text-gray-700 mb-2">
-                                        <strong>🎓 Educación:</strong> USC (Universidad de Santiago de Compostela)
+                                        <strong> Educación:</strong> USC (Universidad de Santiago de Compostela)
                                     </p>
                                 </div>
                                 <div>
                                     <p class="text-gray-700 mb-2">
-                                        <strong>✈️ Turismo:</strong> Hoteles, restauración, guías turísticos
+                                        <strong> Turismo:</strong> Hoteles, restauración, guías turísticos
                                     </p>
                                     <p class="text-gray-700 mb-2">
-                                        <strong>💼 Servicios profesionales:</strong> Consultorías, despachos, asesorías
+                                        <strong> Servicios profesionales:</strong> Consultorías, despachos, asesorías
                                     </p>
                                     <p class="text-gray-700 mb-2">
-                                        <strong>💻 Tecnología:</strong> Sectores emergentes, startups, empresas TIC
+                                        <strong> Tecnología:</strong> Sectores emergentes, startups, empresas TIC
                                     </p>
                                 </div>
                             </div>
@@ -273,7 +296,7 @@ import Footer from '../../components/Footer.astro'
                     </div>
 
                     <div class="bg-gradient-to-r from-[#0c615d] to-[#c6d067] rounded-2xl p-8 text-white">
-                        <h2 class="text-2xl font-bold mb-4">💡 Consejo AJERGA</h2>
+                        <h2 class="text-2xl font-bold mb-4">Consejo AJERGA</h2>
                         <p class="text-lg">
                             Santiago es perfecta si buscas calidad de vida, ambiente cultural y oportunidades laborales
                             en el sector público. Es una ciudad cómoda para vivir sin coche, con servicios de calidad y
@@ -283,6 +306,8 @@ import Footer from '../../components/Footer.astro'
                 </div>
             </div>
         </section>
+
+        <AcabasDeLlegarA city="Santiago" />
     </main>
 
     <Footer />

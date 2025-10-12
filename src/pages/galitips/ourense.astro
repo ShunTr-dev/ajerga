@@ -2,6 +2,9 @@
 import Layout from '../../layouts/Layout.astro'
 import Header from '../../components/Header.astro'
 import Footer from '../../components/Footer.astro'
+import AcabasDeLlegarA from '../../components/AcabasDeLlegarA.astro'
+import PortalesBuscarVivienda from '../../components/PortalesBuscarVivienda.astro'
+import ConsejosAdicionalesVivienda from '../../components/ConsejosAdicionalesVivienda.astro'
 ---
 
 <Layout title="Ourense - Galitips - AJERGA" description="Guía para vivir en Ourense">
@@ -37,201 +40,82 @@ import Footer from '../../components/Footer.astro'
                     </div>
 
                     <div class="mb-12">
-                        <h2 class="text-3xl font-bold text-[#d75528] mb-6">Zonas para vivir</h2>
-
-                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <div class="bg-gradient-to-br from-[#dfa142]/10 to-transparent rounded-xl p-6">
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-3">🏛️ Casco Vello</h3>
-                                <p class="text-gray-700 text-sm mb-2">
-                                    Centro histórico con la Catedral, plazas y zona de vinos. Ambiente tradicional y
-                                    céntrico.
-                                </p>
-                                <p class="text-[#d75528] text-sm font-semibold">Alquileres: 400-600€</p>
-                            </div>
-
-                            <div class="bg-gradient-to-br from-[#d75528]/10 to-transparent rounded-xl p-6">
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-3">🏙️ Centro - Rúa do Progreso</h3>
-                                <p class="text-gray-700 text-sm mb-2">
-                                    Principal eje comercial de Ourense. Zona moderna, con tiendas y servicios. Muy bien
-                                    comunicada.
-                                </p>
-                                <p class="text-[#d75528] text-sm font-semibold">Alquileres: 450-650€</p>
-                            </div>
-
-                            <div class="bg-gradient-to-br from-[#c6d067]/10 to-transparent rounded-xl p-6">
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-3">🌳 Ponte Vella - As Burgas</h3>
-                                <p class="text-gray-700 text-sm mb-2">
-                                    Junto a las termas públicas más conocidas. Zona histórica con mucho encanto.
-                                </p>
-                                <p class="text-[#d75528] text-sm font-semibold">Alquileres: 400-600€</p>
-                            </div>
-
-                            <div class="bg-gradient-to-br from-[#77b2c0]/10 to-transparent rounded-xl p-6">
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-3">🏘️ O Couto</h3>
-                                <p class="text-gray-700 text-sm mb-2">
-                                    Zona residencial moderna, con buena comunicación. Ideal para familias.
-                                </p>
-                                <p class="text-[#d75528] text-sm font-semibold">Alquileres: 450-700€</p>
-                            </div>
-
-                            <div class="bg-gradient-to-br from-[#d2557d]/10 to-transparent rounded-xl p-6">
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-3">🏫 A Ponte - Universidade</h3>
-                                <p class="text-gray-700 text-sm mb-2">
-                                    Cerca del campus universitario. Zona tranquila con ambiente estudiantil.
-                                </p>
-                                <p class="text-[#d75528] text-sm font-semibold">Alquileres: 350-550€</p>
-                            </div>
-
-                            <div class="bg-gradient-to-br from-[#394d62]/10 to-transparent rounded-xl p-6">
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-3">♨️ Outariz - Chavasqueira</h3>
-                                <p class="text-gray-700 text-sm mb-2">
-                                    Junto a las piscinas termales de Outariz. Zona verde, perfecta para amantes de las
-                                    termas.
-                                </p>
-                                <p class="text-[#d75528] text-sm font-semibold">Alquileres: 400-650€</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mb-12">
-                        <h2 class="text-3xl font-bold text-[#d75528] mb-6">Dónde comer y tomar algo</h2>
+                        <h2 class="text-3xl font-bold text-[#d75528] mb-6">Vivienda</h2>
 
                         <div class="space-y-6">
-                            <div>
-                                <h3 class="text-xl font-semibold text-[#d75528] mb-3">
-                                    🍷 Zona de Vinos - Casco Vello
-                                </h3>
-                                <p class="text-gray-700 mb-3">
-                                    Calles Lepanto, Lamas Carvajal y Irmáns Villar. Bares de tapas tradicionales con
-                                    vinos gallegos. Pulpo "á feira", empanadas, cachelos con carne. Ambiente auténtico y
-                                    precios muy razonables.
-                                </p>
-                                <p class="text-sm text-gray-600">
-                                    🕒 Especialmente animado mediodías y tardes de fin de semana
+                            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-[#d75528]">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">Demanda Moderada</h3>
+                                <p class="text-gray-700">
+                                    Aunque Ourense no tiene una universidad de la misma magnitud que Santiago o A
+                                    Coruña, la Universidad de Vigo tiene una sede importante en la ciudad, lo que genera
+                                    una demanda de viviendas para estudiantes.
                                 </p>
                             </div>
 
-                            <div>
-                                <h3 class="text-xl font-semibold text-[#d75528] mb-3">
-                                    ☕ Zona Comercial - Rúa do Progreso
-                                </h3>
-                                <p class="text-gray-700 mb-3">
-                                    Cafeterías, heladerías y restaurantes más modernos. Terrazas ideales para el café de
-                                    media mañana.
-                                </p>
-                                <p class="text-sm text-gray-600">
-                                    🕒 Todo el día, especialmente concurrida mañanas y tardes
+                            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-[#d75528]">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">Tipos de Vivienda</h3>
+                                <p class="text-gray-700">
+                                    Se pueden encontrar apartamentos compartidos, especialmente en el centro de la
+                                    ciudad, además de residencias más asequibles.
                                 </p>
                             </div>
 
-                            <div>
-                                <h3 class="text-xl font-semibold text-[#d75528] mb-3">🥩 Restaurantes Típicos</h3>
-                                <p class="text-gray-700 mb-3">
-                                    <strong>Nova Horta:</strong> Cocina gallega de mercado<br />
-                                    <strong>San Miguel:</strong> Carnes a la parrilla y pulpo<br />
-                                    <strong>A Taberna:</strong> Cocina tradicional casera<br />
-                                    <strong>O Asador:</strong> Carnes gallegas de calidad
-                                </p>
+                            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-[#d75528]">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">Precios Promedio</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <span class="font-medium mr-2">Habitación compartida:</span>
+                                        <span>250-350 € al mes + gastos</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="font-medium mr-2">Residencias universitarias:</span>
+                                        <span>280-380 € al mes</span>
+                                    </li>
+                                </ul>
                             </div>
 
-                            <div>
-                                <h3 class="text-xl font-semibold text-[#d75528] mb-3">
-                                    ♨️ Terrazas junto a las termas
-                                </h3>
+                            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-[#d75528]">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">Zonas Recomendadas</h3>
                                 <p class="text-gray-700 mb-3">
-                                    Varios bares y restaurantes junto a las zonas termales. Ideal para combinar baño
-                                    termal con tapeo.
+                                    El centro de la ciudad "O casco vello", barrios como A Ponte y O Couto son comunes
+                                    para los migrantes, por ser más económicos, pero para estar cerca de la universidad
+                                    lo mejor es barrio As Lagunas.
                                 </p>
-                                <p class="text-sm text-gray-600">🕒 Tardes-noches, ambiente relajado</p>
+                                <p class="text-sm text-gray-600 italic">
+                                    De todas maneras es una ciudad pequeña, puedes llegar andando a cualquier sitio.
+                                </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="mb-12">
-                        <h2 class="text-3xl font-bold text-[#d75528] mb-6">Aguas termales - El tesoro de Ourense</h2>
+                    <PortalesBuscarVivienda />
+                    <ConsejosAdicionalesVivienda />
 
-                        <div class="bg-gradient-to-br from-[#dfa142]/10 to-[#d75528]/10 rounded-xl p-8 mb-8">
-                            <h3 class="text-xl font-semibold text-[#394d62] mb-4">♨️ Zonas termales gratuitas</h3>
-                            <div class="space-y-4">
-                                <div class="bg-white rounded-lg p-4">
-                                    <h4 class="font-semibold text-[#d75528] mb-2">As Burgas</h4>
-                                    <p class="text-gray-700 text-sm">
-                                        En pleno centro histórico. Manantiales de agua caliente (65°C) declarados Bien
-                                        de Interés Cultural. Pozas de agua termal al aire libre. Acceso gratuito 24h.
-                                    </p>
-                                </div>
-                                <div class="bg-white rounded-lg p-4">
-                                    <h4 class="font-semibold text-[#d75528] mb-2">Outariz y Chavasqueira</h4>
-                                    <p class="text-gray-700 text-sm">
-                                        Complejo termal en la ribera del Miño. Varias piscinas con diferentes
-                                        temperaturas (35-41°C). Entorno natural espectacular. Gratuito y abierto todo el
-                                        año.
-                                    </p>
-                                </div>
-                                <div class="bg-white rounded-lg p-4">
-                                    <h4 class="font-semibold text-[#d75528] mb-2">Muíño da Veiga</h4>
-                                    <p class="text-gray-700 text-sm">
-                                        Piscina termal junto al río. Ambiente más tranquilo y menos masificado. Perfecto
-                                        para relajarse en plena naturaleza. Acceso gratuito.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="bg-white border-2 border-[#dfa142] rounded-xl p-6">
+                    <section class="mb-12">
+                        <h2 class="text-3xl font-bold text-[#394d62] mb-6">Residencias Universitarias</h2>
+                        <div class="bg-orange-50 border-l-4 border-[#d75528] p-6 mb-6">
                             <p class="text-gray-700">
-                                <strong>💡 Consejo:</strong> Las termas de Ourense son uno de los grandes atractivos de la
-                                ciudad. Poder disfrutar de aguas termales gratuitas en plena naturaleza es un lujo único
-                                en España. Ideales todo el año, especialmente en invierno.
+                                <strong>⚠️ Ten en cuenta:</strong> La mensualidad de las residencias suelen tener un costo
+                                elevado. Por otra parte, este servicio suele ser contratado por jóvenes que actualmente se
+                                encuentran cursando una carrera de grado (19-23 años).
                             </p>
                         </div>
-                    </div>
-
-                    <div class="mb-12">
-                        <h2 class="text-3xl font-bold text-[#d75528] mb-6">Cultura y ocio</h2>
-
-                        <div class="grid md:grid-cols-2 gap-8">
-                            <div>
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-4">🏛️ Monumentos</h3>
-                                <ul class="space-y-2 text-gray-700">
-                                    <li>• <strong>Catedral de San Martiño:</strong> Románico y Pórtico del Paraíso</li>
-                                    <li>• <strong>Ponte Romana:</strong> Puente romano sobre el Miño</li>
-                                    <li>• <strong>As Burgas:</strong> Manantiales termales históricos</li>
-                                    <li>• <strong>Praza Maior:</strong> Plaza porticada del s. XVII</li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-4">🌳 Naturaleza</h3>
-                                <ul class="space-y-2 text-gray-700">
-                                    <li>• <strong>Ribeira do Miño:</strong> Paseo fluvial de 4 km</li>
-                                    <li>• <strong>O Cumial:</strong> Mirador con vistas panorámicas</li>
-                                    <li>• <strong>Parque San Lázaro:</strong> Parque urbano histórico</li>
-                                    <li>• <strong>Ruta das Pozas:</strong> Senderismo por zonas termales</li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-4">🎭 Eventos anuales</h3>
-                                <ul class="space-y-2 text-gray-700">
-                                    <li>• <strong>Entroido (Carnaval):</strong> Uno de los más famosos de Galicia</li>
-                                    <li>• <strong>Magosto (noviembre):</strong> Fiesta tradicional de las castañas</li>
-                                    <li>• <strong>As Neves (agosto):</strong> Fiestas de la ciudad</li>
-                                    <li>• <strong>Festival de Ourense Termal:</strong> Eventos en las termas</li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-4">🏃 Deporte</h3>
-                                <ul class="space-y-2 text-gray-700">
-                                    <li>• <strong>Running:</strong> Paseo fluvial del Miño, rutas naturales</li>
-                                    <li>• <strong>Gimnasios:</strong> O2 Wellness, gimnasios municipales</li>
-                                    <li>• <strong>Natación:</strong> Piscina municipal cubierta</li>
-                                    <li>• <strong>Senderismo:</strong> Múltiples rutas por los alrededores</li>
-                                </ul>
-                            </div>
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-bold text-[#0c615d] mb-4">📍 Ourense (sede UVigo)</h3>
+                            <ul class="space-y-2">
+                                <li>
+                                    <a
+                                        href="https://www.resa.es/es/residencias/ourense/residencia-universitaria-as-burgas/residencia/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-[#c6d067] hover:text-[#394d62] transition-colors">
+                                        <span class="mr-2"></span>
+                                        <span>Residencia Universitaria As Burgas</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
+                    </section>
 
                     <div class="mb-12">
                         <h2 class="text-3xl font-bold text-[#d75528] mb-6">Transporte</h2>
@@ -243,8 +127,73 @@ import Footer from '../../components/Footer.astro'
                                     Red de AEVA con 13 líneas. Ciudad compacta, fácil moverse a pie o en bus.
                                 </p>
                                 <p class="text-sm text-[#d75528] font-semibold">
-                                    Bono mensual: ~24€ | Billete sencillo: 1€
+                                    Bono mensual: +-24€ | Billete sencillo: 1€
                                 </p>
+
+                                <div class="mt-6 pt-6 border-t border-gray-200">
+                                    <h4 class="text-lg font-bold text-[#394d62] mb-3 flex items-center gap-2">
+                                        💳 Tarjeta del Milenio
+                                    </h4>
+                                    <p class="text-gray-700 mb-4 leading-relaxed">
+                                        Si quieres movilizarte dentro de la ciudad de Ourense existe la
+                                        <span class="font-semibold text-[#394d62]">Tarjeta del Milenio</span>. Es una
+                                        tarjeta física, monedero, recargable que permite a los residentes de la ciudad
+                                        obtener descuentos en el precio del billete de bus urbano. Según tu situación
+                                        personal te permitirá obtener descuentos como estudiante o persona en búsqueda
+                                        de empleo según la documentación que presenten.
+                                    </p>
+                                    <div class="space-y-3 text-sm">
+                                        <div class="flex gap-3">
+                                            <span class="text-[#d75528] font-bold whitespace-nowrap"
+                                                >¿Qué necesito?</span
+                                            >
+                                            <span class="text-gray-700"
+                                                >La tarjeta es para residentes de la ciudad, por tanto, te solicitarán
+                                                certificado de empadronamiento y DNI. Si quieres obtener los descuentos
+                                                específicos como estudiante o descuento social, deberás adjuntar la
+                                                inscripción al máster, matrícula de estudiante o tarjeta de demandante
+                                                de empleo.</span
+                                            >
+                                        </div>
+                                        <div class="flex gap-3">
+                                            <span class="text-[#d75528] font-bold whitespace-nowrap"
+                                                >¿Cómo se obtiene?</span
+                                            >
+                                            <span class="text-gray-700">En las oficinas de ABANCA de la ciudad.</span>
+                                        </div>
+                                        <div class="flex gap-3">
+                                            <span class="text-[#d75528] font-bold whitespace-nowrap"
+                                                >¿Cuánto cuesta?</span
+                                            >
+                                            <span class="text-gray-700"
+                                                >Es gratuita la primera vez, luego si se pierde o extravía cobran 4
+                                                euros por tarjeta.</span
+                                            >
+                                        </div>
+                                        <div class="flex gap-3">
+                                            <span class="text-[#d75528] font-bold whitespace-nowrap"
+                                                >¿Cómo se recarga?</span
+                                            >
+                                            <span class="text-gray-700"
+                                                >En cualquier cajero automático de Abanca podrás recargarla ingresando
+                                                un mínimo de 10 euros.</span
+                                            >
+                                        </div>
+                                        <div class="flex gap-3 items-center pt-2">
+                                            <span class="text-[#d75528] font-bold">ℹ️ Más info:</span>
+                                            <a
+                                                href="https://ourense.avanzagrupo.com/tarifas/tarjeta-milenio"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                class="text-[#394d62] hover:text-[#d75528] underline transition-colors">
+                                                ourense.avanzagrupo.com/tarifas/tarjeta-milenio
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                - Para saber los horarios de los autobuses puedes usar la app OurenseConsello, leyendo el
+                                código Qr de cada parada o desde la app Moovit. - Cuenta con un autobús nocturno llamado
+                                “Moucho bus” que pasa cada media hora en la madrugada de festivos y fines de semana.
                             </div>
 
                             <div class="bg-gray-50 rounded-xl p-6">
@@ -285,13 +234,13 @@ import Footer from '../../components/Footer.astro'
                             <div class="grid md:grid-cols-2 gap-6">
                                 <div>
                                     <p class="text-gray-700 mb-2">
-                                        <strong>🏛️ Administración pública:</strong> Diputación, Xunta, organismos provinciales
+                                        <strong> Administración pública:</strong> Diputación, Xunta, organismos provinciales
                                     </p>
                                     <p class="text-gray-700 mb-2">
-                                        <strong>🏥 Sanidad:</strong> Hospital Universitario de Ourense (CHUO)
+                                        <strong> Sanidad:</strong> Hospital Universitario de Ourense (CHUO)
                                     </p>
                                     <p class="text-gray-700 mb-2">
-                                        <strong>🎓 Educación:</strong> Universidade de Vigo (campus Ourense)
+                                        <strong> Educación:</strong> Universidade de Vigo (campus Ourense)
                                     </p>
                                 </div>
                                 <div>
@@ -308,7 +257,7 @@ import Footer from '../../components/Footer.astro'
                             </div>
                             <div class="mt-6 bg-white rounded-lg p-4">
                                 <p class="text-gray-700">
-                                    <strong>💡 Nota:</strong> Ourense tiene menor dinamismo laboral que las ciudades costeras,
+                                    <strong> Nota:</strong> Ourense tiene menor dinamismo laboral que las ciudades costeras,
                                     pero ofrece buenas oportunidades en administración pública, sanidad y turismo termal.
                                 </p>
                             </div>
@@ -316,7 +265,7 @@ import Footer from '../../components/Footer.astro'
                     </div>
 
                     <div class="bg-gradient-to-r from-[#d75528] to-[#dfa142] rounded-2xl p-8 text-white">
-                        <h2 class="text-2xl font-bold mb-4">💡 Consejo AJERGA</h2>
+                        <h2 class="text-2xl font-bold mb-4">Consejo AJERGA</h2>
                         <p class="text-lg">
                             Ourense es ideal si buscas tranquilidad, coste de vida bajo y calidad de vida. Las aguas
                             termales gratuitas son un tesoro único. Perfecta para teletrabajo, funcionarios o perfiles
@@ -327,6 +276,8 @@ import Footer from '../../components/Footer.astro'
                 </div>
             </div>
         </section>
+
+        <AcabasDeLlegarA city="Ourense" />
     </main>
 
     <Footer />
