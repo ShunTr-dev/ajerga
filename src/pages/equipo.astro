@@ -8,7 +8,6 @@ import Footer from '../components/Footer.astro'
     <Header />
 
     <main>
-        <!-- Hero Section -->
         <section class="bg-gradient-to-br from-[#d2557d] to-[#394d62] py-20 text-white">
             <div class="container mx-auto px-4 text-center">
                 <h1 class="text-5xl font-bold mb-6">Nuestro Equipo</h1>
@@ -19,7 +18,6 @@ import Footer from '../components/Footer.astro'
             </div>
         </section>
 
-        <!-- Contenido -->
         <section class="py-20 bg-white">
             <div class="container mx-auto px-4">
                 <div class="max-w-6xl mx-auto">
@@ -37,18 +35,23 @@ import Footer from '../components/Footer.astro'
                         <h2 class="text-3xl font-bold text-[#394d62] mb-8 text-center">Junta Directiva</h2>
 
                         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            <!-- Ejemplo de miembro de equipo - Repetir para cada miembro -->
                             <div
                                 class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 text-center hover:shadow-xl transition-shadow">
                                 <div
                                     class="w-32 h-32 bg-gradient-to-br from-[#c6d067] to-[#0c615d] rounded-full mx-auto mb-6 flex items-center justify-center">
-                                    <span class="text-5xl text-white"></span>
+                                    <video
+                                        class="scroll-video w-full h-full object-cover"
+                                        src="/src/assets/capturas/la-presi.mp4"
+                                        muted
+                                        autoplay
+                                        loop
+                                        preload="auto"></video>
                                 </div>
-                                <h3 class="text-2xl font-bold text-[#394d62] mb-2">[Nombre]</h3>
+                                <h3 class="text-2xl font-bold text-[#394d62] mb-2">Gabriela Alves Primo García</h3>
                                 <p class="text-[#d75528] font-semibold mb-4">Presidenta</p>
                                 <p class="text-gray-700 text-sm mb-4">
-                                    [Breve descripción: país de emigración, profesión, motivación para formar parte de
-                                    AJERGA]
+                                    Ingeniera Química - Máster en Ingeniería de la Automoción UVIGO BEME 2017 - 🇧🇷
+                                    BRASIL
                                 </p>
                             </div>
 
@@ -56,11 +59,19 @@ import Footer from '../components/Footer.astro'
                                 class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 text-center hover:shadow-xl transition-shadow">
                                 <div
                                     class="w-32 h-32 bg-gradient-to-br from-[#77b2c0] to-[#394d62] rounded-full mx-auto mb-6 flex items-center justify-center">
-                                    <span class="text-5xl text-white"></span>
+                                    <video
+                                        class="scroll-video w-full h-full object-cover"
+                                        src="/src/assets/capturas/la-vice.mp4"
+                                        muted
+                                        autoplay
+                                        loop
+                                        preload="auto"></video>
                                 </div>
-                                <h3 class="text-2xl font-bold text-[#394d62] mb-2">[Nombre]</h3>
-                                <p class="text-[#d75528] font-semibold mb-4">Vicepresidente</p>
-                                <p class="text-gray-700 text-sm mb-4">[Breve descripción]</p>
+                                <h3 class="text-2xl font-bold text-[#394d62] mb-2">Mariana Doldán Cortada</h3>
+                                <p class="text-[#d75528] font-semibold mb-4">Vicepresidenta</p>
+                                <p class="text-gray-700 text-sm mb-4">
+                                    Nutricionista - Master en Xenómica e xenética USC - 🇺🇾 URUGUAY
+                                </p>
                             </div>
 
                             <div
