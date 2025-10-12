@@ -20,8 +20,7 @@ import apadrinarImg from '../assets/apadrinar-1024x768.webp'
                             Bienvenido a <span class="text-[#d75528]">AJERGA</span>
                         </h1>
                         <p class="text-xl text-gray-600 leading-relaxed">
-                            Asociación de Jóvenes Emigrantes Retornados de Galicia. Juntos construimos una comunidad de
-                            apoyo para quienes vuelven a casa.
+                            Juntos construimos una comunidad de apoyo para quienes vuelven a casa.
                         </p>
                         <div class="flex flex-wrap gap-4">
                             <a
@@ -70,6 +69,58 @@ import apadrinarImg from '../assets/apadrinar-1024x768.webp'
                         Creemos en la fuerza del colectivo y en la importancia de construir juntos un futuro en Galicia
                         para todas las personas que desean regresar.
                     </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Asóciate con franja azul-verde -->
+        <section id="asociate" class="relative mb-60 -mt-28">
+            <!-- Fondo con inclinación -->
+            <div
+                class="absolute inset-0 -top-24 -bottom-24 bg-gradient-to-r from-[#77b2c0] to-[#c6d067]"
+                style="clip-path: polygon(0 6%, 100% 0%, 100% 94%, 0% 100%);">
+            </div>
+
+            <!-- Contenido -->
+            <div class="relative container mx-auto px-4 py-8">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold text-white mb-6">Asóciate a AJERGA</h2>
+                        <div class="w-24 h-1 bg-white mx-auto mb-8"></div>
+                    </div>
+
+                    <!-- Contenedor con imagen animada y contenido -->
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <!-- Imagen animada a la izquierda -->
+
+                        <section class="video-scroll-section w-full h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+                            <video
+                                class="scroll-video w-full h-full object-cover"
+                                src="/src/assets/capturas/mari-vamos-cuadrado.mp4"
+                                muted
+                                playsinline
+                                preload="auto"></video>
+                        </section>
+
+                        <!-- Contenido a la derecha -->
+                        <div class="bg-white rounded-2xl shadow-xl p-10 md:p-12">
+                            <div id="scroll-section-1" class="scroll-trigger mb-12">
+                                <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                                    Formar parte de AJERGA significa unirte a una comunidad de personas que comparten tu
+                                    experiencia migratoria. Juntos podemos crear una red de apoyo sólida y trabajar por
+                                    mejorar las condiciones de retorno a Galicia.
+                                </p>
+                            </div>
+
+                            <div id="scroll-section-5" class="scroll-trigger text-center">
+                                <a
+                                    href="/asociate"
+                                    class="inline-block bg-gradient-to-r from-[#0c615d] to-[#c6d067] text-white px-10 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+                                    Hazte socio/a ahora
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -179,59 +230,6 @@ import apadrinarImg from '../assets/apadrinar-1024x768.webp'
             </div>
         </section>
 
-        <!-- Sección: Asóciate con franja azul-verde -->
-        <section id="asociate" class="relative mb-60 -mt-28">
-            <!-- Fondo con inclinación -->
-            <div
-                class="absolute inset-0 -top-24 -bottom-24 bg-gradient-to-r from-[#77b2c0] to-[#c6d067]"
-                style="clip-path: polygon(0 6%, 100% 0%, 100% 94%, 0% 100%);">
-            </div>
-
-            <!-- Contenido -->
-            <div class="relative container mx-auto px-4 py-8">
-                <div class="max-w-4xl mx-auto">
-                    <div class="text-center mb-12">
-                        <h2 class="text-4xl font-bold text-white mb-6">Asóciate a AJERGA</h2>
-                        <div class="w-24 h-1 bg-white mx-auto mb-8"></div>
-                    </div>
-
-                    <div class="bg-white rounded-2xl shadow-xl p-10 md:p-12">
-                        <p class="text-lg text-gray-700 leading-relaxed mb-8 text-center">
-                            Formar parte de AJERGA significa unirte a una comunidad de personas que comparten tu
-                            experiencia migratoria. Juntos podemos crear una red de apoyo sólida y trabajar por mejorar
-                            las condiciones de retorno a Galicia.
-                        </p>
-
-                        <div class="grid md:grid-cols-3 gap-6 mb-10">
-                            <div class="text-center p-6 bg-gradient-to-br from-[#c6d067]/10 to-transparent rounded-xl">
-                                <div class="text-4xl mb-3">🤝</div>
-                                <h3 class="font-bold text-[#0c615d] mb-2">Comunidad</h3>
-                                <p class="text-gray-600 text-sm">Conecta con personas que entienden tu experiencia</p>
-                            </div>
-                            <div class="text-center p-6 bg-gradient-to-br from-[#d75528]/10 to-transparent rounded-xl">
-                                <div class="text-4xl mb-3">📚</div>
-                                <h3 class="font-bold text-[#0c615d] mb-2">Recursos</h3>
-                                <p class="text-gray-600 text-sm">Accede a información y guías útiles</p>
-                            </div>
-                            <div class="text-center p-6 bg-gradient-to-br from-[#77b2c0]/10 to-transparent rounded-xl">
-                                <div class="text-4xl mb-3">💪</div>
-                                <h3 class="font-bold text-[#0c615d] mb-2">Impacto</h3>
-                                <p class="text-gray-600 text-sm">Ayuda a construir un futuro mejor</p>
-                            </div>
-                        </div>
-
-                        <div class="text-center">
-                            <a
-                                href="/asociate"
-                                class="inline-block bg-gradient-to-r from-[#0c615d] to-[#c6d067] text-white px-10 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
-                                Hazte socio/a ahora
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Sección: Comité de Ética con franja naranja-rosa -->
         <section id="comite-etica" class="relative mb-60 -mt-28">
             <!-- Fondo con inclinación -->
@@ -270,6 +268,29 @@ import apadrinarImg from '../assets/apadrinar-1024x768.webp'
             </div>
         </section>
     </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const video = document.querySelector('.scroll-video')
+            const section = document.querySelector('.video-scroll-section')
+
+            if (!video) {
+                console.error('No se encontró el vídeo en la página')
+                return
+            }
+
+            window.addEventListener('scroll', () => {
+                const rect = section.getBoundingClientRect()
+                const progress = Math.min(
+                    Math.max((window.innerHeight - rect.top) / (rect.height + window.innerHeight), 0),
+                    1
+                )
+                if (video.duration) {
+                    video.currentTime = progress * video.duration * 1.48
+                }
+            })
+        })
+    </script>
 
     <Footer />
 </Layout>
