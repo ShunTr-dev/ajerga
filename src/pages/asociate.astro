@@ -18,174 +18,186 @@ import Footer from '../components/Footer.astro'
             </div>
         </section>
 
-        <!-- Contenido -->
         <section class="py-20 bg-white">
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto">
                     <div class="mb-16">
-                        <h2 class="text-4xl font-bold text-[#0c615d] mb-8 text-center">¿Por qué asociarte?</h2>
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <section
+                                class="video-scroll-section w-full h-[700px] rounded-2xl overflow-hidden shadow-2xl">
+                                <video
+                                    class="scroll-video w-full h-full object-cover"
+                                    src="/src/assets/capturas/eventos-sociales.mp4"
+                                    muted
+                                    loop
+                                    autoplay
+                                    preload="auto"></video>
+                            </section>
 
-                        <div class="grid md:grid-cols-3 gap-8">
-                            <div class="text-center p-8 bg-gradient-to-br from-[#c6d067]/10 to-transparent rounded-2xl">
-                                <div class="text-5xl mb-4"></div>
-                                <h3 class="text-2xl font-bold text-[#0c615d] mb-4">Comunidad</h3>
-                                <p class="text-gray-700">
-                                    Conecta con personas que comparten tu experiencia migratoria y entienden los
-                                    desafíos del retorno
-                                </p>
-                            </div>
-
-                            <div class="text-center p-8 bg-gradient-to-br from-[#d75528]/10 to-transparent rounded-2xl">
-                                <div class="text-5xl mb-4"></div>
-                                <h3 class="text-2xl font-bold text-[#0c615d] mb-4">Recursos</h3>
-                                <p class="text-gray-700">
-                                    Accede a información actualizada, guías prácticas y asesoramiento para facilitar tu
-                                    retorno
-                                </p>
-                            </div>
-
-                            <div class="text-center p-8 bg-gradient-to-br from-[#77b2c0]/10 to-transparent rounded-2xl">
-                                <div class="text-5xl mb-4"></div>
-                                <h3 class="text-2xl font-bold text-[#0c615d] mb-4">Impacto</h3>
-                                <p class="text-gray-700">
-                                    Tu voz cuenta. Juntos trabajamos para mejorar las políticas de retorno y crear
-                                    oportunidades
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mb-16">
-                        <h2 class="text-4xl font-bold text-[#0c615d] mb-8 text-center">Beneficios de ser socio/a</h2>
-
-                        <div class="space-y-4">
-                            <div class="flex items-start bg-gray-50 rounded-xl p-6">
-                                <span class="text-3xl mr-4">✅</span>
-                                <div>
-                                    <h3 class="text-xl font-semibold text-[#394d62] mb-2">
-                                        Programa de Apadrinamiento
-                                    </h3>
-                                    <p class="text-gray-700">
-                                        Acceso prioritario a nuestro programa de apadrinamiento para recibir o dar apoyo
+                            <div class="bg-white rounded-2xl shadow-xl p-10 md:p-12">
+                                <div id="scroll-section-1" class="scroll-trigger mb-12">
+                                    <h2 class="text-3xl font-bold text-[#0c615d] mb-4">
+                                        Volver a casa no significa empezar de cero
+                                    </h2>
+                                    <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                                        En AJERGA creemos en el poder de la comunidad: una red de jóvenes que vivieron
+                                        la experiencia de emigrar y hoy acompañan a quienes regresan o llegan a Galicia
+                                        para construir un nuevo comienzo. Ser parte de AJERGA es sumarte a un movimiento
+                                        hecho de historias, aprendizajes y solidaridad. Es encontrar apoyo, compartir
+                                        tus ideas y crecer junto a otr@s que entienden tu camino.
                                     </p>
                                 </div>
                             </div>
-
-                            <div class="flex items-start bg-gray-50 rounded-xl p-6">
-                                <span class="text-3xl mr-4">✅</span>
-                                <div>
-                                    <h3 class="text-xl font-semibold text-[#394d62] mb-2">Eventos y Actividades</h3>
-                                    <p class="text-gray-700">
-                                        Participa en nuestros encuentros, charlas, talleres y actividades sociales
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start bg-gray-50 rounded-xl p-6">
-                                <span class="text-3xl mr-4">✅</span>
-                                <div>
-                                    <h3 class="text-xl font-semibold text-[#394d62] mb-2">Red de Contactos</h3>
-                                    <p class="text-gray-700">
-                                        Amplía tu red profesional y personal con personas de diversos sectores y
-                                        experiencias
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start bg-gray-50 rounded-xl p-6">
-                                <span class="text-3xl mr-4">✅</span>
-                                <div>
-                                    <h3 class="text-xl font-semibold text-[#394d62] mb-2">Información Exclusiva</h3>
-                                    <p class="text-gray-700">
-                                        Recibe boletines con información sobre ayudas, convocatorias y oportunidades
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start bg-gray-50 rounded-xl p-6">
-                                <span class="text-3xl mr-4">✅</span>
-                                <div>
-                                    <h3 class="text-xl font-semibold text-[#394d62] mb-2">Voz y Voto</h3>
-                                    <p class="text-gray-700">
-                                        Participa en las decisiones de la asociación y propón iniciativas
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mb-16">
-                        <h2 class="text-4xl font-bold text-[#0c615d] mb-8 text-center">Cuota de Socio/a</h2>
-
-                        <div class="bg-gradient-to-br from-[#77b2c0]/10 to-[#c6d067]/10 rounded-2xl p-8 text-center">
-                            <p class="text-3xl font-bold text-[#0c615d] mb-4">8€ / año</p>
-                            <p class="text-lg text-gray-700 mb-6">
-                                Una cuota simbólica que nos permite mantener las actividades de la asociación y seguir
-                                creciendo
-                            </p>
-                            <p class="text-sm text-gray-600">
-                                * Si la cuota supone un problema económico, contacta con nosotros. Nadie se queda fuera
-                                por motivos económicos.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="mb-16">
-                        <h2 class="text-4xl font-bold text-[#0c615d] mb-8 text-center">¿Cómo asociarte?</h2>
-
-                        <div class="grid md:grid-cols-3 gap-6">
-                            <div class="text-center p-6 bg-white border-2 border-[#c6d067] rounded-xl">
-                                <div class="text-4xl mb-4">1️⃣</div>
-                                <h3 class="text-xl font-bold text-[#394d62] mb-3">Rellena el formulario</h3>
-                                <p class="text-gray-700">Completa tus datos en nuestro formulario de inscripción</p>
-                            </div>
-
-                            <div class="text-center p-6 bg-white border-2 border-[#d75528] rounded-xl">
-                                <div class="text-4xl mb-4">2️⃣</div>
-                                <h3 class="text-xl font-bold text-[#394d62] mb-3">Realiza el pago</h3>
-                                <p class="text-gray-700">Abona la cuota anual por transferencia bancaria</p>
-                            </div>
-
-                            <div class="text-center p-6 bg-white border-2 border-[#77b2c0] rounded-xl">
-                                <div class="text-4xl mb-4">3️⃣</div>
-                                <h3 class="text-xl font-bold text-[#394d62] mb-3">¡Bienvenido/a!</h3>
-                                <p class="text-gray-700">
-                                    Recibirás un email de confirmación y acceso a todos los beneficios
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Formulario de Contacto -->
-                    <div class="bg-gradient-to-br from-[#0c615d] to-[#c6d067] rounded-2xl p-8 md:p-12 text-white">
-                        <h2 class="text-3xl font-bold mb-6 text-center">Formulario de Inscripción</h2>
-                        <p class="text-center mb-8">
-                            Por ahora, para asociarte envíanos un email a <a
-                                href={`mailto:${import.meta.env.EMAIL}`}
-                                class="underline font-bold">{import.meta.env.EMAIL}</a
-                            >
-                            indicando:
-                        </p>
-                        <ul class="max-w-2xl mx-auto space-y-2 mb-8">
-                            <li>✉️ Nombre completo</li>
-                            <li>✉️ Email de contacto</li>
-                            <li>✉️ Teléfono</li>
-                            <li>✉️ Localidad donde resides en Galicia</li>
-                            <li>✉️ País del que regresas o has regresado</li>
-                            <li>✉️ Breve presentación (opcional)</li>
-                        </ul>
-                        <div class="text-center">
-                            <a
-                                href={`mailto:${import.meta.env.EMAIL}?subject=Quiero asociarme a AJERGA`}
-                                class="inline-block bg-white text-[#0c615d] px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg">
-                                Enviar solicitud
-                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
 
-    <Footer />
+            <section class="relative py-20 bg-white bg-gradient-to-r from-[#77b2c0] to-[#c6d067]">
+                <div class="container relative mx-auto px-4 py-8">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="mb-16">
+                            <h2 class="text-4xl font-bold text-white mb-8 text-center">¿Por qué asociarte?</h2>
+
+                            <div class="grid md:grid-cols-2 gap-8 items-center">
+                                <div class="bg-white rounded-2xl shadow-xl p-10 md:p-12">
+                                    <div id="scroll-section-1" class="scroll-trigger mb-12">
+                                        <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                                            <p class="text-gray-700">
+                                                Conecta con personas que comparten tu experiencia migratoria y entienden
+                                                los desafíos del retorno.
+                                            </p>
+                                            <p class="text-gray-700">
+                                                Formar parte de una red activa de jóvenes retornados y migrantes en
+                                                Galicia y el mundo.
+                                            </p>
+                                            <p class="text-gray-700">
+                                                Poder participar en nuestras Asambleas Generales y tener voz en las
+                                                decisiones de la asociación.
+                                            </p>
+                                            <p class="text-gray-700">
+                                                Acceder a oportunidades de voluntariado, talleres, charlas y eventos
+                                                culturales.
+                                            </p>
+                                            <p class="text-gray-700">
+                                                Recibir información exclusiva sobre nuestras actividades y programas de
+                                                desarrollo personal y profesional.
+                                            </p>
+                                            <p class="text-gray-700">
+                                                Tu voz cuenta. Juntos trabajamos para mejorar las políticas de retorno y
+                                                crear oportunidades.
+                                            </p>
+                                            <p class="text-gray-700">
+                                                Programa de apadrinamiento para nuevos retornados y migrantes.
+                                            </p>
+                                            <p class="text-gray-700">
+                                                Amplía tu red profesional y personal con personas de diversos sectores y
+                                                experiencias.
+                                            </p>
+                                            <p class="text-gray-700">
+                                                Accede a recursos y herramientas para tu desarrollo personal y
+                                                profesional.
+                                            </p>
+                                            <p class="text-gray-700">
+                                                Participa en grupos de discusión y networking para compartir
+                                                experiencias y aprender de otros.
+                                            </p>
+                                        </p>
+                                    </div>
+                                </div>
+                                <section
+                                    class="video-scroll-section w-full h-[700px] rounded-2xl overflow-hidden shadow-2xl">
+                                    <video
+                                        class="scroll-video w-full h-full object-cover"
+                                        src="/src/assets/capturas/bemes-estudios.mp4"
+                                        muted
+                                        loop
+                                        autoplay
+                                        preload="auto"></video>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="relative py-20 bg-white">
+                <div class="container relative mx-auto px-4 py-8">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="mb-16">
+                            <h2 class="text-4xl font-bold text-[#0c615d] mb-8 text-center">Cuota de Socio/a</h2>
+
+                            <div
+                                class="bg-gradient-to-br from-[#77b2c0]/10 to-[#c6d067]/10 rounded-2xl p-8 text-center">
+                                <p class="text-3xl font-bold text-[#0c615d] mb-4">8€ / año</p>
+                                <p class="text-lg text-gray-700 mb-6">
+                                    Una cuota simbólica que nos permite mantener las actividades de la asociación y
+                                    seguir creciendo
+                                </p>
+                                <p class="text-sm text-gray-600">
+                                    * Si la cuota supone un problema económico, contacta con nosotros. Nadie se queda
+                                    fuera por motivos económicos.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-16">
+                            <h2 class="text-4xl font-bold text-[#0c615d] mb-8 text-center">¿Cómo asociarte?</h2>
+
+                            <div class="grid md:grid-cols-3 gap-6">
+                                <div class="text-center p-6 bg-white border-2 border-[#c6d067] rounded-xl">
+                                    <div class="text-4xl mb-4">1️⃣</div>
+                                    <h3 class="text-xl font-bold text-[#394d62] mb-3">Rellena el formulario</h3>
+                                    <p class="text-gray-700">Completa tus datos en nuestro formulario de inscripción</p>
+                                </div>
+
+                                <div class="text-center p-6 bg-white border-2 border-[#d75528] rounded-xl">
+                                    <div class="text-4xl mb-4">2️⃣</div>
+                                    <h3 class="text-xl font-bold text-[#394d62] mb-3">Realiza el pago</h3>
+                                    <p class="text-gray-700">Abona la cuota anual por transferencia bancaria</p>
+                                </div>
+
+                                <div class="text-center p-6 bg-white border-2 border-[#77b2c0] rounded-xl">
+                                    <div class="text-4xl mb-4">3️⃣</div>
+                                    <h3 class="text-xl font-bold text-[#394d62] mb-3">¡Bienvenido/a!</h3>
+                                    <p class="text-gray-700">
+                                        Recibirás un email de confirmación y acceso a todos los beneficios
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Formulario de Contacto -->
+                        <div class="bg-gradient-to-br from-[#0c615d] to-[#c6d067] rounded-2xl p-8 md:p-12 text-white">
+                            <h2 class="text-3xl font-bold mb-6 text-center">Formulario de Inscripción</h2>
+                            <p class="text-center mb-8">
+                                Por ahora, para asociarte envíanos un email a <a
+                                    href={`mailto:${import.meta.env.EMAIL}`}
+                                    class="underline font-bold">{import.meta.env.EMAIL}</a
+                                >
+                                indicando:
+                            </p>
+                            <ul class="max-w-2xl mx-auto space-y-2 mb-8">
+                                <li>✉️ Nombre completo</li>
+                                <li>✉️ Email de contacto</li>
+                                <li>✉️ Teléfono</li>
+                                <li>✉️ Localidad donde resides en Galicia</li>
+                                <li>✉️ País del que regresas o has regresado</li>
+                                <li>✉️ Breve presentación (opcional)</li>
+                            </ul>
+                            <div class="text-center">
+                                <a
+                                    href={`mailto:${import.meta.env.EMAIL}?subject=Quiero asociarme a AJERGA`}
+                                    class="inline-block bg-white text-[#0c615d] px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg">
+                                    Enviar solicitud
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <Footer />
+    </main>
 </Layout>
