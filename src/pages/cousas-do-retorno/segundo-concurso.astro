@@ -1,0 +1,369 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Header from '../../components/Header.astro'
+import Footer from '../../components/Footer.astro'
+import Banner from '../../assets/cousas-do-retorno/banner-cousas.webp'
+import Poster from '../../assets/cousas-do-retorno/cousas-do-retorno-poster.webp'
+---
+
+<Layout
+    title="Segundo Concurso Cousas do Retorno - Ser Migrante"
+    description="II Edición del Concurso Cousas do Retorno: Ser Migrante (2024-2025)">
+    <Header />
+
+    <main class="bg-gradient-to-b from-gray-50 to-white">
+        <!-- Hero Section -->
+        <section
+            class="relative bg-gradient-to-br from-[#0c615d] to-[#394d62] py-24 md:py-32 text-white overflow-hidden">
+            <div class="absolute inset-0 bg-black/10"></div>
+            <div class="container relative z-10 mx-auto px-4 text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 tracking-tight">Cousas do Retorno</h1>
+                <p class="text-xl md:text-2xl max-w-3xl mx-auto font-light">
+                    II Edición del Concurso - "Ser Migrante" (2024-2025)
+                </p>
+            </div>
+        </section>
+
+        <section class="w-full">
+            <div class="relative">
+                <img src={Banner.src} alt="Banner de Cousas do Retorno" class="w-full h-auto object-cover" />
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="py-20 md:py-28">
+            <div class="container mx-auto px-4">
+                <div class="max-w-5xl mx-auto">
+                    <!-- Poster -->
+                    <div class="mb-16 flex justify-center">
+                        <div class="relative max-w-2xl">
+                            <div
+                                class="absolute -inset-4 bg-gradient-to-r from-[#0c615d] to-[#c6d067] rounded-3xl blur-2xl opacity-20">
+                            </div>
+                            <img
+                                src={Poster.src}
+                                alt="Póster Segundo Concurso Cousas do Retorno - Ser Migrante"
+                                class="relative rounded-3xl shadow-2xl ring-2 ring-white"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Alerta de Plazo Abierto -->
+                    <div class="mb-16">
+                        <div
+                            class="bg-gradient-to-r from-[#c6d067] to-[#dfa142] rounded-3xl p-8 md:p-10 text-center shadow-2xl">
+                            <div class="flex items-center justify-center gap-3 mb-4">
+                                <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <h2 class="text-3xl md:text-4xl font-bold text-white">¡Plazo Abierto!</h2>
+                            </div>
+                            <p class="text-xl text-white font-semibold mb-2">Fecha límite de participación:</p>
+                            <p class="text-3xl md:text-4xl font-bold text-[#394d62] mb-4">15 de marzo de 2025</p>
+                            <p class="text-white text-lg">23:59 (hora peninsular española)</p>
+                        </div>
+                    </div>
+
+                    <!-- Introducción -->
+                    <div class="mb-16 bg-gradient-to-br from-[#0c615d]/5 to-[#c6d067]/5 rounded-3xl p-10 md:p-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-[#0c615d] mb-6">II Edición - "Ser Migrante"</h2>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                            En noviembre de <strong>2024</strong> lanzamos la <strong
+                                >II Edición del Concurso Cousas do Retorno</strong
+                            >, titulada <strong>"Ser Migrante"</strong>.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Esta nueva edición tiene como objetivo destacar un proyecto artístico constituido por una
+                            secuencia de obras, piezas o escenas que reflejen la experiencia migrante en la actualidad.
+                        </p>
+                    </div>
+
+                    <!-- Objetivos -->
+                    <div class="mb-16">
+                        <h2 class="text-3xl md:text-4xl font-bold text-[#0c615d] mb-8 text-center">
+                            Objetivos del Concurso
+                        </h2>
+                        <div class="w-24 h-1 bg-gradient-to-r from-[#0c615d] to-[#c6d067] mx-auto mb-12"></div>
+
+                        <div class="bg-white rounded-3xl p-8 md:p-10 shadow-lg">
+                            <div class="space-y-6">
+                                <div class="flex items-start gap-4">
+                                    <div
+                                        class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#77b2c0] to-[#394d62] rounded-full flex items-center justify-center">
+                                        <svg
+                                            class="w-6 h-6 text-white"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <p class="text-lg text-gray-700 leading-relaxed">
+                                            Busca fomentar la <strong>transdisciplinariedad de las artes</strong> y su papel
+                                            como herramientas de transformación y generación de conciencia de la realidad
+                                            en la que estamos inmersos.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div
+                                        class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#d2557d] to-[#dfa142] rounded-full flex items-center justify-center">
+                                        <svg
+                                            class="w-6 h-6 text-white"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <p class="text-lg text-gray-700 leading-relaxed">
+                                            Destacar proyectos que reflejen la <strong
+                                                >experiencia migrante en la actualidad</strong
+                                            >
+                                            a través de múltiples disciplinas artísticas.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Colaboradores -->
+                    <div class="mb-16 bg-gradient-to-br from-[#d2557d]/5 to-[#dfa142]/5 rounded-3xl p-10 md:p-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-[#0c615d] mb-8 text-center">Colaboradores</h2>
+                        <p class="text-center text-gray-700 mb-6">
+                            Esta segunda edición cuenta con la colaboración de:
+                        </p>
+
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all">
+                                <div
+                                    class="w-16 h-16 bg-gradient-to-br from-[#0c615d] to-[#394d62] rounded-full mx-auto mb-4 flex items-center justify-center">
+                                    <svg
+                                        class="w-8 h-8 text-white"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-lg font-bold text-[#394d62]">Secretaría Xeral de Emigración</h3>
+                            </div>
+
+                            <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all">
+                                <div
+                                    class="w-16 h-16 bg-gradient-to-br from-[#77b2c0] to-[#394d62] rounded-full mx-auto mb-4 flex items-center justify-center">
+                                    <svg
+                                        class="w-8 h-8 text-white"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-lg font-bold text-[#394d62]">Asociación Rioplatenses de Lugo</h3>
+                            </div>
+
+                            <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all">
+                                <div
+                                    class="w-16 h-16 bg-gradient-to-br from-[#c6d067] to-[#0c615d] rounded-full mx-auto mb-4 flex items-center justify-center">
+                                    <svg
+                                        class="w-8 h-8 text-white"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-lg font-bold text-[#394d62]">Red Museística de Lugo</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Premio -->
+                    <div class="mb-16">
+                        <h2 class="text-3xl md:text-4xl font-bold text-[#0c615d] mb-8 text-center">Premio</h2>
+                        <div class="w-24 h-1 bg-gradient-to-r from-[#0c615d] to-[#c6d067] mx-auto mb-12"></div>
+
+                        <div
+                            class="bg-gradient-to-br from-[#0c615d] to-[#394d62] rounded-3xl p-10 md:p-12 text-white shadow-2xl">
+                            <div class="text-center mb-8">
+                                <div
+                                    class="inline-flex items-center justify-center w-24 h-24 bg-white/20 backdrop-blur-sm rounded-full mb-6">
+                                    <svg
+                                        class="w-12 h-12 text-[#c6d067]"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <p class="text-6xl font-bold text-[#c6d067] mb-4">1.000 €</p>
+                                <p class="text-2xl font-semibold mb-6">Premio Único</p>
+                            </div>
+
+                            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0">
+                                        <svg
+                                            class="w-8 h-8 text-[#c6d067]"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="text-xl font-semibold mb-2">Oportunidad de Exposición</p>
+                                        <p class="text-lg">
+                                            La obra ganadora tendrá la oportunidad de ser expuesta en uno de los centros
+                                            de la
+                                            <strong>Red Museística de Lugo</strong>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Acciones -->
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-3xl p-8 md:p-10 shadow-lg">
+                            <h2 class="text-2xl font-bold text-[#0c615d] mb-6">Participa Ahora</h2>
+
+                            <div class="space-y-4">
+                                <a
+                                    href="http://retornoxove.hl1460.dinaserver.com/wp-content/uploads/2025/01/Bases_del_Concurso_Cousas_do_Retorno_24_25_Ser_Migrante_comprimido.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="flex items-center gap-3 p-4 bg-gradient-to-r from-[#0c615d] to-[#394d62] hover:from-[#394d62] hover:to-[#0c615d] text-white rounded-2xl transition-all group">
+                                    <div
+                                        class="flex-shrink-0 w-12 h-12 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-all">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <p class="font-bold text-lg">Descarga las Bases y Condiciones</p>
+                                        <p class="text-sm text-white/80">Documento PDF completo</p>
+                                    </div>
+                                    <svg
+                                        class="w-6 h-6 group-hover:translate-x-1 transition-transform"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                                        ></path>
+                                    </svg>
+                                </a>
+
+                                <a
+                                    href="https://bit.ly/3WLstgq"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="flex items-center gap-3 p-4 bg-gradient-to-r from-[#c6d067] to-[#dfa142] hover:from-[#dfa142] hover:to-[#c6d067] text-[#394d62] rounded-2xl transition-all group">
+                                    <div
+                                        class="flex-shrink-0 w-12 h-12 bg-white/40 rounded-full flex items-center justify-center group-hover:bg-white/60 transition-all">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <p class="font-bold text-lg">Formulario de Inscripción y Envío de Obras</p>
+                                        <p class="text-sm opacity-80">Completa tu participación online</p>
+                                    </div>
+                                    <svg
+                                        class="w-6 h-6 group-hover:translate-x-1 transition-transform"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                                        ></path>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="mt-8 pt-6 border-t border-gray-200 text-center">
+                                <p class="text-gray-600 mb-2">¿Dudas o consultas?</p>
+                                <a
+                                    href="mailto:cultura@retornoxove.gal"
+                                    class="inline-flex items-center gap-2 text-[#0c615d] hover:text-[#394d62] font-semibold transition-colors">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                        ></path>
+                                    </svg>
+                                    cultura@retornoxove.gal
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <Footer />
+</Layout>

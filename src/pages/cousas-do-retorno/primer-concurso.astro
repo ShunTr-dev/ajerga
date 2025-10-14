@@ -1,0 +1,199 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Header from '../../components/Header.astro'
+import Footer from '../../components/Footer.astro'
+import Banner from '../../assets/cousas-do-retorno/banner-cousas.webp'
+import Poster from '../../assets/cousas-do-retorno/cousas-do-retorno-poster.webp'
+---
+
+<Layout
+    title="Cousas do Retorno - Primer Concurso"
+    description="Primer Concurso Multidisciplinar sobre la Experiencia del Retorno">
+    <Header />
+
+    <main class="bg-gradient-to-b from-gray-50 to-white">
+        <!-- Hero Section -->
+        <section
+            class="relative bg-gradient-to-br from-[#0c615d] to-[#394d62] py-24 md:py-32 text-white overflow-hidden">
+            <div class="absolute inset-0 bg-black/10"></div>
+            <div class="container relative z-10 mx-auto px-4 text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 tracking-tight">Cousas do Retorno</h1>
+                <p class="text-xl md:text-2xl max-w-3xl mx-auto font-light">
+                    Primer Concurso Multidisciplinar sobre la Experiencia del Retorno
+                </p>
+            </div>
+        </section>
+
+        <!-- Banner Image -->
+        <section class="w-full">
+            <div class="relative">
+                <img src={Banner.src} alt="Banner de Cousas do Retorno" class="w-full h-auto object-cover" />
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="py-20 md:py-28">
+            <div class="container mx-auto px-4">
+                <div class="max-w-5xl mx-auto">
+                    <!-- Poster -->
+                    <div class="mb-16 flex justify-center">
+                        <div class="relative max-w-2xl">
+                            <div
+                                class="absolute -inset-4 bg-gradient-to-r from-[#0c615d] to-[#c6d067] rounded-3xl blur-2xl opacity-20">
+                            </div>
+                            <img
+                                src={Poster.src}
+                                alt="Póster de Cousas do Retorno"
+                                class="relative rounded-3xl shadow-2xl ring-2 ring-white"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Homenaje a Castelao -->
+                    <div class="mb-16 bg-gradient-to-br from-[#0c615d]/5 to-[#c6d067]/5 rounded-3xl p-10 md:p-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-[#0c615d] mb-6">Homenaje a Castelao</h2>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                            El concurso toma el nombre de las <strong>"Cousas"</strong> de Castelao (escritas entre 1919
+                            y 1926), un conjunto de relatos breves que interpretaban la realidad gallega y su tiempo, publicados
+                            pocos años antes de que el autor iniciara su exilio en Latinoamérica.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Él nunca pudo retornar, pero sí muchos hijos y nietos de gallegos, que ahora le rinden
+                            homenaje de este modo.
+                        </p>
+                    </div>
+
+                    <!-- Sobre el Concurso -->
+                    <div class="mb-16">
+                        <h2 class="text-3xl md:text-4xl font-bold text-[#0c615d] mb-8 text-center">
+                            Sobre el Concurso
+                        </h2>
+                        <div class="w-24 h-1 bg-gradient-to-r from-[#0c615d] to-[#c6d067] mx-auto mb-12"></div>
+
+                        <div class="space-y-8">
+                            <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all">
+                                <h3 class="text-2xl font-bold text-[#394d62] mb-4">Concepto</h3>
+                                <p class="text-gray-700 leading-relaxed">
+                                    Consistió en un certamen multidisciplinar de <strong
+                                        >pintura, fotografía, producción audiovisual y relatos cortos</strong
+                                    >, dirigido a emigrantes con la idea de dar visibilidad a la historia, aún por
+                                    narrar, de este colectivo.
+                                </p>
+                            </div>
+
+                            <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all">
+                                <h3 class="text-2xl font-bold text-[#394d62] mb-4">Colaboración</h3>
+                                <p class="text-gray-700 leading-relaxed">
+                                    Contó con la colaboración de la <strong
+                                        >Secretaría Xeral de Emigración de la Xunta de Galicia</strong
+                                    >.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- El Jurado -->
+                    <div class="mb-16 bg-gradient-to-br from-[#d2557d]/5 to-[#dfa142]/5 rounded-3xl p-10 md:p-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-[#0c615d] mb-8 text-center">El Jurado</h2>
+
+                        <p class="text-lg text-gray-700 leading-relaxed mb-8 text-center">
+                            El jurado estuvo conformado por tres artistas residentes en Galicia y conectados con la
+                            migración:
+                        </p>
+
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all">
+                                <div
+                                    class="w-20 h-20 bg-gradient-to-br from-[#c6d067] to-[#0c615d] rounded-full mx-auto mb-4 flex items-center justify-center">
+                                    <span class="text-3xl text-white font-bold">A</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-[#394d62] mb-2">Amaia Roldán</h3>
+                                <p class="text-gray-600 text-sm">
+                                    Coordinadora de la residencia artística Cuarto Pexigo
+                                </p>
+                            </div>
+
+                            <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all">
+                                <div
+                                    class="w-20 h-20 bg-gradient-to-br from-[#77b2c0] to-[#394d62] rounded-full mx-auto mb-4 flex items-center justify-center">
+                                    <span class="text-3xl text-white font-bold">N</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-[#394d62] mb-2">Nacho Muñoz</h3>
+                                <p class="text-gray-600 text-sm">Compositor y artista sonoro</p>
+                            </div>
+
+                            <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all">
+                                <div
+                                    class="w-20 h-20 bg-gradient-to-br from-[#d2557d] to-[#dfa142] rounded-full mx-auto mb-4 flex items-center justify-center">
+                                    <span class="text-3xl text-white font-bold">X</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-[#394d62] mb-2">Xesús Fraga</h3>
+                                <p class="text-gray-600 text-sm">
+                                    Periodista y escritor, Premio Nacional de Narrativa 2021
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Participación y Resultados -->
+                    <div class="bg-white rounded-3xl p-10 md:p-12 shadow-xl">
+                        <h2 class="text-3xl md:text-4xl font-bold text-[#0c615d] mb-8 text-center">
+                            Participación y Resultados
+                        </h2>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-[#0c615d] rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                    70+
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-[#394d62] mb-2">Obras Recibidas</h3>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        La convocatoria recibió más de <strong>70 obras</strong> llegadas desde Galicia y
+                                        de países como Argentina, Polonia, Uruguay, Chile, México, Venezuela o Puerto Rico.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-[#c6d067] rounded-full flex items-center justify-center text-[#394d62] font-bold text-xl">
+                                    17-77
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-[#394d62] mb-2">Diversidad de Edades</h3>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        Participantes de un rango de edad entre <strong>17 y 77 años</strong>,
+                                        reflejando la diversidad intergeneracional de la experiencia migratoria.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-[#d2557d] rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                    15
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-[#394d62] mb-2">
+                                        Colección «Cousas del Retorno»
+                                    </h3>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        La selección final incluyó a las ganadoras del concurso y <strong
+                                            >15 obras destacadas</strong
+                                        >
+                                        por el jurado en su objetivo de transmitir la singularidad de la experiencia del
+                                        retorno. Esta selección constituyó la base de nuestra Colección «Cousas del Retorno».
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <Footer />
+</Layout>
