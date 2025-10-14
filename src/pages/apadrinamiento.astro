@@ -11,53 +11,54 @@ import apadrinar from '../assets/apadrinar-1024x768.webp'
     description="Conecta con alguien que te acompañe en tu retorno a Galicia">
     <Header />
 
-    <main>
+    <main class="bg-gradient-to-b from-gray-50 to-white">
         <!-- Hero Section -->
-        <section class="bg-gradient-to-br from-[#d2557d] to-[#dfa142] py-20 text-white">
-            <div class="container mx-auto px-4 text-center">
-                <h1 class="text-5xl font-bold mb-6">Programa de Apadrinamiento</h1>
-                <p class="text-xl max-w-3xl mx-auto">
+        <section
+            class="relative bg-gradient-to-br from-[#d2557d] to-[#dfa142] py-24 md:py-32 text-white overflow-hidden">
+            <div class="absolute inset-0 bg-black/10"></div>
+            <div class="container relative z-10 mx-auto px-4 text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 tracking-tight">Programa de Apadrinamiento</h1>
+                <p class="text-xl md:text-2xl max-w-3xl mx-auto font-light">
                     Conectamos a personas recién retornadas con socios/as establecidos para facilitar tu integración en
                     Galicia
                 </p>
             </div>
         </section>
 
-        <!-- Qué es -->
-        <section class="py-20 bg-white">
+        <section class="py-20 md:py-28">
             <div class="container mx-auto px-4">
                 <div class="max-w-6xl mx-auto">
                     <div class="mb-16">
-                        <h2 class="text-3xl font-bold text-[#d75528] mb-6 text-center">
+                        <h2 class="text-4xl md:text-5xl font-bold text-[#d75528] mb-8 text-center">
                             ¿Qué es el Programa de Apadrinamiento?
                         </h2>
-                        <p class="text-lg text-gray-700 mb-6 text-center max-w-4xl mx-auto">
-                            Es uno de los pilares de AJERGA. Conectamos a personas que acaban de retornar a Galicia con
-                            socios/as que llevan más tiempo establecidos. El objetivo es ofrecer apoyo, orientación y
-                            acompañamiento durante los primeros meses del retorno, facilitando la integración social y
-                            profesional.
+                        <div class="w-24 h-1 bg-gradient-to-r from-[#d2557d] to-[#dfa142] mx-auto mb-8"></div>
+                        <p class="text-lg md:text-xl text-gray-700 mb-6 text-center max-w-4xl mx-auto leading-relaxed">
+                            Conectamos a personas que acaban de retornar a Galicia con socios/as que llevan más tiempo
+                            establecidos. El objetivo es ofrecer apoyo, orientación y acompañamiento durante los
+                            primeros meses del retorno, facilitando la integración social y profesional.
                         </p>
-                        <div class="grid md:grid-cols-3 gap-8 mt-12">
-                            <div class="bg-gradient-to-br from-[#c6d067]/10 to-transparent rounded-xl p-8 text-center">
-                                <div class="text-5xl mb-4"></div>
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-3">Conexión Personal</h3>
-                                <p class="text-gray-700">
+                        <div class="grid md:grid-cols-3 gap-8 mt-16">
+                            <div
+                                class="bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+                                <h3 class="text-xl font-bold text-[#394d62] mb-3">Conexión Personal</h3>
+                                <p class="text-gray-700 leading-relaxed">
                                     Te emparejamos con alguien que comparte intereses, ciudad o experiencia migratoria
                                     similar
                                 </p>
                             </div>
-                            <div class="bg-gradient-to-br from-[#77b2c0]/10 to-transparent rounded-xl p-8 text-center">
-                                <div class="text-5xl mb-4">💬</div>
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-3">Apoyo Mutuo</h3>
-                                <p class="text-gray-700">
+                            <div
+                                class="bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+                                <h3 class="text-xl font-bold text-[#394d62] mb-3">Apoyo Mutuo</h3>
+                                <p class="text-gray-700 leading-relaxed">
                                     Resolver dudas, compartir experiencias y tener alguien en quien apoyarte durante el
                                     retorno
                                 </p>
                             </div>
-                            <div class="bg-gradient-to-br from-[#dfa142]/10 to-transparent rounded-xl p-8 text-center">
-                                <div class="text-5xl mb-4">🌱</div>
-                                <h3 class="text-xl font-semibold text-[#394d62] mb-3">Integración</h3>
-                                <p class="text-gray-700">
+                            <div
+                                class="bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+                                <h3 class="text-xl font-bold text-[#394d62] mb-3">Integración</h3>
+                                <p class="text-gray-700 leading-relaxed">
                                     Facilitar tu adaptación social, laboral y cultural en tu nueva vida en Galicia
                                 </p>
                             </div>
@@ -67,66 +68,80 @@ import apadrinar from '../assets/apadrinar-1024x768.webp'
             </div>
         </section>
 
-        <!-- Cómo funciona -->
-        <section class="py-20 bg-gray-50">
+        <section class="py-20 md:py-28 bg-gradient-to-br from-[#d2557d]/5 to-[#dfa142]/5">
             <div class="container mx-auto px-4">
                 <div class="max-w-6xl mx-auto">
-                    <h2 class="text-3xl font-bold text-[#d75528] mb-12 text-center">¿Cómo funciona?</h2>
+                    <h2 class="text-4xl md:text-5xl font-bold text-[#d75528] mb-16 text-center">¿Cómo funciona?</h2>
 
-                    <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
-                        <div>
-                            <img src={apadrinar.src} alt="Quiero apadrinar" class="rounded-2xl shadow-lg" />
+                    <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+                        <div class="order-2 lg:order-1">
+                            <div class="relative">
+                                <div
+                                    class="absolute -inset-4 bg-gradient-to-r from-[#d2557d] to-[#dfa142] rounded-3xl blur-2xl opacity-20">
+                                </div>
+                                <img
+                                    src={apadrinar.src}
+                                    alt="Quiero apadrinar"
+                                    class="relative rounded-3xl shadow-2xl ring-2 ring-white"
+                                />
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-[#394d62] mb-6">Si quieres ser apadrinado/a</h3>
+                        <div class="order-1 lg:order-2">
+                            <h3 class="text-3xl font-bold text-[#394d62] mb-8">Si quieres ser apadrinado/a</h3>
                             <div class="space-y-6">
-                                <div class="flex items-start gap-4">
+                                <div
+                                    class="flex items-start gap-4 bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow">
                                     <div
-                                        class="bg-[#d2557d] text-white rounded-full w-10 h-10 flex items-center justify-center font-bold flex-shrink-0">
+                                        class="bg-[#d2557d] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold flex-shrink-0 text-xl">
                                         1
                                     </div>
                                     <div>
-                                        <h4 class="font-semibold text-[#394d62] mb-2">Rellena el formulario</h4>
-                                        <p class="text-gray-700">
+                                        <h4 class="font-bold text-[#394d62] mb-2 text-lg">Rellena el formulario</h4>
+                                        <p class="text-gray-700 leading-relaxed">
                                             Cuéntanos sobre ti: dónde has estado, dónde quieres vivir en Galicia, tus
                                             intereses y necesidades.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="flex items-start gap-4">
+                                <div
+                                    class="flex items-start gap-4 bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow">
                                     <div
-                                        class="bg-[#d2557d] text-white rounded-full w-10 h-10 flex items-center justify-center font-bold flex-shrink-0">
+                                        class="bg-[#d2557d] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold flex-shrink-0 text-xl">
                                         2
                                     </div>
                                     <div>
-                                        <h4 class="font-semibold text-[#394d62] mb-2">Te emparejamos</h4>
-                                        <p class="text-gray-700">
+                                        <h4 class="font-bold text-[#394d62] mb-2 text-lg">Te emparejamos</h4>
+                                        <p class="text-gray-700 leading-relaxed">
                                             Buscamos un padrino/madrina que encaje con tu perfil, ciudad y necesidades
                                             específicas.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="flex items-start gap-4">
+                                <div
+                                    class="flex items-start gap-4 bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow">
                                     <div
-                                        class="bg-[#d2557d] text-white rounded-full w-10 h-10 flex items-center justify-center font-bold flex-shrink-0">
+                                        class="bg-[#d2557d] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold flex-shrink-0 text-xl">
                                         3
                                     </div>
                                     <div>
-                                        <h4 class="font-semibold text-[#394d62] mb-2">Primera toma de contacto</h4>
-                                        <p class="text-gray-700">
+                                        <h4 class="font-bold text-[#394d62] mb-2 text-lg">Primera toma de contacto</h4>
+                                        <p class="text-gray-700 leading-relaxed">
                                             Os ponemos en contacto para que os conozcáis y acordéis cómo queréis que sea
                                             el acompañamiento.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="flex items-start gap-4">
+                                <div
+                                    class="flex items-start gap-4 bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow">
                                     <div
-                                        class="bg-[#d2557d] text-white rounded-full w-10 h-10 flex items-center justify-center font-bold flex-shrink-0">
+                                        class="bg-[#d2557d] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold flex-shrink-0 text-xl">
                                         4
                                     </div>
                                     <div>
-                                        <h4 class="font-semibold text-[#394d62] mb-2">Acompañamiento personalizado</h4>
-                                        <p class="text-gray-700">
+                                        <h4 class="font-bold text-[#394d62] mb-2 text-lg">
+                                            Acompañamiento personalizado
+                                        </h4>
+                                        <p class="text-gray-700 leading-relaxed">
                                             Tu padrino/madrina te acompaña durante los primeros meses: dudas, consejos,
                                             quedadas, integración.
                                         </p>
@@ -136,59 +151,65 @@ import apadrinar from '../assets/apadrinar-1024x768.webp'
                         </div>
                     </div>
 
-                    <div class="grid md:grid-cols-2 gap-12 items-center">
-                        <div class="order-2 md:order-1">
-                            <h3 class="text-2xl font-bold text-[#394d62] mb-6">Si quieres ser padrino/madrina</h3>
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-3xl font-bold text-[#394d62] mb-8">Si quieres ser padrino/madrina</h3>
                             <div class="space-y-6">
-                                <div class="flex items-start gap-4">
+                                <div
+                                    class="flex items-start gap-4 bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow">
                                     <div
-                                        class="bg-[#c6d067] text-[#394d62] rounded-full w-10 h-10 flex items-center justify-center font-bold flex-shrink-0">
+                                        class="bg-[#c6d067] text-[#394d62] rounded-full w-12 h-12 flex items-center justify-center font-bold flex-shrink-0 text-xl">
                                         1
                                     </div>
                                     <div>
-                                        <h4 class="font-semibold text-[#394d62] mb-2">
+                                        <h4 class="font-bold text-[#394d62] mb-2 text-lg">
                                             Inscríbete como padrino/madrina
                                         </h4>
-                                        <p class="text-gray-700">
+                                        <p class="text-gray-700 leading-relaxed">
                                             Cuéntanos sobre tu experiencia, tu ciudad, tus intereses y qué tipo de apoyo
                                             puedes ofrecer.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="flex items-start gap-4">
+                                <div
+                                    class="flex items-start gap-4 bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow">
                                     <div
-                                        class="bg-[#c6d067] text-[#394d62] rounded-full w-10 h-10 flex items-center justify-center font-bold flex-shrink-0">
+                                        class="bg-[#c6d067] text-[#394d62] rounded-full w-12 h-12 flex items-center justify-center font-bold flex-shrink-0 text-xl">
                                         2
                                     </div>
                                     <div>
-                                        <h4 class="font-semibold text-[#394d62] mb-2">Te asignamos un ahijado/a</h4>
-                                        <p class="text-gray-700">
+                                        <h4 class="font-bold text-[#394d62] mb-2 text-lg">Te asignamos un ahijado/a</h4>
+                                        <p class="text-gray-700 leading-relaxed">
                                             Cuando llegue alguien que encaje con tu perfil, te contactamos para
                                             presentaros.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="flex items-start gap-4">
+                                <div
+                                    class="flex items-start gap-4 bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow">
                                     <div
-                                        class="bg-[#c6d067] text-[#394d62] rounded-full w-10 h-10 flex items-center justify-center font-bold flex-shrink-0">
+                                        class="bg-[#c6d067] text-[#394d62] rounded-full w-12 h-12 flex items-center justify-center font-bold flex-shrink-0 text-xl">
                                         3
                                     </div>
                                     <div>
-                                        <h4 class="font-semibold text-[#394d62] mb-2">Acompañamiento flexible</h4>
-                                        <p class="text-gray-700">
+                                        <h4 class="font-bold text-[#394d62] mb-2 text-lg">Acompañamiento flexible</h4>
+                                        <p class="text-gray-700 leading-relaxed">
                                             Decides cómo quieres acompañar: mensajes, llamadas, quedadas para un café,
                                             ayuda con trámites...
                                         </p>
                                     </div>
                                 </div>
-                                <div class="flex items-start gap-4">
+                                <div
+                                    class="flex items-start gap-4 bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow">
                                     <div
-                                        class="bg-[#c6d067] text-[#394d62] rounded-full w-10 h-10 flex items-center justify-center font-bold flex-shrink-0">
+                                        class="bg-[#c6d067] text-[#394d62] rounded-full w-12 h-12 flex items-center justify-center font-bold flex-shrink-0 text-xl">
                                         4
                                     </div>
                                     <div>
-                                        <h4 class="font-semibold text-[#394d62] mb-2">Devuelves lo que recibiste</h4>
-                                        <p class="text-gray-700">
+                                        <h4 class="font-bold text-[#394d62] mb-2 text-lg">
+                                            Devuelves lo que recibiste
+                                        </h4>
+                                        <p class="text-gray-700 leading-relaxed">
                                             Ayudas a otra persona como quizás alguien te ayudó a ti. ¡Y ganas un nuevo
                                             amigo/a!
                                         </p>
@@ -196,200 +217,107 @@ import apadrinar from '../assets/apadrinar-1024x768.webp'
                                 </div>
                             </div>
                         </div>
-                        <div class="order-1 md:order-2">
-                            <img src={apadrina.src} alt="Quiero ser apadrinado" class="rounded-2xl shadow-lg" />
+                        <div>
+                            <div class="relative">
+                                <div
+                                    class="absolute -inset-4 bg-gradient-to-r from-[#c6d067] to-[#0c615d] rounded-3xl blur-2xl opacity-20">
+                                </div>
+                                <img
+                                    src={apadrina.src}
+                                    alt="Quiero ser apadrinado"
+                                    class="relative rounded-3xl shadow-2xl ring-2 ring-white"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Qué ofrece -->
-        <section class="py-20 bg-white">
+        <section class="py-20 md:py-28">
             <div class="container mx-auto px-4">
                 <div class="max-w-6xl mx-auto">
-                    <h2 class="text-3xl font-bold text-[#d75528] mb-12 text-center">
+                    <h2 class="text-4xl md:text-5xl font-bold text-[#d75528] mb-16 text-center">
                         ¿Qué puedes esperar del apadrinamiento?
                     </h2>
 
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div class="bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 border border-gray-200">
-                            <div class="text-3xl mb-3">📍</div>
-                            <h3 class="text-lg font-semibold text-[#394d62] mb-3">Orientación local</h3>
-                            <p class="text-gray-700 text-sm">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div
+                            class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 border-t-4 border-[#c6d067]">
+                            <h3 class="text-xl font-bold text-[#394d62] mb-3">Orientación local</h3>
+                            <p class="text-gray-700 leading-relaxed">
                                 Recomendaciones sobre tu ciudad: zonas para vivir, dónde hacer trámites, mejores
                                 comercios, transportes...
                             </p>
                         </div>
 
-                        <div class="bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 border border-gray-200">
-                            <div class="text-3xl mb-3"></div>
-                            <h3 class="text-lg font-semibold text-[#394d62] mb-3">Apoyo laboral</h3>
-                            <p class="text-gray-700 text-sm">
+                        <div
+                            class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 border-t-4 border-[#77b2c0]">
+                            <h3 class="text-xl font-bold text-[#394d62] mb-3">Apoyo laboral</h3>
+                            <p class="text-gray-700 leading-relaxed">
                                 Consejos para buscar empleo, contactos, información sobre sectores y empresas en tu
                                 área.
                             </p>
                         </div>
 
-                        <div class="bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 border border-gray-200">
-                            <div class="text-3xl mb-3"></div>
-                            <h3 class="text-lg font-semibold text-[#394d62] mb-3">Vivienda</h3>
-                            <p class="text-gray-700 text-sm">
+                        <div
+                            class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 border-t-4 border-[#d2557d]">
+                            <h3 class="text-xl font-bold text-[#394d62] mb-3">Vivienda</h3>
+                            <p class="text-gray-700 leading-relaxed">
                                 Tips para buscar piso, zonas recomendadas, webs útiles, cómo funcionan los alquileres en
                                 Galicia.
                             </p>
                         </div>
 
-                        <div class="bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 border border-gray-200">
-                            <div class="text-3xl mb-3">🎭</div>
-                            <h3 class="text-lg font-semibold text-[#394d62] mb-3">Integración social</h3>
-                            <p class="text-gray-700 text-sm">
+                        <div
+                            class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 border-t-4 border-[#dfa142]">
+                            <h3 class="text-xl font-bold text-[#394d62] mb-3">Integración social</h3>
+                            <p class="text-gray-700 leading-relaxed">
                                 Presentarte a otros socios/as, recomendarte actividades, grupos, eventos para conocer
                                 gente.
                             </p>
                         </div>
 
-                        <div class="bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 border border-gray-200">
-                            <div class="text-3xl mb-3"></div>
-                            <h3 class="text-lg font-semibold text-[#394d62] mb-3">Trámites</h3>
-                            <p class="text-gray-700 text-sm">
+                        <div
+                            class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 border-t-4 border-[#0c615d]">
+                            <h3 class="text-xl font-bold text-[#394d62] mb-3">Trámites</h3>
+                            <p class="text-gray-700 leading-relaxed">
                                 Ayuda para entender y gestionar trámites administrativos, bancarios, de sanidad, etc.
                             </p>
                         </div>
 
-                        <div class="bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 border border-gray-200">
-                            <div class="text-3xl mb-3">💚</div>
-                            <h3 class="text-lg font-semibold text-[#394d62] mb-3">Apoyo emocional</h3>
-                            <p class="text-gray-700 text-sm">
+                        <div
+                            class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 border-t-4 border-[#d75528]">
+                            <h3 class="text-xl font-bold text-[#394d62] mb-3">Apoyo emocional</h3>
+                            <p class="text-gray-700 leading-relaxed">
                                 Alguien que entiende tu situación, con quien compartir dudas, miedos y alegrías del
                                 retorno.
                             </p>
                         </div>
-                    </div>
-
-                    <div class="mt-12 bg-gradient-to-br from-[#dfa142]/10 to-transparent rounded-xl p-8">
-                        <h3 class="text-xl font-semibold text-[#394d62] mb-4">Duración del apadrinamiento</h3>
-                        <p class="text-gray-700">
-                            El programa tiene una duración orientativa de <strong>3-6 meses</strong>, aunque puede
-                            alargarse o acortarse según las necesidades y la relación que se establezca. Muchas veces,
-                            padrinos/madrinas y ahijados/as mantienen el contacto y amistad más allá del programa
-                            formal.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonios -->
-        <section class="py-20 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <div class="max-w-6xl mx-auto">
-                    <h2 class="text-3xl font-bold text-[#d75528] mb-12 text-center">Testimonios</h2>
-
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="bg-white rounded-xl p-8 shadow-md">
-                            <div class="flex items-center mb-4">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-br from-[#d2557d] to-[#dfa142] rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                                    M
-                                </div>
-                                <div>
-                                    <p class="font-semibold text-[#394d62]">María</p>
-                                    <p class="text-sm text-gray-600">Ahijada - Retornada de Berlín</p>
-                                </div>
-                            </div>
-                            <p class="text-gray-700 italic">
-                                "Mi madrina fue un apoyo fundamental los primeros meses. Me ayudó a entender cómo
-                                funcionaban los trámites, me presentó a gente, y sobre todo, me escuchó en momentos
-                                difíciles. Retornar no es fácil, pero tener alguien que lo entiende marca la
-                                diferencia."
-                            </p>
-                        </div>
-
-                        <div class="bg-white rounded-xl p-8 shadow-md">
-                            <div class="flex items-center mb-4">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-br from-[#c6d067] to-[#0c615d] rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                                    P
-                                </div>
-                                <div>
-                                    <p class="font-semibold text-[#394d62]">Pablo</p>
-                                    <p class="text-sm text-gray-600">Padrino - Retornado de Londres</p>
-                                </div>
-                            </div>
-                            <p class="text-gray-700 italic">
-                                "Ser padrino me ha permitido devolver la ayuda que yo recibí cuando retorné. Es muy
-                                gratificante ver cómo tu ahijado/a va superando obstáculos y adaptándose. Además, he
-                                ganado un buen amigo en el proceso. ¡Totalmente recomendable!"
-                            </p>
-                        </div>
-
-                        <div class="bg-white rounded-xl p-8 shadow-md">
-                            <div class="flex items-center mb-4">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-br from-[#77b2c0] to-[#394d62] rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                                    L
-                                </div>
-                                <div>
-                                    <p class="font-semibold text-[#394d62]">Lucía</p>
-                                    <p class="text-sm text-gray-600">Ahijada - Retornada de París</p>
-                                </div>
-                            </div>
-                            <p class="text-gray-700 italic">
-                                "Llegué a Santiago sin conocer a nadie. Mi padrino me dio mil consejos prácticos: dónde
-                                buscar piso, cómo moverse, qué zonas eran mejor. Pero lo más valioso fue sentir que no
-                                estaba sola, que había alguien disponible cuando tenía dudas o simplemente necesitaba
-                                hablar."
-                            </p>
-                        </div>
-
-                        <div class="bg-white rounded-xl p-8 shadow-md">
-                            <div class="flex items-center mb-4">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-br from-[#dfa142] to-[#d75528] rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                                    J
-                                </div>
-                                <div>
-                                    <p class="font-semibold text-[#394d62]">Jorge</p>
-                                    <p class="text-sm text-gray-600">Padrino - Retornado de Ámsterdam</p>
-                                </div>
-                            </div>
-                            <p class="text-gray-700 italic">
-                                "Me apunté como padrino porque sé lo duro que puede ser retornar. He apadrinado a dos
-                                personas y ambas experiencias han sido muy positivas. Ver cómo poco a poco se van
-                                integrando y sintiendo más cómodos en Galicia es muy satisfactorio."
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA -->
-        <section class="py-20 bg-gradient-to-br from-[#0c615d] to-[#c6d067]">
-            <div class="container mx-auto px-4">
-                <div class="max-w-4xl mx-auto text-center text-white">
-                    <h2 class="text-4xl font-bold mb-6">¿Te interesa el programa de apadrinamiento?</h2>
-                    <p class="text-xl mb-10">
-                        Para participar en el programa necesitas ser socio/a de AJERGA. La cuota es de solo 20€/año y te
-                        da acceso a todos nuestros recursos y actividades.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a
-                            href="/asociate"
-                            class="inline-block bg-white text-[#0c615d] px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg">
-                            Hazte socio/a
-                        </a>
-                        <a
-                            href="mailto:apadrinamiento@ajerga.org"
-                            class="inline-block bg-[#d75528] text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-[#c04820] transition-colors shadow-lg">
-                            Más información
-                        </a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <Footer />
+    <section class="py-20 md:py-32 bg-gradient-to-br from-[#0c615d] to-[#394d62]">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center text-white">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8">¿Te interesa el programa de apadrinamiento?</h2>
+                <p class="text-xl md:text-2xl mb-12 font-light leading-relaxed">
+                    Para participar en el programa necesitas ser socio/a de AJERGA. La cuota es de solo 8€/año y te da
+                    acceso a todos nuestros recursos y actividades.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <a
+                        href="/asociate"
+                        class="inline-block bg-white text-[#0c615d] px-12 py-5 rounded-full font-bold text-lg hover:bg-gray-100 hover:scale-105 transition-all shadow-xl">
+                        Hazte socio/a
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 </Layout>
+
+<Footer />
