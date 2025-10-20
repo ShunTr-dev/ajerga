@@ -2,6 +2,9 @@
 import Layout from '../layouts/Layout.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
+
+import porQueVoluntariaVideo from '../assets/capturas/por-que-voluntaria.mp4'
+import bemesEstudiosVideo from '../assets/capturas/bemes-estudios.mp4'
 ---
 
 <Layout
@@ -31,7 +34,7 @@ import Footer from '../components/Footer.astro'
                                 class="w-full max-w-[380px] aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl ring-1 ring-gray-200">
                                 <video
                                     class="w-full h-full object-cover"
-                                    src="/src/assets/capturas/por-que-voluntaria.mp4"
+                                    src={porQueVoluntariaVideo}
                                     muted
                                     loop
                                     autoplay
@@ -103,7 +106,7 @@ import Footer from '../components/Footer.astro'
                                     class="w-full max-w-[380px] aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl ring-1 ring-gray-200">
                                     <video
                                         class="w-full h-full object-cover"
-                                        src="/src/assets/capturas/bemes-estudios.mp4"
+                                        src={bemesEstudiosVideo}
                                         muted
                                         loop
                                         autoplay
