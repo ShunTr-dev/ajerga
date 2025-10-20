@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro'
 import fotoGrupal from '../assets/foto-grupal.webp'
 import apadrinaImg from '../assets/apadrina-1024x682.webp'
 import apadrinarImg from '../assets/apadrinar-1024x768.webp'
+import vamosMariVideo from '../assets/capturas/mari-vamos-cuadrado.mp4'
 ---
 
 <Layout>
@@ -96,7 +97,7 @@ import apadrinarImg from '../assets/apadrinar-1024x768.webp'
                                 class="video-scroll-section w-full max-w-[500px] aspect-square rounded-3xl overflow-hidden shadow-2xl ring-1 ring-gray-200">
                                 <video
                                     class="scroll-video w-full h-full object-cover"
-                                    src="/src/assets/capturas/mari-vamos-cuadrado.mp4"
+                                    src={vamosMariVideo}
                                     muted
                                     playsinline
                                     preload="auto">

@@ -2,6 +2,9 @@
 import Layout from '../layouts/Layout.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
+
+import laViceEnVideo from '../assets/capturas/la-vice.mp4'
+import laPresiEnVideo from '../assets/capturas/la-presi.mp4'
 ---
 
 <Layout title="Nuestro Equipo - AJERGA" description="Conoce al equipo de AJERGA">
@@ -62,7 +65,7 @@ import Footer from '../components/Footer.astro'
                                 class="w-36 h-36 bg-gradient-to-br from-[#c6d067] to-[#0c615d] rounded-full mx-auto mb-6 overflow-hidden ring-4 ring-[#c6d067]/20 group-hover:ring-[#c6d067]/40 transition-all">
                                 <video
                                     class="w-full h-full object-cover"
-                                    src="/src/assets/capturas/la-presi.mp4"
+                                    src={laPresiEnVideo}
                                     muted
                                     autoplay
                                     loop
@@ -83,7 +86,7 @@ import Footer from '../components/Footer.astro'
                                 class="w-36 h-36 bg-gradient-to-br from-[#77b2c0] to-[#394d62] rounded-full mx-auto mb-6 overflow-hidden ring-4 ring-[#77b2c0]/20 group-hover:ring-[#77b2c0]/40 transition-all">
                                 <video
                                     class="w-full h-full object-cover"
-                                    src="/src/assets/capturas/la-vice.mp4"
+                                    src={laViceEnVideo}
                                     muted
                                     autoplay
                                     loop

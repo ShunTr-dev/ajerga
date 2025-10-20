@@ -2,6 +2,9 @@
 import Layout from '../layouts/Layout.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
+
+import videoEventosSociales from '../assets/capturas/eventos-sociales.mp4'
+import videoBemesEstudios from '../assets/capturas/bemes-estudios.mp4'
 ---
 
 <Layout title="Asóciate a AJERGA" description="Únete a la comunidad de jóvenes emigrantes retornados de Galicia">
@@ -31,7 +34,7 @@ import Footer from '../components/Footer.astro'
                                 class="w-full max-w-[380px] aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl ring-1 ring-gray-200">
                                 <video
                                     class="w-full h-full object-cover"
-                                    src="/src/assets/capturas/eventos-sociales.mp4"
+                                    src={videoEventosSociales}
                                     muted
                                     loop
                                     autoplay
@@ -97,7 +100,7 @@ import Footer from '../components/Footer.astro'
                                     class="w-full max-w-[380px] aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl ring-1 ring-gray-200">
                                     <video
                                         class="w-full h-full object-cover"
-                                        src="/src/assets/capturas/bemes-estudios.mp4"
+                                        src={videoBemesEstudios}
                                         muted
                                         loop
                                         autoplay
