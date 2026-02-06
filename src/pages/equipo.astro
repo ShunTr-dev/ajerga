@@ -5,6 +5,14 @@ import Footer from '../components/Footer.astro'
 
 import laViceEnVideo from '../assets/capturas/la-vice.mp4'
 import laPresiEnVideo from '../assets/capturas/la-presi.mp4'
+
+import camilaCorreaPhoto from '../assets/voluntarios/camila-correa.jpg'
+import claudiaGonzalezPhoto from '../assets/voluntarios/claudia-gonzalez.webp'
+import guadaPhoto from '../assets/voluntarios/guada.webp'
+import jesusPhoto from '../assets/voluntarios/jesus.webp'
+import luciaPhoto from '../assets/voluntarios/lucia.webp'
+import marcosGodiPhoto from '../assets/voluntarios/marcos-godi.webp'
+import pabloMartinezPhoto from '../assets/voluntarios/pablo-martinez.webp'
 ---
 
 <Layout title="Nuestro Equipo - AJERGA" description="Conoce al equipo de AJERGA">
@@ -201,61 +209,151 @@ import laPresiEnVideo from '../assets/capturas/la-presi.mp4'
                             class="group bg-white rounded-3xl p-8 text-center hover:shadow-2xl transition-all hover:-translate-y-2 duration-300">
                             <div
                                 class="w-36 h-36 bg-gradient-to-br from-[#394d62] to-[#d2557d] rounded-full mx-auto mb-6 flex items-center justify-center ring-4 ring-[#394d62]/20 group-hover:ring-[#394d62]/40 transition-all">
-                                <div class="w-20 h-20 bg-white/20 rounded-full"></div>
+                                <img
+                                    src={camilaCorreaPhoto.src}
+                                    alt="Camila Correa Suárez"
+                                    class="w-full h-full object-cover rounded-full"
+                                />
                             </div>
-                            <h3 class="text-xl font-bold text-[#394d62] mb-2">[Nombre]</h3>
-                            <p class="text-[#d75528] font-bold mb-4 text-lg">Voluntario</p>
-                            <p class="text-gray-600 text-sm leading-relaxed">[Breve descripción]</p>
+                            <h3 class="text-xl font-bold text-[#394d62] mb-2">Camila Correa Suárez</h3>
+                            <p class="text-[#d75528] font-bold mb-4 text-lg">Voluntaria</p>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Soy Camila Correa Suárez (díganme Cami porfa!😂) abogada argentina con un máster en
+                                Gobierno Local y Políticas Públicas (USC) y cursando actualmente el Máster en Estudios
+                                Internacionales. Desde mi rol en AJERGA Santiago, disfruto acompañaando, escuchachando y
+                                conectando a quienes, como yo, decidieron construir una nueva etapa en Galicia. Me motiva
+                                generar comunidad y tender puentes desde la empatía.
+                            </p>
                         </div>
                         <div
                             class="group bg-white rounded-3xl p-8 text-center hover:shadow-2xl transition-all hover:-translate-y-2 duration-300">
                             <div
                                 class="w-36 h-36 bg-gradient-to-br from-[#394d62] to-[#d2557d] rounded-full mx-auto mb-6 flex items-center justify-center ring-4 ring-[#394d62]/20 group-hover:ring-[#394d62]/40 transition-all">
-                                <div class="w-20 h-20 bg-white/20 rounded-full"></div>
+                                <img
+                                    src={claudiaGonzalezPhoto.src}
+                                    alt="Claudia Cedeño"
+                                    class="w-full h-full object-cover rounded-full"
+                                />
                             </div>
-                            <h3 class="text-xl font-bold text-[#394d62] mb-2">[Nombre]</h3>
-                            <p class="text-[#d75528] font-bold mb-4 text-lg">Voluntario</p>
-                            <p class="text-gray-600 text-sm leading-relaxed">[Breve descripción]</p>
+                            <h3 class="text-xl font-bold text-[#394d62] mb-2">Claudia Cedeño</h3>
+                            <p class="text-[#d75528] font-bold mb-4 text-lg">Voluntaria</p>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Soy Claudia Cedeño de origen cubano que llegó a España en el 2020 gracias a las becas
+                                BEMES para estudiar un Máster en Xestión Cultural en la USC. Me enamoré de Galicia y en
+                                especial de Ourense dónde vivo actualmente con mi familia. Espero poder seguir
+                                desarrollándome como profesional y como persona en esta tierra tan verde y mágica en la
+                                cual he decidido quedarme, establecerme y plantar mi semilla.
+                            </p>
                         </div>
                         <div
                             class="group bg-white rounded-3xl p-8 text-center hover:shadow-2xl transition-all hover:-translate-y-2 duration-300">
                             <div
                                 class="w-36 h-36 bg-gradient-to-br from-[#394d62] to-[#d2557d] rounded-full mx-auto mb-6 flex items-center justify-center ring-4 ring-[#394d62]/20 group-hover:ring-[#394d62]/40 transition-all">
-                                <div class="w-20 h-20 bg-white/20 rounded-full"></div>
+                                <img
+                                    src={guadaPhoto.src}
+                                    alt="Guadalupe"
+                                    class="w-full h-full object-cover rounded-full"
+                                />
                             </div>
-                            <h3 class="text-xl font-bold text-[#394d62] mb-2">[Nombre]</h3>
-                            <p class="text-[#d75528] font-bold mb-4 text-lg">Voluntario</p>
-                            <p class="text-gray-600 text-sm leading-relaxed">[Breve descripción]</p>
+                            <h3 class="text-xl font-bold text-[#394d62] mb-2">Guadalupe</h3>
+                            <p class="text-[#d75528] font-bold mb-4 text-lg">Voluntaria</p>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Soy Guadalupe. Nací en el sur de la Patagonia Argentina, pero gracias a mi abuelo
+                                Antonio crecí en una casa muy gallega. Por eso, cuando llegué a Vigo hace ya tres años,
+                                sentí desde el primer momento que estaba volviendo a casa. Llegué a Galicia gracias a
+                                las becas BEME para realizar un máster en Nutrición y así completar mi formación como
+                                médica endocrinóloga. Migrar fue un gran desafío, y desde el minuto cero AJERGA estuvo a
+                                mi lado, acompañándome, y haciéndome sentir parte. Desde 2025 soy voluntaria de AJERGA,
+                                como una forma de devolver todo lo recibido y de acompañar hoy a nuevas generaciones.
+                            </p>
                         </div>
                         <div
                             class="group bg-white rounded-3xl p-8 text-center hover:shadow-2xl transition-all hover:-translate-y-2 duration-300">
                             <div
                                 class="w-36 h-36 bg-gradient-to-br from-[#394d62] to-[#d2557d] rounded-full mx-auto mb-6 flex items-center justify-center ring-4 ring-[#394d62]/20 group-hover:ring-[#394d62]/40 transition-all">
-                                <div class="w-20 h-20 bg-white/20 rounded-full"></div>
+                                <img
+                                    src={jesusPhoto.src}
+                                    alt="Jesús Orlando"
+                                    class="w-full h-full object-cover rounded-full"
+                                />
                             </div>
-                            <h3 class="text-xl font-bold text-[#394d62] mb-2">[Nombre]</h3>
+                            <h3 class="text-xl font-bold text-[#394d62] mb-2">Jesús Orlando</h3>
                             <p class="text-[#d75528] font-bold mb-4 text-lg">Voluntario</p>
-                            <p class="text-gray-600 text-sm leading-relaxed">[Breve descripción]</p>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Mi nombre es Jesús Orlando. Nací en Lechería, Edo. Anzoátegui, Venezuela. En Venezuela
+                                me gradué como Licenciado en Idiomas Modernos en la Universidad Metropolitana. En 2024
+                                fui beneficiario de la BEME, lo que me permitió mudarme a Galicia y cursar el Máster en
+                                Traducción para la Comunicación Internacional (MTCI) en la Universidad de Vigo, así como
+                                el título de Especialista en Traducción para la Industria del Videojuego (ETIV). En mi
+                                tiempo libre me gusta a salir a pasear y conocer lugares nuevos, pero cuando llueve
+                                mucho mis hobbies incluyen jugar videojuegos, ver películas y leer cómics.
+                            </p>
                         </div>
                         <div
                             class="group bg-white rounded-3xl p-8 text-center hover:shadow-2xl transition-all hover:-translate-y-2 duration-300">
                             <div
                                 class="w-36 h-36 bg-gradient-to-br from-[#394d62] to-[#d2557d] rounded-full mx-auto mb-6 flex items-center justify-center ring-4 ring-[#394d62]/20 group-hover:ring-[#394d62]/40 transition-all">
-                                <div class="w-20 h-20 bg-white/20 rounded-full"></div>
+                                <img
+                                    src={luciaPhoto.src}
+                                    alt="Lucía Zele"
+                                    class="w-full h-full object-cover rounded-full"
+                                />
                             </div>
-                            <h3 class="text-xl font-bold text-[#394d62] mb-2">[Nombre]</h3>
-                            <p class="text-[#d75528] font-bold mb-4 text-lg">Voluntario</p>
-                            <p class="text-gray-600 text-sm leading-relaxed">[Breve descripción]</p>
+                            <h3 class="text-xl font-bold text-[#394d62] mb-2">Lucía Zele</h3>
+                            <p class="text-[#d75528] font-bold mb-4 text-lg">Voluntaria</p>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Hola! Mi nombre es Lucia Zele, tengo 36 años, soy medica endocrinologa. Viaje de
+                                Argentina a Vigo con las becas Beme 2024-2025 y realice mi Master en Nutrición. Desde
+                                que llegué, Ajerga estuvo muy presente y nos acompañó en todo el proceso, y por eso
+                                decidí aportar mi granito de arena haciéndome socia y voluntaria, para devolver un poco
+                                de lo que me dieron y ayudar a los que llegan a que se sientan más acompañados!
+                                Actualmente estoy coordinando el grupo de Argentina a Galicia. Si necesitan ayuda, acá
+                                estoy para lo que necesiten!
+                            </p>
                         </div>
                         <div
                             class="group bg-white rounded-3xl p-8 text-center hover:shadow-2xl transition-all hover:-translate-y-2 duration-300">
                             <div
                                 class="w-36 h-36 bg-gradient-to-br from-[#394d62] to-[#d2557d] rounded-full mx-auto mb-6 flex items-center justify-center ring-4 ring-[#394d62]/20 group-hover:ring-[#394d62]/40 transition-all">
-                                <div class="w-20 h-20 bg-white/20 rounded-full"></div>
+                                <img
+                                    src={marcosGodiPhoto.src}
+                                    alt="Marcos Godi"
+                                    class="w-full h-full object-cover rounded-full"
+                                />
                             </div>
-                            <h3 class="text-xl font-bold text-[#394d62] mb-2">[Nombre]</h3>
+                            <h3 class="text-xl font-bold text-[#394d62] mb-2">Marcos</h3>
                             <p class="text-[#d75528] font-bold mb-4 text-lg">Voluntario</p>
-                            <p class="text-gray-600 text-sm leading-relaxed">[Breve descripción]</p>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Soy Marcos, un galego de Argentina y un argentino de Galicia. Desde hace tres años vivo
+                                en Galicia, aunque mi vínculo con esta tierra viene desde muy chico. Fui alumno del
+                                Colegio Santiago Apóstol de Buenos Aires, realicé un intercambio en Santiago de
+                                Compostela y completé un Máster en Dirección de PYMES en la Universidad de Vigo.
+                                Actualmente resido en A Coruña, donde me dedico al desarrollo comercial de startups
+                                gallegas. Además de mi trabajo, participo activamente en la vida cultural: bailo danza
+                                tradicional, soy seguidor del Deportivo y del Liceo, y desde hace dos años colaboro como
+                                voluntario en AJERGA, donde actualmente desempeño el rol de tesorero/revisor de cuentas.
+                            </p>
+                        </div>
+
+                        <div
+                            class="group bg-white rounded-3xl p-8 text-center hover:shadow-2xl transition-all hover:-translate-y-2 duration-300">
+                            <div
+                                class="w-36 h-36 bg-gradient-to-br from-[#394d62] to-[#d2557d] rounded-full mx-auto mb-6 flex items-center justify-center ring-4 ring-[#394d62]/20 group-hover:ring-[#394d62]/40 transition-all">
+                                <img
+                                    src={pabloMartinezPhoto.src}
+                                    alt="Pablo Martínez"
+                                    class="w-full h-full object-cover rounded-full"
+                                />
+                            </div>
+                            <h3 class="text-xl font-bold text-[#394d62] mb-2">Pablo</h3>
+                            <p class="text-[#d75528] font-bold mb-4 text-lg">Voluntario</p>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Gallego de nacimiento, redescubriendo Galicia a través de otras miradas. Estudié
+                                Informática orientada al desarrollo de software y resido en Santiago de Compostela.
+                                Formo parte de la asociación con la motivación de contribuir a la integración, el
+                                intercambio cultural y la creación de comunidad, descubriendo en cada historia de
+                                retorno una oportunidad para aprender y crecer.
+                            </p>
                         </div>
                     </div>
                 </section>
